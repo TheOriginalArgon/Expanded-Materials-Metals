@@ -1,0 +1,70 @@
+<Defs>
+
+<!-- Recipes to get metals from slag -->
+<RecipeDef>
+    <defName>VMEu_ExtractMetal_Lead</defName>
+    <label>smelt lead from slag</label>
+    <description>Use heat and strong electromagnets to extract useful lead from slag chunks.</description>
+    <jobString>Smelting metal from slag.</jobString>
+    <workAmount>200</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+		<li>ElectricSmelter</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VMEu_LeadSlag</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <VMEu_Lead>15</VMEu_Lead>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VMEu_LeadSlag</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>VMEu_ExtractMetal_Misc</defName>
+    <label>smelt metals from slag</label>
+    <description>Use heat and strong electromagnets to extract useful metals from slag chunks.</description>
+    <jobString>Smelting metals from slag.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+		<li>ElectricSmelter</li>
+	</recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VMEu_MiscSlag</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <VMEu_Iron>5</VMEu_Iron>
+      <VMEu_Copper>8</VMEu_Copper>
+      <VMEu_Lead>5</VMEu_Lead>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VMEu_MiscSlag</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+</Defs>

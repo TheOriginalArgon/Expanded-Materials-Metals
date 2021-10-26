@@ -1,0 +1,15 @@
+<Patch>
+    
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Rimefeller</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

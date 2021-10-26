@@ -1,0 +1,45 @@
+<Defs>
+
+<ThingDef ParentName="ChunkBase">
+    <defName>VMEu_LeadSlag</defName>
+    <label>lead slag chunk</label>
+    <description>A chunk of lead slag. While it's useless in its current form, it can be smelted to recover lead.</description>
+    <graphicData>
+      <texPath>Things/Item/Chunk/VMEu_LeadSlag</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>12</Mass>
+    </statBases>
+    <soundDrop>ChunkSlag_Drop</soundDrop>
+    <thingCategories>
+      <li>Chunks</li>
+    </thingCategories>
+    <smeltProducts>
+      <VMEu_Lead>15</VMEu_Lead>
+    </smeltProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="ChunkBase">
+    <defName>VMEu_MiscSlag</defName>
+    <label>metal slag chunk</label>
+    <description>A chunk of metal slag. While it's useless in its current form, it can be smelted to recover small amounts of various metals.</description>
+    <graphicData>
+      <texPath>Things/Item/Chunk/VMEu_MiscSlag</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>5</Mass>
+    </statBases>
+    <soundDrop>ChunkSlag_Drop</soundDrop>
+    <thingCategories>
+      <li>Chunks</li>
+    </thingCategories>
+    <smeltProducts>
+      <VMEu_Iron>5</VMEu_Iron>
+      <VMEu_Copper>8</VMEu_Copper>
+      <VMEu_Lead>5</VMEu_Lead>
+    </smeltProducts>
+  </ThingDef>
+
+</Defs>

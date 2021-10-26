@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Canned Food Uses Tin -->
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Vanilla Cooking Expanded</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef [defName = "VCE_CanMeats"]/ingredients</xpath>
+				<value>
+					<ingredients>
+					<li>
+						<filter>
+							<categories>
+								<li>MeatRaw</li>
+
+							</categories>
+						</filter>
+						<count>1</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>Steel</li>
+							</thingDefs>
+						</filter>
+						<count>1</count>
+					</li>
+					<li>
+						<filter>
+							<thingDefs>
+								<li>VMEu_Tin</li>
+							</thingDefs>
+						</filter>
+						<count>0.1</count>
+					</li>
+				</ingredients>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef [defName = "VCE_CanProduce"]/ingredients</xpath>
+				<value>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>PlantFoodRaw</li>
+								</categories>
+							</filter>
+							<count>1</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Steel</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>VMEu_Tin</li>
+								</thingDefs>
+							</filter>
+							<count>0.1</count>
+						</li>
+					</ingredients>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef [defName = "VCE_CanFruit"]/ingredients</xpath>
+				<value>
+					<ingredients>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>RawBerries</li>
+								</thingDefs>
+								<categories>
+									
+								</categories>
+							</filter>
+							<count>1</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Steel</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>VMEu_Tin</li>
+								</thingDefs>
+							</filter>
+							<count>0.1</count>
+						</li>
+					</ingredients>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef [defName = "VCE_CanEggs"]/ingredients</xpath>
+				<value>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>EggsUnfertilized</li>
+									<li>EggsFertilized</li>
+								</categories>
+							</filter>
+							<count>1</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Steel</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>VMEu_Tin</li>
+								</thingDefs>
+							</filter>
+							<count>0.1</count>
+						</li>
+					</ingredients>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef [defName = "VCE_CheesePress"]/costList</xpath>
+			<value>
+				<costList>
+					<VMEu_Iron>10</VMEu_Iron>
+					<WoodLog>30</WoodLog>
+				</costList>
+			</value>
+			</li>
+		</operations>
+	</match>
+</Operation>
+
+<!-- Canned Fish -->
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>Vanilla Cooking Expanded</li>
+</mods>
+<match Class="PatchOperationFindMod">
+<mods>
+<li>Vanilla Fishing Expanded</li>
+</mods>
+<match Class="PatchOperationSequence">
+<success>Always</success>
+<operations>
+<li Class="PatchOperationReplace">
+<xpath>/Defs/RecipeDef [defName = "VCE_CanFish"]/ingredients</xpath>
+<value>
+<ingredients>
+<li>
+<filter>
+<categories>
+<li>VCEF_RawFishCategory</li>
+
+</categories>
+</filter>
+<count>1</count>
+</li>
+<li>
+<filter>
+<thingDefs>
+<li>Steel</li>
+</thingDefs>
+</filter>
+<count>1</count>
+</li>
+<li>
+<filter>
+<thingDefs>
+<li>VMEu_Tin</li>
+</thingDefs>
+</filter>
+<count>0.1</count>
+</li>
+</ingredients>
+</value>
+</li>
+</operations>
+</match>
+</match>
+</Operation>
+
+</Patch>

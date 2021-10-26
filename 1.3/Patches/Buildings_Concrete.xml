@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Patch Concrete -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/TerrainDef [defName = "Concrete"]/costList/Steel</xpath>
+		<value>
+			<VMEu_RockPowder>1</VMEu_RockPowder>
+		</value>
+	</Operation>
+
+	<!-- Patch Paved Tiles -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/TerrainDef [defName = "PavedTile"]/costList/Steel</xpath>
+		<value>
+			<VMEu_Concrete>1</VMEu_Concrete>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Wall"]/stuffCategories</xpath>
+		<value>
+			<li>VMEu_ConcreteStuffCategory</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Column"]/stuffCategories</xpath>
+		<value>
+			<li>VMEu_ConcreteStuffCategory</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Sarcophagus"]/stuffCategories</xpath>
+		<value>
+			<li>VMEu_ConcreteStuffCategory</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="ElectricCrematorium"]/stuffCategories</xpath>
+		<value>
+			<li>VMEu_ConcreteStuffCategory</li>
+		</value>
+	</Operation>
+
+</Patch>
