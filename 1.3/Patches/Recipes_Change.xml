@@ -110,7 +110,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef [defName = "Gun_EmpLauncher"]/costList</xpath>
 		<value>
-			<VMEu_Lithium>8.5</VMEu_Lithium>
+			<VMEu_Lithium>8</VMEu_Lithium>
 		</value>
 	</Operation>
 	
