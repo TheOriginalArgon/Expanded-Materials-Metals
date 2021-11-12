@@ -8,6 +8,14 @@
         <success>Always</success>
         <operations>
 
+            <!-- Styling Table -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "StylingStation"]/costList/Steel</xpath>
+                <value>
+                    <VMEu_Iron>30</VMEu_Iron>
+                </value>
+            </li>
+
             <!-- Sleep Accelerator -->
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef [defName = "SleepAccelerator"]/costList/Steel</xpath>
