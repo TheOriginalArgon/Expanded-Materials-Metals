@@ -11,6 +11,7 @@
     <statBases>
       <Mass>12</Mass>
     </statBases>
+    <smeltable>true</smeltable>
     <soundDrop>ChunkSlag_Drop</soundDrop>
     <thingCategories>
       <li>Chunks</li>
@@ -31,6 +32,7 @@
     <statBases>
       <Mass>5</Mass>
     </statBases>
+    <smeltable>true</smeltable>
     <soundDrop>ChunkSlag_Drop</soundDrop>
     <thingCategories>
       <li>Chunks</li>
