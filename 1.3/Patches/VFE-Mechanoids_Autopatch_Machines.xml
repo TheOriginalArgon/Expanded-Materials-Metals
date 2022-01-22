@@ -12,7 +12,7 @@
 
 			<!-- Autopatch Machines -->
 			<li Class="PatchOperationSequence">
-				<success>Always</success>
+				<!-- <success>Always</success> -->
 				<operations>
 					<li Class="PatchOperationTest">
 						<xpath>Defs/ThingDef[@ParentName = "BuildingBase" and costList/VFE_ComponentMechanoid and not(comps/ li[@Class = "VFE.Mechanoids.CompProperties_MachineChargingStation"])]/costList/Steel</xpath>
