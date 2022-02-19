@@ -76,7 +76,7 @@
 				<li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef [defName = "VMEu_Germanium"]/graphicData/texPath</xpath>
                     <value>
-                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/VMEu_GermaniumIngot</texPath>
+                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/GermaniumIngot</texPath>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
@@ -89,7 +89,7 @@
 				<li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef [defName = "VMEu_Lithium"]/graphicData/texPath</xpath>
                     <value>
-                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/VMEu_LithiumIngot</texPath>
+                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/LithiumIngot</texPath>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
@@ -102,7 +102,7 @@
 				<li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef [defName = "VMEu_Tin"]/graphicData/texPath</xpath>
                     <value>
-                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/VMEu_TinIngot</texPath>
+                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/TinIngot</texPath>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
@@ -115,7 +115,7 @@
 				<li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef [defName = "VMEu_Titanium"]/graphicData/texPath</xpath>
                     <value>
-                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/VMEu_TitaniumIngot</texPath>
+                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/TitaniumIngot</texPath>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
@@ -128,7 +128,7 @@
 				<li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef [defName = "VMEu_Tungsten"]/graphicData/texPath</xpath>
                     <value>
-                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/VMEu_TungstenIngot</texPath>
+                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/TungstenIngot</texPath>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
@@ -138,76 +138,7 @@
                     </value>
                 </li>
 				
-                <!-- Change copper mineable yield -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableCopper"]/building/mineableThing</xpath>
-                    <value>
-                        <mineableThing>VMEu_DankPyon_CopperOre</mineableThing>
-                    </value>
-                </li>
-				<!-- Change chromium mineable ore -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableChromium"]/building/mineableThing</xpath>
-                    <value>
-                        <mineableThing>VMEu_DankPyon_ChromiumOre</mineableThing>
-                    </value>
-                </li>
-				<!-- Change tin mineable ore -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableTin"]/building/mineableThing</xpath>
-                    <value>
-                        <mineableThing>VMEu_DankPyon_TinOre</mineableThing>
-                    </value>
-                </li>
-				<!-- Change germanium mineable ore -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableGermanium"]/building/mineableThing</xpath>
-                    <value>
-                        <mineableThing>VMEu_DankPyon_GermaniumOre</mineableThing>
-                    </value>
-                </li>
-				<!-- Change lead mineable ore -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableLead"]/building/mineableThing</xpath>
-                    <value>
-                        <mineableThing>VMEu_DankPyon_LeadOre</mineableThing>
-                    </value>
-                </li>
-				<!-- Change lithium mineable ore -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableLithium"]/building/mineableThing</xpath>
-                    <value>
-                        <mineableThing>VMEu_DankPyon_LithiumOre</mineableThing>
-                    </value>
-                </li>
-				<!-- Change titanium mineable ore -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableTitanium"]/building/mineableThing</xpath>
-                    <value>
-                        <mineableThing>VMEu_DankPyon_TitaniumOre</mineableThing>
-                    </value>
-                </li>
-				<!-- Change tunsgten mineable ore -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableTungsten"]/building/mineableThing</xpath>
-                    <value>
-                        <mineableThing>VMEu_DankPyon_TungstenOre</mineableThing>
-                    </value>
-                </li>
-				<!-- Change low-volume mineable yields -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableCopper" or defName = "VMEu_MineableTin" or defName = "VMEu_MineableLithium" or defName = "VMEu_MineableGermanium"]/building/mineableYield</xpath>
-                    <value>
-                        <mineableYield>8</mineableYield>
-                    </value>
-                </li>
-				<!-- Change regular-volume mineable yields -->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableTungsten" or defName="VMEu_MineableTitanium" or defName="VMEu_MineableChromium" or defName="VMEu_MineableIron"] /building/mineableYield</xpath>
-                    <value>
-                        <mineableYield>1</mineableYield>
-                    </value>
-                </li>
+                
 
                 <!-- Add new defs -->
                 <li Class="PatchOperationAdd">
@@ -706,6 +637,7 @@
                             <fixedIngredientFilter>
                                 <thingDefs>
                                     <li>VMEu_DankPyon_CopperOre</li>
+                                    <li>VMEu_Tin</li>
                                 </thingDefs>
                             </fixedIngredientFilter>
                             <products>
@@ -740,6 +672,7 @@
                             <fixedIngredientFilter>
                                 <thingDefs>
                                     <li>VMEu_DankPyon_CopperOre</li>
+                                    <li>VMEu_Tin</li>
                                 </thingDefs>
                             </fixedIngredientFilter>
                             <products>
@@ -774,6 +707,7 @@
                             <fixedIngredientFilter>
                                 <thingDefs>
                                     <li>VMEu_DankPyon_CopperOre</li>
+                                    <li>VMEu_Tin</li>
                                 </thingDefs>
                             </fixedIngredientFilter>
                             <products>
@@ -1225,6 +1159,77 @@
                             </products>
                         </RecipeDef>
 						
+                    </value>
+                </li>
+
+                <!-- Change copper mineable yield -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableCopper"]/building/mineableThing</xpath>
+                    <value>
+                        <mineableThing>VMEu_DankPyon_CopperOre</mineableThing>
+                    </value>
+                </li>
+				<!-- Change chromium mineable ore -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableChromium"]/building/mineableThing</xpath>
+                    <value>
+                        <mineableThing>VMEu_DankPyon_ChromiumOre</mineableThing>
+                    </value>
+                </li>
+				<!-- Change tin mineable ore -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableTin"]/building/mineableThing</xpath>
+                    <value>
+                        <mineableThing>VMEu_DankPyon_TinOre</mineableThing>
+                    </value>
+                </li>
+				<!-- Change germanium mineable ore -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableGermanium"]/building/mineableThing</xpath>
+                    <value>
+                        <mineableThing>VMEu_DankPyon_GermaniumOre</mineableThing>
+                    </value>
+                </li>
+				<!-- Change lead mineable ore -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableLead"]/building/mineableThing</xpath>
+                    <value>
+                        <mineableThing>VMEu_DankPyon_LeadOre</mineableThing>
+                    </value>
+                </li>
+				<!-- Change lithium mineable ore -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableLithium"]/building/mineableThing</xpath>
+                    <value>
+                        <mineableThing>VMEu_DankPyon_LithiumOre</mineableThing>
+                    </value>
+                </li>
+				<!-- Change titanium mineable ore -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableTitanium"]/building/mineableThing</xpath>
+                    <value>
+                        <mineableThing>VMEu_DankPyon_TitaniumOre</mineableThing>
+                    </value>
+                </li>
+				<!-- Change tunsgten mineable ore -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableTungsten"]/building/mineableThing</xpath>
+                    <value>
+                        <mineableThing>VMEu_DankPyon_TungstenOre</mineableThing>
+                    </value>
+                </li>
+				<!-- Change low-volume mineable yields -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableCopper" or defName = "VMEu_MineableTin" or defName = "VMEu_MineableLithium" or defName = "VMEu_MineableGermanium"]/building/mineableYield</xpath>
+                    <value>
+                        <mineableYield>8</mineableYield>
+                    </value>
+                </li>
+				<!-- Change regular-volume mineable yields -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableTungsten" or defName="VMEu_MineableTitanium" or defName="VMEu_MineableChromium" or defName="VMEu_MineableIron"] /building/mineableYield</xpath>
+                    <value>
+                        <mineableYield>1</mineableYield>
                     </value>
                 </li>
 
