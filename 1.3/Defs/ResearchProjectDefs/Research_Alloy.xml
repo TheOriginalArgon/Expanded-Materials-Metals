@@ -67,4 +67,21 @@
 	</requiredResearchFacilities>
   </ResearchProjectDef>
 
+  <!-- Oil Extracting -->
+
+  <ResearchProjectDef>
+		<defName>VMEu_PlasticManufacture</defName>
+		<label>plastic manufacture</label>
+		<tab>VMEu_PlasticsResearchTab</tab>
+		<techLevel>Industrial</techLevel>
+		<description>Allows the manufacture of diverse mateirals created from dark oil. These materials range from cheap and weak ones used for medium quality furniture, to hard and durable ones used for building resistent yet cheap structures.</description>
+		<baseCost>900</baseCost>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>0.20</researchViewY>
+		<prerequisites>
+			<li>Electricity</li>
+			<li>BiofuelRefining</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
 </Defs>

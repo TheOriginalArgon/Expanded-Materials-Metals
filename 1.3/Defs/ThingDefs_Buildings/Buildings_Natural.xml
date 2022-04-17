@@ -216,4 +216,35 @@
       <mineableScatterLumpSizeRange>6~12</mineableScatterLumpSizeRange>
     </building>
   </ThingDef>
+
+  <!-- Oil Pond -->
+
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>VMEu_OilPond</defName>
+    <label>dark oil pond</label>
+    <description>A natural pond containing dark oil. Dark oil takes time to be extracted with an specialized oil extractor, plus these ponds are quite rare, but they ccontain lots of dark oil that can supply your production chain for a pretty long period.</description>
+    <thingClass>ExpandedMaterials_Plastics.VMEu_Building_OilPond</thingClass>
+    <graphicData>
+      <texPath>Things/Building/VMEu_OilPond</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <uiIconScale>0.5</uiIconScale>
+    <altitudeLayer>Floor</altitudeLayer>
+    <rotatable>false</rotatable>
+    <destroyable>false</destroyable>
+    <useHitPoints>false</useHitPoints>
+    <tickerType>Normal</tickerType>
+    <selectable>true</selectable>
+    <size>(2,2)</size>
+    <neverOverlapFloors>true</neverOverlapFloors>
+    <blockPlants>true</blockPlants>
+    <building>
+      <isEdifice>false</isEdifice>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+    </building>
+  </ThingDef>
+
 </Defs>

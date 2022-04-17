@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!-- Smelter -->
+  <!-- Smelter -->
   <ThingDef ParentName="BenchBase">
     <defName>VMEu_MetalSmelter</defName>
     <label>alloy smelter</label>
@@ -10,7 +10,7 @@
     <graphicData>
       <texPath>Things/Building/VMEu_Smelter</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
+      <shaderType>CutoutComplex</shaderType>
       <drawSize>(3.5,1.5)</drawSize>
       <shadowData>
         <volume>(2.8, 0.35, 0.59)</volume>
@@ -26,7 +26,7 @@
     <costList>
       <VMEu_Iron>50</VMEu_Iron>
     </costList>
-	<stuffCategories>
+    <stuffCategories>
       <li>Stony</li>
     </stuffCategories>
     <costStuffCount>100</costStuffCount>
@@ -70,7 +70,7 @@
           <li>ToolCabinet</li>
         </linkableFacilities>
       </li>
-	  <li Class="CompProperties_Glower">
+      <li Class="CompProperties_Glower">
         <glowRadius>3</glowRadius>
         <glowColor>(217,112,33,0)</glowColor>
       </li>
@@ -83,7 +83,7 @@
       <li>Smithing</li>
     </researchPrerequisites>
   </ThingDef>
-  
+
   <!-- Electric Smelter  -->
   <ThingDef ParentName="BenchBase">
     <defName>VMEu_ElectricMetalSmelter</defName>
@@ -93,7 +93,7 @@
     <graphicData>
       <texPath>Things/Building/VMEu_ESmelter</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
+      <shaderType>CutoutComplex</shaderType>
       <drawSize>(3.5,1.5)</drawSize>
       <shadowData>
         <volume>(2.8, 0.35, 0.59)</volume>
@@ -108,9 +108,9 @@
     </graphicData>
     <costList>
       <Steel>60</Steel>
-	  <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
-	<stuffCategories>
+    <stuffCategories>
       <li>Stony</li>
     </stuffCategories>
     <costStuffCount>100</costStuffCount>
@@ -143,13 +143,13 @@
         <basePowerConsumption>350</basePowerConsumption>
         <shortCircuitInRain>true</shortCircuitInRain>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>ToolCabinet</li>
         </linkableFacilities>
       </li>
-	  <li Class="CompProperties_Glower">
+      <li Class="CompProperties_Glower">
         <glowRadius>3</glowRadius>
         <glowColor>(217,112,33,0)</glowColor>
       </li>
@@ -163,8 +163,8 @@
       <li>Electricity</li>
     </researchPrerequisites>
   </ThingDef>
-  
-	<!-- Advanced Smelter -->
+
+  <!-- Advanced Smelter -->
   <ThingDef ParentName="BuildingBase">
     <defName>VMEu_AdvancedSmelter</defName>
     <label>advanced alloy smelter</label>
@@ -218,8 +218,8 @@
         <basePowerConsumption>500</basePowerConsumption>
         <shortCircuitInRain>true</shortCircuitInRain>
       </li>
-      <li Class="CompProperties_Flickable"/>
-	  <li Class="CompProperties_AffectedByFacilities">
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>ToolCabinet</li>
         </linkableFacilities>
@@ -249,6 +249,76 @@
       <li>Electricity</li>
       <li>Smithing</li>
     </researchPrerequisites>
+  </ThingDef>
+
+  <!-- Oil Extractor -->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>VMEu_OilExtractor</defName>
+    <label>oil extractor</label>
+    <description>An industrial machine capable of extracting dark oil from deep ponds.\n\nNeeds to be built in top of a natural oil pond for it to work.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Things/Building/EM_OilExtractor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4.5,4.5)</drawSize>
+
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>150</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>1.0</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>750</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+      <Flammability>1.5</Flammability>
+      <Beauty>-20</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <canOverlapZones>false</canOverlapZones>
+    <size>(4,4)</size>
+    <costList>
+      <Steel>160</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <placeWorkers>
+      <li>ExpandedMaterials_Plastics.VMEu_Placeworker_OnOilPond</li>
+    </placeWorkers>
+    <comps>
+
+      <li Class="ExpandedMaterials_Plastics.CompProperties_OilExtractor">
+        <oilProduced>60</oilProduced>
+        <oilInterval>10</oilInterval>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(194,103,29,0)</glowColor>
+      </li>
+
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>0</explosiveRadius>
+        <explosiveExpandPerFuel>0.95</explosiveExpandPerFuel>
+        <explosiveDamageType>Flame</explosiveDamageType>
+        <destroyThingOnExplosionSize>2</destroyThingOnExplosionSize>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>1</preExplosionSpawnChance>
+        <wickTicks>70~150</wickTicks>
+      </li>
+
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <designationHotKey>Misc3</designationHotKey>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>VMEu_PlasticManufacture</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </ThingDef>
 
 </Defs>
