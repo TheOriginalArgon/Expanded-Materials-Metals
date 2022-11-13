@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[SYR] Naga</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationReplace">
+        <xpath>/Defs/PawnKindDef [defName = "Naga_Grenadier_EMP"]/weaponMoney/min</xpath>
+        <value>480</value>
+        </li>
+        <li Class="PatchOperationReplace">
+        <xpath>/Defs/PawnKindDef [defName = "Naga_Grenadier_EMP"]/weaponMoney/max</xpath>
+        <value>480</value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

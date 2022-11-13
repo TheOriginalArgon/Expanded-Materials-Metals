@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Coal -->
+  <ThingDef ParentName="RockBase">
+    <defName>VMEu_MineableCoal</defName>
+    <label>coal ore</label>
+    <description>Rock containing bits of coal.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <colorTwo>(31,31,31)</colorTwo>
+      <color>(128,128,128)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>900</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>VMEu_Coal</mineableThing>
+      <mineableYield>50</mineableYield>
+      <mineableScatterCommonality>1.1</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>12~25</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+  
+	<!-- Iron -->
+  <ThingDef ParentName="RockBase">
+    <defName>VMEu_MineableIron</defName>
+    <label>iron ore</label>
+    <description>Rock containing bits of iron.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <colorTwo>(200,183,183)</colorTwo>
+      <color>(108,83,83)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>VMEu_Iron</mineableThing>
+      <mineableYield>40</mineableYield>
+      <mineableScatterCommonality>1.5</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>15~25</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+  
+  <!-- Lead -->
+  <ThingDef ParentName="RockBase">
+    <defName>VMEu_MineableLead</defName>
+    <label>lead ore</label>
+    <description>Rock containing bits of lead.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <colorTwo>(126,136,148)</colorTwo>
+      <color>(78,84,92)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1200</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>VMEu_Lead</mineableThing>
+      <mineableYield>45</mineableYield>
+      <mineableScatterCommonality>1</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>12~22</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+  
+  <!-- Tin -->
+  <ThingDef ParentName="RockBase">
+    <defName>VMEu_MineableTin</defName>
+    <label>tin ore</label>
+    <description>Rock containing bits of tin.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <colorTwo>(172, 173, 181)</colorTwo>
+      <color>(117, 117, 117)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>VMEu_Tin</mineableThing>
+      <mineableYield>82</mineableYield>
+      <mineableScatterCommonality>0.5</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>13~15</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+	<!-- Copper -->
+  <ThingDef ParentName="RockBase">
+    <defName>VMEu_MineableCopper</defName>
+    <label>copper ore</label>
+    <description>Rock containing bits of copper.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <colorTwo>(175,73,27)</colorTwo>
+      <color>(87,40,19)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1200</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>VMEu_Copper</mineableThing>
+      <mineableYield>77</mineableYield>
+      <mineableScatterCommonality>0.7</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>11~16</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+	<!-- Germanium -->
+  <ThingDef ParentName="RockBase">
+    <defName>VMEu_MineableGermanium</defName>
+    <label>germanium ore</label>
+    <description>Rock containing bits of germanium.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <colorTwo>(66,62,60)</colorTwo>
+      <color>(28,26,26)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>VMEu_Germanium</mineableThing>
+      <mineableYield>40</mineableYield>
+      <mineableScatterCommonality>0.6</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>6~10</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+	<!-- Titanium -->
+  <ThingDef ParentName="RockBase">
+    <defName>VMEu_MineableTitanium</defName>
+    <label>titanium ore</label>
+    <description>Rock containing bits of titanium.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <colorTwo>(199,199,199)</colorTwo>
+      <color>(56,56,56)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>4000</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>VMEu_Titanium</mineableThing>
+      <mineableYield>45</mineableYield>
+      <mineableScatterCommonality>0.6</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>6~14</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+	<!-- Lithium -->
+  <ThingDef ParentName="RockBase">
+    <defName>VMEu_MineableLithium</defName>
+    <label>lithium ore</label>
+    <description>Rock containing bits of lithium.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <colorTwo>(237,232,232)</colorTwo>
+      <color>(166,166,166)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>4400</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>VMEu_Lithium</mineableThing>
+      <mineableYield>50</mineableYield>
+      <mineableScatterCommonality>0.4</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>10~13</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+  
+  <!-- Tungsten -->
+  <ThingDef ParentName="RockBase">
+    <defName>VMEu_MineableTungsten</defName>
+    <label>tungsten ore</label>
+    <description>Rock containing bits of tungsten.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <colorTwo>(76,94,77)</colorTwo>
+      <color>(46,56,47)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>3500</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>VMEu_Tungsten</mineableThing>
+      <mineableYield>40</mineableYield>
+      <mineableScatterCommonality>0.7</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>6~12</mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+  <!-- Oil Pond -->
+
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>VMEu_OilPond</defName>
+    <label>dark oil pond</label>
+    <description>A natural pond containing dark oil. Dark oil takes time to be extracted with an specialized oil extractor, plus these ponds are quite rare, but they ccontain lots of dark oil that can supply your production chain for a pretty long period.</description>
+    <thingClass>ExpandedMaterials_Plastics.VMEu_Building_OilPond</thingClass>
+    <graphicData>
+      <texPath>Things/Building/VMEu_OilPond</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <uiIconScale>0.5</uiIconScale>
+    <altitudeLayer>Floor</altitudeLayer>
+    <rotatable>false</rotatable>
+    <destroyable>false</destroyable>
+    <useHitPoints>false</useHitPoints>
+    <tickerType>Normal</tickerType>
+    <selectable>true</selectable>
+    <size>(2,2)</size>
+    <neverOverlapFloors>true</neverOverlapFloors>
+    <blockPlants>true</blockPlants>
+    <building>
+      <isEdifice>false</isEdifice>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+    </building>
+  </ThingDef>
+
+</Defs>
