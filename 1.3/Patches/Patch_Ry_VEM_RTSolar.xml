@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Materials - Metals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>RT Solar Flare Shield</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/ThingDef[defName="Building_RTMagneticShield"]/costList</xpath>
+								<value>
+									<costList>
+										<VMEu_Tin>50</VMEu_Tin>
+										<VMEu_Copper>25</VMEu_Copper>
+										<ComponentIndustrial>10</ComponentIndustrial>
+									</costList>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

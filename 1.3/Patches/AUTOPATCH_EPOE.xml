@@ -4,6 +4,8 @@
     <mods>
         <li>Expanded Prosthetics and Organ Engineering</li>
         <li>Expanded Prosthetics and Organ Engineering - Forked</li>
+        <li>Expanded Prosthetics, Implants and Augmentations</li>
+	    <li>EPOE-Forked: Legacy mode</li>
     </mods>
     <match Class="PatchOperationSequence">
         <success>Always</success>
