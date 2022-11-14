@@ -1,0 +1,1241 @@
+<Patch>
+
+    <!-- PATCH MADE BY ALEXIS POPCORN -->
+
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+
+                <!-- Replace all iron from EM with MO iron ingots -->
+                <li Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationTest">
+                            <xpath>/Defs/ThingDef/costList/VMEu_Iron</xpath>
+                            <success>Normal</success>
+                        </li>
+                        <li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+                            <xpath>/Defs/ThingDef/costList/VMEu_Iron</xpath>
+                            <material>DankPyon_IronIngot</material>
+                            <percentage>100</percentage>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                            <xpath>/Defs/ThingDef/costList/VMEu_Iron[text()="0"]</xpath>
+                        </li>
+                    </operations>
+                </li>
+
+                <!-- Change copper sprite and name -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_Copper"]/graphicData/texPath</xpath>
+                    <value>
+                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/CopperIngot</texPath>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_Copper"]/label</xpath>
+                    <value>
+                        <label>copper ingot</label>
+                    </value>
+                </li>
+
+                <!-- Change bronze sprite and name -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_Bronze"]/graphicData/texPath</xpath>
+                    <value>
+                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/BronzeIngot</texPath>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_Bronze"]/label</xpath>
+                    <value>
+                        <label>bronze ingot</label>
+                    </value>
+                </li>
+				
+				<!-- -->
+				<!-- Change lead sprite and name -->
+				<li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_Lead"]/graphicData/texPath</xpath>
+                    <value>
+                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/LeadIngot</texPath>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_Lead"]/label</xpath>
+                    <value>
+                        <label>lead ingot</label>
+                    </value>
+                </li>
+				<!-- Change germanium sprite and name -->
+				<li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_Germanium"]/graphicData/texPath</xpath>
+                    <value>
+                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/GermaniumIngot</texPath>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_Germanium"]/label</xpath>
+                    <value>
+                        <label>germanium ingot</label>
+                    </value>
+                </li>
+				<!-- Change lithium sprite and name -->
+				<li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_Lithium"]/graphicData/texPath</xpath>
+                    <value>
+                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/LithiumIngot</texPath>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_Lithium"]/label</xpath>
+                    <value>
+                        <label>lithium ingot</label>
+                    </value>
+                </li>
+				<!-- Change tin sprite and name -->
+				<li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_Tin"]/graphicData/texPath</xpath>
+                    <value>
+                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/TinIngot</texPath>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_Tin"]/label</xpath>
+                    <value>
+                        <label>tin ingot</label>
+                    </value>
+                </li>
+				<!-- Change titanium sprite and name -->
+				<li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_Titanium"]/graphicData/texPath</xpath>
+                    <value>
+                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/TitaniumIngot</texPath>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_Titanium"]/label</xpath>
+                    <value>
+                        <label>titanium ingot</label>
+                    </value>
+                </li>
+				<!-- Change tungsten sprite and name -->
+				<li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_Tungsten"]/graphicData/texPath</xpath>
+                    <value>
+                        <texPath>Things/Item/Resource/MedievalOverhaulPatch/TungstenIngot</texPath>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_Tungsten"]/label</xpath>
+                    <value>
+                        <label>tungsten ingot</label>
+                    </value>
+                </li>
+				
+                
+
+                <!-- Add new defs -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+
+                        <!-- Copper ore -->
+                        <ThingDef ParentName="ResourceBase">
+                            <defName>VMEu_DankPyon_CopperOre</defName>
+                            <label>copper ore</label>
+                            <description>A raw copper ore, needs to be processed into ingots at a smelter to be usable.</description>
+                            <graphicData>
+                                <texPath>Things/Item/Resource/MedievalOverhaulPatch/CopperOre</texPath>
+                                <graphicClass>Graphic_StackCount</graphicClass>
+                            </graphicData>
+                            <soundInteract>Metal_Drop</soundInteract>
+                            <soundDrop>Metal_Drop</soundDrop>
+                            <statBases>
+                                <MarketValue>1</MarketValue>
+                                <Mass>0.008</Mass>
+                            </statBases>
+                            <useHitPoints>false</useHitPoints>
+                            <healthAffectsPrice>false</healthAffectsPrice>
+                            <thingCategories>
+                                <li>VMEu_SpecialMetals</li>
+                            </thingCategories>
+                            <stackLimit>500</stackLimit>
+                            <smallVolume>true</smallVolume>
+                            <deepCommonality>2</deepCommonality>
+                            <deepCountPerPortion>90</deepCountPerPortion>
+                            <deepLumpSizeRange>10~20</deepLumpSizeRange>
+                            <burnableByRecipe>false</burnableByRecipe>
+                            <smeltable>true</smeltable>
+                            <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+                        </ThingDef>
+						<!-- Tin ore -->
+                        <ThingDef ParentName="ResourceBase">
+                            <defName>VMEu_DankPyon_TinOre</defName>
+                            <label>tin ore</label>
+                            <description>A raw tin ore, needs to be processed into ingots at a smelter to be usable.</description>
+                            <graphicData>
+                                <texPath>Things/Item/Resource/MedievalOverhaulPatch/TinOre</texPath>
+                                <graphicClass>Graphic_StackCount</graphicClass>
+                            </graphicData>
+                            <soundInteract>Metal_Drop</soundInteract>
+                            <soundDrop>Metal_Drop</soundDrop>
+                            <statBases>
+                                <MarketValue>1</MarketValue>
+                                <Mass>0.008</Mass>
+                            </statBases>
+                            <useHitPoints>false</useHitPoints>
+                            <healthAffectsPrice>false</healthAffectsPrice>
+                            <thingCategories>
+                                <li>VMEu_SpecialMetals</li>
+                            </thingCategories>
+                            <stackLimit>500</stackLimit>
+                            <smallVolume>true</smallVolume>
+                            <deepCommonality>0.86</deepCommonality>
+                            <deepCountPerPortion>85</deepCountPerPortion>
+                            <deepLumpSizeRange>18~25</deepLumpSizeRange>
+                            <burnableByRecipe>false</burnableByRecipe>
+                            <smeltable>true</smeltable>
+                            <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+                        </ThingDef>
+						<!-- Lithium ore -->
+                        <ThingDef ParentName="ResourceBase">
+                            <defName>VMEu_DankPyon_LithiumOre</defName>
+                            <label>lithium ore</label>
+                            <description>A raw tin ore, needs to be processed into ingots at a smelter to be usable.</description>
+                            <graphicData>
+                                <texPath>Things/Item/Resource/MedievalOverhaulPatch/LithiumOre</texPath>
+                                <graphicClass>Graphic_StackCount</graphicClass>
+                            </graphicData>
+                            <soundInteract>Metal_Drop</soundInteract>
+                            <soundDrop>Metal_Drop</soundDrop>
+                            <statBases>
+                                <MarketValue>1</MarketValue>
+                                <Mass>0.008</Mass>
+                            </statBases>
+                            <useHitPoints>false</useHitPoints>
+                            <healthAffectsPrice>false</healthAffectsPrice>
+                            <thingCategories>
+                                <li>VMEu_SpecialMetals</li>
+                            </thingCategories>
+                            <stackLimit>500</stackLimit>
+                            <smallVolume>true</smallVolume>
+                            <deepCommonality>0.5</deepCommonality>
+                            <deepCountPerPortion>44</deepCountPerPortion>
+                            <deepLumpSizeRange>8~11</deepLumpSizeRange>
+                            <burnableByRecipe>false</burnableByRecipe>
+                            <smeltable>true</smeltable>
+                            <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+                        </ThingDef>
+						<!-- Germanium ore -->
+                        <ThingDef ParentName="ResourceBase">
+                            <defName>VMEu_DankPyon_GermaniumOre</defName>
+                            <label>germanium ore</label>
+                            <description>A raw germanium ore, needs to be processed into ingots at a smelter to be usable.</description>
+                            <graphicData>
+                                <texPath>Things/Item/Resource/MedievalOverhaulPatch/GermaniumOre</texPath>
+                                <graphicClass>Graphic_StackCount</graphicClass>
+                            </graphicData>
+                            <soundInteract>Metal_Drop</soundInteract>
+                            <soundDrop>Metal_Drop</soundDrop>
+                            <statBases>
+                                <MarketValue>1</MarketValue>
+                                <Mass>0.008</Mass>
+                            </statBases>
+                            <useHitPoints>false</useHitPoints>
+                            <healthAffectsPrice>false</healthAffectsPrice>
+                            <thingCategories>
+                                <li>VMEu_SpecialMetals</li>
+                            </thingCategories>
+                            <stackLimit>500</stackLimit>
+                            <smallVolume>true</smallVolume>
+                            <deepCommonality>0.85</deepCommonality>
+                            <deepCountPerPortion>33</deepCountPerPortion>
+                            <deepLumpSizeRange>5~10</deepLumpSizeRange>
+                            <burnableByRecipe>false</burnableByRecipe>
+                            <smeltable>true</smeltable>
+                            <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+                        </ThingDef>
+						<!-- Tungsten ore -->
+                        <ThingDef ParentName="ResourceBase">
+                            <defName>VMEu_DankPyon_TungstenOre</defName>
+                            <label>tungsten ore</label>
+                            <description>A raw tungsten ore, needs to be processed into ingots at a smelter to be usable.</description>
+                            <graphicData>
+                                <texPath>Things/Item/Resource/MedievalOverhaulPatch/TungstenOre</texPath>
+                                <graphicClass>Graphic_StackCount</graphicClass>
+                            </graphicData>
+                            <soundInteract>Metal_Drop</soundInteract>
+                            <soundDrop>Metal_Drop</soundDrop>
+                            <statBases>
+                                <MarketValue>1</MarketValue>
+                                <Mass>0.02</Mass>
+                            </statBases>
+                            <useHitPoints>false</useHitPoints>
+                            <healthAffectsPrice>false</healthAffectsPrice>
+                            <thingCategories>
+                                <li>VMEu_SpecialMetals</li>
+                            </thingCategories>
+                            <stackLimit>500</stackLimit>
+                            <deepCommonality>1.9</deepCommonality>
+							<deepCountPerPortion>22</deepCountPerPortion>
+							<deepLumpSizeRange>10~20</deepLumpSizeRange>
+                            <burnableByRecipe>false</burnableByRecipe>
+                            <smeltable>true</smeltable>
+                            <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+                        </ThingDef>
+						<!-- Lead ore -->
+                        <ThingDef ParentName="ResourceBase">
+                            <defName>VMEu_DankPyon_LeadOre</defName>
+                            <label>lead ore</label>
+                            <description>A raw lead ore, needs to be processed into ingots at a smelter to be usable.</description>
+                            <graphicData>
+                                <texPath>Things/Item/Resource/MedievalOverhaulPatch/LeadOre</texPath>
+                                <graphicClass>Graphic_StackCount</graphicClass>
+                            </graphicData>
+                            <soundInteract>Metal_Drop</soundInteract>
+                            <soundDrop>Metal_Drop</soundDrop>
+                            <statBases>
+                                <MarketValue>1</MarketValue>
+                                <Mass>0.02</Mass>
+                            </statBases>
+                            <useHitPoints>false</useHitPoints>
+                            <healthAffectsPrice>false</healthAffectsPrice>
+                            <thingCategories>
+                                <li>VMEu_SpecialMetals</li>
+                            </thingCategories>
+                            <stackLimit>500</stackLimit>
+                            <deepCommonality>3.8</deepCommonality>
+							<deepCountPerPortion>35</deepCountPerPortion>
+							<deepLumpSizeRange>20~25</deepLumpSizeRange>
+                            <burnableByRecipe>false</burnableByRecipe>
+                            <smeltable>true</smeltable>
+                            <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+                        </ThingDef>
+						<!-- Chromium ore -->
+                        <ThingDef ParentName="ResourceBase">
+                            <defName>VMEu_DankPyon_ChromiumOre</defName>
+                            <label>chromium ore</label>
+                            <description>A raw chromium ore, needs to be processed into ingots at a smelter to be usable.</description>
+                            <graphicData>
+                                <texPath>Things/Item/Resource/MedievalOverhaulPatch/ChromiumOre</texPath>
+                                <graphicClass>Graphic_StackCount</graphicClass>
+                            </graphicData>
+                            <soundInteract>Metal_Drop</soundInteract>
+                            <soundDrop>Metal_Drop</soundDrop>
+                            <statBases>
+                                <MarketValue>1</MarketValue>
+                                <Mass>0.02</Mass>
+                            </statBases>
+                            <useHitPoints>false</useHitPoints>
+                            <healthAffectsPrice>false</healthAffectsPrice>
+                            <thingCategories>
+                                <li>VMEu_SpecialMetals</li>
+                            </thingCategories>
+                            <stackLimit>500</stackLimit>
+                            <deepCommonality>3.2</deepCommonality>
+							<deepCountPerPortion>28</deepCountPerPortion>
+							<deepLumpSizeRange>10~22</deepLumpSizeRange>
+                            <burnableByRecipe>false</burnableByRecipe>
+                            <smeltable>true</smeltable>
+                            <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+                        </ThingDef>
+
+						<!-- Low-volume smelting -->
+                        <!-- Copper smelting -->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_Copper</defName>
+                            <workAmount>100</workAmount>
+                            <label>Smelt copper ore into ingots x70</label>
+                            <jobString>Smelting copper ores into 70 ingots</jobString>
+                            <targetCountAdjustment>10</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_CopperOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>1</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_CopperOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Copper>70</VMEu_Copper>
+                            </products>
+                        </RecipeDef>
+						<!-- Lithium smelting -->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_Lithium</defName>
+                            <workAmount>100</workAmount>
+                            <label>Smelt lithium ore into ingots x40</label>
+                            <jobString>Smelting lithium ores into 40 ingots</jobString>
+                            <targetCountAdjustment>10</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_LithiumOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>1</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_LithiumOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Lithium>40</VMEu_Lithium>
+                            </products>
+                        </RecipeDef>
+						<!-- Tin smelting -->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_Tin</defName>
+                            <workAmount>100</workAmount>
+                            <label>Smelt tin ore into ingots x70</label>
+                            <jobString>Smelting tin ores into 70 ingots</jobString>
+                            <targetCountAdjustment>10</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_TinOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>1</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_TinOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Tin>70</VMEu_Tin>
+                            </products>
+                        </RecipeDef>
+						<!-- Germanium smelting -->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_Germanium</defName>
+                            <workAmount>100</workAmount>
+                            <label>Smelt germanium ore into ingots x40</label>
+                            <jobString>Smelting germanium ores into 40 ingots</jobString>
+                            <targetCountAdjustment>10</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_GermaniumOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>1</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_GermaniumOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Germanium>40</VMEu_Germanium>
+                            </products>
+                        </RecipeDef>
+						<!-- Regular-volume smelting -->
+						<!-- Lead smelting -->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_Lead</defName>
+                            <workAmount>100</workAmount>
+                            <label>Smelt lead ore into ingots x45</label>
+                            <jobString>Smelting lead ores into 45 ingots</jobString>
+                            <targetCountAdjustment>10</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_LeadOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>1</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_LeadOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Lead>45</VMEu_Lead>
+                            </products>
+                        </RecipeDef>
+						<!-- Titanium smelting -->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_Titanium</defName>
+                            <workAmount>100</workAmount>
+                            <label>Smelt titanium ore into ingots x40</label>
+                            <jobString>Smelting titanium ores into 40 ingots</jobString>
+                            <targetCountAdjustment>10</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_TitaniumOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>1</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_TitaniumOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Titanium>40</VMEu_Titanium>
+                            </products>
+                        </RecipeDef>
+						<!-- Tungsten smelting -->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_Tungsten</defName>
+                            <workAmount>100</workAmount>
+                            <label>Smelt tungsten ore into ingots x40</label>
+                            <jobString>Smelting tungsten ores into 40 ingots</jobString>
+                            <targetCountAdjustment>10</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_TungstenOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>1</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_TungstenOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Tungsten>40</VMEu_Tungsten>
+                            </products>
+                        </RecipeDef>
+						<!-- Iron smelting -->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_Iron</defName>
+                            <workAmount>100</workAmount>
+                            <label>Smelt iron ore into ingots x40</label>
+                            <jobString>Smelting iron ores into 40 ingots</jobString>
+                            <targetCountAdjustment>10</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_IronOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>1</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_IronOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Iron>40</VMEu_Iron>
+                            </products>
+                        </RecipeDef>
+						<!-- Bulk recipes-->
+						<!-- Coppper Bulk -->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_CopperBulk</defName>
+                            <workAmount>600</workAmount>
+                            <label>Smelt copper ore into ingots x350</label>
+                            <jobString>Smelting copper ores into 350 ingots</jobString>
+                            <targetCountAdjustment>30</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_CopperOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>5</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_CopperOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Copper>350</VMEu_Copper>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_CopperExtraBulk</defName>
+                            <workAmount>1200</workAmount>
+                            <label>Smelt copper ore into ingots x700</label>
+                            <jobString>Smelting copper ores into 700 ingots</jobString>
+                            <targetCountAdjustment>30</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_CopperOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>10</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_CopperOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Copper>700</VMEu_Copper>
+                            </products>
+                        </RecipeDef>
+                        <!-- Bronze smelting -->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_Bronze</defName>
+                            <workAmount>100</workAmount>
+                            <label>Smelt copper and tin into bronze x15</label>
+                            <jobString>Smelting copper and tin into 15 ingots</jobString>
+                            <targetCountAdjustment>15</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_CopperOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>1</count>
+                                </li>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_Tin</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>0.2</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_CopperOre</li>
+                                    <li>VMEu_Tin</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Bronze>15</VMEu_Bronze>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_BronzeBulk</defName>
+                            <workAmount>600</workAmount>
+                            <label>Smelt copper and tin into bronze x45</label>
+                            <jobString>Smelting copper and tin into 45 ingots</jobString>
+                            <targetCountAdjustment>45</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_CopperOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>30</count>
+                                </li>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_Tin</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>1.5</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_CopperOre</li>
+                                    <li>VMEu_Tin</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Bronze>45</VMEu_Bronze>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_BronzeExtraBulk</defName>
+                            <workAmount>1200</workAmount>
+                            <label>Smelt copper and tin into bronze x90</label>
+                            <jobString>Smelting copper and tin into 90 ingots</jobString>
+                            <targetCountAdjustment>90</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_CopperOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>60</count>
+                                </li>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_Tin</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>3</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_CopperOre</li>
+                                    <li>VMEu_Tin</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Bronze>90</VMEu_Bronze>
+                            </products>
+                        </RecipeDef>
+						<!-- Lithium Bulk -->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_LithiumBulk</defName>
+                            <workAmount>600</workAmount>
+                            <label>Smelt lithium ore into ingots x200</label>
+                            <jobString>Smelting lithium ores into 200 ingots</jobString>
+                            <targetCountAdjustment>30</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_LithiumOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>5</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_LithiumOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Lithium>200</VMEu_Lithium>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_LithiumExtraBulk</defName>
+                            <workAmount>1200</workAmount>
+                            <label>Smelt lithium ore into ingots x400</label>
+                            <jobString>Smelting lithium ores into 400 ingots</jobString>
+                            <targetCountAdjustment>30</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_LithiumOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>10</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_LithiumOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Lithium>400</VMEu_Lithium>
+                            </products>
+                        </RecipeDef>
+						<!-- Germanium Bulk -->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_LithiumBulk</defName>
+                            <workAmount>600</workAmount>
+                            <label>Smelt germanium ore into ingots x200</label>
+                            <jobString>Smelting germanium ores into 200 ingots</jobString>
+                            <targetCountAdjustment>30</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_GermaniumOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>5</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_GermaniumOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Germanium>200</VMEu_Germanium>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_GermaniumExtraBulk</defName>
+                            <workAmount>1200</workAmount>
+                            <label>Smelt germanium ore into ingots x400</label>
+                            <jobString>Smelting germanium ores into 400 ingots</jobString>
+                            <targetCountAdjustment>30</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_GermaniumOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>10</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_GermaniumOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Germanium>400</VMEu_Germanium>
+                            </products>
+                        </RecipeDef>
+						<!-- Lead Bulk -->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_LeadBulk</defName>
+                            <workAmount>600</workAmount>
+                            <label>Smelt lead ore into ingots x225</label>
+                            <jobString>Smelting lead ores into 225 ingots</jobString>
+                            <targetCountAdjustment>30</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_LeadOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>5</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_LeadOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Lead>225</VMEu_Lead>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_LeadExtraBulk</defName>
+                            <workAmount>1200</workAmount>
+                            <label>Smelt lead ore into ingots x450</label>
+                            <jobString>Smelting lead ores into 450 ingots</jobString>
+                            <targetCountAdjustment>30</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_LeadOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>10</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_LeadOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Germanium>450</VMEu_Germanium>
+                            </products>
+                        </RecipeDef>
+						<!-- Titanium Bulk -->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_TitaniumBulk</defName>
+                            <workAmount>600</workAmount>
+                            <label>Smelt titanium ore into ingots x200</label>
+                            <jobString>Smelting titanium ores into 200 ingots</jobString>
+                            <targetCountAdjustment>30</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_TitaniumOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>5</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_TitaniumOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Titanium>200</VMEu_Titanium>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_TitaniumExtraBulk</defName>
+                            <workAmount>1200</workAmount>
+                            <label>Smelt titanium ore into ingots x400</label>
+                            <jobString>Smelting titanium ores into 400 ingots</jobString>
+                            <targetCountAdjustment>30</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_TitaniumOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>10</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_TitaniumOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Titanium>400</VMEu_Titanium>
+                            </products>
+                        </RecipeDef>
+						<!-- Tin Bulk -->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_TinBulk</defName>
+                            <workAmount>600</workAmount>
+                            <label>Smelt tin ore into ingots x350</label>
+                            <jobString>Smelting tin ores into 350 ingots</jobString>
+                            <targetCountAdjustment>30</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_TinOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>5</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_TinOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Tin>350</VMEu_Tin>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_TinExtraBulk</defName>
+                            <workAmount>1200</workAmount>
+                            <label>Smelt tin ore into ingots x700</label>
+                            <jobString>Smelting tin ores into 700 ingots</jobString>
+                            <targetCountAdjustment>30</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_TinOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>10</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_TinOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Tin>700</VMEu_Tin>
+                            </products>
+                        </RecipeDef>
+						<!-- Tungsten Bulk -->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_TungstenBulk</defName>
+                            <workAmount>600</workAmount>
+                            <label>Smelt tungsten ore into ingots x200</label>
+                            <jobString>Smelting tungsten ores into 200 ingots</jobString>
+                            <targetCountAdjustment>30</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_TungstenOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>5</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_TungstenOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Tungsten>200</VMEu_Tungsten>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_TungstenExtraBulk</defName>
+                            <workAmount>1200</workAmount>
+                            <label>Smelt tungsten ore into ingots x400</label>
+                            <jobString>Smelting tungsten ores into 400 ingots</jobString>
+                            <targetCountAdjustment>30</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_TungstenOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>10</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_TungstenOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Tin>400</VMEu_Tin>
+                            </products>
+                        </RecipeDef>
+						<!-- Iron Bulk -->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_IronBulk</defName>
+                            <workAmount>600</workAmount>
+                            <label>Smelt iron ore into ingots x200</label>
+                            <jobString>Smelting iron ores into 200 ingots</jobString>
+                            <targetCountAdjustment>30</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_IronOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>5</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_IronOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Iron>200</VMEu_Iron>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_MakeIngots_IronExtraBulk</defName>
+                            <workAmount>1200</workAmount>
+                            <label>Smelt iron ore into ingots x400</label>
+                            <jobString>Smelting iron ores into 400 ingots</jobString>
+                            <targetCountAdjustment>30</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_DankPyon_IronOre</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>10</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_DankPyon_IronOre</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <VMEu_Iron>400</VMEu_Iron>
+                            </products>
+                        </RecipeDef>
+						
+						
+						<!-- Debug switch iron recipes-->
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_DebugSwitchIngots</defName>
+                            <workAmount>1</workAmount>
+                            <label>Convert EM iron to MO iron x1</label>
+                            <jobString>fixing this mess of an ore bloat</jobString>
+                            <targetCountAdjustment>1</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_Iron</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>1</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_Iron</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <DankPyon_IronIngot>1</DankPyon_IronIngot>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_DebugSwitchIngotsBulk</defName>
+                            <workAmount>1</workAmount>
+                            <label>Convert EM iron to MO iron x30</label>
+                            <jobString>fixing this mess of an ore bloat</jobString>
+                            <targetCountAdjustment>30</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_Iron</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>30</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_Iron</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <DankPyon_IronIngot>30</DankPyon_IronIngot>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef ParentName="DankPyon_SmelterBase">
+                            <defName>VMEu_DebugSwitchIngotsExtraBulk</defName>
+                            <workAmount>1</workAmount>
+                            <label>Convert EM iron to MO iron x90</label>
+                            <jobString>fixing this mess of an ore bloat</jobString>
+                            <targetCountAdjustment>90</targetCountAdjustment>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>VMEu_Iron</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>90</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>VMEu_Iron</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <DankPyon_IronIngot>90</DankPyon_IronIngot>
+                            </products>
+                        </RecipeDef>
+						
+                    </value>
+                </li>
+
+                <!-- Change copper mineable yield -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableCopper"]/building/mineableThing</xpath>
+                    <value>
+                        <mineableThing>VMEu_DankPyon_CopperOre</mineableThing>
+                    </value>
+                </li>
+				<!-- Change chromium mineable ore -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableChromium"]/building/mineableThing</xpath>
+                    <value>
+                        <mineableThing>VMEu_DankPyon_ChromiumOre</mineableThing>
+                    </value>
+                </li>
+				<!-- Change tin mineable ore -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableTin"]/building/mineableThing</xpath>
+                    <value>
+                        <mineableThing>VMEu_DankPyon_TinOre</mineableThing>
+                    </value>
+                </li>
+				<!-- Change germanium mineable ore -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableGermanium"]/building/mineableThing</xpath>
+                    <value>
+                        <mineableThing>VMEu_DankPyon_GermaniumOre</mineableThing>
+                    </value>
+                </li>
+				<!-- Change lead mineable ore -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableLead"]/building/mineableThing</xpath>
+                    <value>
+                        <mineableThing>VMEu_DankPyon_LeadOre</mineableThing>
+                    </value>
+                </li>
+				<!-- Change lithium mineable ore -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableLithium"]/building/mineableThing</xpath>
+                    <value>
+                        <mineableThing>VMEu_DankPyon_LithiumOre</mineableThing>
+                    </value>
+                </li>
+				<!-- Change titanium mineable ore -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableTitanium"]/building/mineableThing</xpath>
+                    <value>
+                        <mineableThing>VMEu_DankPyon_TitaniumOre</mineableThing>
+                    </value>
+                </li>
+				<!-- Change tunsgten mineable ore -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableTungsten"]/building/mineableThing</xpath>
+                    <value>
+                        <mineableThing>VMEu_DankPyon_TungstenOre</mineableThing>
+                    </value>
+                </li>
+				<!-- Change low-volume mineable yields -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableCopper" or defName = "VMEu_MineableTin" or defName = "VMEu_MineableLithium" or defName = "VMEu_MineableGermanium"]/building/mineableYield</xpath>
+                    <value>
+                        <mineableYield>8</mineableYield>
+                    </value>
+                </li>
+				<!-- Change regular-volume mineable yields -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef [defName = "VMEu_MineableTungsten" or defName="VMEu_MineableTitanium" or defName="VMEu_MineableChromium" or defName="VMEu_MineableIron"] /building/mineableYield</xpath>
+                    <value>
+                        <mineableYield>1</mineableYield>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+
+</Patch>

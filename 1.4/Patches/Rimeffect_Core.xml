@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Rimeffect: Core -->
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Rim-Effect: Core</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+		
+			<!-- Prefab Components Recipes -->
+			<li Class="PatchOperationReplace"> <!-- Fix steel amount-->
+				<xpath>/Defs/RecipeDef [defName = "RE_Make_PrefabComponent"]/ingredients/li[1]/count</xpath>
+				<value>
+						<count>1</count>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> <!-- Add copper -->
+				<xpath>/Defs/RecipeDef [defName = "RE_Make_PrefabComponent"]/ingredients</xpath>
+				<value>
+					<li>
+						<filter>
+						  <thingDefs>
+							<li>VMEu_Copper</li>
+						  </thingDefs>
+						</filter>
+						<count>0.2</count>
+					  </li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> <!-- Fix the ingredient list -->
+				<xpath>/Defs/RecipeDef [defName = "RE_Make_PrefabComponent"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>VMEu_Copper</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/RecipeDef [defName = "RE_Make_PrefabComponentBulk"]/ingredients/li[1]/count</xpath>
+				<value>
+						<count>4</count>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef [defName = "RE_Make_PrefabComponentBulk"]/ingredients</xpath>
+				<value>
+					<li>
+						<filter>
+						  <thingDefs>
+							<li>VMEu_Copper</li>
+						  </thingDefs>
+						</filter>
+						<count>0.8</count>
+					  </li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef [defName = "RE_Make_PrefabComponentBulk"]/fixedIngredientFilter/thingDefs</xpath>
+				<value>
+					<li>VMEu_Copper</li>
+				</value>
+			</li>
+			
+			<!-- Prefab Furniture -->
+			<li Class="PatchOperationSequence"> <!-- Custom patch adding a percentage of stainless steel -->
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>Defs/ThingDef[@ParentName = "BuildingBase" and label[contains(text(), "prefab")] or @ParentName = "FurnitureWithQualityBase" and label[contains(text(), "prefab")] or @ParentName = "BedWithQualityBase" and label[contains(text(), "prefab")]]/costList/Plasteel</xpath>
+						<success>Normal</success>
+					</li>
+					<li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+						<xpath>Defs/ThingDef[@ParentName = "BuildingBase" and label[contains(text(), "prefab")] or @ParentName = "FurnitureWithQualityBase" and label[contains(text(), "prefab")] or @ParentName = "BedWithQualityBase" and label[contains(text(), "prefab")]]/costList/Plasteel</xpath>
+						<percentage>65</percentage>
+						<material>VMEu_StainlessSteel</material>
+					</li>
+				</operations>
+			</li>
+			
+			<!-- Exotic Furniture -->
+			<li Class="PatchOperationReplace"> <!-- Reduce plasteel -->
+				<xpath>Defs/ThingDef [defName = "RE_KodiakShuttle"]/costList/Plasteel</xpath>
+				<value>
+					<Plasteel>350</Plasteel>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> <!-- Add titanium -->
+				<xpath>Defs/ThingDef [defName = "RE_KodiakShuttle"]/costList</xpath>
+				<value>
+					<VMEu_Titanium>100</VMEu_Titanium>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace"> <!-- Reduce plasteel -->
+				<xpath>Defs/ThingDef [defName = "RE_ProtheanBeacon"]/costList/Plasteel</xpath>
+				<value>
+					<Plasteel>100</Plasteel>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> <!-- Add titanium -->
+				<xpath>Defs/ThingDef [defName = "RE_ProtheanBeacon"]/costList</xpath>
+				<value>
+					<VMEu_Titanium>100</VMEu_Titanium>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace"> <!-- Reduce plasteel -->
+				<xpath>Defs/ThingDef [defName = "RE_MakoTank"]/costList/Plasteel</xpath>
+				<value>
+					<Plasteel>200</Plasteel>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> <!-- Add titanium -->
+				<xpath>Defs/ThingDef [defName = "RE_MakoTank"]/costList</xpath>
+				<value>
+					<VMEu_Titanium>150</VMEu_Titanium>
+				</value>
+			</li>
+			
+			<!-- Floor Costs -->
+			<li Class="PatchOperationReplace"> <!-- Pavement -->
+				<xpath>/Defs/TerrainDef [defName = "RE_ColonialPavementTileSteel"]/costList</xpath>
+				<value>
+					<costList>
+						<VMEu_Concrete>1</VMEu_Concrete>
+						<Steel>1</Steel>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace"> <!-- Pavement -->
+				<xpath>/Defs/TerrainDef [defName = "RE_ColonialPavementTileSilver"]/costList</xpath>
+				<value>
+					<costList>
+						<VMEu_Concrete>1</VMEu_Concrete>
+						<Silver>15</Silver>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace"> <!-- Pavement -->
+				<xpath>/Defs/TerrainDef [defName = "RE_ColonialPavementTileGold"]/costList</xpath>
+				<value>
+					<costList>
+						<VMEu_Concrete>1</VMEu_Concrete>
+						<Gold>15</Gold>
+					</costList>
+				</value>
+			</li>
+
+			<!-- Patch Starting Scenario -->
+
+			<!-- Add Stainless Steel to be able to craft prefab furniture -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ScenarioDef [defName = "RE_AllianceColony"]/scenario/parts</xpath>
+				<value>
+					<li Class="ScenPart_StartingThing_Defined">
+						<def>StartingThing_Defined</def>
+						<thingDef>VMEu_StainlessSteel</thingDef>
+						<count>500</count>
+					</li>
+				</value>
+			</li>
+
+			<!-- Balance Steel -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ScenarioDef [defName = "RE_AllianceColony"]/scenario/parts/li [@Class = "ScenPart_StartingThing_Defined" and thingDef [text()="Steel"]]/count</xpath>
+				<value>
+					<count>400</count>
+				</value>
+			</li>
+
+			<!-- Add EM Research -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ScenarioDef [defName = "RE_AllianceColony"]/scenario/parts</xpath>
+				<value>
+					<li Class="ScenPart_StartingResearch">
+						<project>VMEu_ConcreteMaking</project>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ScenarioDef [defName = "RE_AllianceColony"]/scenario/parts</xpath>
+				<value>
+					<li Class="ScenPart_StartingResearch">
+						<project>VMEu_StainlessSteelAlloying</project>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ScenarioDef [defName = "RE_AllianceColony"]/scenario/parts</xpath>
+				<value>
+					<li Class="ScenPart_StartingResearch">
+						<project>VMEu_SteelAlloying</project>
+					</li>
+				</value>
+			</li>
+
+
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

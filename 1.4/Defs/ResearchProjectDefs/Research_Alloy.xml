@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ResearchProjectDef>
+    <defName>VMEu_ConcreteMaking</defName>
+    <label>concrete making</label>
+    <description>Cook grounded stone and iron dust to make a strong mix used to make walls, floors and some structures.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.10</researchViewY>
+	  <tags>
+      <li>ClassicStart</li>
+    </tags>
+	<prerequisites>
+		<li>Stonecutting</li>
+		<li>Smithing</li>
+	</prerequisites>
+  </ResearchProjectDef>
+  
+	<!-- Alloys -->
+	
+  <ResearchProjectDef>
+    <defName>VMEu_StainlessSteelAlloying</defName>
+    <label>stainless steel alloying</label>
+    <description>Alloy a special type of steel immune to corrosion, a necessary material in the fabrication of prosthetic parts, bionics and synthetic organs.</description>
+    <baseCost>700</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>3.70</researchViewY>
+	<prerequisites>
+		<li>VMEu_SteelAlloying</li>
+	</prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>VMEu_SteelAlloying</defName>
+    <label>steel alloying</label>
+    <description>Learn to alloy iron and carbon to make steel, one of the most widely used metals of mankind.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>2.40</researchViewY>
+    <tags>
+      <li>ClassicStart</li>
+    </tags>
+	<prerequisites>
+		<li>Smithing</li>
+	</prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>VMEu_PlasteelAlloying</defName>
+    <label>plasteel alloying</label>
+    <description>Discover how to synthetize plasteel from various chemicals.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>15.00</researchViewX>
+    <researchViewY>2.95</researchViewY>
+	<prerequisites>
+		<li>VMEu_SteelAlloying</li>
+		<li>Fabrication</li>
+	</prerequisites>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	<requiredResearchFacilities>
+		<li>MultiAnalyzer</li>
+	</requiredResearchFacilities>
+  </ResearchProjectDef>
+
+  <!-- Oil Extracting -->
+
+  <ResearchProjectDef>
+		<defName>VMEu_PlasticManufacture</defName>
+		<label>plastic manufacture</label>
+		<tab>VMEu_PlasticsResearchTab</tab>
+		<techLevel>Industrial</techLevel>
+		<description>Allows the manufacture of diverse mateirals created from dark oil. These materials range from cheap and weak ones used for medium quality furniture, to hard and durable ones used for building resistent yet cheap structures.</description>
+		<baseCost>900</baseCost>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>0.20</researchViewY>
+		<prerequisites>
+			<li>Electricity</li>
+			<li>BiofuelRefining</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</Defs>

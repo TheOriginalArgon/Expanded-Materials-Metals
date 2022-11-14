@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Rock Powder -->
+<ThingDef ParentName="ResourceBase">
+    <defName>VMEu_RockPowder</defName>
+    <label>primitive cement</label>
+    <description>Rock grounded into dust, primitive yet efficient for building floors and walls resistant to fire.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/VMEu_RockPowder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Pickup</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.5</MarketValue>
+      <Mass>0.5</Mass>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stuffProps>
+	  <stuffAdjective>rock</stuffAdjective>
+	  <categories>
+        <li>VMEu_ConcreteStuffCategory</li>
+      </categories>
+      <commonality>0.3</commonality>
+      <constructEffect>ConstructDirt</constructEffect>
+      <color>(150,150,150)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>1</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0.05</Flammability>
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+
+<!-- Industrial Concrete -->
+	<ThingDef ParentName="ResourceBase">
+    <defName>VMEu_Concrete</defName>
+    <label>concrete mix</label>
+    <description>Grounded rock reinforced with iron dust, when combined with sand and water it gets hard enough to make structres, not so resistant to impacts but incredibly resistant to fire.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/VMEu_Concrete</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Pickup</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.8</MarketValue>
+      <Mass>0.5</Mass>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stuffProps>
+	<stuffAdjective>concrete</stuffAdjective>
+	  <categories>
+        <li>VMEu_ConcreteStuffCategory</li>
+      </categories>
+      <commonality>0.2</commonality>
+      <constructEffect>ConstructDirt</constructEffect>
+      <color>(107,110,102)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>1.1</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0.01</Flammability>
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+
+</Defs>
