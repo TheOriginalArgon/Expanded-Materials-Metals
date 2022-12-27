@@ -6,7 +6,6 @@
 			<li>Expanded Materials - Stones and Mortars</li>
 		</mods>
 		<nomatch Class="PatchOperationSequence">
-			<success>Normal</success>
 			<operations>
 				<!-- Patch Concrete -->
 				<li Class="PatchOperationReplace">

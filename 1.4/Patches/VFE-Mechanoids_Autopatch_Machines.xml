@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Mechanoids -->
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Vanilla Factions Expanded - Mechanoids</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+			<!-- Autopatch Machines -->
+			<li Class="PatchOperationSequence">
+				<!-- <success>Always</success> -->
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>Defs/ThingDef[@ParentName = "BuildingBase" and costList/VFE_ComponentMechanoid and not(comps/ li[@Class = "VFE.Mechanoids.CompProperties_MachineChargingStation"])]/costList/Steel</xpath>
+						<success>Normal</success>
+					</li>
+					<li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+						<xpath>Defs/ThingDef[@ParentName = "BuildingBase" and costList/VFE_ComponentMechanoid and not(comps/ li[@Class = "VFE.Mechanoids.CompProperties_MachineChargingStation"])]/costList/Steel</xpath>
+						<percentage>45</percentage>
+						<material>VMEu_Concrete</material>
+					</li>
+				</operations>
+			</li>
+
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>Defs/ThingDef[@ParentName = "BuildingBase" and costList/VFE_ComponentMechanoid and not(comps/ li[@Class = "VFE.Mechanoids.CompProperties_MachineChargingStation"])]/costList/Plasteel</xpath>
+						<success>Normal</success>
+					</li>
+					<li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+						<xpath>Defs/ThingDef[@ParentName = "BuildingBase" and costList/VFE_ComponentMechanoid and not(comps/ li[@Class = "VFE.Mechanoids.CompProperties_MachineChargingStation"])]/costList/Plasteel</xpath>
+						<percentage>30</percentage>
+						<material>VMEu_Titanium</material>
+					</li>
+				</operations>
+			</li>
+
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>Defs/ThingDef[@ParentName = "BuildingBase" and costList/VFE_ComponentMechanoid and not(comps/ li[@Class = "VFE.Mechanoids.CompProperties_MachineChargingStation"])]/costList/Plasteel</xpath>
+						<success>Normal</success>
+					</li>
+					<li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+						<xpath>Defs/ThingDef[@ParentName = "BuildingBase" and costList/VFE_ComponentMechanoid and not(comps/ li[@Class = "VFE.Mechanoids.CompProperties_MachineChargingStation"])]/costList/Plasteel</xpath>
+						<percentage>30</percentage>
+						<material>VMEu_StainlessSteel</material>
+					</li>
+				</operations>
+			</li>
+
+			<!-- ============== Extra changes ============== -->
+
+			<!-- Masonry Saw -->
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>Defs/ThingDef [defName = "VFEM_MasonryAndMetallicsFactory_AutomaticDrill"]/costList/Steel</xpath>
+						<success>Normal</success>
+					</li>
+					<li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+						<xpath>Defs/ThingDef [defName = "VFEM_MasonryAndMetallicsFactory_AutomaticDrill"]/costList/Steel</xpath>
+						<percentage>30</percentage>
+						<material>VMEu_Chromium</material>
+					</li>
+				</operations>
+			</li>
+			<!-- Automatic Drill -->
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>Defs/ThingDef [defName = "VFEM_MasonryAndMetallicsFactory_MasonrySaw"]/costList/Steel</xpath>
+						<success>Normal</success>
+					</li>
+					<li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+						<xpath>Defs/ThingDef [defName = "VFEM_MasonryAndMetallicsFactory_MasonrySaw"]/costList/Steel</xpath>
+						<percentage>20</percentage>
+						<material>VMEu_Chromium</material>
+					</li>
+				</operations>
+			</li>
+			
+			<!-- Plasteel Forge -->
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>Defs/ThingDef [defName = "VFEM_MasonryAndMetallicsFactory_PlasteelForge"]/costList/Steel</xpath>
+						<success>Normal</success>
+					</li>
+					<li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+						<xpath>Defs/ThingDef [defName = "VFEM_MasonryAndMetallicsFactory_PlasteelForge"]/costList/Steel</xpath>
+						<percentage>20</percentage>
+						<material>VMEu_Chromium</material>
+					</li>
+				</operations>
+			</li>
+			
+			<!-- Versatile Assembler -->
+			<li Class="PatchOperationSequence">
+				<success>Always</success>
+				<operations>
+					<li Class="PatchOperationTest">
+						<xpath>Defs/ThingDef [defName = "VFEM_VersatileAssembler"]/costList/Steel</xpath>
+						<success>Normal</success>
+					</li>
+					<li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+						<xpath>Defs/ThingDef [defName = "VFEM_VersatileAssembler"]/costList/Steel</xpath>
+						<percentage>25</percentage>
+						<material>VMEu_Chromium</material>
+					</li>
+				</operations>
+			</li>
+			
+
+
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

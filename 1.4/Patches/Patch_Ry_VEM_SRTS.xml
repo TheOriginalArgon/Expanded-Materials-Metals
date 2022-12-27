@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<!-- ============================ SRTS Expanded ========================== -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Materials - Metals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			
+			<operations>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>SRTS Expanded</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						
+						<operations>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/ThingDef[defName="SRTSSuperpod"]/costList</xpath>
+								<value>
+									<!--<costList>
+										<Steel>700</Steel>
+										<Gold>45</Gold>
+										<Silver>2000</Silver>
+										<ComponentIndustrial>12</ComponentIndustrial>
+									</costList> -->
+									<costList>
+										<Steel>100</Steel>
+										<VMEu_Titanium>200</VMEu_Titanium>
+										<VMEu_StainlessSteel>200</VMEu_StainlessSteel>
+										<Plasteel>200</Plasteel>
+										<VMEu_Lead>45</VMEu_Lead>
+										<Silver>2000</Silver>
+										<ComponentIndustrial>12</ComponentIndustrial>
+									</costList>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/ThingDef[defName="SRTSSkip"]/costList</xpath>
+								<value>
+									<!--<costList>
+										<Steel>1200</Steel>
+										<Gold>100</Gold>
+										<Silver>1800</Silver>
+										<ComponentIndustrial>12</ComponentIndustrial>
+									</costList> -->
+									<costList>
+										<Steel>200</Steel>
+										<VMEu_Titanium>300</VMEu_Titanium>
+										<VMEu_StainlessSteel>300</VMEu_StainlessSteel>
+										<Plasteel>400</Plasteel>
+										<VMEu_Lead>100</VMEu_Lead>
+										<Silver>1800</Silver>
+										<ComponentIndustrial>12</ComponentIndustrial>
+									</costList>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/ThingDef[defName="SRAF"]/costList</xpath>
+								<value>
+									<!--<costList>
+										<Steel>3200</Steel>
+										<Gold>225</Gold>
+										<Silver>3200</Silver>
+										<ComponentIndustrial>16</ComponentIndustrial>
+									</costList> -->
+									<costList>
+										<Steel>500</Steel>
+										<VMEu_Titanium>1000</VMEu_Titanium>
+										<VMEu_StainlessSteel>1000</VMEu_StainlessSteel>
+										<Plasteel>700</Plasteel>
+										<VMEu_Lead>225</VMEu_Lead>
+										<Silver>3200</Silver>
+										<ComponentIndustrial>16</ComponentIndustrial>
+									</costList>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/ThingDef[defName="SRAFTek"]/costList</xpath>
+								<value>
+									<!--<costList>
+										<Steel>4500</Steel>
+										<Gold>350</Gold>
+										<Silver>6000</Silver>
+										<ComponentIndustrial>20</ComponentIndustrial>
+									</costList> -->
+									<costList>
+										<Steel>800</Steel>
+										<VMEu_Titanium>1500</VMEu_Titanium>
+										<VMEu_StainlessSteel>1500</VMEu_StainlessSteel>
+										<Plasteel>700</Plasteel>
+										<VMEu_Lead>350</VMEu_Lead>
+										<Silver>6000</Silver>
+										<ComponentIndustrial>20</ComponentIndustrial>
+									</costList>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/ThingDef[defName="SRTSMkII"]/costList</xpath>
+								<value>
+									<!--<costList>
+										<Steel>2500</Steel>
+										<Plasteel>240</Plasteel>
+										<Gold>325</Gold>
+										<Silver>6000</Silver>
+										<Synthread>100</Synthread>
+										<ComponentIndustrial>16</ComponentIndustrial>
+										<ComponentSpacer>4</ComponentSpacer>
+									</costList> -->
+									<costList>
+										<Steel>540</Steel>
+										<VMEu_Titanium>700</VMEu_Titanium>
+										<VMEu_StainlessSteel>700</VMEu_StainlessSteel>
+										<Plasteel>800</Plasteel>
+										<VMEu_Lead>325</VMEu_Lead>
+										<Silver>6000</Silver>
+										<Synthread>100</Synthread>
+										<ComponentIndustrial>16</ComponentIndustrial>
+										<ComponentSpacer>4</ComponentSpacer>
+									</costList>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/ThingDef[defName="SRTSMkIII"]/costList</xpath>
+								<value>
+									<!--<costList>
+										<Steel>700</Steel>
+										<Plasteel>1200</Plasteel>
+										<Gold>500</Gold>
+										<Silver>10500</Silver>
+										<Synthread>240</Synthread>
+										<Neutroamine>100</Neutroamine>
+										<ComponentIndustrial>24</ComponentIndustrial>
+										<ComponentSpacer>8</ComponentSpacer>
+									</costList> -->
+									<costList>
+										<Steel>100</Steel>
+										<VMEu_Titanium>300</VMEu_Titanium>
+										<VMEu_StainlessSteel>300</VMEu_StainlessSteel>
+										<Plasteel>1200</Plasteel>
+										<VMEu_Lead>500</VMEu_Lead>
+										<Silver>10500</Silver>
+										<Synthread>240</Synthread>
+										<Neutroamine>100</Neutroamine>
+										<ComponentIndustrial>24</ComponentIndustrial>
+										<ComponentSpacer>8</ComponentSpacer>
+									</costList>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/ThingDef[defName="SRTSMkIIIp"]/costList</xpath>
+								<value>
+									<!--<costList>
+										<Steel>2800</Steel>
+										<Plasteel>1300</Plasteel>
+										<Gold>500</Gold>
+										<Neutroamine>200</Neutroamine>
+										<Silver>10500</Silver>
+										<ComponentIndustrial>32</ComponentIndustrial>
+										<ComponentSpacer>9</ComponentSpacer>
+									</costList> -->
+									<costList>
+										<Steel>800</Steel>
+										<VMEu_Titanium>1000</VMEu_Titanium>
+										<VMEu_StainlessSteel>1000</VMEu_StainlessSteel>
+										<Plasteel>1300</Plasteel>
+										<VMEu_Lead>500</VMEu_Lead>
+										<Neutroamine>200</Neutroamine>
+										<Silver>10500</Silver>
+										<ComponentIndustrial>32</ComponentIndustrial>
+										<ComponentSpacer>9</ComponentSpacer>
+									</costList>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/ThingDef[defName="SRTSMkIV"]/costList</xpath>
+								<value>
+									<!--<costList>
+										<Steel>5600</Steel>
+										<Plasteel>2400</Plasteel>
+										<Gold>2400</Gold>
+										<Silver>50000</Silver>
+										<Uranium>600</Uranium>
+										<Hyperweave>300</Hyperweave>
+										<Neutroamine>400</Neutroamine>
+										<ComponentIndustrial>32</ComponentIndustrial>
+										<ComponentSpacer>16</ComponentSpacer>
+										<AIPersonaCore>3</AIPersonaCore>
+									</costList> -->
+									<costList>
+										<Steel>600</Steel>
+										<VMEu_Titanium>2000</VMEu_Titanium>
+										<VMEu_StainlessSteel>2000</VMEu_StainlessSteel>
+										<Plasteel>2400</Plasteel>
+										<VMEu_Lead>2400</VMEu_Lead>
+										<Silver>50000</Silver>
+										<Uranium>600</Uranium>
+										<Hyperweave>300</Hyperweave>
+										<Neutroamine>400</Neutroamine>
+										<ComponentIndustrial>32</ComponentIndustrial>
+										<ComponentSpacer>16</ComponentSpacer>
+										<AIPersonaCore>3</AIPersonaCore>
+									</costList>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
