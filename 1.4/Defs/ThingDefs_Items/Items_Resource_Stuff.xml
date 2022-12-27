@@ -197,6 +197,7 @@
       <Cleanliness>0.2</Cleanliness>
     </statBases>
     <useHitPoints>false</useHitPoints>
+    <tradeability>Buyable</tradeability>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
       <li>ResourcesRaw</li>
