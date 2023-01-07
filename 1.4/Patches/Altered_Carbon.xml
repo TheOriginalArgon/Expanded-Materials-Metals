@@ -37,7 +37,7 @@
 
             <!-- Cortical Stack Storage -->
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/ThingDef [defName = "VFEU_CorticalStackStorage"]/costList/Steel</xpath>
+                <xpath>/Defs/ThingDef [defName = "AC_StackArray"]/costList/Steel</xpath>
                 <value>
                     <costList>
                         <Steel>150</Steel>
