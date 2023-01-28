@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- A patch by Liara, whose ego is insatiable! -->
+<!-- Biotech -->
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Biotech</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			
+			<!-- Gene Assembler -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "GeneAssembler"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>160</Steel>
+						<VMEu_StainlessSteel>40</VMEu_StainlessSteel>
+						<ComponentIndustrial>4</ComponentIndustrial>
+                    </costList>
+                </value>
+            </li>
+			
+			<!-- Gene Bank (tiny and pathetic) -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "GeneBank"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>40</Steel>
+						<VMEu_StainlessSteel>10</VMEu_StainlessSteel>
+						<ComponentIndustrial>1</ComponentIndustrial>
+                    </costList>
+                </value>
+            </li>
+			
+			<!-- Gene Extractor (genestealers!?) -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "GeneExtractor"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>160</Steel>
+						<VMEu_StainlessSteel>40</VMEu_StainlessSteel>
+						<ComponentIndustrial>8</ComponentIndustrial>
+                    </costList>
+                </value>
+            </li>
+			
+			<!-- Gene Processor (does not do your laundry) -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "GeneProcessor"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>80</Steel>
+                        <Plasteel>25</Plasteel>
+						<VMEu_StainlessSteel>20</VMEu_StainlessSteel>
+						<ComponentIndustrial>2</ComponentIndustrial>
+                    </costList>
+                </value>
+            </li>
+						
+		</operations>
+	</match>
+</Operation>
+
+</Patch>
