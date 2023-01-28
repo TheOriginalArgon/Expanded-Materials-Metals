@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- A patch by Liara, whose ego is insatiable! -->
+<!-- Biotech -->
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Biotech Gene Variety</li>
+		<li>Oops All Gene Banks</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			
+			<!-- Gene Register -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "ThingGeneRegister"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>300</Steel>
+						<VMEu_StainlessSteel>100</VMEu_StainlessSteel>
+						<ComponentIndustrial>12</ComponentIndustrial>
+						<ComponentSpacer>2</ComponentSpacer>
+                    </costList>
+                </value>
+            </li>
+			
+			<!-- Gene Archive -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "ThingGeneArchive"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>200</Steel>
+						<VMEu_StainlessSteel>50</VMEu_StainlessSteel>
+						<ComponentIndustrial>6</ComponentIndustrial>
+                    </costList>
+                </value>
+            </li>
+			
+			<!-- Gene Macroprocessor -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "ThingGeneMacroprocessor"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>100</Steel>
+						<Plasteel>60</Plasteel>
+						<VMEu_StainlessSteel>25</VMEu_StainlessSteel>
+						<ComponentIndustrial>8</ComponentIndustrial>
+                    </costList>
+                </value>
+            </li>
+			
+			<!-- Gene Subprocessor -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "ThingGeneSubprocessor"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Plasteel>40</Plasteel>
+						<VMEu_StainlessSteel>20</VMEu_StainlessSteel>
+						<ComponentIndustrial>1</ComponentIndustrial>
+						<ComponentSpacer>1</ComponentSpacer>
+                    </costList>
+                </value>
+            </li>
+						
+		</operations>
+	</match>
+</Operation>
+
+</Patch>
