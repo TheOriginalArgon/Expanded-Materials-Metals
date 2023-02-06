@@ -196,6 +196,7 @@
       <BluntDamageMultiplier>0.87</BluntDamageMultiplier>
     </statBases>
     <useHitPoints>false</useHitPoints>
+    <tradeability>Buyable</tradeability>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
       <li>ResourcesRaw</li>
