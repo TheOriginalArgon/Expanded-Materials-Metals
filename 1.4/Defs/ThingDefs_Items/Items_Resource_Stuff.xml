@@ -194,7 +194,6 @@
       <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
       <SharpDamageMultiplier>0.87</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.87</BluntDamageMultiplier>
-      <Cleanliness>0.2</Cleanliness>
     </statBases>
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -217,8 +216,13 @@
       <statFactors>
         <MaxHitPoints>0.87</MaxHitPoints>
         <Beauty>1.68</Beauty>
+        <Cleanliness>0.2</Cleanliness>
         <Flammability>0.42</Flammability>
       </statFactors>
+      <statOffsets>
+        <Beauty>1.68</Beauty>
+        <Cleanliness>0.2</Cleanliness>
+      </statOffsets>
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
