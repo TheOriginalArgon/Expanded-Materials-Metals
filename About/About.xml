@@ -28,5 +28,10 @@
             <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
             <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
         </li>
+        <li>
+            <packageId>Argon.CoreLib</packageId>
+            <displayName>Argonic Core</displayName>
+            <downloadUrl>https://github.com/TheOriginalArgon/ArgonicCore</downloadUrl>
+        </li>
     </modDependencies>
 </ModMetaData>

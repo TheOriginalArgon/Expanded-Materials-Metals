@@ -1,11 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<!-- Coal -->
+  <!-- Coal -->
   <ThingDef ParentName="ResourceBase">
     <defName>VMEu_Coal</defName>
     <label>coal</label>
-    <description>A combustible black rock. Coal is mostly carbon with variable amounts of other elements. Generally used as fuel or as an ingredient in alloy like steel.</description>
+    <description>A combustible black rock. Coal is mostly carbon with variable amounts of other
+      elements. Generally used as fuel or as an ingredient in alloy like steel.</description>
     <graphicData>
       <texPath>Things/Item/Resource/VMEu_Coal</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -15,8 +16,9 @@
     <useHitPoints>true</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
-	  <MaxHitPoints>80</MaxHitPoints>
-	  <Flammability>0.8</Flammability>
+      <ArgonicCore_FuelPower>2</ArgonicCore_FuelPower>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Flammability>0.8</Flammability>
       <MarketValue>1</MarketValue>
       <Mass>0.008</Mass>
     </statBases>
@@ -29,18 +31,19 @@
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>false</smeltable>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <modExtensions>
+    <!-- <modExtensions>
       <li Class="ExpandedMaterials.ThingDefExtension">
         <fuelPower>1.5</fuelPower>
       </li>
-    </modExtensions>
+    </modExtensions> -->
   </ThingDef>
-  
+
   <!-- Charcoal -->
-    <ThingDef ParentName="ResourceBase">
+  <ThingDef ParentName="ResourceBase">
     <defName>VMEu_Charcoal</defName>
     <label>charcoal</label>
-    <description>Coal made from burning wood. It is less effective than its mineral counterpart, but still a good alternative.</description>
+    <description>Coal made from burning wood. It is less effective than its mineral counterpart, but
+      still a good alternative.</description>
     <graphicData>
       <texPath>Things/Item/Resource/VMEu_Charcoal</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -50,8 +53,8 @@
     <useHitPoints>true</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
-	  <MaxHitPoints>80</MaxHitPoints>
-	  <Flammability>1</Flammability>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Flammability>1</Flammability>
       <MarketValue>1</MarketValue>
       <Mass>0.008</Mass>
     </statBases>
@@ -65,12 +68,14 @@
       </li>
     </modExtensions>
   </ThingDef>
-  
-<!-- Iron -->
-<ThingDef ParentName="ResourceBase">
+
+  <!-- Iron -->
+  <ThingDef ParentName="ResourceBase">
     <defName>VMEu_Iron</defName>
     <label>iron</label>
-    <description>A primary metal used for crafting all sorts of items, widely used among medieval civilizations.\n\nCombining this metal with some chemicals allows the creation of steel, a much stronger material.</description>
+    <description>A primary metal used for crafting all sorts of items, widely used among medieval
+      civilizations.\n\nCombining this metal with some chemicals allows the creation of steel, a
+      much stronger material.</description>
     <graphicData>
       <texPath>Things/Item/Resource/VMEu_Iron</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -117,12 +122,14 @@
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
-  
+
   <!-- Lead -->
   <ThingDef ParentName="ResourceBase">
     <defName>VMEu_Lead</defName>
     <label>lead</label>
-    <description>A soft, heavy metal which isn't very useful for making weapons or structures due to its low strength and heaviness. However, it is widely used in the production and maintenance of turret barrels and, in some cases, crafting equipment which can protect against toxins.</description>
+    <description>A soft, heavy metal which isn't very useful for making weapons or structures due to
+      its low strength and heaviness. However, it is widely used in the production and maintenance
+      of turret barrels and, in some cases, crafting equipment which can protect against toxins.</description>
     <graphicData>
       <texPath>Things/Item/Resource/VMEu_Lead</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -172,12 +179,13 @@
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
-  
+
   <!-- Bronze  -->
-<ThingDef ParentName="ResourceBase">
+  <ThingDef ParentName="ResourceBase">
     <defName>VMEu_Bronze</defName>
     <label>bronze</label>
-    <description>An alloy of copper and tin, useful for the production of specific electrical components.  Its color and beauty make it a good material for decorations.</description>
+    <description>An alloy of copper and tin, useful for the production of specific electrical
+      components. Its color and beauty make it a good material for decorations.</description>
     <graphicData>
       <texPath>Things/Item/Resource/VMEu_Bronze</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -227,12 +235,13 @@
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
-  
+
   <!-- Tin -->
   <ThingDef ParentName="ResourceBase">
     <defName>VMEu_Tin</defName>
     <label>tin</label>
-    <description>Although soft and not very useful by itself, tin is commonly used to coat other metals to prevent corrosion and is a key ingredient in the production of bronze.</description>
+    <description>Although soft and not very useful by itself, tin is commonly used to coat other
+      metals to prevent corrosion and is a key ingredient in the production of bronze.</description>
     <graphicData>
       <texPath>Things/Item/Resource/VMEu_Tin</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -285,11 +294,13 @@
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
 
-	<!-- Copper -->
+  <!-- Copper -->
   <ThingDef ParentName="ResourceBase">
     <defName>VMEu_Copper</defName>
     <label>copper</label>
-    <description>An orangish-brown colored metal which is a great conductor of electricity.\n\nThis metal is not very strong, but it is a critical ingredient in the production of electrical devices and components which makes it highly valued by traders.</description>
+    <description>An orangish-brown colored metal which is a great conductor of electricity.\n\nThis
+      metal is not very strong, but it is a critical ingredient in the production of electrical
+      devices and components which makes it highly valued by traders.</description>
     <graphicData>
       <texPath>Things/Item/Resource/VMEu_Copper</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -341,12 +352,13 @@
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
-  
-	<!-- Tungsten -->
+
+  <!-- Tungsten -->
   <ThingDef ParentName="ResourceBase">
     <defName>VMEu_Tungsten</defName>
     <label>tungsten</label>
-    <description>A very heavy and moderately hard metal commonly used to make certain electrical components such as lightbulb filaments.</description>
+    <description>A very heavy and moderately hard metal commonly used to make certain electrical
+      components such as lightbulb filaments.</description>
     <graphicData>
       <texPath>Things/Item/Resource/VMEu_Tungsten</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -393,12 +405,14 @@
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
-  
+
   <!-- Chromium -->
   <ThingDef ParentName="ResourceBase">
     <defName>VMEu_Chromium</defName>
     <label>chromium</label>
-    <description>A hard metal, Chromium is not commonly used on its own.  Industrial civilizations prefer to combine it with steel and tin to make stainless steel which is immune to corrosion, making it very useful in the production of protheses, bionic parts and synthetic organs.</description>
+    <description>A hard metal, Chromium is not commonly used on its own. Industrial civilizations
+      prefer to combine it with steel and tin to make stainless steel which is immune to corrosion,
+      making it very useful in the production of protheses, bionic parts and synthetic organs.</description>
     <graphicData>
       <texPath>Things/Item/Resource/VMEu_Chromium</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -445,12 +459,15 @@
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
-  
+
   <!-- Stainless Steel -->
   <ThingDef ParentName="ResourceBase">
     <defName>VMEu_StainlessSteel</defName>
     <label>stainless steel</label>
-    <description>Steel alloyed with a percentage of chromium and a bit of tungsten.  Although it's only as strong as regular steel for industrial purposes its antiseptic qualities allow it to be used in the fabrication of prosthetic parts, bionics and synthetic organs.  It's also somewhat prettier than regular steel, as it never tarnishes.</description>
+    <description>Steel alloyed with a percentage of chromium and a bit of tungsten. Although it's
+      only as strong as regular steel for industrial purposes its antiseptic qualities allow it to
+      be used in the fabrication of prosthetic parts, bionics and synthetic organs. It's also
+      somewhat prettier than regular steel, as it never tarnishes.</description>
     <graphicData>
       <texPath>Things/Item/Resource/VMEu_StainlessSteel</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -496,11 +513,12 @@
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
 
-	<!-- Titanium -->
+  <!-- Titanium -->
   <ThingDef ParentName="ResourceBase">
     <defName>VMEu_Titanium</defName>
     <label>titanium</label>
-    <description>A highly durable metal, Titanium is only passable for use in structures but makes for extremely durable weapons and armor.</description>
+    <description>A highly durable metal, Titanium is only passable for use in structures but makes
+      for extremely durable weapons and armor.</description>
     <graphicData>
       <texPath>Things/Item/Resource/VMEu_Titanium</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -550,11 +568,12 @@
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
 
-	<!-- Lithium -->
+  <!-- Lithium -->
   <ThingDef ParentName="ResourceBase">
     <defName>VMEu_Lithium</defName>
     <label>lithium</label>
-    <description>An unstable metal used in drug synthesis, as well as the production of Advanced Components and EMP charges.\n\nLithium may also have applications related to nuclear energy.</description>
+    <description>An unstable metal used in drug synthesis, as well as the production of Advanced
+      Components and EMP charges.\n\nLithium may also have applications related to nuclear energy.</description>
     <graphicData>
       <texPath>Things/Item/Resource/VMEu_Lithium</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -564,7 +583,7 @@
     <useHitPoints>true</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
-	    <MaxHitPoints>85</MaxHitPoints>
+      <MaxHitPoints>85</MaxHitPoints>
       <MarketValue>3.3</MarketValue>
       <Mass>0.008</Mass>
     </statBases>
@@ -572,7 +591,7 @@
       <li>VMEu_SpecialMetals</li>
     </thingCategories>
     <stackLimit>500</stackLimit>
-	<smallVolume>true</smallVolume>
+    <smallVolume>true</smallVolume>
     <deepCommonality>0.5</deepCommonality>
     <deepCountPerPortion>44</deepCountPerPortion>
     <deepLumpSizeRange>8~11</deepLumpSizeRange>
@@ -580,7 +599,7 @@
     <!-- <smeltable>true</smeltable> -->
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
-  
+
   <!-- Germanium -->
   <ThingDef ParentName="ResourceBase">
     <defName>VMEu_Germanium</defName>
@@ -611,4 +630,4 @@
     <!-- <smeltable>true</smeltable> -->
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
- </Defs>
+</Defs>
