@@ -53,6 +53,7 @@
     <useHitPoints>true</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
+      <ArgonicCore_FuelPower>1.5</ArgonicCore_FuelPower>
       <MaxHitPoints>80</MaxHitPoints>
       <Flammability>1</Flammability>
       <MarketValue>1</MarketValue>
