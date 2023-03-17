@@ -31,11 +31,6 @@
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>false</smeltable>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <!-- <modExtensions>
-      <li Class="ExpandedMaterials.ThingDefExtension">
-        <fuelPower>1.5</fuelPower>
-      </li>
-    </modExtensions> -->
   </ThingDef>
 
   <!-- Charcoal -->

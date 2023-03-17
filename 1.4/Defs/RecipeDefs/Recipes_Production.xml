@@ -277,6 +277,83 @@
     </products>
   </RecipeDef>
 
+  <RecipeDef>
+    <defName>EM_MakeChemfuel_Coal</defName>
+    <label>make chemfuel from coal</label>
+    <description>A somewhat long proces that extracts huge amounts of chemfuel from dark oil.</description>
+    <jobString>Refining chemfuel from fossils.</jobString>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>4500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>BiofuelRefinery</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VMEu_Coal</li>
+            <li>VMEu_Charcoal</li>
+          </thingDefs>
+        </filter>
+        <count>70</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VMEu_Coal</li>
+        <li>VMEu_Charcoal</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Chemfuel>45</Chemfuel>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>EM_MakeChemfuel_Coal_Lead</defName>
+    <label>make chemfuel from coal and lead</label>
+    <description>A somewhat long proces that extracts huge amounts of chemfuel from dark oil.</description>
+    <jobString>Refining chemfuel from fossils.</jobString>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>4500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+      <li>BiofuelRefinery</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VMEu_Coal</li>
+            <li>VMEu_Charcoal</li>
+          </thingDefs>
+        </filter>
+        <count>45</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VMEu_Lead</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>VMEu_Coal</li>
+        <li>VMEu_Charcoal</li>
+        <li>VMEu_Lead</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Chemfuel>75</Chemfuel>
+    </products>
+  </RecipeDef>
+
   <!-- Dark Oil -->
   <RecipeDef>
     <defName>VMEu_MakeDarkOilFromFossil</defName>
