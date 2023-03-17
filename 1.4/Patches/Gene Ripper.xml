@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- A patch by Liara, whose ego is insatiable! -->
+<!-- Gene Ripper  -->
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Gene Ripper</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			
+			<!-- Gene Ripper (the latest fashion, apparently) -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "GeneRipper"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>160</Steel>
+						<Plasteel>100</Plasteel>
+						<VMEu_StainlessSteel>40</VMEu_StainlessSteel>
+						<ComponentIndustrial>4</ComponentIndustrial>
+                    </costList>
+                </value>
+            </li>
+		
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

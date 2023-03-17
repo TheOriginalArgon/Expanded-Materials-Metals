@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- A patch by Liara, whose ego is insatiable! -->
+<!-- Biotech -->
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Biotech</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+			
+	<!-- Mech Recharger -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "BasicRecharger"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>75</Steel>
+                        <VMEu_Copper>25</VMEu_Copper>
+			<VMEu_StainlessSteel>25</VMEu_StainlessSteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+                    </costList>
+                </value>
+            </li>
+			
+	<!-- Large Mech Recharger -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "StandardRecharger"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>150</Steel>
+                        <VMEu_Copper>50</VMEu_Copper>
+			<VMEu_StainlessSteel>50</VMEu_StainlessSteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+                    </costList>
+                </value>
+            </li>
+			
+	<!-- Mech Gestator -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "MechGestator"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>100</Steel>
+                        <VMEu_Germanium>25</VMEu_Germanium>
+			<VMEu_StainlessSteel>25</VMEu_StainlessSteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+                    </costList>
+                </value>
+            </li>
+			
+	<!-- Large Mech Gestator -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "LargeMechGestator"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>200</Steel>
+                        <VMEu_Germanium>50</VMEu_Germanium>
+			<VMEu_StainlessSteel>50</VMEu_StainlessSteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+                    </costList>
+                </value>
+            </li>
+			
+	<!-- Subcore Encoder -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "SubcoreEncoder"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>60</Steel>
+                        <VMEu_Germanium>20</VMEu_Germanium>
+			<VMEu_StainlessSteel>20</VMEu_StainlessSteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+                    </costList>
+                </value>
+            </li>
+			
+			<!-- Subcore Softscanner -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "SubcoreSoftscanner"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>120</Steel>
+			<Plasteel>30</Plasteel>
+                        <VMEu_Germanium>40</VMEu_Germanium>
+			<VMEu_StainlessSteel>40</VMEu_StainlessSteel>
+			<VMEu_Titanium>20</VMEu_Titanium>
+			<ComponentIndustrial>4</ComponentIndustrial>
+                    </costList>
+                </value>
+            </li>
+			
+	<!-- Subcore Ripscanner -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "SubcoreRipscanner"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>120</Steel>
+			<Plasteel>100</Plasteel>
+                        <VMEu_Germanium>40</VMEu_Germanium>
+			<VMEu_StainlessSteel>40</VMEu_StainlessSteel>
+			<VMEu_Titanium>50</VMEu_Titanium>
+			<ComponentIndustrial>6</ComponentIndustrial>
+                    </costList>
+                </value>
+            </li>
+			
+	<!-- Mech Booster -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "MechBooster"]/costList</xpath>
+                <value>
+                    <costList>
+                        <Steel>60</Steel>
+                        <VMEu_Germanium>20</VMEu_Germanium>
+			<VMEu_StainlessSteel>20</VMEu_StainlessSteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+                    </costList>
+                </value>
+            </li>
+			
+		</operations>
+	</match>
+</Operation>
+
+</Patch>
