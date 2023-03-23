@@ -1,4 +1,0 @@
-D:\Proyectos y Archivos Guardados\RimWorld Mods\Expanded Materials\Expanded Materials - Metals\1.3\Assemblies\ExpandedMaterials.dll
-D:\Proyectos y Archivos Guardados\RimWorld Mods\Expanded Materials\Expanded Materials - Metals\Source\ExpandedMaterials\obj\Debug\ExpandedMaterials.csproj.AssemblyReference.cache
-D:\Proyectos y Archivos Guardados\RimWorld Mods\Expanded Materials\Expanded Materials - Metals\Source\ExpandedMaterials\obj\Debug\ExpandedMaterials.csproj.CoreCompileInputs.cache
-D:\Proyectos y Archivos Guardados\RimWorld Mods\Expanded Materials\Expanded Materials - Metals\Source\ExpandedMaterials\obj\Debug\ExpandedMaterials.dll
