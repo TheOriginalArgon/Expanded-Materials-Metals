@@ -66,6 +66,61 @@
   </ThingDef>
 
   <!-- Iron -->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>VMEu_Iron</defName>
+    <label>iron</label>
+    <description>A primary metal used for crafting all sorts of items, widely used among medieval
+      civilizations.\n\nCombining this metal with some chemicals allows the creation of steel, a
+      much stronger material.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/VMEu_Iron</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+      <Mass>0.5</Mass>
+      <StuffPower_Armor_Sharp>0.85</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.38</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.58</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.9</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>5</deepCommonality>
+    <deepCountPerPortion>45</deepCountPerPortion>
+    <deepLumpSizeRange>20~30</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <commonality>1.00</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(200, 183, 183)</color>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.9</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0.42</Flammability>
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+
+
   <ThingDef ParentName="ResourceBase">
     <defName>VMEu_Iron</defName>
     <label>iron</label>

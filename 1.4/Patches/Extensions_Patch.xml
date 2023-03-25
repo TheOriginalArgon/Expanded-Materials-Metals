@@ -1,0 +1,14 @@
+<Patch>
+
+    <!-- <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef [defName = "Steel"]</xpath>
+        <value>
+            <li Class="ArgonicCore.ModExtensions.ThingDefExtension_InterchangableThing">
+                <canBeReplacedByThings>
+                    <li>VMEu_Iron</li>
+                </canBeReplacedByThings>
+            </li>
+        </value>
+    </Operation> -->
+
+</Patch>
