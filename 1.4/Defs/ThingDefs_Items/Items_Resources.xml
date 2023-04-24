@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ================================ COAL TYPES ================================ -->
+
+  <!-- Coal -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_Coal</defName>
+    <label>coal</label>
+    <description>A combustible, black sedimentary rock formed by dead plant matter turned into peat and converted into coal by the heat and pressure of deep burial over millions of years. Coal is mostly carbon with variable amounts of other elements. It is used as a common fuel and also as a source of carbon, which is required in some important alloys like steel.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_Coal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <ArgonicCore_FuelPower>2.0</ArgonicCore_FuelPower>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+      <DeteriorationRate>0.4</DeteriorationRate>
+      <MarketValue>1</MarketValue>
+      <Mass>0.35</Mass>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>4</deepCommonality>
+    <deepCountPerPortion>40</deepCountPerPortion>
+    <deepLumpSizeRange>25~50</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>false</smeltable>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+
+  <!-- Charcoal -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_Charcoal</defName>
+    <label>charcoal</label>
+    <description>A lightweight, black carbon residue produced by strongly heating wood to remove all water and volatile constituents. Charcoal is not as much of an efficient carbon source as mineral coal is, but it is an effective substitute.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_Charcoal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <ArgonicCore_FuelPower>1.5</ArgonicCore_FuelPower>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>0.9</MarketValue>
+      <Mass>0.35</Mass>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <modExtensions>
+      <li Class="ExpandedMaterials.ThingDefExtension">
+        <fuelPower>1.7</fuelPower>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- ================================ BASIC METALS ================================ -->
+
+  <!-- Iron -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_Iron</defName>
+    <label>iron</label>
+    <description>A basic resource found widely in mountains and underground. Iron is one of mankind’s oldest and most used metals for making weapons, armor, reinforced building structures and several other things. Iron can be used on alloys too, steel being the most common one.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_IronRaw</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.4</MarketValue>
+      <Mass>0.5</Mass>
+      <StuffPower_Armor_Sharp>0.85</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.6</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <BluntDamageMultiplier>1</BluntDamageMultiplier>
+      <SharpDamageMultiplier>1</SharpDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>4</deepCommonality>
+    <deepCountPerPortion>45</deepCountPerPortion>
+    <deepLumpSizeRange>20~30</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <commonality>1.00</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(143, 123, 109)</color>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>1</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0.4</Flammability>
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+
+  <!-- Mild Steel -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_MildSteel</defName>
+    <label>mild steel</label>
+    <description>A variant of steel with a lesser percentage of carbon. Mild steel alloy process is slightly faster than average steel, however, the material is also slightly less tough. Mild steel is very common among medieval civilizations, where alloying metals is difficult and sometimes quantity-over-quality is the best approach.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Steel</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.9</MarketValue>
+      <Mass>0.5</Mass>
+      <StuffPower_Armor_Sharp>0.88</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.42</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.6</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <BluntDamageMultiplier>0.98</BluntDamageMultiplier>
+      <SharpDamageMultiplier>0.98</SharpDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <commonality>1.00</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(109, 105, 105)</color>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>1</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0.4</Flammability>
+        <!-- Add work to make??? -->
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+
+  <!-- Tempered Steel -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_TemperedSteel</defName>
+    <label>tempered steel</label>
+    <description>Steel with a heat treating process that enhances its properties. Tempering is generally done by heating the material to some temperature below the critical point for some time and then quickly cooling it in water or oil. Tempered steel is much stronger than average steel, and it is mostly used to build stronger weapons, armor and structures.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_TemperedSteel</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>2</MarketValue>
+      <Mass>0.5</Mass>
+      <StuffPower_Armor_Sharp>0.95</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.62</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+      <SharpDamageMultiplier>1.05</SharpDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <commonality>1.00</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(100, 100, 102)</color>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>1.4</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0.4</Flammability>
+        <!-- Add work to make??? -->
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+
+  <!-- Lead -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_Lead</defName>
+    <label>lead</label>
+    <description>A heavy, dark gray-bluish metal that is malleable and soft. While it is not very suitable for weapons and armor due to its weight and low resistance, lead is a very useful metal. It is widely used as a chemical additive and to make industrial batteries. It is also an essential material in the weapon industry, being the main component of most bullets and ammunition. Lead is toxic to the human body, and can contaminate soil and food if it evaporates or burns. Lead poisoning can cause chemical damage to the kidneys and brain, and if not tended properly, death.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/VMEu_Lead</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.9</Mass>
+      <StuffPower_Armor_Sharp>0.45</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.3</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.2</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <BluntDamageMultiplier>1</BluntDamageMultiplier>
+      <SharpDamageMultiplier>0.54</SharpDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>2.75</deepCommonality>
+    <deepCountPerPortion>55</deepCountPerPortion>
+    <deepLumpSizeRange>15~20</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <commonality>0.08</commonality>
+      <color>(126,136,148)</color>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.75</MaxHitPoints>
+        <Flammability>0.4</Flammability>
+        <Beauty>0.5</Beauty>
+        <WorkToBuild>1.2</WorkToBuild>
+        <WorkToMake>0.9</WorkToMake>
+        <DoorOpenSpeed>0.7</DoorOpenSpeed>
+        <MeleeWeapon_CooldownMultiplier>1.1</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+
+  <!-- Bronze  -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_Bronze</defName>
+    <label>bronze</label>
+    <description>A metal alloy consisting mostly of copper and a relatively small portion of tin. Bronze is not as hard and durable as iron, but it is quicker to work and it also has some unique benefits, like a bonus to cleanliness and beauty.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_BronzeIngot</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.6</MarketValue>
+      <Mass>0.5</Mass>
+      <Beauty>-2</Beauty>
+      <StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.55</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <BluntDamageMultiplier>0.92</BluntDamageMultiplier>
+      <SharpDamageMultiplier>0.92</SharpDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <tradeability>Buyable</tradeability>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <commonality>1.00</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(176, 139, 101)</color>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.9</MaxHitPoints>
+        <Beauty>1.1</Beauty>
+        <Flammability>0.4</Flammability>
+      </statFactors>
+      <statOffsets>
+        <Beauty>3</Beauty>
+        <Cleanliness>0.2</Cleanliness>
+      </statOffsets>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+
+  <!-- Tin -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_Tin</defName>
+    <label>tin</label>
+    <description>A somewhat rare, silvery-white colored metal that melts at a relatively low temperature. Tin is extremely weak compared to other metals; a bar of tin can be easily bent by hand, therefore it is not suitable by any means to make weapons or armor. However, it has incredible properties when alloyed with other metals. Tin is one of the main components of bronze, and it can also be used as plating to reinforce other metals. Tin is also widely used in electronics as a soldering element.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_TinRaw</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+      <Mass>0.005</Mass>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>500</stackLimit>
+    <smallVolume>true</smallVolume>
+    <deepCommonality>1.5</deepCommonality>
+    <deepCountPerPortion>120</deepCountPerPortion>
+    <deepLumpSizeRange>8~15</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+
+  <!-- Copper -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_Copper</defName>
+    <label>copper</label>
+    <description>An orange-looking, relatively malleable and somewhat pretty metal that can be found in veins scattered in mountains. Copper is not very tough, but somewhat viable for weaponry in some rare cases, however, it has very high thermal and electrical conductivity, and it is mostly used as a temperature insulator and electrical conductor. Copper is essential in modern civilizations and settlements as the main element used to make wiring and generators. Its use is also widely required in electronics. Copper is a naturally sterile metal and has a very slight bonus to cleanliness.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_Copper</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MarketValue>2.1</MarketValue>
+      <Mass>0.012</Mass>
+      <StuffPower_Armor_Sharp>0.45</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.3</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.2</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>3</StuffPower_Insulation_Heat>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+      <SharpDamageMultiplier>0.55</SharpDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>500</stackLimit>
+    <smallVolume>true</smallVolume>
+    <deepCommonality>2</deepCommonality>
+    <deepCountPerPortion>90</deepCountPerPortion>
+    <deepLumpSizeRange>15~20</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <color>(167, 98, 64)</color>
+      <commonality>0.12</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>0.75</MaxHitPoints>
+        <Flammability>0.4</Flammability>
+        <Beauty>1.05</Beauty>
+        <WorkToMake>0.75</WorkToMake>
+        <WorkToBuild>0.75</WorkToBuild>
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+
+  <!-- Stainless Steel -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_StainlessSteel</defName>
+    <label>stainless steel</label>
+    <description>A harder, stronger and prettier alloy of steel made by combining it with an assortment of other metals. In the most advanced high-tech worlds, chromium is used to make the most pure stainless steel, but other metals like silver or tin can also be used to produce a close-quality material. Stainless steel has sterile properties and it is widely required in modern industry. Medicine, energy, weapons and the aerospace industry all require this type of steel.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_StainlessSteel</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>2.2</MarketValue>
+      <Mass>0.6</Mass>
+      <StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.48</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.6</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>2</StuffPower_Insulation_Heat>
+      <BluntDamageMultiplier>1.05</BluntDamageMultiplier>
+      <SharpDamageMultiplier>1.02</SharpDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <commonality>0.05</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(111,124,145)</color>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>1</MaxHitPoints>
+        <Beauty>1.25</Beauty>
+        <Flammability>0.2</Flammability>
+      </statFactors>
+      <statOffsets>
+        <Beauty>1</Beauty>
+        <Cleanliness>0.5</Cleanliness>
+      </statOffsets>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+
+  <!-- Titanium -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_Titanium</defName>
+    <label>titanium</label>
+    <description>A highly durable metal, Titanium is only passable for use in structures but makes
+      for extremely durable weapons and armor.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/VMEu_Titanium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MarketValue>7.8</MarketValue>
+      <Mass>0.55</Mass>
+      <StuffPower_Armor_Sharp>1.15</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.62</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.7</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>1.02</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>1.25</deepCommonality>
+    <deepCountPerPortion>40</deepCountPerPortion>
+    <deepLumpSizeRange>8~12</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <commonality>0.05</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(58,58,58)</color>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>2.6</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0</Flammability>
+        <WorkToMake>2.2</WorkToMake>
+        <WorkToBuild>2.2</WorkToBuild>
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+
+  <!-- Germanium -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_Germanium</defName>
+    <label>germanium</label>
+    <description>A lustrous grayish-white metal very valuable in advanced industry and microelectronics. Germanium is rare, and can only be found scattered in very small amounts in some rocks. It is widely used in the production of optical elements and microelectronic components such as chips and processors.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_Germanium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <MarketValue>2.6</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>1</deepCommonality>
+    <deepCountPerPortion>40</deepCountPerPortion>
+    <deepLumpSizeRange>2~5</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+
+  <!-- Silicon -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>EM_Silicon</defName>
+    <label>silicon</label>
+    <description>text.todo</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/EM_Silicon</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <MarketValue>2.9</MarketValue>
+      <Mass>0.01</Mass>
+      <DeteriorationRate>0.3</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>2</deepCommonality>
+    <deepCountPerPortion>40</deepCountPerPortion>
+    <deepLumpSizeRange>8~12</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  </ThingDef>
+
+</Defs>

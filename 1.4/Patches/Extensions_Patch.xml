@@ -1,14 +1,43 @@
 <Patch>
 
-    <!-- <Operation Class="PatchOperationAddModExtension">
+    <Operation Class="PatchOperationAddModExtension">
         <xpath>Defs/ThingDef [defName = "Steel"]</xpath>
         <value>
-            <li Class="ArgonicCore.ModExtensions.ThingDefExtension_InterchangableThing">
-                <canBeReplacedByThings>
-                    <li>VMEu_Iron</li>
-                </canBeReplacedByThings>
+            <li Class="ArgonicCore.ModExtensions.ThingDefExtension_InterchangableResource">
+                <interchangableWith>
+                    <li>EM_Iron</li>
+                    <li>EM_Bronze</li>
+                    <li>EM_MildSteel</li>
+                    <li>EM_TemperedSteel</li>
+                </interchangableWith>
+                <techLevels>
+                    <li>Medieval</li>
+                    <li>Neolithic</li>
+                    <li>Medieval</li>
+                    <li>Industrial</li>
+                </techLevels>
+                <costModifiers>
+                    <li>1.0</li>
+                    <li>1.2</li>
+                    <li>1.0</li>
+                    <li>0.9</li>
+                </costModifiers>
+                <defaultThingDef>Steel</defaultThingDef>
             </li>
         </value>
-    </Operation> -->
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef [defName = "Steel"]/graphicData/texPath</xpath>
+        <value>
+            <texPath>Things/Item/Resource/EM_Steel</texPath>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef [defName = "Steel"]/stuffProps/color</xpath>
+        <value>
+            <color>(95, 95, 95)</color>
+        </value>
+    </Operation>
 
 </Patch>
