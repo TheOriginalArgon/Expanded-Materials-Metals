@@ -1,0 +1,12 @@
+<Patch>
+
+    <!-- Add the metal traders to the corresponding vanilla factions -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef [@Name="OutlanderFactionBase"]/caravanTraderKinds</xpath>
+        <value>
+            <li>EM_Caravan_Outlander_Metals</li>
+            <li>EM_Caravan_Outlander_MetalsRare</li>
+        </value>
+    </Operation>
+
+</Patch>

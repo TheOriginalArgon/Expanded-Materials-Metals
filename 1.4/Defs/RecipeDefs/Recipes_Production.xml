@@ -1,0 +1,830 @@
+<Defs>
+
+    <!-- =============================== CHARCOAL RECIPES =============================== -->
+
+    <RecipeDef ParentName="AlloyBase">
+        <defName>EM_Make_Charcoal</defName>
+        <label>make charcoal</label>
+        <description>text.todo</description>
+        <jobString>Making charcoal.</jobString>
+        <workAmount>1900</workAmount> <!-- Placeholder -->
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <recipeUsers>
+            <li>EM_FueledAlloyFurnace</li>
+            <li>EM_ElectricAlloyFurnace</li>
+            <li>FueledSmithy</li>
+            <li>ElectricSmithy</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WoodLog</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_Charcoal>35</EM_Charcoal>
+        </products>
+        <researchPrerequisite>Smithing</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Bulk -->
+    <RecipeDef ParentName="AlloyBase">
+        <defName>EM_Make_Charcoal_Bulk</defName>
+        <label>make bulk charcoal</label>
+        <description>text.todo</description>
+        <jobString>Making charcoal.</jobString>
+        <workAmount>3900</workAmount> <!-- Short time because it doesn't have an unfinished def and can't be interrumpted -->
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <recipeUsers>
+            <li>EM_FueledAlloyFurnace</li>
+            <li>EM_ElectricAlloyFurnace</li>
+            <li>FueledSmithy</li>
+            <li>ElectricSmithy</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>140</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WoodLog</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_Charcoal>140</EM_Charcoal>
+        </products>
+        <researchPrerequisite>Smithing</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- =============================== COMPONENT RECIPES =============================== -->
+    <RecipeDef>
+        <defName>EM_Make_ComponentIndustrial_Iron</defName>
+        <label>make component</label>
+        <description>Make a component.</description>
+        <jobString>Making component.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>5000</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Iron</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Copper</li>
+                    </thingDefs>
+                </filter>
+                <count>0.5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Tin</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_Iron</li>
+                <li>EM_Copper</li>
+                <li>EM_Tin</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </products>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <displayPriority>0</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>EM_Make_ComponentIndustrial_Bronze</defName>
+        <label>make component</label>
+        <description>Make a component.</description>
+        <jobString>Making component.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>5000</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Bronze</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Copper</li>
+                    </thingDefs>
+                </filter>
+                <count>0.7</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Tin</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_Bronze</li>
+                <li>EM_Copper</li>
+                <li>EM_Tin</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </products>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <displayPriority>0</displayPriority>
+    </RecipeDef>
+
+    <!-- Components with lead (Recipe causes lead poisoning) -->
+    <RecipeDef>
+        <defName>EM_Make_ComponentIndustrial_Steel_Lead</defName>
+        <label>make component (lead)</label>
+        <description>Make a component.\n\nThis recipe uses lead soldering instead of tin. It is much quicker but causes accumulative lead poisoning over time.</description>
+        <jobString>Making component.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>2200</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Copper</li>
+                    </thingDefs>
+                </filter>
+                <count>0.5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Lead</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>EM_Copper</li>
+                <li>EM_Lead</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </products>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <displayPriority>0</displayPriority>
+        <modExtensions>
+            <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_HediffOnFinish">
+                <hediff>EM_LeadPoisoning</hediff>
+                <severity>0.001</severity>
+                <chance>0.9</chance>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>EM_Make_ComponentIndustrial_Iron_Lead</defName>
+        <label>make component (lead)</label>
+        <description>Make a component.\n\nThis recipe uses lead soldering instead of tin. It is much quicker but causes accumulative lead poisoning over time.</description>
+        <jobString>Making component.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>2200</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Iron</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Copper</li>
+                    </thingDefs>
+                </filter>
+                <count>0.5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Lead</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_Iron</li>
+                <li>EM_Copper</li>
+                <li>EM_Lead</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </products>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <displayPriority>0</displayPriority>
+        <modExtensions>
+            <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_HediffOnFinish">
+                <hediff>EM_LeadPoisoning</hediff>
+                <severity>0.001</severity>
+                <chance>0.9</chance>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>EM_Make_ComponentIndustrial_Bronze_Lead</defName>
+        <label>make component (lead)</label>
+        <description>Make a component.\n\nThis recipe uses lead soldering instead of tin. It is much quicker but causes accumulative lead poisoning over time.</description>
+        <jobString>Making component.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>2200</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Bronze</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Copper</li>
+                    </thingDefs>
+                </filter>
+                <count>0.7</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Lead</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_Bronze</li>
+                <li>EM_Copper</li>
+                <li>EM_Lead</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </products>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <displayPriority>0</displayPriority>
+        <modExtensions>
+            <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_HediffOnFinish">
+                <hediff>EM_LeadPoisoning</hediff>
+                <severity>0.001</severity>
+                <chance>0.9</chance>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+    <!-- Triple Components -->
+    <RecipeDef>
+        <defName>EM_Make_ComponentIndustrial_x3_Steel</defName>
+        <label>make component x3</label>
+        <description>Make a component.</description>
+        <jobString>Making component.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>12000</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Silicon</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Tin</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>EM_Silicon</li>
+                <li>EM_Tin</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </products>
+        <skillRequirements>
+            <Crafting>9</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <displayPriority>0</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>EM_Make_ComponentIndustrial_x3_StainlessSteel</defName>
+        <label>make component x3</label>
+        <description>Make a component.</description>
+        <jobString>Making component.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>12000</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_StainlessSteel</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Silicon</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Tin</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_StainlessSteel</li>
+                <li>EM_Silicon</li>
+                <li>EM_Tin</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </products>
+        <skillRequirements>
+            <Crafting>9</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <displayPriority>0</displayPriority>
+    </RecipeDef>
+
+    <!-- =============================== CHEMFUEL RECIPES =============================== -->
+
+    <RecipeDef>
+        <defName>EM_Make_ChemfuelFromCoal</defName>
+        <label>make chemfuel from coal</label>
+        <description>Make a batch of chemfuel by extracting and condensing gas from coal chunks.</description>
+        <jobString>Refining chemfuel from coal.</jobString>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workAmount>2000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <recipeUsers>
+            <li>BiofuelRefinery</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Coal</li>
+                        <li>EM_Charcoal</li>
+                    </thingDefs>
+                </filter>
+                <count>70</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_Coal</li>
+                <li>EM_Charcoal</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Chemfuel>45</Chemfuel>
+        </products>
+    </RecipeDef>
+
+    <!-- Chemfuel with lead (Recipe causes lead poisoning) -->
+
+    <RecipeDef>
+        <defName>EM_Make_ChemfuelFromWood_Lead</defName>
+        <label>make chemfuel from wood (lead)</label>
+        <description>Make a batch of lead-based chemfuel by extracting and condensing gas from wood logs.\n\nLead makes for a higher yield but causes accumulative lead contamination over time.</description>
+        <jobString>Refining chemfuel from coal.</jobString>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workAmount>2000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <recipeUsers>
+            <li>BiofuelRefinery</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>45</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Lead</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WoodLog</li>
+                <li>EM_Lead</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Chemfuel>45</Chemfuel>
+        </products>
+        <modExtensions>
+            <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_HediffOnFinish">
+                <hediff>EM_LeadPoisoning</hediff>
+                <severity>0.206</severity>
+                <chance>1</chance>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>EM_Make_ChemfuelFromCoal_Lead</defName>
+        <label>make chemfuel from coal (lead)</label>
+        <description>Make a batch of lead-based chemfuel by extracting and condensing gas from coal chunks.\n\nLead makes for a higher yield but causes accumulative lead contamination over time.</description>
+        <jobString>Refining chemfuel from coal.</jobString>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workAmount>2000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <recipeUsers>
+            <li>BiofuelRefinery</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Coal</li>
+                        <li>EM_Charcoal</li>
+                    </thingDefs>
+                </filter>
+                <count>45</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Lead</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_Coal</li>
+                <li>EM_Charcoal</li>
+                <li>EM_Lead</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Chemfuel>75</Chemfuel>
+        </products>
+        <modExtensions>
+            <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_HediffOnFinish">
+                <hediff>EM_LeadPoisoning</hediff>
+                <severity>0.006</severity>
+                <chance>1</chance>
+            </li>
+        </modExtensions>
+    </RecipeDef>
+
+    <!-- =============================== ADVANCED COMPONENT RECIPES =============================== -->
+
+    <RecipeDef>
+        <defName>EM_Make_ComponentSpacer_StainlessSteel</defName>
+        <label>make advanced component</label>
+        <description>Make an advanced component.</description>
+        <jobString>Making advanced component.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>10000</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_StainlessSteel</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>7</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>0.3</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ComponentIndustrial</li>
+                <li>EM_StainlessSteel</li>
+                <li>Plasteel</li>
+                <li>Gold</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ComponentSpacer>1</ComponentSpacer>
+        </products>
+        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <displayPriority>10</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>EM_Make_ComponentSpacer_Silicon</defName>
+        <label>make advanced component</label>
+        <description>Make an advanced component.</description>
+        <jobString>Making advanced component.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>10000</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Silicon</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ComponentIndustrial</li>
+                <li>Steel</li>
+                <li>Plasteel</li>
+                <li>EM_Silicon</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ComponentSpacer>1</ComponentSpacer>
+        </products>
+        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <displayPriority>10</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>EM_Make_ComponentSpacer_Germanium</defName>
+        <label>make advanced component</label>
+        <description>Make an advanced component.</description>
+        <jobString>Making advanced component.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>10000</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_StainlessSteel</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Germanium</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ComponentIndustrial</li>
+                <li>EM_StainlessSteel</li>
+                <li>Plasteel</li>
+                <li>EM_Germanium</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ComponentSpacer>1</ComponentSpacer>
+        </products>
+        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <displayPriority>10</displayPriority>
+    </RecipeDef>
+
+</Defs>

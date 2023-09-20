@@ -1,0 +1,34 @@
+<Defs>
+
+    <!-- DEBUG -->
+    <RecipeDef ParentName="MakeStoneBlocksBase">
+        <defName>EM_ExtractOreFromChunks</defName>
+        <label>extract ore from stone chunks</label>
+        <description>Smelt rocks to get small traces of resources.</description>
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneChunks</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>StoneChunks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <modExtensions>
+            <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_SpecialProducts">
+                <productTypeDef>EM_SpecialProducts_OreExtraction</productTypeDef>
+            </li>
+        </modExtensions>
+        <researchPrerequisite>EM_OreExtraction</researchPrerequisite>
+    </RecipeDef>
+
+</Defs>

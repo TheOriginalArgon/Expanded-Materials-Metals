@@ -1,12 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
   <ThingCategoryDef>
-    <defName>VMEu_SpecialMetals</defName>
-    <label>Special Metals</label>
+    <defName>EM_SpecialMetals</defName>
+    <label>special metals</label>
     <parent>ResourcesRaw</parent>
     <resourceReadoutRoot>false</resourceReadoutRoot>
-    <iconPath>Things/Item/Resource/VMEu_Tungsten/VMEu_Tungsten_c</iconPath>
+    <iconPath>Things/Item/Resource/EM_Silicon/EM_Silicon_c</iconPath>
   </ThingCategoryDef>
 
 </Defs>

@@ -1,0 +1,798 @@
+<Defs>
+
+    <!-- Unfinished alloy item -->
+    <ThingDef ParentName="UnfinishedBase">
+        <defName>EM_UnfinishedAlloy</defName>
+        <label>unfinished alloy</label>
+        <description>An unfinished metal alloy.</description>
+        <statBases>
+            <Flammability>0.1</Flammability>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Resource/EM_UnfinishedAlloy</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <stuffCategories Inherit="false" />
+    </ThingDef>
+
+    <!-- ============================= BASE ALLOY RECIPE ============================= -->
+
+    <RecipeDef Name="AlloyBase" Abstract="True">
+        <unfinishedThingDef>EM_UnfinishedAlloy</unfinishedThingDef>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <recipeUsers>
+            <li>EM_FueledAlloyFurnace</li>
+            <li>EM_ElectricAlloyFurnace</li>
+        </recipeUsers>
+        <researchPrerequisite>Smithing</researchPrerequisite> <!-- EM Alloy research project -->
+    </RecipeDef>
+
+    <!-- ============================= ALLOY RECIPES ============================= -->
+
+    <!-- Mild Steel -->
+    <RecipeDef ParentName="AlloyBase">
+        <defName>EM_AlloyMildSteel</defName>
+        <label>alloy mild steel</label>
+        <description>text.todo</description>
+        <jobString>Alloying mild steel.</jobString>
+        <workAmount>2200</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Iron</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Coal</li>
+                        <li>EM_Charcoal</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_Iron</li>
+                <li>EM_Coal</li>
+                <li>EM_Charcoal</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_MildSteel>55</EM_MildSteel>
+        </products>
+        <researchPrerequisite>EM_SteelWorking</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef ParentName="AlloyBase">
+        <defName>EM_AlloyMildSteel_Downgrade</defName>
+        <label>alloy mild steel</label>
+        <description>text.todo</description>
+        <jobString>Alloying mild steel.</jobString>
+        <workAmount>2200</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Tin</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>EM_Tin</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_MildSteel>55</EM_MildSteel>
+        </products>
+        <researchPrerequisite>EM_SteelWorking</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Steel -->
+    <RecipeDef ParentName="AlloyBase">
+        <defName>EM_AlloySteel</defName>
+        <label>alloy steel</label>
+        <description>text.todo</description>
+        <jobString>Alloying steel.</jobString>
+        <workAmount>3100</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Iron</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Coal</li>
+                        <li>EM_Charcoal</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_Iron</li>
+                <li>EM_Coal</li>
+                <li>EM_Charcoal</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Steel>45</Steel>
+        </products>
+        <researchPrerequisite>EM_SteelWorking</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Tempered Steel -->
+    <RecipeDef ParentName="AlloyBase">
+        <defName>EM_AlloyTemperedSteel_Chemfuel</defName>
+        <label>alloy tempered steel</label>
+        <description>text.todo</description>
+        <jobString>Alloying tempered steel.</jobString>
+        <workAmount>3900</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_TemperedSteel>35</EM_TemperedSteel>
+        </products>
+        <researchPrerequisite>EM_TemperedSteelMaking</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef ParentName="AlloyBase">
+        <defName>EM_AlloyTemperedSteel_Wood</defName>
+        <label>alloy tempered steel</label>
+        <description>text.todo</description>
+        <jobString>Alloying tempered steel.</jobString>
+        <workAmount>3900</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_TemperedSteel>35</EM_TemperedSteel>
+        </products>
+        <researchPrerequisite>EM_TemperedSteelMaking</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Bronze -->
+    <RecipeDef ParentName="AlloyBase">
+        <defName>EM_AlloyBronze</defName>
+        <label>alloy bronze</label>
+        <description>text.todo</description>
+        <jobString>Alloying bronze.</jobString>
+        <workAmount>2000</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Copper</li>
+                    </thingDefs>
+                </filter>
+                <count>6</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Tin</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_Copper</li>
+                <li>EM_Tin</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_Bronze>45</EM_Bronze>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="AlloyBase">
+        <defName>EM_AlloyBronze_LowQuality</defName>
+        <label>alloy bronze (low quality)</label>
+        <description>text.todo</description>
+        <jobString>Alloying bronze.</jobString>
+        <workAmount>2000</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Copper</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Tin</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_Copper</li>
+                <li>EM_Tin</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_Bronze>30</EM_Bronze>
+        </products>
+    </RecipeDef>
+
+    <!-- Stainless Steel -->
+    <RecipeDef ParentName="AlloyBase">
+        <defName>EM_AlloyStainlessSteel</defName>
+        <label>alloy stainless steel</label>
+        <description>text.todo</description>
+        <jobString>Alloying stainless steel.</jobString>
+        <workAmount>3700</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li>EM_MildSteel</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Tin</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>EM_MildSteel</li>
+                <li>Silver</li>
+                <li>EM_Tin</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_StainlessSteel>45</EM_StainlessSteel>
+        </products>
+        <researchPrerequisite>EM_StainlessSteelMaking</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef ParentName="AlloyBase">
+        <defName>EM_AlloyStainlessSteel_LowQuality</defName>
+        <label>alloy stainless steel (low quality)</label>
+        <description>text.todo</description>
+        <jobString>Alloying stainless steel.</jobString>
+        <workAmount>3700</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li>EM_MildSteel</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Tin</li>
+                    </thingDefs>
+                </filter>
+                <count>45</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>EM_MildSteel</li>
+                <li>EM_Tin</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_StainlessSteel>25</EM_StainlessSteel>
+        </products>
+        <researchPrerequisite>EM_StainlessSteelMaking</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- ============================= Bulk Recipes ============================= -->
+
+    <!-- Mild Steel -->
+    <RecipeDef ParentName="AlloyBase">
+        <defName>EM_AlloyMildSteel_Bulk</defName>
+        <label>alloy mild steel (bulk)</label>
+        <description>text.todo</description>
+        <jobString>Alloying mild steel.</jobString>
+        <workAmount>6200</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Iron</li>
+                    </thingDefs>
+                </filter>
+                <count>120</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Coal</li>
+                        <li>EM_Charcoal</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_Iron</li>
+                <li>EM_Coal</li>
+                <li>EM_Charcoal</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_MildSteel>190</EM_MildSteel>
+        </products>
+        <researchPrerequisite>EM_SteelWorking</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Steel -->
+    <RecipeDef ParentName="AlloyBase">
+        <defName>EM_AlloySteel_Bulk</defName>
+        <label>alloy steel (bulk)</label>
+        <description>text.todo</description>
+        <jobString>Alloying steel.</jobString>
+        <workAmount>9100</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Iron</li>
+                    </thingDefs>
+                </filter>
+                <count>120</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Coal</li>
+                        <li>EM_Charcoal</li>
+                    </thingDefs>
+                </filter>
+                <count>65</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_Iron</li>
+                <li>EM_Coal</li>
+                <li>EM_Charcoal</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Steel>150</Steel>
+        </products>
+        <researchPrerequisite>EM_SteelWorking</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Tempered Steel -->
+    <RecipeDef ParentName="AlloyBase">
+        <defName>EM_AlloyTemperedSteel_Chemfuel_Bulk</defName>
+        <label>alloy tempered steel (bulk)</label>
+        <description>text.todo</description>
+        <jobString>Alloying tempered steel.</jobString>
+        <workAmount>11000</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>120</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_TemperedSteel>120</EM_TemperedSteel>
+        </products>
+        <researchPrerequisite>EM_TemperedSteelMaking</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef ParentName="AlloyBase">
+        <defName>EM_AlloyTemperedSteel_Wood_Bulk</defName>
+        <label>alloy tempered steel (bulk)</label>
+        <description>text.todo</description>
+        <jobString>Alloying tempered steel.</jobString>
+        <workAmount>11000</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>120</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>100</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_TemperedSteel>120</EM_TemperedSteel>
+        </products>
+        <researchPrerequisite>EM_TemperedSteelMaking</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- Bronze -->
+    <RecipeDef ParentName="AlloyBase">
+        <defName>EM_AlloyBronze_Bulk</defName>
+        <label>alloy bronze (bulk)</label>
+        <description>text.todo</description>
+        <jobString>Alloying bronze.</jobString>
+        <workAmount>5800</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Copper</li>
+                    </thingDefs>
+                </filter>
+                <count>24</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Tin</li>
+                    </thingDefs>
+                </filter>
+                <count>80</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_Copper</li>
+                <li>EM_Tin</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_Bronze>180</EM_Bronze>
+        </products>
+    </RecipeDef>
+
+    <!-- Stainless Steel -->
+    <RecipeDef ParentName="AlloyBase">
+        <defName>EM_AlloyStainlessSteel_Bulk</defName>
+        <label>alloy stainless steel (bulk)</label>
+        <description>text.todo</description>
+        <jobString>Alloying stainless steel.</jobString>
+        <workAmount>10600</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li>EM_MildSteel</li>
+                    </thingDefs>
+                </filter>
+                <count>140</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                    </thingDefs>
+                </filter>
+                <count>60</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Tin</li>
+                    </thingDefs>
+                </filter>
+                <count>120</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>EM_MildSteel</li>
+                <li>Silver</li>
+                <li>EM_Tin</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_StainlessSteel>180</EM_StainlessSteel>
+        </products>
+        <researchPrerequisite>EM_StainlessSteelMaking</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- ============================= REVERSE ALLOYS ============================= -->
+
+    <RecipeDef Name="ReverseAlloyBase" Abstract="True">
+        <unfinishedThingDef>EM_UnfinishedAlloy</unfinishedThingDef>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <recipeUsers>
+            <li>DrugLab</li>
+        </recipeUsers>
+        <researchPrerequisite>EM_ReverseAlloying</researchPrerequisite> <!-- EM Alloy research project -->
+    </RecipeDef>
+
+    <!-- De-Alloy Mild Steel -->
+    <RecipeDef ParentName="ReverseAlloyBase">
+        <defName>EM_ReverseAlloy_IronFromMildSteel</defName>
+        <label>extract iron from mild steel</label>
+        <description>text.todo</description>
+        <jobString>Extracting iron from metals.</jobString>
+        <workAmount>4000</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_MildSteel</li>
+                    </thingDefs>
+                </filter>
+                <count>55</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_MildSteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_Iron>20</EM_Iron>
+        </products>
+    </RecipeDef>
+
+    <!-- De-Alloy Steel and Tempered Steel -->
+    <RecipeDef ParentName="ReverseAlloyBase">
+        <defName>EM_ReverseAlloy_IronFromSteel</defName>
+        <label>extract iron from steel</label>
+        <description>text.todo</description>
+        <jobString>Extracting iron from metals.</jobString>
+        <workAmount>4500</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>45</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_TemperedSteel</li>
+                    </thingDefs>
+                </filter>
+                <count>45</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_MildSteel</li>
+                <li>EM_TemperedSteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_Iron>20</EM_Iron>
+        </products>
+    </RecipeDef>
+
+    <!-- De-Alloy Bronze -->
+    <RecipeDef ParentName="ReverseAlloyBase">
+        <defName>EM_ReverseAlloy_CopperFromBronze</defName>
+        <label>extract copper from bronze</label>
+        <description>text.todo</description>
+        <jobString>Extracting copper from metals.</jobString>
+        <workAmount>4000</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Bronze</li>
+                    </thingDefs>
+                </filter>
+                <count>45</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_Bronze</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_Copper>30</EM_Copper>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="ReverseAlloyBase">
+        <defName>EM_ReverseAlloy_TinFromBronze</defName>
+        <label>extract tin from bronze</label>
+        <description>text.todo</description>
+        <jobString>Extracting tin from metals.</jobString>
+        <workAmount>4700</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Bronze</li>
+                    </thingDefs>
+                </filter>
+                <count>45</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_Bronze</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <EM_Tin>15</EM_Tin>
+        </products>
+    </RecipeDef>
+
+    <!-- De-Alloy Stainless Steel -->
+    <RecipeDef ParentName="ReverseAlloyBase">
+        <defName>EM_ReverseAlloy_SteelFromStainlessSteel</defName>
+        <label>extract steel from stainless steel</label>
+        <description>text.todo</description>
+        <jobString>Extracting steel from metals.</jobString>
+        <workAmount>4200</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_StainlessSteel</li>
+                    </thingDefs>
+                </filter>
+                <count>45</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_StainlessSteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Steel>20</Steel>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="ReverseAlloyBase">
+        <defName>EM_ReverseAlloy_SilverFromStainlessSteel</defName>
+        <label>extract silver from stainless steel</label>
+        <description>text.todo</description>
+        <jobString>Extracting silver from metals.</jobString>
+        <workAmount>5700</workAmount> <!-- Placeholder -->
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_StainlessSteel</li>
+                    </thingDefs>
+                </filter>
+                <count>45</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_StainlessSteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Silver>12</Silver>
+        </products>
+    </RecipeDef>
+
+
+</Defs>

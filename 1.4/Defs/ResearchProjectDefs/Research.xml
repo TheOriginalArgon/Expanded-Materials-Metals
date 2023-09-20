@@ -1,0 +1,72 @@
+<Defs>
+
+    <!-- Alloy Research -->
+    <ResearchProjectDef>
+        <defName>EM_SteelWorking</defName>
+        <label>steel working</label>
+        <description>text.todo</description>
+        <baseCost>700</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>4.05</researchViewY>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>EM_TemperedSteelMaking</defName>
+        <label>tempered steel</label>
+        <description>text.todo</description>
+        <baseCost>900</baseCost>
+        <techLevel>Medieval</techLevel>
+        <researchViewX>4.00</researchViewX>
+        <researchViewY>3.35</researchViewY>
+        <prerequisites>
+            <li>EM_SteelWorking</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>EM_StainlessSteelMaking</defName>
+        <label>stainless steel</label>
+        <description>text.todo</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>4.00</researchViewX>
+        <researchViewY>4.00</researchViewY>
+        <prerequisites>
+            <li>EM_SteelWorking</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!-- Reverse Alloying -->
+    <ResearchProjectDef>
+        <defName>EM_ReverseAlloying</defName>
+        <label>reverse alloying</label>
+        <description>text.todo</description>
+        <baseCost>2300</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>0.60</researchViewY>
+        <prerequisites>
+            <li>DrugProduction</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <!-- Ore Extraction -->
+    <ResearchProjectDef>
+        <defName>EM_OreExtraction</defName>
+        <label>ore extraction</label>
+        <description>text.todo</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>5.00</researchViewX>
+        <researchViewY>3.95</researchViewY>
+        <prerequisites>
+            <li>Smithing</li>
+            <li>Electricity</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+</Defs>

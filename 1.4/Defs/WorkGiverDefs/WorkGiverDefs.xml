@@ -1,0 +1,21 @@
+<Defs>
+
+    <WorkGiverDef>
+        <defName>EM_DoBillsAlloyFurnaceOven</defName>
+        <label>alloying metals</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Crafting</workType>
+        <priorityInType>70</priorityInType>
+        <fixedBillGiverDefs>
+            <li>EM_FueledAlloyFurnace</li>
+            <li>EM_ElectricAlloyFurnace</li>
+        </fixedBillGiverDefs>
+        <verb>alloy</verb>
+        <gerund>alloying at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+</Defs>

@@ -1,0 +1,17 @@
+<Patch>
+
+    <!-- Do not generate steel in mountains -->
+    <!-- <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName = "MineableSteel"]/building</xpath>
+        <value>
+            <building>
+                <mineableScatterCommonality>0</mineableScatterCommonality>
+                <mineableScatterLumpSizeRange>1~2</mineableScatterLumpSizeRange>
+            </building>
+        </value>
+    </Operation> -->
+
+    <!-- Do not generate steel underground -->
+
+
+</Patch>

@@ -1,0 +1,532 @@
+<Defs>
+
+    <HediffDef ParentName="ChronicDiseaseBase">
+        <defName>EM_LeadPoisoning</defName>
+        <label>lead poisoning</label>
+        <labelNoun>a bad back</labelNoun>
+        <description>text.todo</description>
+        <defaultLabelColor>(0.4, 0.5, 0.6)</defaultLabelColor>
+        <stages>
+
+            <!-- Stage 1: Hidden -->
+            <li>
+                <becomeVisible>false</becomeVisible>
+                <vomitMtbDays>10.0</vomitMtbDays>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>EM_LeadPoisoning_StageOne</hediff>
+                        <mtbDays>10</mtbDays>
+                    </li>
+                </hediffGivers>
+            </li>
+
+            <!-- Stage 2: Noticeable -->
+            <li>
+                <label>noticeable</label>
+                <minSeverity>0.15</minSeverity>
+                <vomitMtbDays>9.0</vomitMtbDays>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>EM_LeadPoisoning_StageTwo</hediff>
+                        <mtbDays>8</mtbDays>
+                    </li>
+                </hediffGivers>
+            </li>
+
+            <!-- Stage 3: Risky -->
+            <li>
+                <label>risky</label>
+                <minSeverity>0.30</minSeverity>
+                <vomitMtbDays>8.0</vomitMtbDays>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>ChemicalDamageModerate</hediff>
+                        <mtbDays>50</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>EM_LeadPoisoning_StageThree</hediff>
+                        <mtbDays>8</mtbDays>
+                    </li>
+                </hediffGivers>
+            </li>
+
+            <!-- Stage 4: Mild -->
+            <li>
+                <label>mild</label>
+                <minSeverity>0.60</minSeverity>
+                <vomitMtbDays>7.0</vomitMtbDays>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>ChemicalDamageModerate</hediff>
+                        <mtbDays>35</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Carcinoma</hediff>
+                        <mtbDays>300</mtbDays>
+                        <partsToAffect>
+                            <li>Kidney</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Carcinoma</hediff>
+                        <mtbDays>300</mtbDays>
+                        <partsToAffect>
+                            <li>Lung</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>EM_LeadPoisoning_StageFour</hediff>
+                        <mtbDays>8</mtbDays>
+                    </li>
+                </hediffGivers>
+            </li>
+
+            <!-- Stage 5: Moderate -->
+            <li>
+                <label>moderate</label>
+                <minSeverity>0.70</minSeverity>
+                <vomitMtbDays>6.0</vomitMtbDays>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>ChemicalDamageModerate</hediff>
+                        <mtbDays>30</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Carcinoma</hediff>
+                        <mtbDays>250</mtbDays>
+                        <partsToAffect>
+                            <li>Kidney</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Carcinoma</hediff>
+                        <mtbDays>250</mtbDays>
+                        <partsToAffect>
+                            <li>Lung</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Dementia</hediff>
+                        <mtbDays>320</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Alzheimers</hediff>
+                        <mtbDays>320</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>EM_LeadPoisoning_StageFive</hediff>
+                        <mtbDays>6</mtbDays>
+                    </li>
+                </hediffGivers>
+            </li>
+
+            <!-- Stage 6: High -->
+            <li>
+                <label>high</label>
+                <minSeverity>0.80</minSeverity>
+                <vomitMtbDays>5.0</vomitMtbDays>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>ChemicalDamageModerate</hediff>
+                        <mtbDays>20</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Carcinoma</hediff>
+                        <mtbDays>135</mtbDays>
+                        <partsToAffect>
+                            <li>Kidney</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Carcinoma</hediff>
+                        <mtbDays>135</mtbDays>
+                        <partsToAffect>
+                            <li>Lung</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Dementia</hediff>
+                        <mtbDays>290</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Alzheimers</hediff>
+                        <mtbDays>290</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>EM_LeadPoisoning_StageSix</hediff>
+                        <mtbDays>4</mtbDays>
+                    </li>
+                </hediffGivers>
+            </li>
+
+            <!-- Stage 7: Extreme -->
+            <li>
+                <label>extreme</label>
+                <minSeverity>0.90</minSeverity>
+                <vomitMtbDays>4.0</vomitMtbDays>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>ChemicalDamageModerate</hediff>
+                        <mtbDays>16</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Carcinoma</hediff>
+                        <mtbDays>122</mtbDays>
+                        <partsToAffect>
+                            <li>Kidney</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Carcinoma</hediff>
+                        <mtbDays>122</mtbDays>
+                        <partsToAffect>
+                            <li>Lung</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Dementia</hediff>
+                        <mtbDays>220</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Alzheimers</hediff>
+                        <mtbDays>220</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>EM_LeadPoisoning_StageSeven</hediff>
+                        <mtbDays>3</mtbDays>
+                    </li>
+                </hediffGivers>
+            </li>
+
+        </stages>
+    </HediffDef>
+
+    <!-- Lead poisoning sub-hediffs -->
+    <HediffDef>
+        <defName>EM_LeadPoisoning_StageOne</defName>
+        <label>physical discomfort (lead poisoning)</label>
+        <labelNoun>general physical discomfort</labelNoun>
+        <description>text.todo</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>8750~15000</disappearsAfterTicks>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+                <painOffset>0.01</painOffset>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>EM_LeadPoisoning_StageTwo</defName>
+        <label>physical discomfort (lead poisoning)</label>
+        <labelNoun>general physical discomfort</labelNoun>
+        <description>text.todo</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>60000~120000</disappearsAfterTicks>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+                <painOffset>0.03</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.02</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>EM_LeadPoisoning_StageThree</defName>
+        <label>physical discomfort (lead poisoning)</label>
+        <labelNoun>general physical discomfort</labelNoun>
+        <description>text.todo</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>60000~180000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_SkillDecay">
+                <decayPerDayPercentageLevelCurve>
+                    <points>
+                        <li>(4, 0.02)</li>
+                        <li>(12, 0.1)</li>
+                        <li>(20, 0.15)</li>
+                    </points>
+                </decayPerDayPercentageLevelCurve>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+                <painOffset>0.07</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.08</offset>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ImmunityGainSpeed>-0.05</ImmunityGainSpeed>
+                    <RestFallRateFactor>0.07</RestFallRateFactor>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>EM_LeadPoisoning_StageFour</defName>
+        <label>physical discomfort (lead poisoning)</label>
+        <labelNoun>general physical discomfort</labelNoun>
+        <description>text.todo</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>120000~180000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_SkillDecay">
+                <decayPerDayPercentageLevelCurve>
+                    <points>
+                        <li>(4, 0.035)</li>
+                        <li>(12, 0.12)</li>
+                        <li>(20, 0.185)</li>
+                    </points>
+                </decayPerDayPercentageLevelCurve>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+                <painOffset>0.12</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.07</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ImmunityGainSpeed>-0.07</ImmunityGainSpeed>
+                    <RestFallRateFactor>0.15</RestFallRateFactor>
+                    <IncomingDamageFactor>0.07</IncomingDamageFactor>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>EM_LeadPoisoning_StageFive</defName>
+        <label>physical discomfort (lead poisoning)</label>
+        <labelNoun>general physical discomfort</labelNoun>
+        <description>text.todo</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>180000~240000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_SkillDecay">
+                <decayPerDayPercentageLevelCurve>
+                    <points>
+                        <li>(4, 0.05)</li>
+                        <li>(12, 0.2)</li>
+                        <li>(20, 0.22)</li>
+                    </points>
+                </decayPerDayPercentageLevelCurve>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+                <painOffset>0.15</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.12</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.12</offset>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+                        <offset>-0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.12</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ImmunityGainSpeed>-0.12</ImmunityGainSpeed>
+                    <RestFallRateFactor>0.22</RestFallRateFactor>
+                    <IncomingDamageFactor>0.11</IncomingDamageFactor>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>EM_LeadPoisoning_StageSix</defName>
+        <label>physical discomfort (lead poisoning)</label>
+        <labelNoun>general physical discomfort</labelNoun>
+        <description>text.todo</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>180000~300000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_SkillDecay">
+                <decayPerDayPercentageLevelCurve>
+                    <points>
+                        <li>(4, 0.08)</li>
+                        <li>(12, 0.25)</li>
+                        <li>(20, 0.3)</li>
+                    </points>
+                </decayPerDayPercentageLevelCurve>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+                <painOffset>0.2</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ImmunityGainSpeed>-0.2</ImmunityGainSpeed>
+                    <RestFallRateFactor>0.27</RestFallRateFactor>
+                    <IncomingDamageFactor>0.15</IncomingDamageFactor>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>EM_LeadPoisoning_StageSeven</defName>
+        <label>physical discomfort (lead poisoning)</label>
+        <labelNoun>general physical discomfort</labelNoun>
+        <description>text.todo</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>300000~420000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_SkillDecay">
+                <decayPerDayPercentageLevelCurve>
+                    <points>
+                        <li>(4, 0.16)</li>
+                        <li>(12, 0.5)</li>
+                        <li>(20, 0.6)</li>
+                    </points>
+                </decayPerDayPercentageLevelCurve>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+                <painOffset>0.3</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.25</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.25</offset>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+                        <offset>-0.25</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.25</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ImmunityGainSpeed>-0.35</ImmunityGainSpeed>
+                    <RestFallRateFactor>0.32</RestFallRateFactor>
+                    <IncomingDamageFactor>0.2</IncomingDamageFactor>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

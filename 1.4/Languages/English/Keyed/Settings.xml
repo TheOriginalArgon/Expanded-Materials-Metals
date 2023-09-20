@@ -1,0 +1,11 @@
+<LanguageData>
+
+    <EM_Settings_GenerateSteelVeins>Setting_GenerateSteelVeins</EM_Settings_GenerateSteelVeins>
+    <EM_Settings_GenerateComponentVeins>Setting_GenerateComponentVeins</EM_Settings_GenerateComponentVeins>
+
+    <EMSettings_NaturalGenerationOptions>Vanilla steel and components generation (Requires restart)</EMSettings_NaturalGenerationOptions>
+
+    <EMSettings_EnableSteelGeneration>Allow steel generation</EMSettings_EnableSteelGeneration>
+    <EMSettings_EnableComponentGeneration>Allow components generation</EMSettings_EnableComponentGeneration>
+
+</LanguageData>

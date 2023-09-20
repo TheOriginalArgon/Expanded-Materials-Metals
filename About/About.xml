@@ -13,5 +13,10 @@
             <displayName>Argonic Core</displayName>
             <downloadUrl>https://github.com/TheOriginalArgon/ArgonicCore</downloadUrl>
         </li>
+        <li>
+            <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+            <displayName>Vanilla Expanded Framework</displayName>
+            <downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
+        </li>
     </modDependencies>
 </ModMetaData>

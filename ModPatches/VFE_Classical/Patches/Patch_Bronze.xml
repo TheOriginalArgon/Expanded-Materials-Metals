@@ -1,0 +1,170 @@
+<Patch>
+
+    <!-- Patch bronze to be cuprosteel -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="VFEC_Bronze"]/label</xpath>
+        <value>
+            <label>cuprosteel</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="VFEC_Bronze"]/description</xpath>
+        <value>
+            <description>A rare iron-copper alloy used by ancient civilizations to make armor and weapons. Cuprosteel was commonly found in roman ruins back in old earth, in the shape of spears, swords and helmets. It is slightly worse than regular iron, but it paid off for its high malleability and versatility to make different tools and weapons. Nowadays it holds a value that refers more to its antiquity than its reliability as a working metal.</description>
+        </value>
+    </Operation>
+
+    <!-- Rebalance stats -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName="VFEC_Bronze"]/statBases</xpath>
+        <value>
+            <Beauty>-3</Beauty>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="VFEC_Bronze"]/stuffProps/statFactors/MaxHitPoints</xpath>
+        <value>
+            <MaxHitPoints>0.87</MaxHitPoints>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="VFEC_Bronze"]/statBases/StuffPower_Armor_Sharp</xpath>
+        <value>
+            <StuffPower_Armor_Sharp>0.82</StuffPower_Armor_Sharp>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="VFEC_Bronze"]/statBases/BluntDamageMultiplier</xpath>
+        <value>
+            <BluntDamageMultiplier>0.95</BluntDamageMultiplier>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="VFEC_Bronze"]/statBases/SharpDamageMultiplier</xpath>
+        <value>
+            <SharpDamageMultiplier>0.95</SharpDamageMultiplier>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="VFEC_Bronze"]/stuffProps/statFactors/Beauty</xpath>
+        <value>
+            <Beauty>1.05</Beauty>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName="VFEC_Bronze"]/stuffProps</xpath>
+        <value>
+            <statOffsets>
+                <Beauty>1</Beauty>
+                <Cleanliness>0.1</Cleanliness>
+            </statOffsets>
+        </value>
+    </Operation>
+
+    <!-- Patch the recipe -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef [defName="VFEC_Make_Bronze"]/label</xpath>
+        <value>
+            <label>Alloy cuprosteel</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef [defName="VFEC_Make_Bronze"]/description</xpath>
+        <value>
+            <description>Alloy cuprosteel from iron and copper.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef [defName="VFEC_Make_Bronze"]/jobString</xpath>
+        <value>
+            <jobString>Alloying cuprosteel.</jobString>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef [defName="VFEC_Make_Bronze"]/ingredients/li[filter/thingDefs/li[text()="Steel"]]/count</xpath>
+        <value>
+            <count>30</count>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef [defName="VFEC_Make_Bronze"]/ingredients/li[filter/thingDefs/li[text()="Steel"]]/filter/thingDefs/li[text()="Steel"]</xpath>
+        <value>
+            <li>EM_Iron</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef [defName="VFEC_Make_Bronze"]/ingredients/li[filter/categories/li[text()="StoneChunks"]]/count</xpath>
+        <value>
+            <count>1</count>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef [defName="VFEC_Make_Bronze"]/ingredients/li[filter/categories/li[text()="StoneChunks"]]/filter/categories</xpath>
+        <value>
+            <thingDefs>
+                <li>EM_Copper</li>
+            </thingDefs>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef [defName="VFEC_Make_Bronze"]/products/VFEC_Bronze</xpath>
+        <value>
+            <VFEC_Bronze>45</VFEC_Bronze>
+        </value>
+    </Operation>
+
+    <!-- Patch the ingredients list -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef [defName="VFEC_Make_Bronze"]/fixedIngredientFilter/thingDefs/li[text()="Steel"]</xpath>
+        <value>
+            <li>EM_Iron</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef [defName="VFEC_Make_Bronze"]/fixedIngredientFilter/thingDefs</xpath>
+        <value>
+            <li>EM_Copper</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef [defName="VFEC_Make_Bronze"]/fixedIngredientFilter/categories</xpath>
+    </Operation>
+
+    <!-- Move to the recipe to the new alloy furnaces -->
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef [defName="VFEC_Make_Bronze"]/recipeUsers/li[text()="FueledSmithy"]</xpath>
+        <value>
+            <li>EM_FueledAlloyFurnace</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef [defName="VFEC_Make_Bronze"]/recipeUsers/li[text()="ElectricSmithy"]</xpath>
+        <value>
+            <li>EM_ElectricAlloyFurnace</li>
+        </value>
+    </Operation>
+
+    <!-- Add the unfinished product -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef [defName="VFEC_Make_Bronze"]</xpath>
+        <value>
+            <unfinishedThingDef>EM_UnfinishedAlloy</unfinishedThingDef>
+        </value>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,11 @@
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="WoodLog"]]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li[text()="WoodLog"]]</xpath> <!-- This should be a war crime -->
+        <value>
+            <li>EM_Charcoal</li>
+            <li>EM_Coal</li>
+        </value>
+    </Operation>
+
+</Patch>

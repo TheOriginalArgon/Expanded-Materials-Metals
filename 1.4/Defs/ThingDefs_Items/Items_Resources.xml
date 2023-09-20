@@ -60,11 +60,6 @@
       <li>ResourcesRaw</li>
     </thingCategories>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <modExtensions>
-      <li Class="ExpandedMaterials.ThingDefExtension">
-        <fuelPower>1.7</fuelPower>
-      </li>
-    </modExtensions>
   </ThingDef>
 
   <!-- ================================ BASIC METALS ================================ -->
@@ -227,7 +222,7 @@
     <label>lead</label>
     <description>A heavy, dark gray-bluish metal that is malleable and soft. While it is not very suitable for weapons and armor due to its weight and low resistance, lead is a very useful metal. It is widely used as a chemical additive and to make industrial batteries. It is also an essential material in the weapon industry, being the main component of most bullets and ammunition. Lead is toxic to the human body, and can contaminate soil and food if it evaporates or burns. Lead poisoning can cause chemical damage to the kidneys and brain, and if not tended properly, death.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/VMEu_Lead</texPath>
+      <texPath>Things/Item/Resource/EM_LeadRaw</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
@@ -235,6 +230,7 @@
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
+      <ArgonicCore_FuelPower>2.75</ArgonicCore_FuelPower>
       <MarketValue>1.2</MarketValue>
       <Mass>0.9</Mass>
       <StuffPower_Armor_Sharp>0.45</StuffPower_Armor_Sharp>
@@ -350,7 +346,7 @@
       <Mass>0.005</Mass>
     </statBases>
     <thingCategories>
-      <li>ResourcesRaw</li>
+      <li>EM_SpecialMetals</li>
     </thingCategories>
     <stackLimit>500</stackLimit>
     <smallVolume>true</smallVolume>
@@ -358,7 +354,6 @@
     <deepCountPerPortion>120</deepCountPerPortion>
     <deepLumpSizeRange>8~15</deepLumpSizeRange>
     <burnableByRecipe>false</burnableByRecipe>
-    <smeltable>true</smeltable>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
 
@@ -478,7 +473,7 @@
     <description>A highly durable metal, Titanium is only passable for use in structures but makes
       for extremely durable weapons and armor.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/VMEu_Titanium</texPath>
+      <texPath>Things/Item/Resource/EM_Titanium</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
@@ -545,7 +540,7 @@
       <Mass>0.01</Mass>
     </statBases>
     <thingCategories>
-      <li>ResourcesRaw</li>
+      <li>EM_SpecialMetals</li>
     </thingCategories>
     <deepCommonality>1</deepCommonality>
     <deepCountPerPortion>40</deepCountPerPortion>
@@ -558,7 +553,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>EM_Silicon</defName>
     <label>silicon</label>
-    <description>text.todo</description>
+    <description>A silverish, brittle metal found scattered across planets. Despite its abundance, it does not occur pure as other minerals, finding it requires drilling for deep veins and processing certain types of rocks. Silicon is widely used as a mineral additive to various materials like mortars, porcelain or glass, but its most important implementation is as a semiconductor for microelectronics and integrated circuits.</description>
     <graphicData>
       <texPath>Things/Item/Resource/EM_Silicon</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -574,7 +569,7 @@
       <DeteriorationRate>0.3</DeteriorationRate>
     </statBases>
     <thingCategories>
-      <li>ResourcesRaw</li>
+      <li>EM_SpecialMetals</li>
     </thingCategories>
     <deepCommonality>2</deepCommonality>
     <deepCountPerPortion>40</deepCountPerPortion>
