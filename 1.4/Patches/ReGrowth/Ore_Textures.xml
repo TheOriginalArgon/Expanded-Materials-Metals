@@ -1,0 +1,17 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <mods>
+            <li>ReGrowth: Core</li>
+        </mods>
+        <label>Use ReGrowth ore vein textures:</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="MineableCoal" or defName="MineableIron" or defName="MineableLead" or defName="MineableTin" or defName="MineableCopper" or defName="MineableTitanium"]/graphicData/texPath</xpath>
+                <value>
+                    <texPath>Things/Building/Linked/RG_RockFlecked_Atlas</texPath>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

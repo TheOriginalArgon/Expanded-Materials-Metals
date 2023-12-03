@@ -35,7 +35,7 @@
     <RecipeDef ParentName="AlloyBase">
         <defName>EM_AlloyMildSteel</defName>
         <label>alloy mild steel</label>
-        <description>text.todo</description>
+        <description>Alloy mild steel from iron and carbon</description>
         <jobString>Alloying mild steel.</jobString>
         <workAmount>2200</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -73,7 +73,7 @@
     <RecipeDef ParentName="AlloyBase">
         <defName>EM_AlloyMildSteel_Downgrade</defName>
         <label>alloy mild steel</label>
-        <description>text.todo</description>
+        <description>Alloy mild steel by mixing steel and tin</description>
         <jobString>Alloying mild steel.</jobString>
         <workAmount>2200</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -110,7 +110,7 @@
     <RecipeDef ParentName="AlloyBase">
         <defName>EM_AlloySteel</defName>
         <label>alloy steel</label>
-        <description>text.todo</description>
+        <description>Alloy steel from iron and carbon</description>
         <jobString>Alloying steel.</jobString>
         <workAmount>3100</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -149,7 +149,7 @@
     <RecipeDef ParentName="AlloyBase">
         <defName>EM_AlloyTemperedSteel_Chemfuel</defName>
         <label>alloy tempered steel</label>
-        <description>text.todo</description>
+        <description>Enhance steel with chemfuel</description>
         <jobString>Alloying tempered steel.</jobString>
         <workAmount>3900</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -185,7 +185,7 @@
     <RecipeDef ParentName="AlloyBase">
         <defName>EM_AlloyTemperedSteel_Wood</defName>
         <label>alloy tempered steel</label>
-        <description>text.todo</description>
+        <description>Enhance steel with organic oils</description>
         <jobString>Alloying tempered steel.</jobString>
         <workAmount>3900</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -222,7 +222,7 @@
     <RecipeDef ParentName="AlloyBase">
         <defName>EM_AlloyBronze</defName>
         <label>alloy bronze</label>
-        <description>text.todo</description>
+        <description>Alloy bronze from copper and tin</description>
         <jobString>Alloying bronze.</jobString>
         <workAmount>2000</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -257,7 +257,7 @@
     <RecipeDef ParentName="AlloyBase">
         <defName>EM_AlloyBronze_LowQuality</defName>
         <label>alloy bronze (low quality)</label>
-        <description>text.todo</description>
+        <description>Alloy bronze from copper and tin</description>
         <jobString>Alloying bronze.</jobString>
         <workAmount>2000</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -293,7 +293,7 @@
     <RecipeDef ParentName="AlloyBase">
         <defName>EM_AlloyStainlessSteel</defName>
         <label>alloy stainless steel</label>
-        <description>text.todo</description>
+        <description>Sterilize steel with silver and tin</description>
         <jobString>Alloying stainless steel.</jobString>
         <workAmount>3700</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -340,7 +340,7 @@
     <RecipeDef ParentName="AlloyBase">
         <defName>EM_AlloyStainlessSteel_LowQuality</defName>
         <label>alloy stainless steel (low quality)</label>
-        <description>text.todo</description>
+        <description>Sterilize steel with tin</description>
         <jobString>Alloying stainless steel.</jobString>
         <workAmount>3700</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -381,7 +381,7 @@
     <RecipeDef ParentName="AlloyBase">
         <defName>EM_AlloyMildSteel_Bulk</defName>
         <label>alloy mild steel (bulk)</label>
-        <description>text.todo</description>
+        <description>Alloy mild steel with iron and carbon</description>
         <jobString>Alloying mild steel.</jobString>
         <workAmount>6200</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -420,7 +420,7 @@
     <RecipeDef ParentName="AlloyBase">
         <defName>EM_AlloySteel_Bulk</defName>
         <label>alloy steel (bulk)</label>
-        <description>text.todo</description>
+        <description>Alloy steel with iron and carbon</description>
         <jobString>Alloying steel.</jobString>
         <workAmount>9100</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -459,7 +459,7 @@
     <RecipeDef ParentName="AlloyBase">
         <defName>EM_AlloyTemperedSteel_Chemfuel_Bulk</defName>
         <label>alloy tempered steel (bulk)</label>
-        <description>text.todo</description>
+        <description>Enhance steel with chemfuel</description>
         <jobString>Alloying tempered steel.</jobString>
         <workAmount>11000</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -495,7 +495,7 @@
     <RecipeDef ParentName="AlloyBase">
         <defName>EM_AlloyTemperedSteel_Wood_Bulk</defName>
         <label>alloy tempered steel (bulk)</label>
-        <description>text.todo</description>
+        <description>Enhance steel with organic oils</description>
         <jobString>Alloying tempered steel.</jobString>
         <workAmount>11000</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -532,7 +532,7 @@
     <RecipeDef ParentName="AlloyBase">
         <defName>EM_AlloyBronze_Bulk</defName>
         <label>alloy bronze (bulk)</label>
-        <description>text.todo</description>
+        <description>Alloy bronze with copper and tin</description>
         <jobString>Alloying bronze.</jobString>
         <workAmount>5800</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -568,7 +568,7 @@
     <RecipeDef ParentName="AlloyBase">
         <defName>EM_AlloyStainlessSteel_Bulk</defName>
         <label>alloy stainless steel (bulk)</label>
-        <description>text.todo</description>
+        <description>Sterilize steel with silver and tin</description>
         <jobString>Alloying stainless steel.</jobString>
         <workAmount>10600</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -629,7 +629,7 @@
     <RecipeDef ParentName="ReverseAlloyBase">
         <defName>EM_ReverseAlloy_IronFromMildSteel</defName>
         <label>extract iron from mild steel</label>
-        <description>text.todo</description>
+        <description>Smelt mild steel to recover small amounts of iron</description>
         <jobString>Extracting iron from metals.</jobString>
         <workAmount>4000</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -656,7 +656,7 @@
     <RecipeDef ParentName="ReverseAlloyBase">
         <defName>EM_ReverseAlloy_IronFromSteel</defName>
         <label>extract iron from steel</label>
-        <description>text.todo</description>
+        <description>Smelt steel to recover small amounts of iron</description>
         <jobString>Extracting iron from metals.</jobString>
         <workAmount>4500</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -692,7 +692,7 @@
     <RecipeDef ParentName="ReverseAlloyBase">
         <defName>EM_ReverseAlloy_CopperFromBronze</defName>
         <label>extract copper from bronze</label>
-        <description>text.todo</description>
+        <description>Smelt bronze to recover small amounts of copper</description>
         <jobString>Extracting copper from metals.</jobString>
         <workAmount>4000</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -718,7 +718,7 @@
     <RecipeDef ParentName="ReverseAlloyBase">
         <defName>EM_ReverseAlloy_TinFromBronze</defName>
         <label>extract tin from bronze</label>
-        <description>text.todo</description>
+        <description>Smelt bronze to recover small amounts of tin</description>
         <jobString>Extracting tin from metals.</jobString>
         <workAmount>4700</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -745,7 +745,7 @@
     <RecipeDef ParentName="ReverseAlloyBase">
         <defName>EM_ReverseAlloy_SteelFromStainlessSteel</defName>
         <label>extract steel from stainless steel</label>
-        <description>text.todo</description>
+        <description>Smelt stainless steel to recover small amounts of steel</description>
         <jobString>Extracting steel from metals.</jobString>
         <workAmount>4200</workAmount> <!-- Placeholder -->
         <ingredients>
@@ -771,7 +771,7 @@
     <RecipeDef ParentName="ReverseAlloyBase">
         <defName>EM_ReverseAlloy_SilverFromStainlessSteel</defName>
         <label>extract silver from stainless steel</label>
-        <description>text.todo</description>
+        <description>Smelt stainless steel to recover small amounts of silver.</description>
         <jobString>Extracting silver from metals.</jobString>
         <workAmount>5700</workAmount> <!-- Placeholder -->
         <ingredients>

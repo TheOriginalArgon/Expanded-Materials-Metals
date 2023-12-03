@@ -214,6 +214,11 @@
       </statFactors>
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <modExtensions>
+      <li Class="VFECore.StuffExtension">
+        <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- Lead -->
@@ -271,6 +276,13 @@
       </statFactors>
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <modExtensions>
+      <li Class="VFECore.StuffExtension">
+        <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
+        <weaponGenerationCommonalityFactor>0</weaponGenerationCommonalityFactor>
+        <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- Bronze  -->
@@ -326,6 +338,13 @@
       </statOffsets>
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <modExtensions>
+      <li Class="VFECore.StuffExtension">
+        <structureGenerationCommonalityFactor>0.15</structureGenerationCommonalityFactor>
+        <weaponGenerationCommonalityFactor>0.15</weaponGenerationCommonalityFactor>
+        <apparelGenerationCommonalityFactor>0.15</apparelGenerationCommonalityFactor>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- Tin -->
@@ -411,6 +430,13 @@
       </statFactors>
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <modExtensions>
+      <li Class="VFECore.StuffExtension">
+        <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
+        <weaponGenerationCommonalityFactor>0</weaponGenerationCommonalityFactor>
+        <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- Stainless Steel -->
@@ -464,6 +490,13 @@
       </statOffsets>
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <modExtensions>
+      <li Class="VFECore.StuffExtension">
+        <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
+        <weaponGenerationCommonalityFactor>0</weaponGenerationCommonalityFactor>
+        <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- Titanium -->
@@ -519,6 +552,13 @@
       </statFactors>
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <modExtensions>
+      <li Class="VFECore.StuffExtension">
+        <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
+        <weaponGenerationCommonalityFactor>0.15</weaponGenerationCommonalityFactor>
+        <apparelGenerationCommonalityFactor>0.2</apparelGenerationCommonalityFactor>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- Germanium -->

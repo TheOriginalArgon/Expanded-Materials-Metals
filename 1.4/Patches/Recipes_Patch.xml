@@ -44,6 +44,13 @@
 
     <!-- ================================ VANILLA RECIPES PATCH: PROSTHETICS & BIONICS ================================ -->
 
+    <!-- These are toggable operations provided by Vanilla Expanded Framework.
+        These hold the purpose of letting players decide whether or not they want to enable these cost replacements. -->
+
+    <!-- These recipes also use a custom patch operation that splits the cost of a given resource into two costs, adding a new resource to the recipe
+        and attempting to keep the numbers relatively round. The patch is set to catch a wide arrangement of defs, mostly thought to work well with
+        Vanilla Expanded series. -->
+
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
         <label>Add stainless steel to vanilla prosthetics</label>
