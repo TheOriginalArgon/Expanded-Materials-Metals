@@ -1,17 +1,57 @@
 <Patch>
 
-    <!-- Do not generate steel in mountains -->
-    <!-- <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/ThingDef [defName = "MineableSteel"]/building</xpath>
-        <value>
-            <building>
-                <mineableScatterCommonality>0</mineableScatterCommonality>
-                <mineableScatterLumpSizeRange>1~2</mineableScatterLumpSizeRange>
-            </building>
-        </value>
-    </Operation> -->
+    <!-- Remove steel generation -->
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Remove vanilla steel generation:</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName="MineableSteel"]/building/mineableScatterCommonality</xpath>
+                <value>
+                    <mineableScatterCommonality>0</mineableScatterCommonality>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName="MineableSteel"]/building/mineableLumpSizeRange</xpath>
+                <value>
+                    <mineableLumpSizeRange>0~1</mineableLumpSizeRange>
+                </value>
+            </li>
+        </operations>
+    </Operation>
 
-    <!-- Do not generate steel underground -->
+    <!-- Remove components generation -->
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Remove vanilla components generation:</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName="MineableComponentsIndustrial"]/building/mineableScatterCommonality</xpath>
+                <value>
+                    <mineableScatterCommonality>0</mineableScatterCommonality>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName="MineableComponentsIndustrial"]/building/mineableLumpSizeRange</xpath>
+                <value>
+                    <mineableLumpSizeRange>0~1</mineableLumpSizeRange>
+                </value>
+            </li>
+        </operations>
+    </Operation>
 
+    <!-- Change mineable steel drop to mild steel -->
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Mineable steel yields mild steel:</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName="MineableSteel"]/building/mineableThing</xpath>
+                <value>
+                    <mineableThing>EM_MildSteel</mineableThing>
+                </value>
+            </li>
+        </operations>
+    </Operation>
 
 </Patch>
