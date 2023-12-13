@@ -12,7 +12,7 @@
     <!-- Optional patch to disable refueling with steel -->
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>false</enabled>
-        <label>Turrets can only be refueled with lead.</label>
+        <label>Turrets can only be refueled with lead:</label>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>/Defs/ThingDef [defName="Turret_MiniTurret"]/comps/li [@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>

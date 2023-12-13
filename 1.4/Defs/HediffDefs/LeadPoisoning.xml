@@ -3,19 +3,20 @@
     <HediffDef ParentName="ChronicDiseaseBase">
         <defName>EM_LeadPoisoning</defName>
         <label>lead poisoning</label>
-        <labelNoun>a bad back</labelNoun>
-        <description>text.todo</description>
+        <labelNoun>lead poisoning</labelNoun>
+        <description>Contamination in the body caused by exposure to lead. It slowly accumulates through time and cannot be cured easily or using conventional medicine. Lead poisoning happens when a person accidentally ingested or inhaled lead through different means; it can be due to consuming contaminated food or inhaling vapors produced by this metal when melted or used as a chemical additive.\nHigher levels of lead in the bloodstream can cause severe health issues and eventually death.</description>
         <defaultLabelColor>(0.4, 0.5, 0.6)</defaultLabelColor>
         <stages>
 
             <!-- Stage 1: Hidden -->
             <li>
+                <minSeverity>0.03</minSeverity>
                 <becomeVisible>false</becomeVisible>
                 <vomitMtbDays>10.0</vomitMtbDays>
                 <hediffGivers>
                     <li Class="HediffGiver_Random">
                         <hediff>EM_LeadPoisoning_StageOne</hediff>
-                        <mtbDays>10</mtbDays>
+                        <mtbDays>17</mtbDays>
                     </li>
                 </hediffGivers>
             </li>
@@ -28,7 +29,7 @@
                 <hediffGivers>
                     <li Class="HediffGiver_Random">
                         <hediff>EM_LeadPoisoning_StageTwo</hediff>
-                        <mtbDays>8</mtbDays>
+                        <mtbDays>12</mtbDays>
                     </li>
                 </hediffGivers>
             </li>
@@ -48,7 +49,7 @@
                     </li>
                     <li Class="HediffGiver_Random">
                         <hediff>EM_LeadPoisoning_StageThree</hediff>
-                        <mtbDays>8</mtbDays>
+                        <mtbDays>10</mtbDays>
                     </li>
                 </hediffGivers>
             </li>
@@ -82,7 +83,7 @@
                     </li>
                     <li Class="HediffGiver_Random">
                         <hediff>EM_LeadPoisoning_StageFour</hediff>
-                        <mtbDays>8</mtbDays>
+                        <mtbDays>10</mtbDays>
                     </li>
                 </hediffGivers>
             </li>
@@ -130,7 +131,7 @@
                     </li>
                     <li Class="HediffGiver_Random">
                         <hediff>EM_LeadPoisoning_StageFive</hediff>
-                        <mtbDays>6</mtbDays>
+                        <mtbDays>9</mtbDays>
                     </li>
                 </hediffGivers>
             </li>
@@ -178,7 +179,7 @@
                     </li>
                     <li Class="HediffGiver_Random">
                         <hediff>EM_LeadPoisoning_StageSix</hediff>
-                        <mtbDays>4</mtbDays>
+                        <mtbDays>8</mtbDays>
                     </li>
                 </hediffGivers>
             </li>
@@ -226,7 +227,7 @@
                     </li>
                     <li Class="HediffGiver_Random">
                         <hediff>EM_LeadPoisoning_StageSeven</hediff>
-                        <mtbDays>3</mtbDays>
+                        <mtbDays>5</mtbDays>
                     </li>
                 </hediffGivers>
             </li>
@@ -239,11 +240,14 @@
         <defName>EM_LeadPoisoning_StageOne</defName>
         <label>physical discomfort (lead poisoning)</label>
         <labelNoun>general physical discomfort</labelNoun>
-        <description>text.todo</description>
+        <description>Generalized body malfunctioning caused by lead poisoning. Higher levels of lead poisoning produce worse symptoms.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <comps>
             <li Class="HediffCompProperties_Disappears">
                 <disappearsAfterTicks>8750~15000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_Discoverable">
+                <sendLetterWhenDiscovered>false</sendLetterWhenDiscovered>
             </li>
         </comps>
         <stages>
@@ -258,11 +262,14 @@
         <defName>EM_LeadPoisoning_StageTwo</defName>
         <label>physical discomfort (lead poisoning)</label>
         <labelNoun>general physical discomfort</labelNoun>
-        <description>text.todo</description>
+        <description>Generalized body malfunctioning caused by lead poisoning. Higher levels of lead poisoning produce worse symptoms.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <comps>
             <li Class="HediffCompProperties_Disappears">
                 <disappearsAfterTicks>60000~120000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_Discoverable">
+                <sendLetterWhenDiscovered>false</sendLetterWhenDiscovered>
             </li>
         </comps>
         <stages>
@@ -283,11 +290,14 @@
         <defName>EM_LeadPoisoning_StageThree</defName>
         <label>physical discomfort (lead poisoning)</label>
         <labelNoun>general physical discomfort</labelNoun>
-        <description>text.todo</description>
+        <description>Generalized body malfunctioning caused by lead poisoning. Higher levels of lead poisoning produce worse symptoms.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <comps>
             <li Class="HediffCompProperties_Disappears">
                 <disappearsAfterTicks>60000~180000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_Discoverable">
+                <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
             </li>
             <li Class="HediffCompProperties_SkillDecay">
                 <decayPerDayPercentageLevelCurve>
@@ -329,11 +339,14 @@
         <defName>EM_LeadPoisoning_StageFour</defName>
         <label>physical discomfort (lead poisoning)</label>
         <labelNoun>general physical discomfort</labelNoun>
-        <description>text.todo</description>
+        <description>Generalized body malfunctioning caused by lead poisoning. Higher levels of lead poisoning produce worse symptoms.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <comps>
             <li Class="HediffCompProperties_Disappears">
                 <disappearsAfterTicks>120000~180000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_Discoverable">
+                <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
             </li>
             <li Class="HediffCompProperties_SkillDecay">
                 <decayPerDayPercentageLevelCurve>
@@ -380,11 +393,14 @@
         <defName>EM_LeadPoisoning_StageFive</defName>
         <label>physical discomfort (lead poisoning)</label>
         <labelNoun>general physical discomfort</labelNoun>
-        <description>text.todo</description>
+        <description>Generalized body malfunctioning caused by lead poisoning. Higher levels of lead poisoning produce worse symptoms.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <comps>
             <li Class="HediffCompProperties_Disappears">
                 <disappearsAfterTicks>180000~240000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_Discoverable">
+                <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
             </li>
             <li Class="HediffCompProperties_SkillDecay">
                 <decayPerDayPercentageLevelCurve>
@@ -431,11 +447,14 @@
         <defName>EM_LeadPoisoning_StageSix</defName>
         <label>physical discomfort (lead poisoning)</label>
         <labelNoun>general physical discomfort</labelNoun>
-        <description>text.todo</description>
+        <description>Generalized body malfunctioning caused by lead poisoning. Higher levels of lead poisoning produce worse symptoms.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <comps>
             <li Class="HediffCompProperties_Disappears">
                 <disappearsAfterTicks>180000~300000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_Discoverable">
+                <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
             </li>
             <li Class="HediffCompProperties_SkillDecay">
                 <decayPerDayPercentageLevelCurve>
@@ -482,11 +501,14 @@
         <defName>EM_LeadPoisoning_StageSeven</defName>
         <label>physical discomfort (lead poisoning)</label>
         <labelNoun>general physical discomfort</labelNoun>
-        <description>text.todo</description>
+        <description>Generalized body malfunctioning caused by lead poisoning. Higher levels of lead poisoning produce worse symptoms.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <comps>
             <li Class="HediffCompProperties_Disappears">
                 <disappearsAfterTicks>300000~420000</disappearsAfterTicks>
+            </li>
+            <li Class="HediffCompProperties_Discoverable">
+                <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
             </li>
             <li Class="HediffCompProperties_SkillDecay">
                 <decayPerDayPercentageLevelCurve>

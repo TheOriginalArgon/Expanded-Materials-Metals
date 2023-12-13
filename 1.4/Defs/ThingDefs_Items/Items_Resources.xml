@@ -180,12 +180,12 @@
     <statBases>
       <MarketValue>2</MarketValue>
       <Mass>0.5</Mass>
-      <StuffPower_Armor_Sharp>0.95</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Sharp>1.03</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
       <StuffPower_Armor_Heat>0.62</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
-      <BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
       <SharpDamageMultiplier>1.05</SharpDamageMultiplier>
     </statBases>
     <useHitPoints>false</useHitPoints>
@@ -516,13 +516,13 @@
     <statBases>
       <MarketValue>7.8</MarketValue>
       <Mass>0.55</Mass>
-      <StuffPower_Armor_Sharp>1.15</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.62</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.7</StuffPower_Armor_Heat>
+      <StuffPower_Armor_Sharp>1.09</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.65</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
-      <SharpDamageMultiplier>1.02</SharpDamageMultiplier>
-      <BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+      <SharpDamageMultiplier>1.07</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.32</BluntDamageMultiplier>
     </statBases>
     <thingCategories>
       <li>ResourcesRaw</li>
@@ -544,11 +544,11 @@
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
       <statFactors>
-        <MaxHitPoints>2.6</MaxHitPoints>
+        <MaxHitPoints>2.7</MaxHitPoints>
         <Beauty>1</Beauty>
         <Flammability>0</Flammability>
         <WorkToMake>2.2</WorkToMake>
-        <WorkToBuild>2.2</WorkToBuild>
+        <WorkToBuild>2</WorkToBuild>
       </statFactors>
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>

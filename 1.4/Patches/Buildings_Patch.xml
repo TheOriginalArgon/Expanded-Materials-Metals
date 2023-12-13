@@ -5,7 +5,7 @@
     <!-- Replace steel with copper in power conduits -->
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>Power conduits made of copper</label>
+        <label>Power conduits made of copper:</label>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef [defName="PowerConduit"]/costList/Steel</xpath>

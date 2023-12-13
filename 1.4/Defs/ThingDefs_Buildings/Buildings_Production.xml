@@ -139,7 +139,7 @@
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
                 <shortCircuitInRain>true</shortCircuitInRain>
-                <basePowerConsumption>340</basePowerConsumption>
+                <basePowerConsumption>600</basePowerConsumption>
             </li>
             <li Class="CompProperties_Glower">
                 <glowRadius>3</glowRadius>
