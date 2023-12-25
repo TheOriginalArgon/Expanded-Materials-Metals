@@ -10,6 +10,14 @@
         </value>
     </Operation>
 
+    <!-- Add mild steel -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef [defName="Make_ComponentIndustrial"]/ingredients/li[filter/thingDefs/li[text()="Steel"]]/filter/thingDefs</xpath>
+        <value>
+            <li>EM_MildSteel</li>
+        </value>
+    </Operation>
+
     <!-- Add copper and tin -->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/RecipeDef [defName="Make_ComponentIndustrial"]/ingredients</xpath>
@@ -55,7 +63,7 @@
         <enabled>true</enabled>
         <label>Add stainless steel to vanilla prosthetics</label>
         <operations>
-            <li Class="ExpandedMaterialsMetals.PatchOperationDistributeCost">
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
                 <xpath>/Defs/ThingDef [@ParentName="BodyPartProstheticMakeableBase" or @ParentName="BodyPartProstheticImperialBase"]/costList/Steel</xpath>
                 <newMaterial>EM_StainlessSteel</newMaterial>
                 <splitMode>small</splitMode>
@@ -67,7 +75,7 @@
         <enabled>true</enabled>
         <label>Add titanium to vanilla bionics</label>
         <operations>
-            <li Class="ExpandedMaterialsMetals.PatchOperationDistributeCost">
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
                 <xpath>/Defs/ThingDef [@ParentName="BodyPartBionicBase" or @ParentName="BodyPartBionicImperialBase"]/costList/Plasteel</xpath>
                 <newMaterial>EM_Titanium</newMaterial>
                 <splitMode>small</splitMode>
@@ -81,7 +89,7 @@
         <enabled>true</enabled>
         <label>Add stainless steel to vanilla weapons</label>
         <operations>
-            <li Class="ExpandedMaterialsMetals.PatchOperationDistributeCost">
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
                 <xpath>/Defs/ThingDef [@ParentName="BaseHumanMakeableGun" and recipeMaker/researchPrerequisite!="Gunsmithing"]/costList/Steel</xpath>
                 <newMaterial>EM_StainlessSteel</newMaterial>
                 <splitMode>small</splitMode>

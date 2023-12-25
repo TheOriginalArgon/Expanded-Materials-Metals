@@ -207,6 +207,7 @@
                 <filter>
                     <thingDefs>
                         <li>Steel</li>
+                        <li>EM_MildSteel</li>
                     </thingDefs>
                 </filter>
                 <count>8</count>
@@ -231,6 +232,7 @@
         <fixedIngredientFilter>
             <thingDefs>
                 <li>Steel</li>
+                <li>EM_MildSteel</li>
                 <li>EM_Copper</li>
                 <li>EM_Lead</li>
             </thingDefs>

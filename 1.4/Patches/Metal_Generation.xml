@@ -12,9 +12,9 @@
                 </value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/ThingDef [defName="MineableSteel"]/building/mineableLumpSizeRange</xpath>
+                <xpath>/Defs/ThingDef [defName="MineableSteel"]/building/mineableScatterLumpSizeRange</xpath>
                 <value>
-                    <mineableLumpSizeRange>0~1</mineableLumpSizeRange>
+                    <mineableScatterLumpSizeRange>0~1</mineableScatterLumpSizeRange>
                 </value>
             </li>
         </operations>
@@ -32,9 +32,9 @@
                 </value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/ThingDef [defName="MineableComponentsIndustrial"]/building/mineableLumpSizeRange</xpath>
+                <xpath>/Defs/ThingDef [defName="MineableComponentsIndustrial"]/building/mineableScatterLumpSizeRange</xpath>
                 <value>
-                    <mineableLumpSizeRange>0~1</mineableLumpSizeRange>
+                    <mineableScatterLumpSizeRange>0~1</mineableScatterLumpSizeRange>
                 </value>
             </li>
         </operations>
