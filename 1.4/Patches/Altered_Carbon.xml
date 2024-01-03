@@ -2,7 +2,7 @@
 
 <Operation Class="PatchOperationFindMod">
     <mods>
-        <li>Ultratech: Altered Carbon Remastered</li>
+        <li>Altered Carbon</li>
     </mods>
     <match Class="PatchOperationSequence">
         <success>Always</success>
@@ -10,95 +10,55 @@
 
             <!-- Sleeve Incubator -->
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/ThingDef [defName = "UT_SleeveIncubator"]/costList/Steel</xpath>
+                <xpath>/Defs/ThingDef [defName = "VFEU_SleeveIncubator"]/costList</xpath>
                 <value>
-                    <Steel>150</Steel>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>/Defs/ThingDef [defName = "UT_SleeveIncubator"]/costList/Plasteel</xpath>
-                <value>
-                    <Plasteel>100</Plasteel>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef [defName = "UT_SleeveIncubator"]/costList</xpath>
-                <value>
-                    <VMEu_Titanium>70</VMEu_Titanium>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef [defName = "UT_SleeveIncubator"]/costList</xpath>
-                <value>
-                    <VMEu_StainlessSteel>100</VMEu_StainlessSteel>
-                </value>
-            </li>
-
-            <!-- Organ Incubator -->
-            <li Class="PatchOperationReplace">
-                <xpath>/Defs/ThingDef [defName = "UT_OrganIncubator"]/costList/Steel</xpath>
-                <value>
-                    <Steel>40</Steel>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef [defName = "UT_OrganIncubator"]/costList</xpath>
-                <value>
-                    <VMEu_StainlessSteel>35</VMEu_StainlessSteel>
+                    <costList>
+                        <Steel>150</Steel>
+                        <Plasteel>50</Plasteel>
+                        <VMEu_Titanium>50</VMEu_Titanium>
+                        <VMEu_StainlessSteel>80</VMEu_StainlessSteel>
+                        <ComponentSpacer>3</ComponentSpacer>
+                    </costList>
                 </value>
             </li>
 
             <!-- Sleeve Casket -->
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/ThingDef [defName = "UT_SleeveCasket"]/costList/Steel</xpath>
+                <xpath>/Defs/ThingDef [defName = "VFEU_SleeveCasket"]/costList</xpath>
                 <value>
-                    <Steel>50</Steel>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef [defName = "UT_SleeveCasket"]/costList</xpath>
-                <value>
-                    <VMEu_StainlessSteel>30</VMEu_StainlessSteel>
+                    <costList>
+                        <Steel>75</Steel>
+                        <Plasteel>25</Plasteel>
+                        <VMEu_StainlessSteel>25</VMEu_StainlessSteel>
+                        <ComponentSpacer>2</ComponentSpacer>
+                    </costList>
                 </value>
             </li>
 
             <!-- Cortical Stack Storage -->
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/ThingDef [defName = "UT_CorticalStackStorage"]/costList/Steel</xpath>
+                <xpath>/Defs/ThingDef [defName = "AC_StackArray"]/costList/Steel</xpath>
                 <value>
-                    <Steel>150</Steel>
-                </value>
-            </li>
-            <li Class="PatchOperationReplace">
-                <xpath>/Defs/ThingDef [defName = "UT_CorticalStackStorage"]/costList/Plasteel</xpath>
-                <value>
-                    <Plasteel>80</Plasteel>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef [defName = "UT_CorticalStackStorage"]/costList</xpath>
-                <value>
-                    <VMEu_Titanium>60</VMEu_Titanium>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef [defName = "UT_CorticalStackStorage"]/costList</xpath>
-                <value>
-                    <VMEu_StainlessSteel>100</VMEu_StainlessSteel>
+                    <costList>
+                        <Steel>150</Steel>
+                        <Plasteel>100</Plasteel>
+                        <VMEu_StainlessSteel>100</VMEu_StainlessSteel>
+                        <VMEu_Titanium>50</VMEu_Titanium>
+                        <ComponentSpacer>12</ComponentSpacer>
+                    </costList>
                 </value>
             </li>
 
             <!-- Decryption Bench -->
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/ThingDef [defName = "UT_DecryptionBench"]/costList/Steel</xpath>
+                <xpath>/Defs/ThingDef [defName = "VFEU_DecryptionBench"]/costList/Steel</xpath>
                 <value>
-                    <Steel>120</Steel>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef [defName = "UT_DecryptionBench"]/costList</xpath>
-                <value>
-                    <VMEu_StainlessSteel>80</VMEu_StainlessSteel>
+                    <costList>
+                        <Steel>75</Steel>
+                        <Plasteel>50</Plasteel>
+                        <VMEu_StainlessSteel>25</VMEu_StainlessSteel>
+                        <ComponentSpacer>5</ComponentSpacer>
+                    </costList>
                 </value>
             </li>
 
