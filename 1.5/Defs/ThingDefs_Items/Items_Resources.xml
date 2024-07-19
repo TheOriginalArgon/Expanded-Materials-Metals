@@ -88,6 +88,7 @@
     </statBases>
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
+    <slagDef>EM_ChunkSlagIron</slagDef>
     <thingCategories>
       <li>ResourcesRaw</li>
     </thingCategories>
@@ -104,9 +105,10 @@
       <commonality>1.00</commonality>
       <constructEffect>ConstructMetal</constructEffect>
       <color>(143, 123, 109)</color>
-      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
       <statFactors>
         <MaxHitPoints>1</MaxHitPoints>
         <Beauty>1</Beauty>
@@ -140,6 +142,7 @@
     </statBases>
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
+    <slagDef>ChunkSlagSteel</slagDef>
     <thingCategories>
       <li>ResourcesRaw</li>
     </thingCategories>
@@ -153,9 +156,10 @@
       <commonality>1.00</commonality>
       <constructEffect>ConstructMetal</constructEffect>
       <color>(109, 105, 105)</color>
-      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
       <statFactors>
         <MaxHitPoints>1</MaxHitPoints>
         <Beauty>1</Beauty>
@@ -190,6 +194,7 @@
     </statBases>
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
+    <slagDef>ChunkSlagSteel</slagDef>
     <thingCategories>
       <li>ResourcesRaw</li>
     </thingCategories>
@@ -203,9 +208,10 @@
       <commonality>1.00</commonality>
       <constructEffect>ConstructMetal</constructEffect>
       <color>(100, 100, 102)</color>
-      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
       <statFactors>
         <MaxHitPoints>1.4</MaxHitPoints>
         <Beauty>1</Beauty>
@@ -246,6 +252,7 @@
       <BluntDamageMultiplier>1</BluntDamageMultiplier>
       <SharpDamageMultiplier>0.54</SharpDamageMultiplier>
     </statBases>
+    <slagDef>EM_ChunkSlagLead</slagDef>
     <thingCategories>
       <li>ResourcesRaw</li>
     </thingCategories>
@@ -262,9 +269,10 @@
       <commonality>0.08</commonality>
       <color>(126,136,148)</color>
       <constructEffect>ConstructMetal</constructEffect>
-      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
       <statFactors>
         <MaxHitPoints>0.75</MaxHitPoints>
         <Flammability>0.4</Flammability>
@@ -311,6 +319,7 @@
     <useHitPoints>false</useHitPoints>
     <tradeability>Buyable</tradeability>
     <healthAffectsPrice>false</healthAffectsPrice>
+    <slagDef>EM_ChunkSlagBronze</slagDef>
     <thingCategories>
       <li>ResourcesRaw</li>
     </thingCategories>
@@ -324,9 +333,10 @@
       <commonality>1.00</commonality>
       <constructEffect>ConstructMetal</constructEffect>
       <color>(176, 139, 101)</color>
-      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
       <statFactors>
         <MaxHitPoints>0.9</MaxHitPoints>
         <Beauty>1.1</Beauty>
@@ -340,7 +350,7 @@
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <modExtensions>
       <li Class="VFECore.StuffExtension">
-        <structureGenerationCommonalityFactor>0.15</structureGenerationCommonalityFactor>
+        <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
         <weaponGenerationCommonalityFactor>0.15</weaponGenerationCommonalityFactor>
         <apparelGenerationCommonalityFactor>0.15</apparelGenerationCommonalityFactor>
       </li>
@@ -418,9 +428,10 @@
       <color>(167, 98, 64)</color>
       <commonality>0.12</commonality>
       <constructEffect>ConstructMetal</constructEffect>
-      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
       <statFactors>
         <MaxHitPoints>0.75</MaxHitPoints>
         <Flammability>0.4</Flammability>
@@ -476,9 +487,10 @@
       <commonality>0.05</commonality>
       <constructEffect>ConstructMetal</constructEffect>
       <color>(111,124,145)</color>
-      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
       <statFactors>
         <MaxHitPoints>1</MaxHitPoints>
         <Beauty>1.25</Beauty>
@@ -540,9 +552,10 @@
       <commonality>0.05</commonality>
       <constructEffect>ConstructMetal</constructEffect>
       <color>(58,58,58)</color>
-      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
       <statFactors>
         <MaxHitPoints>2.7</MaxHitPoints>
         <Beauty>1</Beauty>

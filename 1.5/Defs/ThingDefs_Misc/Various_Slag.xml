@@ -1,0 +1,66 @@
+<Defs>
+
+    <ThingDef ParentName="ChunkBase">
+        <defName>EM_ChunkSlagIron</defName>
+        <label>iron slag chunk</label>
+        <description>A chunk of iron slag. While it's useless in its current form, it can be smelted to recover iron.</description>
+        <graphicData>
+            <texPath>Things/Item/Chunk/EM_IronSlag</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>8</Mass>
+        </statBases>
+        <soundDrop>ChunkSlag_Drop</soundDrop>
+        <thingCategories>
+            <li>Chunks</li>
+        </thingCategories>
+        <smeltable>true</smeltable>
+        <smeltProducts>
+            <EM_Iron>15</EM_Iron>
+        </smeltProducts>
+    </ThingDef>
+
+    <ThingDef ParentName="ChunkBase">
+        <defName>EM_ChunkSlagLead</defName>
+        <label>lead slag chunk</label>
+        <description>A chunk of lead slag. While it's useless in its current form, it can be smelted to recover lead.</description>
+        <graphicData>
+            <texPath>Things/Item/Chunk/EM_LeadSlag</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>8</Mass>
+        </statBases>
+        <soundDrop>ChunkSlag_Drop</soundDrop>
+        <thingCategories>
+            <li>Chunks</li>
+        </thingCategories>
+        <smeltable>true</smeltable>
+        <smeltProducts>
+            <EM_Lead>15</EM_Lead>
+        </smeltProducts>
+    </ThingDef>
+
+    <ThingDef ParentName="ChunkBase">
+        <defName>EM_ChunkSlagBronze</defName>
+        <label>bronze slag chunk</label>
+        <description>A chunk of bronze slag. While it's useless in its current form, it can be smelted to recover bronze.</description>
+        <graphicData>
+            <texPath>Things/Item/Chunk/EM_BronzeSlag</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>8</Mass>
+        </statBases>
+        <soundDrop>ChunkSlag_Drop</soundDrop>
+        <thingCategories>
+            <li>Chunks</li>
+        </thingCategories>
+        <smeltable>true</smeltable>
+        <smeltProducts>
+            <EM_Bronze>15</EM_Bronze>
+        </smeltProducts>
+    </ThingDef>
+
+</Defs>

@@ -623,7 +623,7 @@
         <modExtensions>
             <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_HediffOnFinish">
                 <hediff>EM_LeadPoisoning</hediff>
-                <severity>0.006</severity>
+                <severity>0.106</severity>
                 <chance>1</chance>
             </li>
         </modExtensions>

@@ -5,6 +5,7 @@
     <packageId>Argon.ExpandedMaterials.Metals</packageId>
     <supportedVersions>
         <li>1.4</li>
+        <li>1.5</li>
     </supportedVersions>
     <description>Realistic metals and construction, this mod is designed to make rimworld harder.</description>
     <modDependencies>

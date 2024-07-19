@@ -551,4 +551,39 @@
         </stages>
     </HediffDef>
 
+    <!-- Surgery recipe to treat lead poisoning. (Stored here because it's all in the same place) -->
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>EM_TreatLeadPoisoning</defName>
+        <label>treat lead poisoning</label>
+        <description>Treat lead poisoning.</description>
+        <workerClass>ArgonicCore.RecipeWorkers.Recipe_LowerSeverity</workerClass>
+        <removesHediff>EM_LeadPoisoning</removesHediff>
+        <jobString>Treating lead poisoning.</jobString>
+        <workAmount>5200</workAmount>
+        <recipeUsers>
+            <li>Human</li>
+        </recipeUsers>
+        <skillRequirements>
+            <Medicine>2</Medicine>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>4</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <disallowedThingDefs>
+                <li>MedicineHerbal</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
 </Defs>
