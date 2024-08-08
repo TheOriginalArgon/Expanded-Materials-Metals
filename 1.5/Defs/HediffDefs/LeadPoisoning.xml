@@ -557,6 +557,7 @@
         <label>treat lead poisoning</label>
         <description>Treat lead poisoning.</description>
         <workerClass>ArgonicCore.RecipeWorkers.Recipe_LowerSeverity</workerClass>
+        <targetsBodyPart>false</targetsBodyPart>
         <removesHediff>EM_LeadPoisoning</removesHediff>
         <jobString>Treating lead poisoning.</jobString>
         <workAmount>5200</workAmount>

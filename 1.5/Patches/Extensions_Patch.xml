@@ -1,36 +1,5 @@
 <Patch>
 
-    <!-- Material extension patches -->
-    <Operation Class="PatchOperationAddModExtension">
-        <xpath>Defs/ThingDef [defName = "Steel"]</xpath>
-        <value>
-            <li Class="ArgonicCore.ModExtensions.ThingDefExtension_InterchangableResource">
-                <interchangableWith>
-                    <li>EM_Iron</li>
-                    <li>EM_Bronze</li>
-                    <li>EM_MildSteel</li>
-                    <li>EM_TemperedSteel</li>
-                    <li MayRequire="OskarPotocki.VFE.Classical">VFEC_Bronze</li>
-                </interchangableWith>
-                <techLevels>
-                    <li>Medieval</li>
-                    <li>Neolithic</li>
-                    <li>Industrial</li>
-                    <li>Industrial</li>
-                    <li>Medieval</li>
-                </techLevels>
-                <costModifiers>
-                    <li>1.0</li>
-                    <li>1.2</li>
-                    <li>1.0</li>
-                    <li>0.9</li>
-                    <li>1.2</li>
-                </costModifiers>
-                <defaultThingDef>Steel</defaultThingDef>
-            </li>
-        </value>
-    </Operation>
-
     <!-- Steel resprite and recoloring -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef [defName = "Steel"]/graphicData/texPath</xpath>

@@ -31,4 +31,100 @@
         <researchPrerequisite>EM_OreExtraction</researchPrerequisite>
     </RecipeDef>
 
+    <RecipeDef>
+        <defName>EM_ExtractIronFromSlag</defName>
+        <label>smelt iron from slag</label>
+        <description>Use heat and strong electromagnets to extract useful iron from slag chunks.</description>
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <jobString>Smelting iron from slag.</jobString>
+        <workAmount>400</workAmount>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_ChunkSlagIron</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <EM_Iron>15</EM_Iron>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_ChunkSlagIron</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>EM_ExtractLeadFromSlag</defName>
+        <label>smelt lead from slag</label>
+        <description>Use heat and strong electromagnets to extract useful lead from slag chunks.</description>
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <jobString>Smelting iron from slag.</jobString>
+        <workAmount>400</workAmount>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_ChunkSlagLead</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <EM_Lead>15</EM_Lead>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_ChunkSlagLead</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>EM_ExtractBronzeFromSlag</defName>
+        <label>smelt bronze from slag</label>
+        <description>Use heat and strong electromagnets to extract useful bronze from slag chunks.</description>
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <jobString>Smelting bronze from slag.</jobString>
+        <workAmount>400</workAmount>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_ChunkSlagBronze</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <EM_Bronze>15</EM_Bronze>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>EM_ChunkSlagBronze</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
 </Defs>

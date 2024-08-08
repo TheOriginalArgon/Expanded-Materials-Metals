@@ -1,7 +1,7 @@
 <loadFolders>
-    <v1.4>
+    <v1.5>
         <li>/</li>
-        <li>1.4</li>
+        <li>1.5</li>
         <li IfModActive="OskarPotocki.VFE.Classical">ModPatches/VFE_Classical</li>
-    </v1.4>
+    </v1.5>
 </loadFolders>

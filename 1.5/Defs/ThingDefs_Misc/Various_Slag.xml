@@ -1,5 +1,11 @@
 <Defs>
 
+    <!-- All these slag have steel in their products because Rimworld is so well coded that this value is instead only
+     used to calculate the amount of slag left by a building that has been destroyed, it is actually never used to 
+     calculate the output of the smelting recipes.
+     
+     I know someday they will fix it and I'll have to come change this like an idiot. -->
+
     <ThingDef ParentName="ChunkBase">
         <defName>EM_ChunkSlagIron</defName>
         <label>iron slag chunk</label>
@@ -17,7 +23,8 @@
         </thingCategories>
         <smeltable>true</smeltable>
         <smeltProducts>
-            <EM_Iron>15</EM_Iron>
+            <!-- <EM_Iron>15</EM_Iron> -->
+            <Steel>15</Steel>
         </smeltProducts>
     </ThingDef>
 
@@ -38,7 +45,8 @@
         </thingCategories>
         <smeltable>true</smeltable>
         <smeltProducts>
-            <EM_Lead>15</EM_Lead>
+            <!-- <EM_Lead>15</EM_Lead> -->
+            <Steel>15</Steel>
         </smeltProducts>
     </ThingDef>
 
@@ -59,7 +67,8 @@
         </thingCategories>
         <smeltable>true</smeltable>
         <smeltProducts>
-            <EM_Bronze>15</EM_Bronze>
+            <!-- <EM_Bronze>15</EM_Bronze> -->
+            <Steel>15</Steel>
         </smeltProducts>
     </ThingDef>
 

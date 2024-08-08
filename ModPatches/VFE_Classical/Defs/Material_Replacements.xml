@@ -1,0 +1,11 @@
+<Defs>
+
+    <ArgonicCore.Defs.MaterialReplacementDef>
+        <defName>EM_Replacement_SteelWithCuprosteel</defName>
+        <materialToReplace>Steel</materialToReplace>
+        <replaceWith>VFEC_Bronze</replaceWith>
+        <maxTechLevel>Medieval</maxTechLevel>
+        <costModifier>1.2</costModifier>
+    </ArgonicCore.Defs.MaterialReplacementDef>
+
+</Defs>
