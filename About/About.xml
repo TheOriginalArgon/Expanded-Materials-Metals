@@ -7,7 +7,9 @@
         <li>1.4</li>
         <li>1.5</li>
     </supportedVersions>
-    <description>Realistic metals and construction, this mod is designed to make rimworld harder.</description>
+    <description>An expansion mod that adds multiple new metals to the game, expanding the production chain and making the game harder.</description>
+    <modVersion IgnoreIfNoMatchingField="True">0.1-Beta-1</modVersion>
+    <modIconPath IgnoreIfNoMatchingField="True">UI/EM_Logo</modIconPath>
     <modDependencies>
         <li>
             <packageId>Argon.CoreLib</packageId>
