@@ -1,46 +1,46 @@
 <Defs>
 
     <!-- ===== STEEL REPLACEMENTS ===== -->
-    <ArgonicCore.Defs.MaterialReplacementDef>
+    <MaterialReplacement.Defs.MaterialReplacementDef>
         <defName>EM_Replacement_SteelWithBronze</defName>
         <materialToReplace>Steel</materialToReplace>
         <replaceWith>EM_Bronze</replaceWith>
         <maxTechLevel>Medieval</maxTechLevel>
         <costModifier>1.25</costModifier>
-    </ArgonicCore.Defs.MaterialReplacementDef>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
 
-    <ArgonicCore.Defs.MaterialReplacementDef>
+    <MaterialReplacement.Defs.MaterialReplacementDef>
         <defName>EM_Replacement_SteelWithIron</defName>
         <materialToReplace>Steel</materialToReplace>
         <replaceWith>EM_Iron</replaceWith>
         <maxTechLevel>Medieval</maxTechLevel>
         <costModifier>1.1</costModifier>
-    </ArgonicCore.Defs.MaterialReplacementDef>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
 
-    <ArgonicCore.Defs.MaterialReplacementDef>
+    <MaterialReplacement.Defs.MaterialReplacementDef>
         <defName>EM_Replacement_SteelWithMildSteel</defName>
         <materialToReplace>Steel</materialToReplace>
         <replaceWith>EM_MildSteel</replaceWith>
         <maxTechLevel>Industrial</maxTechLevel>
         <costModifier>1.1</costModifier>
-    </ArgonicCore.Defs.MaterialReplacementDef>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
 
-    <ArgonicCore.Defs.MaterialReplacementDef>
+    <MaterialReplacement.Defs.MaterialReplacementDef>
         <defName>EM_Replacement_SteelWithTemperedSteel</defName>
         <materialToReplace>Steel</materialToReplace>
         <replaceWith>EM_TemperedSteel</replaceWith>
         <maxTechLevel>Spacer</maxTechLevel>
         <costModifier>0.9</costModifier>
-    </ArgonicCore.Defs.MaterialReplacementDef>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
 
     <!-- ===== PLASTEEL REPLACEMENTS ===== -->
 
-    <ArgonicCore.Defs.MaterialReplacementDef>
+    <MaterialReplacement.Defs.MaterialReplacementDef>
         <defName>EM_Replacement_PlasteelWithTitanium</defName>
         <materialToReplace>Plasteel</materialToReplace>
         <replaceWith>EM_Titanium</replaceWith>
         <maxTechLevel>Medieval</maxTechLevel>
         <costModifier>1.25</costModifier>
-    </ArgonicCore.Defs.MaterialReplacementDef>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
 
 </Defs>
