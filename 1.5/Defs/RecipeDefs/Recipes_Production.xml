@@ -192,7 +192,7 @@
     <RecipeDef>
         <defName>EM_Make_ComponentIndustrial_Steel_Lead</defName>
         <label>make component (lead)</label>
-        <description>Make a component.\n\n&lt;color=#D73333&gt;Warning:&lt;/color&gt; This recipe uses lead soldering instead of tin. It is much quicker but causes accumulative lead poisoning over time.</description>
+        <description>Make a component.</description>
         <jobString>Making component.</jobString>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <effectWorking>Cook</effectWorking>
@@ -245,19 +245,12 @@
         </skillRequirements>
         <workSkill>Crafting</workSkill>
         <displayPriority>0</displayPriority>
-        <modExtensions>
-            <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_HediffOnFinish">
-                <hediff>EM_LeadPoisoning</hediff>
-                <severity>0.001</severity>
-                <chance>0.9</chance>
-            </li>
-        </modExtensions>
     </RecipeDef>
 
     <RecipeDef>
         <defName>EM_Make_ComponentIndustrial_Iron_Lead</defName>
         <label>make component (lead)</label>
-        <description>Make a component.\n\n&lt;color=#D73333&gt;Warning:&lt;/color&gt; This recipe uses lead soldering instead of tin. It is much quicker but causes accumulative lead poisoning over time.</description>
+        <description>Make a component.</description>
         <jobString>Making component.</jobString>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <effectWorking>Cook</effectWorking>
@@ -308,19 +301,12 @@
         </skillRequirements>
         <workSkill>Crafting</workSkill>
         <displayPriority>0</displayPriority>
-        <modExtensions>
-            <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_HediffOnFinish">
-                <hediff>EM_LeadPoisoning</hediff>
-                <severity>0.001</severity>
-                <chance>0.9</chance>
-            </li>
-        </modExtensions>
     </RecipeDef>
 
     <RecipeDef>
         <defName>EM_Make_ComponentIndustrial_Bronze_Lead</defName>
         <label>make component (lead)</label>
-        <description>Make a component.\n\n&lt;color=#D73333&gt;Warning:&lt;/color&gt; This recipe uses lead soldering instead of tin. It is much quicker but causes accumulative lead poisoning over time.</description>
+        <description>Make a component.</description>
         <jobString>Making component.</jobString>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <effectWorking>Cook</effectWorking>
@@ -371,13 +357,6 @@
         </skillRequirements>
         <workSkill>Crafting</workSkill>
         <displayPriority>0</displayPriority>
-        <modExtensions>
-            <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_HediffOnFinish">
-                <hediff>EM_LeadPoisoning</hediff>
-                <severity>0.001</severity>
-                <chance>0.9</chance>
-            </li>
-        </modExtensions>
     </RecipeDef>
 
     <!-- Triple Components -->
@@ -534,7 +513,7 @@
     <RecipeDef>
         <defName>EM_Make_ChemfuelFromWood_Lead</defName>
         <label>make chemfuel from wood (lead)</label>
-        <description>Make a batch of lead-based chemfuel by extracting and condensing gas from wood logs.\n\n&lt;color=#D73333&gt;Warning:&lt;/color&gt; Lead makes for a higher yield but causes accumulative lead contamination over time.</description>
+        <description>Make a batch of lead-based chemfuel by extracting and condensing gas from wood logs.</description>
         <jobString>Refining chemfuel from coal.</jobString>
         <effectWorking>Cremate</effectWorking>
         <soundWorking>Recipe_Cremate</soundWorking>
@@ -570,19 +549,12 @@
         <products>
             <Chemfuel>45</Chemfuel>
         </products>
-        <modExtensions>
-            <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_HediffOnFinish">
-                <hediff>EM_LeadPoisoning</hediff>
-                <severity>0.006</severity>
-                <chance>1</chance>
-            </li>
-        </modExtensions>
     </RecipeDef>
 
     <RecipeDef>
         <defName>EM_Make_ChemfuelFromCoal_Lead</defName>
         <label>make chemfuel from coal (lead)</label>
-        <description>Make a batch of lead-based chemfuel by extracting and condensing gas from coal chunks.\n\n&lt;color=#D73333&gt;Warning:&lt;/color&gt; Lead makes for a higher yield but causes accumulative lead contamination over time.</description>
+        <description>Make a batch of lead-based chemfuel by extracting and condensing gas from coal chunks.</description>
         <jobString>Refining chemfuel from coal.</jobString>
         <effectWorking>Cremate</effectWorking>
         <soundWorking>Recipe_Cremate</soundWorking>
@@ -620,13 +592,6 @@
         <products>
             <Chemfuel>75</Chemfuel>
         </products>
-        <modExtensions>
-            <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_HediffOnFinish">
-                <hediff>EM_LeadPoisoning</hediff>
-                <severity>0.106</severity>
-                <chance>1</chance>
-            </li>
-        </modExtensions>
     </RecipeDef>
 
     <!-- =============================== ADVANCED COMPONENT RECIPES =============================== -->

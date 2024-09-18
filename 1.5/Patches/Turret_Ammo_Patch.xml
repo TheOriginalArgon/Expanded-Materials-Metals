@@ -3,7 +3,7 @@
     <!-- Turrets can be refueled with lead, which is also way more efficient -->
 
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef [defName="Turret_MiniTurret"]/comps/li [@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+        <xpath>/Defs/ThingDef [thingClass="Building_TurretGun" and comps/li [@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]]/comps/li [@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
         <value>
             <li>EM_Lead</li>
         </value>
@@ -15,7 +15,7 @@
         <label>Turrets can only be refueled with lead:</label>
         <operations>
             <li Class="PatchOperationRemove">
-                <xpath>/Defs/ThingDef [defName="Turret_MiniTurret"]/comps/li [@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+                <xpath>/Defs/ThingDef [thingClass="Building_TurretGun" and comps/li [@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]]/comps/li [@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
             </li>
         </operations>
     </Operation>

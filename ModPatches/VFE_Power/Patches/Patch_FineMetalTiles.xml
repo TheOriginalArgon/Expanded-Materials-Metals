@@ -1,0 +1,46 @@
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Architect</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <TerrainDef ParentName="FineMetalTileBase">
+                            <defName>EM_FineBronzeTile</defName>
+                            <label>fine bronze tile</label>
+                            <renderPrecedence>250</renderPrecedence>
+                            <color>(0.69, 0.54, 0.39)</color>
+                            <statBases>
+                                <Beauty>5</Beauty>
+                                <WorkToBuild>800</WorkToBuild>
+                                <Cleanliness>0.2</Cleanliness>
+                            </statBases>
+                            <costList>
+                                <EM_Bronze>20</EM_Bronze>
+                            </costList>
+                        </TerrainDef>
+                        <TerrainDef ParentName="FineMetalTileBase">
+                            <defName>EM_FineCopperTile</defName>
+                            <label>fine copper tile</label>
+                            <renderPrecedence>251</renderPrecedence>
+                            <color>(0.65, 0.38, 0.25)</color>
+                            <statBases>
+                                <Beauty>3</Beauty>
+                                <WorkToBuild>800</WorkToBuild>
+                                <Cleanliness>0.2</Cleanliness>
+                            </statBases>
+                            <costList>
+                                <EM_Copper>150</EM_Copper>
+                            </costList>
+                        </TerrainDef>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

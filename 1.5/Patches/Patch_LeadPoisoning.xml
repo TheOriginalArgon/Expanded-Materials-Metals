@@ -1,0 +1,48 @@
+<Patch>
+
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Enable lead recipes causing lead poisoning:</label>
+        <operations>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/RecipeDef [defName="EM_Make_ComponentIndustrial_Steel_Lead" or defName="EM_Make_ComponentIndustrial_Iron_Lead" or defName="EM_Make_ComponentIndustrial_Bronze_Lead"]</xpath>
+                <value>
+                    <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_HediffOnFinish">
+                        <hediff>EM_LeadPoisoning</hediff>
+                        <severity>0.001</severity>
+                        <chance>0.9</chance>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef [defName="EM_Make_ComponentIndustrial_Steel_Lead" or defName="EM_Make_ComponentIndustrial_Iron_Lead" or defName="EM_Make_ComponentIndustrial_Bronze_Lead"]/description</xpath>
+                <value>
+                    <description>Make a component.\n\n&lt;color=#D73333&gt;Warning:&lt;/color&gt; This recipe uses lead soldering instead of tin. It is much quicker but causes accumulative lead poisoning over time.</description>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef [defName="EM_Make_ChemfuelFromWood_Lead"]/description</xpath>
+                <value>
+                    <description>Make a batch of lead-based chemfuel by extracting and condensing gas from wood logs.\n\n&lt;color=#D73333&gt;Warning:&lt;/color&gt; Lead makes for a higher yield but causes accumulative lead contamination over time.</description>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef [defName="EM_Make_ChemfuelFromCoal_Lead"]/description</xpath>
+                <value>
+                    <description>Make a batch of lead-based chemfuel by extracting and condensing gas from coal chunks.\n\n&lt;color=#D73333&gt;Warning:&lt;/color&gt; Lead makes for a higher yield but causes accumulative lead contamination over time.</description>
+                </value>
+            </li>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/RecipeDef [defName="EM_Make_ChemfuelFromWood_Lead" or defName="EM_Make_ChemfuelFromCoal_Lead"]</xpath>
+                <value>
+                    <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_HediffOnFinish">
+                        <hediff>EM_LeadPoisoning</hediff>
+                        <severity>0.006</severity>
+                        <chance>1</chance>
+                    </li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>

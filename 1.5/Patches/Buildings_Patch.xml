@@ -16,4 +16,57 @@
         </operations>
     </Operation>
 
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Try replace silver costs with stainless steel:</label>
+        <operations>
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                <xpath>/Defs/ThingDef [costList/Silver]/costList/Silver</xpath>
+                <newMaterial>EM_StainlessSteel</newMaterial>
+                <splitMode>replace</splitMode>
+            </li>
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                <xpath>/Defs/TerrainDef [contains(defName, "Sterile") and costList/Silver]/costList/Silver</xpath>
+                <newMaterial>EM_StainlessSteel</newMaterial>
+                <splitMode>replace</splitMode>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Try add titanium to ship parts:</label>
+        <operations>
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                <xpath>/Defs/ThingDef [building/shipPart[text()="true"] and costList/Steel]/costList/Steel</xpath>
+                <newMaterial>EM_Titanium</newMaterial>
+                <splitMode>small</splitMode>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Try replace gold costs in ship parts with germanium:</label>
+        <operations>
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                <xpath>/Defs/ThingDef [building/shipPart[text()="true"] and costList/Gold]/costList/Gold</xpath>
+                <newMaterial>EM_Germanium</newMaterial>
+                <splitMode>replace</splitMode>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Multi-analyzer requires silicon instead of gold:</label>
+        <operations>
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                <xpath>/Defs/ThingDef [defName="MultiAnalyzer" and costList/Gold]/costList/Gold</xpath>
+                <newMaterial>EM_Silicon</newMaterial>
+                <splitMode>replace</splitMode>
+            </li>
+        </operations>
+    </Operation>
+
 </Patch>

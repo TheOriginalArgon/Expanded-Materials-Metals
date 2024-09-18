@@ -1,0 +1,42 @@
+<Defs>
+
+    <TerrainDef ParentName="TileMetalBase">
+        <defName>EM_CopperTile</defName>
+        <label>copper tile</label>
+        <renderPrecedence>244</renderPrecedence>
+        <description>For a distinctive, vintage and enigmatic look, copper tiles look quite good. They are quick to clean and get a bonus to cleanliness.</description>
+        <color>(0.65, 0.38, 0.25)</color>
+        <statBases>
+            <Beauty>1</Beauty>
+            <WorkToBuild>800</WorkToBuild>
+            <Cleanliness>0.2</Cleanliness>
+            <CleaningTimeFactor>0.6</CleaningTimeFactor>
+        </statBases>
+        <costList>
+            <EM_Copper>70</EM_Copper>
+        </costList>
+        <designationHotKey>Misc3</designationHotKey>
+    </TerrainDef>
+
+    <TerrainDef ParentName="TileMetalBase">
+        <defName>EM_BronzeTile</defName>
+        <label>bronze tile</label>
+        <renderPrecedence>245</renderPrecedence>
+        <description>For a neat, elegant and royal look, bronze tiles are beautiful and made from a not so expensive material. They are quick to clean and get a bonus to cleanliness.</description>
+        <color>(0.69, 0.54, 0.39)</color>
+        <statBases>
+            <Beauty>2</Beauty>
+            <WorkToBuild>800</WorkToBuild>
+            <Cleanliness>0.2</Cleanliness>
+            <CleaningTimeFactor>0.6</CleaningTimeFactor>
+        </statBases>
+        <costList>
+            <EM_Bronze>7</EM_Bronze>
+        </costList>
+        <designationHotKey>Misc3</designationHotKey>
+        <tags>
+            <li>FineFloor</li>
+        </tags>
+    </TerrainDef>
+
+</Defs>

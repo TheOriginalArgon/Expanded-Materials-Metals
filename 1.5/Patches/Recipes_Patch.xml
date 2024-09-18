@@ -45,6 +45,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/RecipeDef [defName="Make_ComponentIndustrial"]/fixedIngredientFilter/thingDefs</xpath>
         <value>
+            <li>EM_MildSteel</li>
             <li>EM_Copper</li>
             <li>EM_Tin</li>
         </value>
@@ -61,7 +62,7 @@
 
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>Add stainless steel to vanilla prosthetics</label>
+        <label>Add stainless steel to vanilla prosthetics:</label>
         <operations>
             <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
                 <xpath>/Defs/ThingDef [@ParentName="BodyPartProstheticMakeableBase" or @ParentName="BodyPartProstheticImperialBase"]/costList/Steel</xpath>
@@ -73,7 +74,7 @@
 
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>Add titanium to vanilla bionics</label>
+        <label>Add titanium to vanilla bionics:</label>
         <operations>
             <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
                 <xpath>/Defs/ThingDef [@ParentName="BodyPartBionicBase" or @ParentName="BodyPartBionicImperialBase"]/costList/Plasteel</xpath>
@@ -87,11 +88,35 @@
 
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>Add stainless steel to vanilla weapons</label>
+        <label>Add stainless steel to vanilla weapons:</label>
         <operations>
             <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
                 <xpath>/Defs/ThingDef [@ParentName="BaseHumanMakeableGun" and recipeMaker/researchPrerequisite!="Gunsmithing"]/costList/Steel</xpath>
                 <newMaterial>EM_StainlessSteel</newMaterial>
+                <splitMode>small</splitMode>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Add titanium to charge weapons:</label>
+        <operations>
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                <xpath>/Defs/ThingDef [techLevel = "Spacer" and costList/Plasteel and weaponTags]/costList/Plasteel</xpath>
+                <newMaterial>EM_Titanium</newMaterial>
+                <splitMode>small</splitMode>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Add titanium to power armor:</label>
+        <operations>
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                <xpath>/Defs/ThingDef [techLevel = "Spacer" and costList/Plasteel and apparel]/costList/Plasteel</xpath>
+                <newMaterial>EM_Titanium</newMaterial>
                 <splitMode>small</splitMode>
             </li>
         </operations>

@@ -1,0 +1,17 @@
+<Patch>
+
+    <!-- ================================ VANILLA FURNITURE EXPANDED: POWER ================================ -->
+
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Add lead to batteries:</label>
+        <operations>
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                <xpath>/Defs/ThingDef [thingClass = "Building_Battery" or comps/li [@Class = "CompProperties_Battery"]]/costList/Steel</xpath>
+                <newMaterial>EM_Lead</newMaterial>
+                <splitMode>small</splitMode>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>

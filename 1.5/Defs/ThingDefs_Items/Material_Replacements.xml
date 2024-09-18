@@ -6,7 +6,7 @@
         <materialToReplace>Steel</materialToReplace>
         <replaceWith>EM_Bronze</replaceWith>
         <maxTechLevel>Medieval</maxTechLevel>
-        <costModifier>1.25</costModifier>
+        <costModifier>1.1</costModifier>
     </MaterialReplacement.Defs.MaterialReplacementDef>
 
     <MaterialReplacement.Defs.MaterialReplacementDef>
@@ -22,7 +22,7 @@
         <materialToReplace>Steel</materialToReplace>
         <replaceWith>EM_MildSteel</replaceWith>
         <maxTechLevel>Industrial</maxTechLevel>
-        <costModifier>1.1</costModifier>
+        <costModifier>1.5</costModifier>
     </MaterialReplacement.Defs.MaterialReplacementDef>
 
     <MaterialReplacement.Defs.MaterialReplacementDef>
@@ -39,8 +39,8 @@
         <defName>EM_Replacement_PlasteelWithTitanium</defName>
         <materialToReplace>Plasteel</materialToReplace>
         <replaceWith>EM_Titanium</replaceWith>
-        <maxTechLevel>Medieval</maxTechLevel>
-        <costModifier>1.25</costModifier>
+        <maxTechLevel>Industrial</maxTechLevel>
+        <costModifier>0.8</costModifier>
     </MaterialReplacement.Defs.MaterialReplacementDef>
 
 </Defs>

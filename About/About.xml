@@ -8,7 +8,7 @@
         <li>1.5</li>
     </supportedVersions>
     <description>An expansion mod that adds multiple new metals to the game, expanding the production chain and making the game harder.</description>
-    <modVersion IgnoreIfNoMatchingField="True">0.1-Beta-1</modVersion>
+    <modVersion IgnoreIfNoMatchingField="True">1.0.0</modVersion>
     <modIconPath IgnoreIfNoMatchingField="True">UI/EM_Logo</modIconPath>
     <modDependencies>
         <li>
@@ -22,4 +22,7 @@
             <downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
         </li>
     </modDependencies>
+    <loadAfter>
+        <li>rebuild.cotr.doorsandcorners</li>
+    </loadAfter>
 </ModMetaData>

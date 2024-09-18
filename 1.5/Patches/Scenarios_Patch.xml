@@ -1,0 +1,43 @@
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ScenarioDef [defName="Crashlanded"]/scenario/parts</xpath>
+                <value>
+                    <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                        <def>ScatterThingsNearPlayerStart</def>
+                        <thingDef>EM_Copper</thingDef>
+                        <count>100</count>
+                    </li>
+                    <li Class="ScenPart_ScatterThingsAnywhere">
+                        <def>ScatterThingsAnywhere</def>
+                        <thingDef>EM_Lead</thingDef>
+                        <count>150</count>
+                    </li>
+                    <li Class="ScenPart_ScatterThingsAnywhere">
+                        <def>ScatterThingsAnywhere</def>
+                        <thingDef>EM_Coal</thingDef>
+                        <count>220</count>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ScenarioDef [defName="TheRichExplorer"]/scenario/parts</xpath>
+                <value>
+                    <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                        <def>ScatterThingsNearPlayerStart</def>
+                        <thingDef>EM_Copper</thingDef>
+                        <count>350</count>
+                    </li>
+                    <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                        <def>ScatterThingsNearPlayerStart</def>
+                        <thingDef>EM_Lead</thingDef>
+                        <count>300</count>
+                    </li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>

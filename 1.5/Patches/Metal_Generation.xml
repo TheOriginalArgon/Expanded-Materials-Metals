@@ -20,6 +20,26 @@
         </operations>
     </Operation>
 
+    <!-- Remove plasteel generation -->
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Remove vanilla plasteel generation:</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName="MineablePlasteel"]/building/mineableScatterCommonality</xpath>
+                <value>
+                    <mineableScatterCommonality>0</mineableScatterCommonality>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName="MineablePlasteel"]/building/mineableScatterLumpSizeRange</xpath>
+                <value>
+                    <mineableScatterLumpSizeRange>0~1</mineableScatterLumpSizeRange>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
     <!-- Remove components generation -->
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>false</enabled>

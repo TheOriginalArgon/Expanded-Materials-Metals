@@ -164,7 +164,8 @@
         <MaxHitPoints>1</MaxHitPoints>
         <Beauty>1</Beauty>
         <Flammability>0.4</Flammability>
-        <!-- Add work to make??? -->
+        <WorkToBuild>1.08</WorkToBuild>
+        <WorkToMake>1.12</WorkToMake>
       </statFactors>
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
@@ -184,8 +185,8 @@
     <statBases>
       <MarketValue>2</MarketValue>
       <Mass>0.5</Mass>
-      <StuffPower_Armor_Sharp>1.03</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Sharp>0.95</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.64</StuffPower_Armor_Blunt>
       <StuffPower_Armor_Heat>0.62</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
@@ -213,10 +214,11 @@
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
       <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
       <statFactors>
-        <MaxHitPoints>1.4</MaxHitPoints>
+        <MaxHitPoints>1.2</MaxHitPoints>
         <Beauty>1</Beauty>
         <Flammability>0.4</Flammability>
-        <!-- Add work to make??? -->
+        <WorkToBuild>1.1</WorkToBuild>
+        <WorkToMake>1.15</WorkToMake>
       </statFactors>
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
@@ -279,7 +281,7 @@
         <Beauty>0.5</Beauty>
         <WorkToBuild>1.2</WorkToBuild>
         <WorkToMake>0.9</WorkToMake>
-        <DoorOpenSpeed>0.7</DoorOpenSpeed>
+        <DoorOpenSpeed>1.5</DoorOpenSpeed>
         <MeleeWeapon_CooldownMultiplier>1.1</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
@@ -377,8 +379,7 @@
     <thingCategories>
       <li>EM_SpecialMetals</li>
     </thingCategories>
-    <stackLimit>500</stackLimit>
-    <smallVolume>true</smallVolume>
+    <stackLimit>150</stackLimit>
     <deepCommonality>1.5</deepCommonality>
     <deepCountPerPortion>120</deepCountPerPortion>
     <deepLumpSizeRange>8~15</deepLumpSizeRange>
@@ -595,6 +596,7 @@
     <thingCategories>
       <li>EM_SpecialMetals</li>
     </thingCategories>
+    <stackLimit>150</stackLimit>
     <deepCommonality>1</deepCommonality>
     <deepCountPerPortion>40</deepCountPerPortion>
     <deepLumpSizeRange>2~5</deepLumpSizeRange>
@@ -624,6 +626,7 @@
     <thingCategories>
       <li>EM_SpecialMetals</li>
     </thingCategories>
+    <stackLimit>150</stackLimit>
     <deepCommonality>2</deepCommonality>
     <deepCountPerPortion>40</deepCountPerPortion>
     <deepLumpSizeRange>8~12</deepLumpSizeRange>

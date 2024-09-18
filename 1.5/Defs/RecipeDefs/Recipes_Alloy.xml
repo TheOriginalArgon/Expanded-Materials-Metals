@@ -65,7 +65,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <EM_MildSteel>55</EM_MildSteel>
+            <EM_MildSteel>45</EM_MildSteel>
         </products>
         <researchPrerequisite>EM_SteelWorking</researchPrerequisite>
     </RecipeDef>
@@ -101,7 +101,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <EM_MildSteel>55</EM_MildSteel>
+            <EM_MildSteel>45</EM_MildSteel>
         </products>
         <researchPrerequisite>EM_SteelWorking</researchPrerequisite>
     </RecipeDef>
@@ -312,7 +312,7 @@
                         <li>Silver</li>
                     </thingDefs>
                 </filter>
-                <count>15</count>
+                <count>1.5</count>
             </li>
             <li>
                 <filter>
@@ -411,7 +411,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <EM_MildSteel>190</EM_MildSteel>
+            <EM_MildSteel>150</EM_MildSteel>
         </products>
         <researchPrerequisite>EM_SteelWorking</researchPrerequisite>
     </RecipeDef>
@@ -587,7 +587,7 @@
                         <li>Silver</li>
                     </thingDefs>
                 </filter>
-                <count>60</count>
+                <count>6</count>
             </li>
             <li>
                 <filter>
