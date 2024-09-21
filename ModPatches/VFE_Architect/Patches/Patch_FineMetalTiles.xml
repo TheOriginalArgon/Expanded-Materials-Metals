@@ -2,7 +2,7 @@
 
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>Vanilla Furniture Expanded - Architect</li>
+            <li>Royalty</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>

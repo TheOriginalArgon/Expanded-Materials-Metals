@@ -24,5 +24,6 @@
     </modDependencies>
     <loadAfter>
         <li>rebuild.cotr.doorsandcorners</li>
+        <li>vanillaexpanded.vfearchitect</li>
     </loadAfter>
 </ModMetaData>

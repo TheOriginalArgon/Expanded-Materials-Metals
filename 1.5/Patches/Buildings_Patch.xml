@@ -20,10 +20,13 @@
         <enabled>true</enabled>
         <label>Try replace silver costs with stainless steel:</label>
         <operations>
-            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+            <li Class="PatchOperationConditional">
                 <xpath>/Defs/ThingDef [costList/Silver]/costList/Silver</xpath>
-                <newMaterial>EM_StainlessSteel</newMaterial>
-                <splitMode>replace</splitMode>
+                <match Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                    <xpath>/Defs/ThingDef [costList/Silver]/costList/Silver</xpath>
+                    <newMaterial>EM_StainlessSteel</newMaterial>
+                    <splitMode>replace</splitMode>
+                </match>
             </li>
             <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
                 <xpath>/Defs/TerrainDef [contains(defName, "Sterile") and costList/Silver]/costList/Silver</xpath>
