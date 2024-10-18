@@ -4,7 +4,7 @@
     <ResearchProjectDef>
         <defName>EM_SteelWorking</defName>
         <label>steel working</label>
-        <description>text.todo</description>
+        <description>Make steel from iron and carbon.</description>
         <baseCost>700</baseCost>
         <techLevel>Medieval</techLevel>
         <researchViewX>3.00</researchViewX>
@@ -17,7 +17,7 @@
     <ResearchProjectDef>
         <defName>EM_TemperedSteelMaking</defName>
         <label>tempered steel</label>
-        <description>text.todo</description>
+        <description>Make tempered steel, a stronger version of steel made through a chemical process.</description>
         <baseCost>900</baseCost>
         <techLevel>Medieval</techLevel>
         <researchViewX>4.00</researchViewX>
@@ -30,7 +30,7 @@
     <ResearchProjectDef>
         <defName>EM_StainlessSteelMaking</defName>
         <label>stainless steel</label>
-        <description>text.todo</description>
+        <description>Make stainless steel, a special variant of steel useful in prosthetics and medical supplies.</description>
         <baseCost>1000</baseCost>
         <techLevel>Industrial</techLevel>
         <researchViewX>4.00</researchViewX>
@@ -44,7 +44,7 @@
     <ResearchProjectDef>
         <defName>EM_ReverseAlloying</defName>
         <label>reverse alloying</label>
-        <description>text.todo</description>
+        <description>Extract base metals from alloys.</description>
         <baseCost>2300</baseCost>
         <techLevel>Industrial</techLevel>
         <researchViewX>3.00</researchViewX>
@@ -58,7 +58,7 @@
     <ResearchProjectDef>
         <defName>EM_OreExtraction</defName>
         <label>ore extraction</label>
-        <description>text.todo</description>
+        <description>Extract raw ore from rock chunks.</description>
         <baseCost>1500</baseCost>
         <techLevel>Industrial</techLevel>
         <researchViewX>5.00</researchViewX>

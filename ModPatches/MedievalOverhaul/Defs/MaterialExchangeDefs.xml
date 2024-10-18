@@ -1,0 +1,35 @@
+<Defs>
+
+    <MaterialReplacement.Defs.MaterialReplacementDef>
+        <defName>EM_Replacement_MOIronWithEMIron</defName>
+        <materialToReplace>DankPyon_IronOre</materialToReplace>
+        <replaceWith>EM_Iron</replaceWith>
+        <maxTechLevel>Medieval</maxTechLevel>
+        <costModifier>1</costModifier>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
+
+    <MaterialReplacement.Defs.MaterialReplacementDef>
+        <defName>EM_Replacement_MOIronWithEMBronze</defName>
+        <materialToReplace>DankPyon_IronOre</materialToReplace>
+        <replaceWith>EM_Bronze</replaceWith>
+        <maxTechLevel>Medieval</maxTechLevel>
+        <costModifier>1.1</costModifier>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
+
+    <MaterialReplacement.Defs.MaterialReplacementDef>
+        <defName>EM_Replacement_MOCoalWithEMCoal</defName>
+        <materialToReplace>DankPyon_Coal</materialToReplace>
+        <replaceWith>EM_Coal</replaceWith>
+        <maxTechLevel>Medieval</maxTechLevel>
+        <costModifier>1</costModifier>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
+
+    <MaterialReplacement.Defs.MaterialReplacementDef>
+        <defName>EM_Replacement_MOCoalWithEMCharcoal</defName>
+        <materialToReplace>DankPyon_Coal</materialToReplace>
+        <replaceWith>EM_Charcoal</replaceWith>
+        <maxTechLevel>Medieval</maxTechLevel>
+        <costModifier>1</costModifier>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
+
+</Defs>

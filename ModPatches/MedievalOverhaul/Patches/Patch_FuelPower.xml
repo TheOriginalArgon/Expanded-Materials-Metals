@@ -1,0 +1,10 @@
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName = "DankPyon_Coal"]/statBases</xpath>
+        <value>
+            <ArgonicCore_FuelPower>2.0</ArgonicCore_FuelPower>
+        </value>
+    </Operation>
+
+</Patch>

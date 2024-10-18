@@ -88,6 +88,7 @@
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <recipeUsers>
             <li>FabricationBench</li>
+            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
         </recipeUsers>
         <ingredients>
             <li>
@@ -144,6 +145,7 @@
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <recipeUsers>
             <li>FabricationBench</li>
+            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
         </recipeUsers>
         <ingredients>
             <li>
@@ -201,6 +203,7 @@
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <recipeUsers>
             <li>FabricationBench</li>
+            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
         </recipeUsers>
         <ingredients>
             <li>
@@ -259,6 +262,7 @@
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <recipeUsers>
             <li>FabricationBench</li>
+            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
         </recipeUsers>
         <ingredients>
             <li>
@@ -315,6 +319,7 @@
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <recipeUsers>
             <li>FabricationBench</li>
+            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
         </recipeUsers>
         <ingredients>
             <li>
@@ -372,6 +377,7 @@
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <recipeUsers>
             <li>FabricationBench</li>
+            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
         </recipeUsers>
         <ingredients>
             <li>
@@ -428,6 +434,7 @@
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <recipeUsers>
             <li>FabricationBench</li>
+            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
         </recipeUsers>
         <ingredients>
             <li>
@@ -608,6 +615,7 @@
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <recipeUsers>
             <li>FabricationBench</li>
+            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
         </recipeUsers>
         <ingredients>
             <li>
@@ -674,6 +682,7 @@
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <recipeUsers>
             <li>FabricationBench</li>
+            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
         </recipeUsers>
         <ingredients>
             <li>
@@ -740,6 +749,7 @@
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <recipeUsers>
             <li>FabricationBench</li>
+            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
         </recipeUsers>
         <ingredients>
             <li>

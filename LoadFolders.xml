@@ -7,5 +7,6 @@
         <li IfModActive="oskarpotocki.vanillavehiclesexpanded">ModPatches/VanillaVehiclesExpanded</li>
         <li IfModActive="rebuild.cotr.doorsandcorners">ModPatches/ReBuild_Doors</li>
         <li IfModActive="vanillaexpanded.vfearchitect">ModPatches/VFE_Architect</li>
+        <li IfModActive="DankPyon.Medieval.Overhaul">ModPatches/MedievalOverhaul</li>
     </v1.5>
 </loadFolders>
