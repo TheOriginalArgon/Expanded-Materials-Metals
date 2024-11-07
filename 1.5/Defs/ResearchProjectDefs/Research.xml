@@ -44,7 +44,7 @@
     <ResearchProjectDef>
         <defName>EM_ReverseAlloying</defName>
         <label>reverse alloying</label>
-        <description>Extract base metals from alloys.</description>
+        <description>Extract base metals from alloys at a drug lab.</description>
         <baseCost>2300</baseCost>
         <techLevel>Industrial</techLevel>
         <researchViewX>3.00</researchViewX>
@@ -58,7 +58,7 @@
     <ResearchProjectDef>
         <defName>EM_OreExtraction</defName>
         <label>ore extraction</label>
-        <description>Extract raw ore from rock chunks.</description>
+        <description>Extract raw ore from rock chunks at a smelter.</description>
         <baseCost>1500</baseCost>
         <techLevel>Industrial</techLevel>
         <researchViewX>5.00</researchViewX>
