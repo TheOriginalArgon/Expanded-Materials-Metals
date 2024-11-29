@@ -2,6 +2,26 @@
 
     <!-- ================================ VANILLA RECIPES PATCH: INDUSTRIAL COMPONENTS ================================ -->
 
+    <!-- Modify texts in slag smelting recipe -->
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef [defName="ExtractMetalFromSlag"]/label</xpath>
+        <value>
+            <label>smelt steel from slag</label>
+        </value>
+     </Operation>
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef [defName="ExtractMetalFromSlag"]/jobString</xpath>
+        <value>
+            <jobString>Smelting steel from slag.</jobString>
+        </value>
+     </Operation>
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef [defName="ExtractMetalFromSlag"]/description</xpath>
+        <value>
+            <description>Use heat and strong electromagnets to extract useful steel from slag chunks.</description>
+        </value>
+     </Operation>
+
     <!-- Modify steel cost -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/RecipeDef [defName="Make_ComponentIndustrial"]/ingredients/li[filter/thingDefs/li[text()="Steel"]]/count</xpath>
