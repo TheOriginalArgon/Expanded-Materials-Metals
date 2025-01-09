@@ -20,6 +20,20 @@
         </operations>
     </Operation>
 
+    <!-- Remove deep steel generation -->
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Remove vanilla steel deep generation</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName="Steel"]/deepCommonality</xpath>
+                <value>
+                    <deepCommonality>0</deepCommonality>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
     <!-- Remove plasteel generation -->
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
@@ -35,6 +49,20 @@
                 <xpath>/Defs/ThingDef [defName="MineablePlasteel"]/building/mineableScatterLumpSizeRange</xpath>
                 <value>
                     <mineableScatterLumpSizeRange>0~1</mineableScatterLumpSizeRange>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+    <!-- Remove deep plasteel generation -->
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Remove vanilla plasteel deep generation</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName="Plasteel"]/deepCommonality</xpath>
+                <value>
+                    <deepCommonality>0</deepCommonality>
                 </value>
             </li>
         </operations>
