@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>EM_SpecialMetals</defName>
+    <label>special metals</label>
+    <parent>ResourcesRaw</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>Things/Item/Resource/EM_Silicon/EM_Silicon_c</iconPath>
+  </ThingCategoryDef>
+
+</Defs>

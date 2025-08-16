@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Vanilla Factions Expanded - Classical</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="VFEC_MeatDryingRack"]/costList</xpath>
+				<value>
+					<costList>
+					  <WoodLog>80</WoodLog>
+			          <VMEu_Iron>20</VMEu_Iron>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="VFEC_CraftingBench"]/costList</xpath>
+				<value>
+					<costList>
+					  <WoodLog>50</WoodLog>
+			          <VMEu_Iron>25</VMEu_Iron>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="VFEC_Beacon"]/costList</xpath>
+				<value>
+					<costList>
+					  <WoodLog>150</WoodLog>
+			          <VMEu_Iron>50</VMEu_Iron>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

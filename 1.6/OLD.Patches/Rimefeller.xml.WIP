@@ -1,0 +1,63 @@
+<Patch>
+    
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Rimefeller</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+
+                <!-- Oil Well -->
+                <li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+                    <xpath>Defs/ThingDef [defName = "OilWell"]/costList/Steel</xpath>
+                    <percentage>60</percentage>
+                    <material>VMEu_Concrete</material>
+                </li>
+
+                <!-- Deep Oil Well -->
+                <li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+                    <xpath>Defs/ThingDef [defName = "DeepOilWell"]/costList/Steel</xpath>
+                    <percentage>60</percentage>
+                    <material>VMEu_Concrete</material>
+                </li>
+
+                <!-- Crude Oil Storage -->
+                <li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+                    <xpath>Defs/ThingDef [defName = "OilStorage"]/costList/Steel</xpath>
+                    <percentage>20</percentage>
+                    <material>VMEu_Concrete</material>
+                </li>
+
+                <!-- Chemfuel Storage -->
+                <li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+                    <xpath>Defs/ThingDef [defName = "FuelStorage"]/costList/Steel</xpath>
+                    <percentage>20</percentage>
+                    <material>VMEu_Concrete</material>
+                </li>
+
+                <!-- Crude Cracker -->
+                <li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+                    <xpath>Defs/ThingDef [defName = "CrudeCracker"]/costList/Steel</xpath>
+                    <percentage>60</percentage>
+                    <material>VMEu_Concrete</material>
+                </li>
+
+                <!-- Chemfuel Power Plant -->
+                <li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+                    <xpath>Defs/ThingDef [defName = "FuelPowerplant"]/costList/Steel</xpath>
+                    <percentage>60</percentage>
+                    <material>VMEu_Concrete</material>
+                </li>
+
+                <!-- Large Chemfuel Power Plant -->
+                <li Class="MaterialPatchingUtility.PatchOperationBalanceMaterial">
+                    <xpath>Defs/ThingDef [defName = "LargeFuelPowerplant"]/costList/Steel</xpath>
+                    <percentage>60</percentage>
+                    <material>VMEu_Concrete</material>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

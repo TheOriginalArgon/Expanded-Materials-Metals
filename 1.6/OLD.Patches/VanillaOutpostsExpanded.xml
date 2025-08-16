@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Outposts Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/WorldObjectDef[defName="Outpost_Mining"]/modExtensions/li[@Class="Outposts.OutpostExtension_Choose"]/ResultOptions/li[1]</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/WorldObjectDef[defName="Outpost_Mining"]/modExtensions/li[@Class="Outposts.OutpostExtension_Choose"]/ResultOptions</xpath>
+					<value>
+						<li>
+							<BaseAmount>750</BaseAmount>
+							<Thing>VMEu_Coal</Thing>
+							<MinSkills>
+								<Mining>10</Mining>
+							</MinSkills>
+						</li>
+						<li>
+							<BaseAmount>750</BaseAmount>
+							<Thing>VMEu_Iron</Thing>
+							<MinSkills>
+								<Mining>12</Mining>
+							</MinSkills>
+						</li>
+						<li>
+							<BaseAmount>750</BaseAmount>
+							<Thing>VMEu_Lead</Thing>
+							<MinSkills>
+								<Mining>12</Mining>
+							</MinSkills>
+						</li>
+						<li>
+							<BaseAmount>7500</BaseAmount>
+							<Thing>VMEu_Tin</Thing>
+							<MinSkills>
+								<Mining>10</Mining>
+							</MinSkills>
+						</li>
+						<li>
+							<BaseAmount>7500</BaseAmount>
+							<Thing>VMEu_Copper</Thing>
+							<MinSkills>
+								<Mining>10</Mining>
+							</MinSkills>
+						</li>
+						<li>
+							<BaseAmount>750</BaseAmount>
+							<Thing>VMEu_Tungsten</Thing>
+							<MinSkills>
+								<Mining>15</Mining>
+							</MinSkills>
+						</li>
+						<li>
+							<BaseAmount>750</BaseAmount>
+							<Thing>VMEu_Chromium</Thing>
+							<MinSkills>
+								<Mining>20</Mining>
+							</MinSkills>
+						</li>
+						<li>
+							<BaseAmount>750</BaseAmount>
+							<Thing>VMEu_Titanium</Thing>
+							<MinSkills>
+								<Mining>10</Mining>
+							</MinSkills>
+						</li>
+						<li>
+							<BaseAmount>750</BaseAmount>
+							<Thing>VMEu_Lithium</Thing>
+							<MinSkills>
+								<Mining>20</Mining>
+							</MinSkills>
+						</li>
+						<li>
+							<BaseAmount>750</BaseAmount>
+							<Thing>VMEu_Germanium</Thing>
+							<MinSkills>
+								<Mining>20</Mining>
+							</MinSkills>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

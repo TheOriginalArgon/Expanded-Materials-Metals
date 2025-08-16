@@ -1,0 +1,27 @@
+<Patch>
+
+    <!-- Steel resprite and recoloring -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef [defName = "Steel"]/graphicData/texPath</xpath>
+        <value>
+            <texPath>Things/Item/Resource/EM_Steel</texPath>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef [defName = "Steel"]/stuffProps/color</xpath>
+        <value>
+            <color>(95, 95, 95)</color>
+        </value>
+    </Operation>
+
+    <!-- Stones have ore extraction special products -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef [@ParentName = "ChunkRockBase"]</xpath>
+        <value>
+            <li Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts">
+                <productTypeDef>EM_SpecialProducts_OreExtraction</productTypeDef>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

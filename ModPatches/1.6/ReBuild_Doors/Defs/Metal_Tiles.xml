@@ -1,0 +1,79 @@
+<Defs>
+
+    <!-- GRATE TILES -->
+    <TerrainDef ParentName="RB_TileGrateMetalBase">
+        <defName>EM_CopperGrateTile</defName>
+        <label>copper grate tile</label>
+        <renderPrecedence>243</renderPrecedence>
+        <description>Copper grate tiles, for that antique look. They are very quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+        <color>(0.65, 0.38, 0.25)</color>
+        <statBases>
+            <WorkToBuild>1000</WorkToBuild>
+            <Beauty>1</Beauty>
+            <Cleanliness>0.2</Cleanliness>
+            <CleaningTimeFactor>0.3</CleaningTimeFactor>
+        </statBases>
+        <costList>
+            <EM_Copper>40</EM_Copper>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="RB_TileGrateMetalBase">
+        <defName>EM_BronzeGrateTile</defName>
+        <label>bronze grate tile</label>
+        <renderPrecedence>244</renderPrecedence>
+        <description>Bronze grate tiles, for that neat imperial look. They are very quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+        <color>(0.69, 0.54, 0.39)</color>
+        <statBases>
+            <Beauty>2</Beauty>
+            <WorkToBuild>1000</WorkToBuild>
+            <Cleanliness>0.2</Cleanliness>
+            <CleaningTimeFactor>0.3</CleaningTimeFactor>
+        </statBases>
+        <costList>
+            <EM_Bronze>4</EM_Bronze>
+        </costList>
+        <tags>
+            <li>FineFloor</li>
+        </tags>
+    </TerrainDef>
+
+    <!-- STUDDED TILES -->
+    <TerrainDef ParentName="RB_TileStuddedMetalBase">
+        <defName>EM_CopperStuddedTile</defName>
+        <label>copper studded tile</label>
+        <renderPrecedence>243</renderPrecedence>
+        <description>Copper studded tiles, for that antique look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+        <color>(0.65, 0.38, 0.25)</color>
+        <statBases>
+            <WorkToBuild>850</WorkToBuild>
+            <Beauty>4</Beauty>
+            <Cleanliness>0.2</Cleanliness>
+            <CleaningTimeFactor>0.6</CleaningTimeFactor>
+        </statBases>
+        <costList>
+            <EM_Copper>70</EM_Copper>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="RB_TileStuddedMetalBase">
+        <defName>EM_BronzeStuddedTile</defName>
+        <label>bronze studded tile</label>
+        <renderPrecedence>244</renderPrecedence>
+        <description>Bronze studded tiles, for that neat imperial look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+        <color>(0.69, 0.54, 0.39)</color>
+        <statBases>
+            <Beauty>5</Beauty>
+            <WorkToBuild>1000</WorkToBuild>
+            <Cleanliness>0.2</Cleanliness>
+            <CleaningTimeFactor>0.6</CleaningTimeFactor>
+        </statBases>
+        <costList>
+            <EM_Bronze>7</EM_Bronze>
+        </costList>
+        <tags>
+            <li>FineFloor</li>
+        </tags>
+    </TerrainDef>
+
+</Defs>

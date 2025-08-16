@@ -1,0 +1,46 @@
+<Defs>
+
+    <!-- ===== STEEL REPLACEMENTS ===== -->
+    <MaterialReplacement.Defs.MaterialReplacementDef>
+        <defName>EM_Replacement_SteelWithBronze</defName>
+        <materialToReplace>Steel</materialToReplace>
+        <replaceWith>EM_Bronze</replaceWith>
+        <maxTechLevel>Medieval</maxTechLevel>
+        <costModifier>1.1</costModifier>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
+
+    <MaterialReplacement.Defs.MaterialReplacementDef>
+        <defName>EM_Replacement_SteelWithIron</defName>
+        <materialToReplace>Steel</materialToReplace>
+        <replaceWith>EM_Iron</replaceWith>
+        <maxTechLevel>Medieval</maxTechLevel>
+        <costModifier>1.2</costModifier>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
+
+    <MaterialReplacement.Defs.MaterialReplacementDef>
+        <defName>EM_Replacement_SteelWithMildSteel</defName>
+        <materialToReplace>Steel</materialToReplace>
+        <replaceWith>EM_MildSteel</replaceWith>
+        <maxTechLevel>Industrial</maxTechLevel>
+        <costModifier>1.1</costModifier>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
+
+    <MaterialReplacement.Defs.MaterialReplacementDef>
+        <defName>EM_Replacement_SteelWithTemperedSteel</defName>
+        <materialToReplace>Steel</materialToReplace>
+        <replaceWith>EM_TemperedSteel</replaceWith>
+        <maxTechLevel>Spacer</maxTechLevel>
+        <costModifier>0.9</costModifier>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
+
+    <!-- ===== PLASTEEL REPLACEMENTS ===== -->
+
+    <MaterialReplacement.Defs.MaterialReplacementDef>
+        <defName>EM_Replacement_PlasteelWithTitanium</defName>
+        <materialToReplace>Plasteel</materialToReplace>
+        <replaceWith>EM_Titanium</replaceWith>
+        <maxTechLevel>Industrial</maxTechLevel>
+        <costModifier>0.8</costModifier>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
+
+</Defs>

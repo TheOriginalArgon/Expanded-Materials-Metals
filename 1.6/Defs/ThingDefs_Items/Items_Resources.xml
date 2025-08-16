@@ -223,7 +223,7 @@
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <modExtensions>
-      <li Class="VFECore.StuffExtension">
+      <li Class="VEF.Things.StuffExtension">
         <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
       </li>
     </modExtensions>
@@ -287,7 +287,7 @@
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <modExtensions>
-      <li Class="VFECore.StuffExtension">
+      <li Class="VEF.Things.StuffExtension">
         <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
         <weaponGenerationCommonalityFactor>0</weaponGenerationCommonalityFactor>
         <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
@@ -351,7 +351,7 @@
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <modExtensions>
-      <li Class="VFECore.StuffExtension">
+      <li Class="VEF.Things.StuffExtension">
         <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
         <weaponGenerationCommonalityFactor>0.15</weaponGenerationCommonalityFactor>
         <apparelGenerationCommonalityFactor>0.15</apparelGenerationCommonalityFactor>
@@ -443,7 +443,7 @@
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <modExtensions>
-      <li Class="VFECore.StuffExtension">
+      <li Class="VEF.Things.StuffExtension">
         <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
         <weaponGenerationCommonalityFactor>0</weaponGenerationCommonalityFactor>
         <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
@@ -504,7 +504,7 @@
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <modExtensions>
-      <li Class="VFECore.StuffExtension">
+      <li Class="VEF.Things.StuffExtension">
         <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
         <weaponGenerationCommonalityFactor>0</weaponGenerationCommonalityFactor>
         <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
@@ -567,7 +567,7 @@
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <modExtensions>
-      <li Class="VFECore.StuffExtension">
+      <li Class="VEF.Things.StuffExtension">
         <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
         <weaponGenerationCommonalityFactor>0.15</weaponGenerationCommonalityFactor>
         <apparelGenerationCommonalityFactor>0.2</apparelGenerationCommonalityFactor>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Adobe Abode</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "JKN_AdobeMixingTable"]/costList</xpath>
+				<value>
+					<costList>
+			          <VMEu_Iron>10</VMEu_Iron>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

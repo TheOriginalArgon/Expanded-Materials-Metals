@@ -1,0 +1,53 @@
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+            <!-- Car Suspension -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "VVE_CarSuspension"]/costList/Silver</xpath>
+                <value>
+                    <EM_StainlessSteel>15</EM_StainlessSteel>
+                </value>
+            </li>
+
+            <!-- Car Battery -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "VVE_CarBattery"]/costList/Steel</xpath>
+                <value>
+                    <Steel>25</Steel>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef [defName = "VVE_CarBattery"]/costList</xpath>
+                <value>
+                    <EM_Lead>10</EM_Lead>
+                </value>
+            </li>
+
+            <!-- Car Radiator -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "VVE_CarRadiator"]/costList/Steel</xpath>
+                <value>
+                    <Steel>15</Steel>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef [defName = "VVE_CarRadiator"]/costList</xpath>
+                <value>
+                    <EM_Copper>25</EM_Copper>
+                </value>
+            </li>
+
+            <!-- Car Wiring -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName = "VVE_CarWiring"]/costList/Gold</xpath>
+                <value>
+                    <EM_Silicon>8</EM_Silicon>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+
+</Patch>

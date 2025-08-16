@@ -1,0 +1,97 @@
+<Defs>
+
+    <!-- Metal trader -->
+    <TraderKindDef>
+        <defName>EM_Caravan_Outlander_Metals</defName>
+        <label>metallurgy trader</label>
+        <stockGenerators>
+
+            <!-- Resources -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>800~1500</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>EM_Iron</thingDef>
+                <countRange>200~550</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>EM_Bronze</thingDef>
+                <countRange>150~650</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>EM_Lead</thingDef>
+                <countRange>-100~400</countRange>
+            </li>
+            <li Class="StockGenerator_MultiDef">
+                <thingDefs>
+                    <li>EM_Coal</li>
+                    <li>EM_Charcoal</li>
+                </thingDefs>
+                <countRange>300~500</countRange>
+            </li>
+            <li Class="StockGenerator_MultiDef">
+                <thingDefs>
+                    <li>EM_Copper</li>
+                    <li>EM_Tin</li>
+                </thingDefs>
+                <countRange>250~450</countRange>
+            </li>
+            <li Class="StockGenerator_MultiDef">
+                <thingDefs>
+                    <li>Steel</li>
+                    <li>EM_MildSteel</li>
+                </thingDefs>
+                <countRange>100~450</countRange>
+            </li>
+
+            <!-- Buying -->
+            <li Class="StockGenerator_BuyExpensiveSimple" />
+
+        </stockGenerators>
+    </TraderKindDef>
+
+    <!-- Rare metals trader -->
+    <TraderKindDef>
+        <defName>EM_Caravan_Outlander_MetalsRare</defName>
+        <label>special metals trader</label>
+        <stockGenerators>
+
+            <!-- Resources -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>800~1500</countRange>
+            </li>
+            <li Class="StockGenerator_MultiDef">
+                <thingDefs>
+                    <li>EM_StainlessSteel</li>
+                    <li>EM_TemperedSteel</li>
+                </thingDefs>
+                <countRange>150~350</countRange>
+            </li>
+            <li Class="StockGenerator_MultiDef">
+                <thingDefs>
+                    <li>EM_Copper</li>
+                    <li>EM_Tin</li>
+                </thingDefs>
+                <countRange>300~500</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>EM_Titanium</thingDef>
+                <countRange>-100~200</countRange>
+            </li>
+            <li Class="StockGenerator_MultiDef">
+                <thingDefs>
+                    <li>EM_Germanium</li>
+                    <li>EM_Silicon</li>
+                </thingDefs>
+                <countRange>50~180</countRange>
+            </li>
+
+            <!-- Buying -->
+            <li Class="StockGenerator_BuyExpensiveSimple" />
+
+        </stockGenerators>
+    </TraderKindDef>
+
+</Defs>

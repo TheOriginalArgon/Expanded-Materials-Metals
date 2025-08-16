@@ -1,0 +1,12 @@
+<Patch>
+
+    <!-- This xpath is a warcrime and should preferably be changed to something less clunky -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="WoodLog"] and not(defName="VFEC_Turret_Scorpion")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li[text()="WoodLog"]]</xpath>
+        <value>
+            <li>EM_Charcoal</li>
+            <li>EM_Coal</li>
+        </value>
+    </Operation>
+
+</Patch>

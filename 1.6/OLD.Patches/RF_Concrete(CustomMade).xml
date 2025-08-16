@@ -1,0 +1,14 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[RF] Concrete (Continued)</li>
+        </mods>
+        <success>Always</success>
+        <nomatch Class="PatchOperationReplace">
+            <xpath>/Defs/TerrainDef [defName = "Concrete"]/costList/Steel</xpath>
+            <value>
+                <VMEu_RockPowder>1</VMEu_RockPowder>
+            </value>
+        </nomatch>
+    </Operation>
+</Patch>

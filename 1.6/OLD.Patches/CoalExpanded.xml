@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Replace Coal Expanded Coal with Materials Expanded Coal -->
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Coal Expanded</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef [defName = "MineableCoal"]/building</xpath>
+			<value>
+				<building>
+				  <isResourceRock>true</isResourceRock>
+				  <mineableThing>Coal</mineableThing>
+				  <mineableYield>0</mineableYield>
+				  <mineableScatterCommonality>0</mineableScatterCommonality>
+				  <mineableScatterLumpSizeRange>0</mineableScatterLumpSizeRange>
+				</building>
+			</value>
+			</li>
+			<!-- Coal Expanded Buildings Use Materials Expanded Coal -->
+			<li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[text()="Coal"]]/fuelFilter/thingDefs/li[text()="Coal"]</xpath>
+				<value>
+					<li>VMEu_Coal</li>
+				</value>
+            </li>
+			<li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable" and fuelFilter/thingDefs/li[text()="Charcoal"]]/fuelFilter/thingDefs/li[text()="Charcoal"]</xpath>
+				<value>
+					<li>VMEu_Charcoal</li>
+				</value>
+            </li>
+			<!-- Coal Expanded Buildings -->
+			<li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef [defName = "CoalCrematorium"]/costList</xpath>
+				<value>
+					<costList>
+					  <VMEu_Iron>40</VMEu_Iron>
+					</costList>
+				</value>
+            </li>
+			<li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef [defName = "CoalSmelter"]/costList</xpath>
+				<value>
+					<costList>
+					  <VMEu_RockPowder>100</VMEu_RockPowder>
+					  <VMEu_Iron>100</VMEu_Iron>
+					  <ComponentIndustrial>1</ComponentIndustrial>
+					</costList>
+				</value>
+            </li>
+			<li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef [defName = "CoalGrill"]/costList</xpath>
+				<value>
+					<costList>
+					  <VMEu_Iron>75</VMEu_Iron>
+					</costList>
+				</value>
+            </li>
+			<li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef [defName = "NECCoalLamp"]/costList</xpath>
+				<value>
+					<costList>
+					  <VMEu_Iron>35</VMEu_Iron>
+					</costList>
+				</value>
+            </li>
+			<li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef [defName = "NECActiveCooler"]/costList</xpath>
+				<value>
+					<costList>
+					  <WoodLog>50</WoodLog>
+					  <VMEu_Iron>15</VMEu_Iron>
+					  <ComponentIndustrial>1</ComponentIndustrial>
+					</costList>
+				</value>
+            </li>
+			<li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef [defName = "CoalStove"]/costList</xpath>
+				<value>
+					<costList>
+					  <VMEu_Iron>45</VMEu_Iron>
+					</costList>
+				</value>
+            </li>
+			<li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef [defName = "CoalFiredGenerator"]/costList</xpath>
+				<value>
+					<costList>
+					  <Steel>90</Steel>
+					  <VMEu_Concrete>35</VMEu_Concrete>
+					  <ComponentIndustrial>2</ComponentIndustrial>
+					</costList>
+				</value>
+            </li>
+			<!-- Other -->
+			<li Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef [defName = "Coal"]/deepCommonality</xpath>
+            </li>
+			<li Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef [defName = "Coal"]/deepLumpSizeRange</xpath>
+            </li>
+			<li Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef [defName = "Coal"]/deepCountPerPortion</xpath>
+            </li>
+			<!-- Recipes -->
+			<li Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef [defName = "Campfire"]/recipes/li[text()="Make_CharcoalFromWood"]</xpath>
+            </li>
+			<li Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef [defName = "ElectricSmelter"]/recipes/li[text()="Make_CharcoalFromWood"]</xpath>
+            </li>
+			<li Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef [defName = "ElectricSmelter"]/recipes/li[text()="Make_CoalFromStone"]</xpath>
+            </li>
+			<li Class="PatchOperationReplace">
+            <xpath>/Defs/RecipeDef [defName = "Make_ChemfuelFromCoal"]/ingredients</xpath>
+				<value>
+					<ingredients>
+					<li>
+					  <filter>
+						<thingDefs>
+						  <li>VMEu_Coal</li>
+						</thingDefs>
+					  </filter>
+					  <count>20</count>
+					</li>
+				  </ingredients>
+				</value>
+            </li>
+			<li Class="PatchOperationReplace">
+            <xpath>/Defs/RecipeDef [defName = "Make_ChemfuelFromCoal"]/fixedIngredientFilter</xpath>
+				<value>
+					<fixedIngredientFilter>
+					<thingDefs>
+					  <li>VMEu_Coal</li>
+					</thingDefs>
+				  </fixedIngredientFilter>
+				</value>
+            </li>
+		</operations>
+	</match>
+</Operation>
+		
+</Patch>

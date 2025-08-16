@@ -1,0 +1,10 @@
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [@Name = "CrashedShipPartBase"]/killedLeavings</xpath>
+        <value>
+            <VMEu_MiscSlag>4</VMEu_MiscSlag>
+        </value>
+    </Operation>
+
+</Patch>

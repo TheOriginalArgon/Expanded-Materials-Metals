@@ -1,0 +1,37 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Expanded Woodworking</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/RecipeDef [defName = "VMEu_MakeCharcoal"]/ingredients</xpath>
+                    <value>
+                        <ingredients>
+                            <li>
+                              <filter>
+                                <categories>
+                                  <li>WoodTypes</li>
+                                </categories>
+                              </filter>
+                              <count>30</count>
+                            </li>
+                          </ingredients>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/RecipeDef [defName = "VMEu_MakeCharcoal"]/fixedIngredientFilter</xpath>
+                    <value>
+                        <fixedIngredientFilter>
+                            <categories>
+                              <li>WoodTypes</li>
+                            </categories>
+                          </fixedIngredientFilter>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

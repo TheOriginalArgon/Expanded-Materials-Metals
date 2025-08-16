@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Components Need Germanium and Copper -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef [defName = "Make_ComponentIndustrial"] /ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+					  <thingDefs>
+						<li>Steel</li>
+					  </thingDefs>
+					</filter>
+					<count>3</count>
+				</li>
+				<li>
+					<filter>
+					  <thingDefs>
+						<li>VMEu_Germanium</li>
+					  </thingDefs>
+					</filter>
+					<count>0.5</count>
+				</li>
+				<li>
+					<filter>
+					  <thingDefs>
+						<li>VMEu_Copper</li>
+					  </thingDefs>
+					</filter>
+					<count>0.5</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef [defName = "Make_ComponentIndustrial"] /fixedIngredientFilter</xpath>
+		<value>
+			<fixedIngredientFilter>
+			  <thingDefs>
+				<li>Steel</li>
+				<li>VMEu_Copper</li>
+				<li>VMEu_Germanium</li>
+			  </thingDefs>
+			</fixedIngredientFilter>
+		</value>
+	</Operation>
+	
+	<!-- Advanced Components Need Germanium and Copper-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef [defName = "Make_ComponentSpacer"] /ingredients</xpath>
+		<value>
+			<ingredients>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>Plasteel</li>
+				  </thingDefs>
+				</filter>
+				<count>3</count>
+			  </li>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>Gold</li>
+				  </thingDefs>
+				</filter>
+				<count>0.1</count>
+			  </li>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>VMEu_Germanium</li>
+				  </thingDefs>
+				</filter>
+				<count>0.8</count>
+			  </li>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>VMEu_Lithium</li>
+				  </thingDefs>
+				</filter>
+				<count>0.5</count>
+			  </li>
+			</ingredients>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef [defName = "Make_ComponentSpacer"] /fixedIngredientFilter</xpath>
+		<value>
+			<fixedIngredientFilter>
+			  <thingDefs>
+				<li>Plasteel</li>
+				<li>Gold</li>
+				<li>VMEu_Germanium</li>
+				<li>VMEu_Lithium</li>
+			  </thingDefs>
+			</fixedIngredientFilter>
+		</value>
+	</Operation>
+	
+	<!-- EMP Launcher -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef [defName = "Gun_EmpLauncher"]/costList/Steel</xpath>
+		<value>
+			<Steel>65</Steel>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef [defName = "Gun_EmpLauncher"]/costList</xpath>
+		<value>
+			<VMEu_Lithium>8</VMEu_Lithium>
+		</value>
+	</Operation>
+	
+	<!-- EMP Grenade -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef [defName = "Weapon_GrenadeEMP"]/costList/Steel</xpath>
+		<value>
+			<Steel>20</Steel>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef [defName = "Weapon_GrenadeEMP"]/costList</xpath>
+		<value>
+			<VMEu_Lithium>5.0</VMEu_Lithium>
+		</value>
+	</Operation>
+	
+	<!-- High-Explosive Shell -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef [defName = "Shell_HighExplosive"]/costList/Steel</xpath>
+		<value>
+			  <Steel>10</Steel>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef [defName = "Shell_HighExplosive"]/costList</xpath>
+		<value>
+			  <VMEu_Tungsten>1</VMEu_Tungsten>
+		</value>
+	</Operation>
+	<!-- Variant -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef [defName = "Shell_HighExplosive"]/costListForDifficulty/costList/Steel</xpath>
+		<value>
+			  <Steel>20</Steel>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef [defName = "Shell_HighExplosive"]/costListForDifficulty/costList</xpath>
+		<value>
+			  <VMEu_Tungsten>2</VMEu_Tungsten>
+		</value>
+	</Operation>
+
+	<!-- EMP Shell -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef [defName = "Shell_EMP"]/costList/Steel</xpath>
+		<value>
+			  <Steel>10</Steel>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef [defName = "Shell_EMP"]/costList</xpath>
+		<value>
+			  <VMEu_Lithium>2</VMEu_Lithium>
+		</value>
+	</Operation>
+	<!-- Variant -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef [defName = "Shell_EMP"]/costListForDifficulty/costList/Steel</xpath>
+		<value>
+			  <Steel>15</Steel>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef [defName = "Shell_EMP"]/costListForDifficulty/costList</xpath>
+		<value>
+			  <VMEu_Lithium>5</VMEu_Lithium>
+		</value>
+	</Operation>
+	
+</Patch>
