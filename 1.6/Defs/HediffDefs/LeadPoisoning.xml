@@ -10,13 +10,13 @@
 
             <!-- Stage 1: Hidden -->
             <li>
-                <minSeverity>0.03</minSeverity>
-                <becomeVisible>false</becomeVisible>
-                <vomitMtbDays>10.0</vomitMtbDays>
+                <minSeverity>0.1</minSeverity>
+                <becomeVisible>true</becomeVisible>
+                <vomitMtbDays>12.0</vomitMtbDays>
                 <hediffGivers>
                     <li Class="HediffGiver_Random">
                         <hediff>EM_LeadPoisoning_StageOne</hediff>
-                        <mtbDays>17</mtbDays>
+                        <mtbDays>19</mtbDays>
                     </li>
                 </hediffGivers>
             </li>
