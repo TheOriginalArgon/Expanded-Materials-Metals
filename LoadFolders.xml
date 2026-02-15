@@ -12,11 +12,21 @@
     <v1.6>
         <li>/</li>
         <li>1.6</li>
+        <li IfModActive="ludeon.rimworld.biotech">ModPatches/1.6/Biotech</li>
+        <li IfModActive="ludeon.rimworld.anomaly">ModPatches/1.6/Anomaly</li>
+        <li IfModActive="ludeon.rimworld.odyssey">ModPatches/1.6/Odyssey</li>
+
         <li IfModActive="OskarPotocki.VFE.Classical">ModPatches/1.6/VFE_Classical</li>
         <li IfModActive="VanillaExpanded.VFEPower">ModPatches/1.6/VFE_Power</li>
         <li IfModActive="oskarpotocki.vanillavehiclesexpanded">ModPatches/1.6/VanillaVehiclesExpanded</li>
         <li IfModActive="rebuild.cotr.doorsandcorners">ModPatches/1.6/ReBuild_Doors</li>
         <li IfModActive="vanillaexpanded.vfearchitect">ModPatches/1.6/VFE_Architect</li>
         <li IfModActive="DankPyon.Medieval.Overhaul">ModPatches/1.6/MedievalOverhaul</li>
+        <li IfModActive="oskarpotocki.vfe.empire">ModPatches/1.6/VFE_Empire</li>
+        <li IfModActive="oskarpotocki.vfe.insectoid2">ModPatches/1.6/VFE_Insectoid2</li>
+        <li IfModActive="oskarpotocki.vfe.medieval2">ModPatches/1.6/VFE_Medieval2</li>
+        <li IfModActive="vanillaracesexpanded.android">ModPatches/1.6/VRE_Android</li>
+        <li IfModActive="oskarpotocki.vfe.deserters">ModPatches/1.6/VFE_Deserters</li>
+        <li IfModActive="vanillaracesexpanded.insector">ModPatches/1.6/VRE_Insector</li>
     </v1.6>
 </loadFolders>

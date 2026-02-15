@@ -1,0 +1,30 @@
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ScenarioDef [defName="VFEM2_NewKingdom"]/scenario/parts</xpath>
+        <value>
+            <li Class="ScenPart_ScatterThingsAnywhere">
+                <def>StartingThing_Defined</def>
+                <thingDef>EM_Coal</thingDef>
+                <count>200</count>
+            </li>
+            <li Class="ScenPart_ScatterThingsAnywhere">
+                <def>StartingThing_Defined</def>
+                <thingDef>EM_Bronze</thingDef>
+                <count>180</count>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ScenarioDef [defName="VFEM2_NewKingdom"]/scenario/parts/li [@Class="ScenPart_ScatterThingsAnywhere" and thingDef [text()="Steel"]]</xpath>
+        <value>
+            <li Class="ScenPart_ScatterThingsAnywhere">
+                <def>ScatterThingsAnywhere</def>
+                <thingDef>EM_MildSteel</thingDef>
+                <count>300</count>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

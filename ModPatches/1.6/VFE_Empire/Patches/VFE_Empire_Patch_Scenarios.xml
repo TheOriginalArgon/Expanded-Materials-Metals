@@ -1,0 +1,19 @@
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ScenarioDef [defName="VFEE_NewFamily"]/scenario/parts</xpath>
+        <value>
+            <li Class="ScenPart_ScatterThingsAnywhere">
+                <def>ScatterThingsAnywhere</def>
+                <thingDef>EM_Copper</thingDef>
+                <count>250</count>
+            </li>
+            <li Class="ScenPart_ScatterThingsAnywhere">
+                <def>ScatterThingsAnywhere</def>
+                <thingDef>EM_Coal</thingDef>
+                <count>300</count>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

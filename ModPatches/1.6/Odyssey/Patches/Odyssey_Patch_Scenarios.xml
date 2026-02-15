@@ -1,0 +1,27 @@
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ScenarioDef [defName="TheGravship"]/scenario/parts</xpath>
+        <value>
+            <li Class="ScenPart_ScatterThingsAnywhere">
+                <def>ScatterThingsNearPlayerStart</def>
+                <thingDef>EM_Copper</thingDef>
+                <count>250</count>
+                <allowRoofed>false</allowRoofed>
+            </li>
+            <li Class="ScenPart_ScatterThingsAnywhere">
+                <def>ScatterThingsNearPlayerStart</def>
+                <thingDef>EM_Lead</thingDef>
+                <count>200</count>
+                <allowRoofed>false</allowRoofed>
+            </li>
+            <li Class="ScenPart_ScatterThingsAnywhere">
+                <def>ScatterThingsNearPlayerStart</def>
+                <thingDef>EM_Coal</thingDef>
+                <count>250</count>
+                <allowRoofed>false</allowRoofed>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

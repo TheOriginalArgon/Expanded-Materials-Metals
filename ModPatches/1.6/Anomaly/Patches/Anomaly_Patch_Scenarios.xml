@@ -1,0 +1,29 @@
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ScenarioDef [defName="TheAnomaly"]/scenario/parts</xpath>
+        <value>
+            <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                <def>StartingThing_Defined</def>
+                <thingDef>EM_Copper</thingDef>
+                <count>120</count>
+            </li>
+            <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                <def>StartingThing_Defined</def>
+                <thingDef>EM_Titanium</thingDef>
+                <count>80</count>
+            </li>
+            <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                <def>StartingThing_Defined</def>
+                <thingDef>EM_Lead</thingDef>
+                <count>200</count>
+            </li>
+            <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                <def>StartingThing_Defined</def>
+                <thingDef>EM_Coal</thingDef>
+                <count>200</count>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

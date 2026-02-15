@@ -1,0 +1,25 @@
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ScenarioDef [defName="VFEC_NewEmpire"]/scenario/parts</xpath>
+        <value>
+            <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                <def>ScatterThingsNearPlayerStart</def>
+                <thingDef>EM_Bronze</thingDef>
+                <count>300</count>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ScenarioDef [defName="VFEC_NewEmpire"]/scenario/parts/li [@Class="ScenPart_ScatterThingsNearPlayerStart" and thingDef [text()="Steel"]]</xpath>
+        <value>
+            <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                <def>ScatterThingsNearPlayerStart</def>
+                <thingDef>EM_MildSteel</thingDef>
+                <count>250</count>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

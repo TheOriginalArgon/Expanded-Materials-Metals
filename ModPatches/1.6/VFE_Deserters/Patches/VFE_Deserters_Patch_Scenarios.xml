@@ -1,0 +1,24 @@
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ScenarioDef [defName="VFED_NewSafehaven"]/scenario/parts</xpath>
+        <value>
+            <li Class="ScenPart_ScatterThingsAnywhere">
+                <def>ScatterThingsAnywhere</def>
+                <thingDef>EM_Copper</thingDef>
+                <count>350</count>
+            </li>
+            <li Class="ScenPart_ScatterThingsAnywhere">
+                <def>ScatterThingsAnywhere</def>
+                <thingDef>EM_Coal</thingDef>
+                <count>500</count>
+            </li>
+            <li Class="ScenPart_ScatterThingsAnywhere">
+                <def>ScatterThingsAnywhere</def>
+                <thingDef>EM_Lead</thingDef>
+                <count>500</count>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

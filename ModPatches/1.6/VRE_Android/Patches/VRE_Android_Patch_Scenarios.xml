@@ -1,0 +1,24 @@
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ScenarioDef [defName="VREA_NewUtopia"]/scenario/parts</xpath>
+        <value>
+            <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                <thingDef>EM_Copper</thingDef>
+                <count>350</count>
+            </li>
+            <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                <thingDef>EM_Coal</thingDef>
+                <count>350</count>
+            </li>
+            <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                <thingDef>EM_Lead</thingDef>
+                <count>300</count>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

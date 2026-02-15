@@ -72,4 +72,35 @@
         </operations>
     </Operation>
 
+    <!-- MANUAL PATCHES -->
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Enable manual patches:</label>
+        <operations>
+
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Vanilla Furniture Expanded - Security</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                            <xpath>/Defs/ThingDef [
+                                defName="VFES_Turret_ChargeTurret" or
+                                defName="VFES_Turret_ChargeRailgun" or
+                                defName="VFES_Turret_TeslaBlaster" or
+                                defName="VFES_Complex_Charge" or
+                                defName="VFES_SmallRepulsor" or
+                                defName="VFES_LargeRepulsor"
+                                ]/costList/Plasteel</xpath>
+                            <newMaterial>EM_Titanium</newMaterial>
+                            <splitMode>small</splitMode>
+                        </li>
+                    </operations>
+                </match>
+            </li>
+
+        </operations>
+    </Operation>
+
 </Patch>

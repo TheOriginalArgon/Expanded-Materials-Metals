@@ -32,7 +32,11 @@
         </fixedIngredientFilter>
         <modExtensions>
             <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_SpecialProducts">
-                <productTypeDef>EM_SpecialProducts_OreExtraction</productTypeDef>
+                <usesEfficiency>true</usesEfficiency>
+                <efficiencySkill>Mining</efficiencySkill>
+                <specialProductKeys>
+                    <li>EM_SpecialProducts_OreExtraction</li>
+                </specialProductKeys>
             </li>
         </modExtensions>
         <researchPrerequisite>EM_OreExtraction</researchPrerequisite>

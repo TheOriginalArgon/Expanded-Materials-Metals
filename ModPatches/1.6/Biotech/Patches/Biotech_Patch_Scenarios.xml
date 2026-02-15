@@ -1,0 +1,40 @@
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ScenarioDef [defName="Mechanitor"]/scenario/parts</xpath>
+        <value>
+            <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                <thingDef>EM_Copper</thingDef>
+                <count>500</count>
+            </li>
+            <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                <thingDef>EM_Lead</thingDef>
+                <count>350</count>
+            </li>
+            <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                <thingDef>EM_Titanium</thingDef>
+                <count>120</count>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ScenarioDef [defName="Sanguophage"]/scenario/parts</xpath>
+        <value>
+            <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                <thingDef>EM_Copper</thingDef>
+                <count>200</count>
+            </li>
+            <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                <thingDef>EM_Coal</thingDef>
+                <count>250</count>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>
