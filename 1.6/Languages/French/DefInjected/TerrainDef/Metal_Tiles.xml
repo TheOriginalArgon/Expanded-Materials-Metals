@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bronze grate tile -->
+  <EM_BronzeGrateTile.label>tuile de grille en bronze</EM_BronzeGrateTile.label>
+  <!-- EN: Bronze grate tiles, for that neat imperial look. They are very quick to clean and get a bonus to cleanliness for use in medical settings. -->
+  <EM_BronzeGrateTile.description>Carreaux de grille en bronze, pour un style impérial soigné. Ils sont très faciles à nettoyer et offrent un bonus de propreté pour une utilisation dans les environnements médicaux.</EM_BronzeGrateTile.description>
+  
+  <!-- EN: bronze studded tile -->
+  <EM_BronzeStuddedTile.label>carreau incrusté de bronze</EM_BronzeStuddedTile.label>
+  <!-- EN: Bronze studded tiles, for that neat imperial look. They are quick to clean and get a bonus to cleanliness for use in medical settings. -->
+  <EM_BronzeStuddedTile.description>Carreaux incrustés de bronze, pour un style impérial soigné. Ils sont faciles à nettoyer et offrent un bonus de propreté pour une utilisation dans les environnements médicaux.</EM_BronzeStuddedTile.description>
+  
+  <!-- EN: copper grate tile -->
+  <EM_CopperGrateTile.label>tuile de grille en cuivre</EM_CopperGrateTile.label>
+  <!-- EN: Copper grate tiles, for that antique look. They are very quick to clean and get a bonus to cleanliness for use in medical settings. -->
+  <EM_CopperGrateTile.description>Carreaux en cuivre, pour un style antique. Ils sont très faciles à nettoyer et offrent un bonus de propreté pour une utilisation dans les environnements médicaux.</EM_CopperGrateTile.description>
+  
+  <!-- EN: copper studded tile -->
+  <EM_CopperStuddedTile.label>carreau incrusté de cuivre</EM_CopperStuddedTile.label>
+  <!-- EN: Copper studded tiles, for that antique look. They are quick to clean and get a bonus to cleanliness for use in medical settings. -->
+  <EM_CopperStuddedTile.description>Carreaux incrustés de cuivre, pour un style antique. Ils sont faciles à nettoyer et offrent un bonus de propreté pour une utilisation dans les environnements médicaux.</EM_CopperStuddedTile.description>
+  
+</LanguageData>

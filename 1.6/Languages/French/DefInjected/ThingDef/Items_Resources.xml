@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bronze -->
+  <EM_Bronze.label>bronze</EM_Bronze.label>
+  <!-- EN: A metal alloy consisting mostly of copper and a relatively small portion of tin. Bronze is not as hard and durable as iron, but it is quicker to work and it also has some unique benefits, like a bonus to cleanliness and beauty. -->
+  <EM_Bronze.description>Alliage métallique composé principalement de cuivre et d'une proportion relativement faible d'étain. Le bronze n'est pas aussi dur et résistant que le fer, mais il est plus rapide à travailler et présente également certains avantages uniques, comme un bonus en termes de propreté et d'esthétique.</EM_Bronze.description>
+  
+  <!-- EN: charcoal -->
+  <EM_Charcoal.label>charbon de bois</EM_Charcoal.label>
+  <!-- EN: A lightweight, black carbon residue produced by strongly heating wood to remove all water and volatile constituents. Charcoal is not as much of an efficient carbon source as mineral coal is, but it is an effective substitute. -->
+  <EM_Charcoal.description>Résidu de carbone noir léger produit par le chauffage intense du bois afin d'en éliminer toute l'eau et les composants volatils. Le charbon de bois n'est pas une source de carbone aussi efficace que le charbon minéral, mais il constitue un substitut efficace.</EM_Charcoal.description>
+  
+  <!-- EN: coal -->
+  <EM_Coal.label>charbon</EM_Coal.label>
+  <!-- EN: A combustible, black sedimentary rock formed by dead plant matter turned into peat and converted into coal by the heat and pressure of deep burial over millions of years. Coal is mostly carbon with variable amounts of other elements. It is used as a common fuel and also as a source of carbon, which is required in some important alloys like steel. -->
+  <EM_Coal.description>Une roche sédimentaire combustible et noire formée à partir de matières végétales mortes transformées en tourbe, puis en charbon sous l'effet de la chaleur et de la pression exercées par un enfouissement profond pendant des millions d'années. Le charbon est principalement composé de carbone et contient des quantités variables d'autres éléments. Il est utilisé comme combustible courant et comme source de carbone, nécessaire à la fabrication de certains alliages importants tels que l'acier.</EM_Coal.description>
+  
+  <!-- EN: copper -->
+  <EM_Copper.label>cuivre</EM_Copper.label>
+  <!-- EN: An orange-looking, relatively malleable and somewhat pretty metal that can be found in veins scattered in mountains. Copper is not very tough, but somewhat viable for weaponry in some rare cases, however, it has very high thermal and electrical conductivity, and it is mostly used as a temperature insulator and electrical conductor. Copper is essential in modern civilizations and settlements as the main element used to make wiring and generators. Its use is also widely required in electronics. Copper is a naturally sterile metal and has a very slight bonus to cleanliness. -->
+  <EM_Copper.description>Métal orange, relativement malléable et assez esthétique, que l'on trouve dans des filons disséminés dans les montagnes. Le cuivre n'est pas très résistant, mais il peut parfois être utilisé pour fabriquer des armes dans certains cas rares. Cependant, il possède une conductivité thermique et électrique très élevée, et il est principalement utilisé comme isolant thermique et conducteur électrique. Le cuivre est essentiel dans les civilisations et les agglomérations modernes, car c'est le principal élément utilisé pour fabriquer des câbles et des générateurs. Son utilisation est également très répandue dans l'électronique. Le cuivre est un métal naturellement stérile et présente un très léger avantage en termes de propreté.</EM_Copper.description>
+  
+  <!-- EN: germanium -->
+  <EM_Germanium.label>germanium</EM_Germanium.label>
+  <!-- EN: A lustrous grayish-white metal very valuable in advanced industry and microelectronics. Germanium is rare, and can only be found scattered in very small amounts in some rocks. It is widely used in the production of optical elements and microelectronic components such as chips and processors. -->
+  <EM_Germanium.description>Métal brillant, blanc grisâtre, très précieux dans l'industrie de pointe et la microélectronique. Le germanium est rare et ne se trouve qu'en très petites quantités dispersées dans certaines roches. Il est largement utilisé dans la production d'éléments optiques et de composants microélectroniques tels que les puces et les processeurs.</EM_Germanium.description>
+  
+  <!-- EN: iron -->
+  <EM_Iron.label>fer</EM_Iron.label>
+  <!-- EN: A basic resource found widely in mountains and underground. Iron is one of mankind’s oldest and most used metals for making weapons, armor, reinforced building structures and several other things. Iron can be used on alloys too, steel being the most common one. -->
+  <EM_Iron.description>Une ressource fondamentale largement présente dans les montagnes et sous terre. Le fer est l'un des métaux les plus anciens et les plus utilisés par l'humanité pour fabriquer des armes, des armures, des structures de bâtiments renforcées et bien d'autres choses encore. Le fer peut également être utilisé dans des alliages, l'acier étant le plus courant.</EM_Iron.description>
+  
+  <!-- EN: lead -->
+  <EM_Lead.label>plomb</EM_Lead.label>
+  <!-- EN: A heavy, dark gray-bluish metal that is malleable and soft. While it is not very suitable for weapons and armor due to its weight and low resistance, lead is a very useful metal. It is widely used as a chemical additive and to make industrial batteries. It is also an essential material in the weapon industry, being the main component of most bullets and ammunition. Lead is toxic to the human body, and can contaminate soil and food if it evaporates or burns. Lead poisoning can cause chemical damage to the kidneys and brain, and if not tended properly, death. -->
+  <EM_Lead.description>Métal lourd, gris foncé tirant vers le bleu, malléable et mou. Bien qu'il ne soit pas très adapté à la fabrication d'armes et d'armures en raison de son poids et de sa faible résistance, le plomb est un métal très utile. Il est largement utilisé comme additif chimique et dans la fabrication de batteries industrielles. C'est également un matériau essentiel dans l'industrie de l'armement, car il est le principal composant de la plupart des balles et des munitions. Le plomb est toxique pour le corps humain et peut contaminer le sol et les aliments s'il s'évapore ou brûle. L'empoisonnement au plomb peut causer des dommages chimiques aux reins et au cerveau, et s'il n'est pas traité correctement, il peut entraîner la mort.</EM_Lead.description>
+  
+  <!-- EN: mild steel -->
+  <EM_MildSteel.label>acier doux</EM_MildSteel.label>
+  <!-- EN: A variant of steel with a lesser percentage of carbon. Mild steel alloy process is slightly faster than average steel, however, the material is also slightly less tough. Mild steel is very common among medieval civilizations, where alloying metals is difficult and sometimes quantity-over-quality is the best approach. -->
+  <EM_MildSteel.description>Une variante de l'acier avec un pourcentage de carbone moins élevé. Le processus d'alliage de l'acier doux est légèrement plus rapide que celui de l'acier moyen, mais le matériau est également un peu moins résistant. L'acier doux est très courant dans les civilisations médiévales, où l'alliage des métaux est difficile et où la quantité prime parfois sur la qualité.</EM_MildSteel.description>
+  
+  <!-- EN: silicon -->
+  <EM_Silicon.label>silicium</EM_Silicon.label>
+  <!-- EN: A silverish, brittle metal found scattered across planets. Despite its abundance, it does not occur pure as other minerals, finding it requires drilling for deep veins and processing certain types of rocks. Silicon is widely used as a mineral additive to various materials like mortars, porcelain or glass, but its most important implementation is as a semiconductor for microelectronics and integrated circuits. -->
+  <EM_Silicon.description>Métal argenté et cassant que l'on trouve dispersé sur plusieurs planètes. Malgré son abondance, il n'existe pas à l'état pur comme d'autres minéraux. Pour l'extraire, il faut forer des veines profondes et traiter certains types de roches. Le silicium est largement utilisé comme additif minéral dans divers matériaux tels que les mortiers, la porcelaine ou le verre, mais son application la plus importante est en tant que semi-conducteur pour la microélectronique et les circuits intégrés.</EM_Silicon.description>
+  
+  <!-- EN: stainless steel -->
+  <EM_StainlessSteel.label>acier inoxydable</EM_StainlessSteel.label>
+  <!-- EN: A harder, stronger and prettier alloy of steel made by combining it with an assortment of other metals. In the most advanced high-tech worlds, chromium is used to make the most pure stainless steel, but other metals like silver or tin can also be used to produce a close-quality material. Stainless steel has sterile properties and it is widely required in modern industry. Medicine, energy, weapons and the aerospace industry all require this type of steel. -->
+  <EM_StainlessSteel.description>Un alliage d'acier plus dur, plus résistant et plus esthétique, obtenu en le combinant avec divers autres métaux. Dans les mondes high-tech les plus avancés, le chrome est utilisé pour fabriquer l'acier inoxydable le plus pur, mais d'autres métaux comme l'argent ou l'étain peuvent également être utilisés pour produire un matériau de qualité similaire. L'acier inoxydable possède des propriétés stériles et est très demandé dans l'industrie moderne. La médecine, l'énergie, l'armement et l'industrie aérospatiale ont tous besoin de ce type d'acier.</EM_StainlessSteel.description>
+  
+  <!-- EN: tempered steel -->
+  <EM_TemperedSteel.label>acier trempé</EM_TemperedSteel.label>
+  <!-- EN: Steel with a heat treating process that enhances its properties. Tempering is generally done by heating the material to some temperature below the critical point for some time and then quickly cooling it in water or oil. Tempered steel is much stronger than average steel, and it is mostly used to build stronger weapons, armor and structures. -->
+  <EM_TemperedSteel.description>Acier ayant subi un traitement thermique qui améliore ses propriétés. La trempe est généralement effectuée en chauffant le matériau à une température inférieure au point critique pendant un certain temps, puis en le refroidissant rapidement dans de l'eau ou de l'huile. L'acier trempé est beaucoup plus résistant que l'acier ordinaire et est principalement utilisé pour fabriquer des armes, des armures et des structures plus solides.</EM_TemperedSteel.description>
+  
+  <!-- EN: tin -->
+  <EM_Tin.label>étain</EM_Tin.label>
+  <!-- EN: A somewhat rare, silvery-white colored metal that melts at a relatively low temperature. Tin is extremely weak compared to other metals; a bar of tin can be easily bent by hand, therefore it is not suitable by any means to make weapons or armor. However, it has incredible properties when alloyed with other metals. Tin is one of the main components of bronze, and it can also be used as plating to reinforce other metals. Tin is also widely used in electronics as a soldering element. -->
+  <EM_Tin.description>Métal assez rare, de couleur blanc argenté, qui fond à une température relativement basse. L'étain est extrêmement fragile par rapport aux autres métaux ; une barre d'étain peut être facilement pliée à la main, ce qui le rend totalement inadapté à la fabrication d'armes ou d'armures. Cependant, il possède des propriétés incroyables lorsqu'il est allié à d'autres métaux. L'étain est l'un des principaux composants du bronze, et il peut également être utilisé comme placage pour renforcer d'autres métaux. L'étain est également largement utilisé en électronique comme élément de soudure.</EM_Tin.description>
+  
+  <!-- EN: titanium -->
+  <EM_Titanium.label>titane</EM_Titanium.label>
+  <!-- EN: A highly durable metal, Titanium is only passable for use in structures but makes\n      for extremely durable weapons and armor. -->
+  <EM_Titanium.description>Métal très résistant, le titane ne convient que moyennement à la construction de structures, mais permet de fabriquer des armes et des armures extrêmement durables.</EM_Titanium.description>
+  
+</LanguageData>

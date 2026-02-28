@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bronze slag chunk -->
+  <EM_ChunkSlagBronze.label>morceau de scorie de bronze</EM_ChunkSlagBronze.label>
+  <!-- EN: A chunk of bronze slag. While it's useless in its current form, it can be smelted to recover bronze. -->
+  <EM_ChunkSlagBronze.description>Un morceau de scorie de bronze. Bien qu'il soit inutilisable sous sa forme actuelle, il peut être fondu pour récupérer du bronze.</EM_ChunkSlagBronze.description>
+  
+  <!-- EN: iron slag chunk -->
+  <EM_ChunkSlagIron.label>morceau de scorie de fer</EM_ChunkSlagIron.label>
+  <!-- EN: A chunk of iron slag. While it's useless in its current form, it can be smelted to recover iron. -->
+  <EM_ChunkSlagIron.description>Un morceau de scorie de fer. Bien qu'il soit inutilisable sous sa forme actuelle, il peut être fondu pour récupérer du fer.</EM_ChunkSlagIron.description>
+  
+  <!-- EN: lead slag chunk -->
+  <EM_ChunkSlagLead.label>morceau de scorie de plomb</EM_ChunkSlagLead.label>
+  <!-- EN: A chunk of lead slag. While it's useless in its current form, it can be smelted to recover lead. -->
+  <EM_ChunkSlagLead.description>Un morceau de scorie de plomb. Bien qu'il soit inutilisable sous sa forme actuelle, il peut être fondu pour récupérer du plomb.</EM_ChunkSlagLead.description>
+  
+</LanguageData>

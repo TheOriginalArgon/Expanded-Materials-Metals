@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: smelt bronze from slag -->
+  <EM_ExtractBronzeFromSlag.label>fondre du bronze à partir de scories</EM_ExtractBronzeFromSlag.label>
+  <!-- EN: Use heat and strong electromagnets to extract useful bronze from slag chunks. -->
+  <EM_ExtractBronzeFromSlag.description>Utilisez la chaleur et des électroaimants puissants pour extraire le bronze utile des morceaux de scories.</EM_ExtractBronzeFromSlag.description>
+  <!-- EN: Smelting bronze from slag. -->
+  <EM_ExtractBronzeFromSlag.jobString>Fond du bronze à partir de scories.</EM_ExtractBronzeFromSlag.jobString>
+  
+  <!-- EN: smelt iron from slag -->
+  <EM_ExtractIronFromSlag.label>fondre du fer à partir de scories</EM_ExtractIronFromSlag.label>
+  <!-- EN: Use heat and strong electromagnets to extract useful iron from slag chunks. -->
+  <EM_ExtractIronFromSlag.description>Utilisez la chaleur et des électroaimants puissants pour extraire le fer utile des morceaux de scories.</EM_ExtractIronFromSlag.description>
+  <!-- EN: Smelting iron from slag. -->
+  <EM_ExtractIronFromSlag.jobString>Fond du fer à partir de scories.</EM_ExtractIronFromSlag.jobString>
+  
+  <!-- EN: smelt lead from slag -->
+  <EM_ExtractLeadFromSlag.label>fondre du plomb à partir de scories</EM_ExtractLeadFromSlag.label>
+  <!-- EN: Use heat and strong electromagnets to extract useful lead from slag chunks. -->
+  <EM_ExtractLeadFromSlag.description>Utilisez la chaleur et des électroaimants puissants pour extraire le plomb utile des morceaux de scories.</EM_ExtractLeadFromSlag.description>
+  <!-- EN: Smelting iron from slag. -->
+  <EM_ExtractLeadFromSlag.jobString>Fond du plomb à partir de scories.</EM_ExtractLeadFromSlag.jobString>
+  
+  <!-- EN: extract ore from stone chunks -->
+  <EM_ExtractOreFromChunks.label>extraire le minerai de morceaux de pierre</EM_ExtractOreFromChunks.label>
+  <!-- EN: Smelt rocks to get small traces of resources. -->
+  <EM_ExtractOreFromChunks.description>Faire fondre des roches pour obtenir de petites quantités de ressources.</EM_ExtractOreFromChunks.description>
+  <!-- EN: Smelting ore from rocks. -->
+  <EM_ExtractOreFromChunks.jobString>Fond du minerai à partir de pierres.</EM_ExtractOreFromChunks.jobString>
+  
+</LanguageData>
