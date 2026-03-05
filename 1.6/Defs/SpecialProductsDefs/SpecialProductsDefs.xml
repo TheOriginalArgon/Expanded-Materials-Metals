@@ -1,0 +1,13 @@
+<Defs>
+
+	<ArgonicCore.Defs.SpecialProductsDef>
+		<defName>EM_SpecialProducts_OreExtraction</defName>
+		<products>
+			<EM_Iron>3</EM_Iron>
+			<EM_Copper>2</EM_Copper>
+			<EM_Lead>3</EM_Lead>
+			<EM_Tin>2</EM_Tin>
+		</products>
+	</ArgonicCore.Defs.SpecialProductsDef>
+
+</Defs>

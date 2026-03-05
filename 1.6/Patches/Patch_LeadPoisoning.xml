@@ -11,6 +11,7 @@
                         <hediff>EM_LeadPoisoning</hediff>
                         <severity>0.001</severity>
                         <chance>0.9</chance>
+                        <preventedByToxicResistance>true</preventedByToxicResistance>
                     </li>
                 </value>
             </li>
@@ -39,6 +40,7 @@
                         <hediff>EM_LeadPoisoning</hediff>
                         <severity>0.006</severity>
                         <chance>1</chance>
+                        <preventedByToxicResistance>true</preventedByToxicResistance>
                     </li>
                 </value>
             </li>

@@ -79,22 +79,27 @@
     </Operation>
 
     <!-- Mining sites with new resources -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/SitePartDef [defName="WorkSite_Mining"]/lootTable/li[thing[text()="Steel"]]</xpath>
-        <value>
-            <li>
-                <thing>EM_Iron</thing>
-                <weight>0.5</weight>
-            </li>
-            <li>
-                <thing>EM_Copper</thing>
-                <weight>0.25</weight>
-            </li>
-            <li>
-                <thing>EM_Titanium</thing>
-                <weight>0.25</weight>
-            </li>
-        </value>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/SitePartDef [defName="WorkSite_Mining"]/lootTable/li[thing[text()="Steel"]]</xpath>
+            <value>
+                <li>
+                    <thing>EM_Iron</thing>
+                    <weight>0.5</weight>
+                </li>
+                <li>
+                    <thing>EM_Copper</thing>
+                    <weight>0.25</weight>
+                </li>
+                <li>
+                    <thing>EM_Titanium</thing>
+                    <weight>0.25</weight>
+                </li>
+            </value>
+        </match>
     </Operation>
 
 </Patch>

@@ -6,6 +6,12 @@
         <replaceWith>VFEC_Bronze</replaceWith>
         <maxTechLevel>Medieval</maxTechLevel>
         <costModifier>1.2</costModifier>
+        <exceptionDefs>
+            <li>MetalTile</li>
+            <li MayRequire="rebuild.cotr.doorsandcorners">RB_MetalGrateTile</li>
+            <li MayRequire="rebuild.cotr.doorsandcorners">RB_MetalStuddedTile</li>
+            <li MayRequire="vanillaexpanded.vfearchitect,ludeon.rimworld.royalty">VFEArch_FineSteelTile</li>
+        </exceptionDefs>
     </MaterialReplacement.Defs.MaterialReplacementDef>
 
 </Defs>

@@ -14,32 +14,4 @@
         </value>
     </Operation>
 
-    <!-- Stones have ore extraction special products -->
-    <Operation Class="PatchOperationConditional">
-        <xpath>Defs/ThingDef [@ParentName="ChunkRockBase" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
-        <match Class="PatchOperationAddModExtension">
-            <xpath>Defs/ThingDef [@ParentName="ChunkRockBase" and not(modExtensions/li/@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts")]</xpath>
-            <value>
-                <li Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts">
-                    <specialProductDictionaryEntries />
-                </li>
-            </value>
-        </match>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef [@ParentName="ChunkRockBase"]/modExtensions/li [@Class="ArgonicCore.ModExtensions.ThingDefExtension_SpecialProducts"]/specialProductDictionaryEntries</xpath>
-        <value>
-            <li>
-                <key>EM_SpecialProducts_OreExtraction</key>
-                <products>
-                    <EM_Iron>2</EM_Iron>
-                    <EM_Copper>1</EM_Copper>
-                    <EM_Lead>2</EM_Lead>
-                    <EM_Tin>1</EM_Tin>
-                </products>
-            </li>
-        </value>
-    </Operation>
-
 </Patch>

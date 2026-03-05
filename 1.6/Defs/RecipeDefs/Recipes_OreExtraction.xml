@@ -9,7 +9,7 @@
             <li>ElectricSmelter</li>
         </recipeUsers>
         <jobString>Smelting ore from rocks.</jobString>
-        <workAmount>2500</workAmount>
+        <workAmount>4000</workAmount>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <effectWorking>Smelt</effectWorking>
         <soundWorking>Recipe_Smelt</soundWorking>
@@ -32,11 +32,9 @@
         </fixedIngredientFilter>
         <modExtensions>
             <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_SpecialProducts">
-                <usesEfficiency>true</usesEfficiency>
-                <efficiencySkill>Mining</efficiencySkill>
-                <specialProductKeys>
-                    <li>EM_SpecialProducts_OreExtraction</li>
-                </specialProductKeys>
+                <usesEfficiency>false</usesEfficiency>
+                <specialProductsDef>EM_SpecialProducts_OreExtraction</specialProductsDef>
+                <randomProduct>true</randomProduct>
             </li>
         </modExtensions>
         <researchPrerequisite>EM_OreExtraction</researchPrerequisite>

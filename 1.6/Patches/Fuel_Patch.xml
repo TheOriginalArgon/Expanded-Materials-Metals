@@ -2,7 +2,10 @@
 
     <!-- This xpath is a warcrime and should preferably be changed to something less clunky -->
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="WoodLog"] and not(defName="VFEC_Turret_Scorpion")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li[text()="WoodLog"]]</xpath>
+        <xpath>Defs/ThingDef[not(defName="VFES_Turret_Ballista") and
+            not(defName="VFEM2_Turret_WallMountedArbalest") and
+            not(defName="VFEC_Turret_Scorpion") and
+            comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="WoodLog"]]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li[text()="WoodLog"]]</xpath>
         <value>
             <li>EM_Charcoal</li>
             <li>EM_Coal</li>
