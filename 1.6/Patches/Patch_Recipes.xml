@@ -1,0 +1,111 @@
+<Patch>
+
+    <!-- Modify texts in slag smelting recipe -->
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef [defName="ExtractMetalFromSlag"]/label</xpath>
+        <value>
+            <label>smelt steel from slag</label>
+        </value>
+     </Operation>
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef [defName="ExtractMetalFromSlag"]/jobString</xpath>
+        <value>
+            <jobString>Smelting steel from slag.</jobString>
+        </value>
+     </Operation>
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef [defName="ExtractMetalFromSlag"]/description</xpath>
+        <value>
+            <description>Use heat and strong electromagnets to extract useful steel from slag chunks.</description>
+        </value>
+     </Operation>
+
+    <!-- ================================ PATCH: INDUSTRIAL COMPONENTS ================================ -->
+
+    <!-- Modify steel cost -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef [defName="Make_ComponentIndustrial"]/ingredients/li[filter/thingDefs/li[text()="Steel"]]/count</xpath>
+        <value>
+            <count>8</count>
+        </value>
+    </Operation>
+
+    <!-- Add mild steel -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef [defName="Make_ComponentIndustrial"]/ingredients/li[filter/thingDefs/li[text()="Steel"]]/filter/thingDefs</xpath>
+        <value>
+            <li>EM_MildSteel</li>
+        </value>
+    </Operation>
+
+    <!-- Add copper and tin -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef [defName="Make_ComponentIndustrial"]/ingredients</xpath>
+        <value>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Copper</li>
+                    </thingDefs>
+                </filter>
+                <count>0.5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Tin</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Add that ingredient filter thingy -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef [defName="Make_ComponentIndustrial"]/fixedIngredientFilter/thingDefs</xpath>
+        <value>
+            <li>EM_MildSteel</li>
+            <li>EM_Copper</li>
+            <li>EM_Tin</li>
+        </value>
+    </Operation>
+
+    <!-- ================================ PATCH: SPACER COMPONENTS ================================ -->
+
+    <!-- Swap steel with stainless steel -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef [defName="Make_ComponentSpacer"]/ingredients/li/filter/thingDefs/li[text()="Steel"]</xpath>
+        <value>
+            <li>EM_StainlessSteel</li> <!-- This may need to later be replaced using PatchOperationDistributeCost -->
+        </value>
+    </Operation>
+
+    <!-- Modify cost -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef [defName="Make_ComponentSpacer"]/ingredients/li[filter/thingDefs/li[text()="EM_StainlessSteel"]]/count</xpath>
+        <value>
+            <count>10</count>
+        </value>
+    </Operation>
+
+    <!-- Add titanium -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef [defName="Make_ComponentSpacer"]/ingredients/li/filter/thingDefs[li[text()="Plasteel"]]</xpath>
+        <value>
+            <li>EM_Titanium</li>
+        </value>
+    </Operation>
+
+    <!-- Adjust that ingredient filter thingy -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef [defName="Make_ComponentSpacer"]/fixedIngredientFilter/thingDefs</xpath>
+        <value>
+            <li>EM_StainlessSteel</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/RecipeDef [defName="Make_ComponentSpacer"]/fixedIngredientFilter/thingDefs/li[text()="Steel"]</xpath>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,24 @@
+<Patch>
+
+    <!-- Batteries need lead -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VFE_LargeBattery" or
+            defName="VFE_SmallBattery"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Lead</newMaterial>
+        <percentage>80</percentage>
+        <extraCostFactor>1.25</extraCostFactor>
+    </Operation>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VFE_AdvancedBattery" or
+            defName="VFE_LargeAdvancedBattery"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Lead</newMaterial>
+        <percentage>80</percentage>
+        <extraCostFactor>1.5</extraCostFactor>
+    </Operation>
+
+</Patch>

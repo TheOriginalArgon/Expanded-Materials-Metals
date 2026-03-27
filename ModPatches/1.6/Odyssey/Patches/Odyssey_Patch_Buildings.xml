@@ -1,0 +1,57 @@
+<Patch>
+
+    <!-- Heavy bridges save steel -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/TerrainDef [defName="HeavyBridge"]/costList</xpath>
+        <value>
+            <costList>
+                <EM_StainlessSteel>5</EM_StainlessSteel>
+                <EM_TemperedSteel>5</EM_TemperedSteel>
+            </costList>
+        </value>
+    </Operation>
+
+    <!-- Gravship structures need titanium -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/TerrainDef [
+            defName="Substructure"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Aluminium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>0.25</extraCostFactor>
+        <round>false</round>
+    </Operation>
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="GravEngine" or
+            defName="GravFieldExtender" or
+            defName="ChemfuelTank" or
+            defName="LargeChemfuelTank" or
+            defName="SmallThruster" or
+            defName="LargeThruster" or
+            defName="FuelOptimizer" or
+            defName="SignalJammer" or
+            defName="GravcorePowerCell" or
+            defName="PilotSubpersonaCore" or
+            defName="GravshipShieldGenerator" or
+            defName="GravAnchor" or
+            defName="PassengerShuttle"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Titanium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>0.5</extraCostFactor>
+    </Operation>
+
+    <!-- Gravship structures need aluminium -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="OxygenPump" or
+            defName="VacBarrier" or
+            defName="PilotConsole"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Aluminium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>0.5</extraCostFactor>
+    </Operation>
+
+</Patch>

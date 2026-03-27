@@ -1,0 +1,106 @@
+<Patch>
+
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Advanced industrial weapons and combat gear require tempered steel:</label>
+        <operations>
+
+            <!-- Vanilla -->
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                <xpath>/Defs/ThingDef [
+                    defName="Gun_IncendiaryLauncher" or
+                    defName="Gun_SmokeLauncher" or
+                    defName="Gun_Minigun" or
+                    defName="Gun_DoomsdayRocket" or
+                    defName="Gun_TripleRocket" or
+                    defName="Gun_Autopistol" or
+                    defName="Gun_MachinePistol" or
+                    defName="Gun_EmpLauncher"
+                    ]/costList/Steel</xpath>
+                <newMaterial>EM_TemperedSteel</newMaterial>
+                <percentage>50</percentage>
+            </li>
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                <xpath>/Defs/ThingDef [
+                    defName="Gun_ChainShotgun" or
+                    defName="Gun_HeavySMG" or
+                    defName="Gun_LMG" or
+                    defName="Gun_AssaultRifle" or
+                    defName="Gun_SniperRifle"
+                    ]/costList/Steel</xpath>
+                <newMaterial>EM_TemperedSteel</newMaterial>
+                <percentage>100</percentage>
+            </li>
+
+            <!-- Biotech -->
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost" MayRequire="ludeon.rimworld.biotech">
+                <xpath>/Defs/ThingDef [
+                    defName="Gun_ToxbombLauncher"
+                    ]/costList/Steel</xpath>
+                <newMaterial>EM_TemperedSteel</newMaterial>
+                <percentage>50</percentage>
+            </li>
+
+            <!-- Vanilla Weapons Expanded -->
+            <li Class="PatchOperationSequence" MayRequire="vanillaexpanded.vwe">
+                <operations>
+                    <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                        <xpath>/Defs/ThingDef [
+                            defName="VWE_Gun_GrenadeLauncher" or
+                            defName="VWE_Gun_AntiMaterialRifle" or
+                            defName="VWE_Gun_HMG" or
+                            defName="VWE_Gun_RocketLauncher" or
+                            defName="VWE_CombatHandgun" or
+                            defName="VWE_Gun_LightSMG" or
+                            defName="VWE_Gun_SemiAutomaticRifle"
+                            ]/costList/Steel</xpath>
+                        <newMaterial>EM_TemperedSteel</newMaterial>
+                        <percentage>50</percentage>
+                    </li>
+
+                    <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                        <xpath>/Defs/ThingDef [
+                            defName="VWE_Gun_SMG" or
+                            defName="VWE_Gun_Flamethrower" or
+                            defName="VWE_TrenchGun" or
+                            defName="VWE_Gun_BattleRifle" or
+                            defName="VWE_Gun_Carbine" or
+                            defName="VWE_Gun_MarksmanRifle" or
+                            defName="VWE_Gun_ServiceRifle"
+                            ]/costList/Steel</xpath>
+                        <newMaterial>EM_TemperedSteel</newMaterial>
+                        <percentage>100</percentage>
+                    </li>
+                </operations>
+            </li>
+
+            <!-- Vanilla Weapons Expanded - Heavy -->
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost" MayRequire="vanillaexpanded.vwehw">
+                <xpath>/Defs/ThingDef [
+                    defName="VWE_Gun_Autocannon" or
+                    defName="VWE_Gun_HandheldMortar" or
+                    defName="VWE_Gun_HeavyFlamer" or
+                    defName="VWE_Gun_SwarmMissileLauncher" or
+                    defName="VWE_Gun_UraniumSlugRifle" or
+                    defName="VWE_Apparel_Exoframe" or
+                    defName="VWEFT_Gun_HandheldGatlingGun"
+                    ]/costList/Steel</xpath>
+                <newMaterial>EM_TemperedSteel</newMaterial>
+                <percentage>100</percentage>
+            </li>
+
+            <!-- Vanilla Armour Expanded -->
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost" MayRequire="vanillaexpanded.varme">
+                <xpath>/Defs/ThingDef [
+                    defName="VAE_Apparel_RiotArmor" or
+                    defName="VAE_Apparel_RiotHelmet" or
+                    defName="VAE_Apparel_Shield_Riot"
+                    ]/costList/Steel</xpath>
+                <newMaterial>EM_TemperedSteel</newMaterial>
+                <percentage>50</percentage>
+            </li>
+
+        </operations>
+    </Operation>
+
+</Patch>

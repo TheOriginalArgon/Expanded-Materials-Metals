@@ -9,7 +9,7 @@
         <li>1.6</li>
     </supportedVersions>
     <description>An expansion mod that adds multiple new metals to the game, expanding the production chain and making the game harder.</description>
-    <modVersion IgnoreIfNoMatchingField="True">Feb9.2026</modVersion>
+    <modVersion IgnoreIfNoMatchingField="True">1.1.0</modVersion>
     <modIconPath IgnoreIfNoMatchingField="True">UI/EM_Logo</modIconPath>
     <modDependencies>
         <li>
@@ -26,5 +26,6 @@
     <loadAfter>
         <li>rebuild.cotr.doorsandcorners</li>
         <li>vanillaexpanded.vfearchitect</li>
+        <li>vanillaexpanded.gravship</li>
     </loadAfter>
 </ModMetaData>

@@ -12,15 +12,19 @@
     <v1.6>
         <li>/</li>
         <li>1.6</li>
+        <!-- DLCs -->
+        <li IfModActive="ludeon.rimworld.ideology">ModPatches/1.6/Ideology</li>
         <li IfModActive="ludeon.rimworld.biotech">ModPatches/1.6/Biotech</li>
         <li IfModActive="ludeon.rimworld.anomaly">ModPatches/1.6/Anomaly</li>
         <li IfModActive="ludeon.rimworld.odyssey">ModPatches/1.6/Odyssey</li>
-
+        
+        <!-- Mods (VE) -->
         <li IfModActive="OskarPotocki.VFE.Classical">ModPatches/1.6/VFE_Classical</li>
         <li IfModActive="VanillaExpanded.VFEPower">ModPatches/1.6/VFE_Power</li>
         <li IfModActive="oskarpotocki.vanillavehiclesexpanded">ModPatches/1.6/VanillaVehiclesExpanded</li>
-        <li IfModActive="rebuild.cotr.doorsandcorners">ModPatches/1.6/ReBuild_Doors</li>
+        <li IfModActive="vanillaexpanded.temperature">ModPatches/1.6/VanillaTemperatureExpanded</li>
         <li IfModActive="vanillaexpanded.vfearchitect">ModPatches/1.6/VFE_Architect</li>
+        <li IfModActive="vanillaexpanded.vfesecurity">ModPatches/1.6/VFE_Security</li>
         <li IfModActive="DankPyon.Medieval.Overhaul">ModPatches/1.6/MedievalOverhaul</li>
         <li IfModActive="oskarpotocki.vfe.empire">ModPatches/1.6/VFE_Empire</li>
         <li IfModActive="oskarpotocki.vfe.insectoid2">ModPatches/1.6/VFE_Insectoid2</li>
@@ -28,5 +32,19 @@
         <li IfModActive="vanillaracesexpanded.android">ModPatches/1.6/VRE_Android</li>
         <li IfModActive="oskarpotocki.vfe.deserters">ModPatches/1.6/VFE_Deserters</li>
         <li IfModActive="vanillaracesexpanded.insector">ModPatches/1.6/VRE_Insector</li>
+        <li IfModActive="oskarpotocki.vfe.pirates">ModPatches/1.6/VFE_Pirates</li>
+        <li IfModActive="vanillaexpanded.vfefactory">ModPatches/1.6/VFE_Factory</li>
+        <li IfModActive="vanillaexpanded.gravship">ModPatches/1.6/VFE_Gravship</li>
+        <li IfModActive="oskarpotocki.vanillavehiclesexpanded">ModPatches/1.6/VanillaVehiclesExpanded</li>
+        <li IfModActive="oskarpotocki.vanillavehiclesexpandedtier3">ModPatches/1.6/VVE_Tier3</li>
+        
+        <!-- Mods (ReGrowth) -->
+        <li IfModActive="rebuild.cotr.doorsandcorners">ModPatches/1.6/ReBuild_Doors</li>
+        
+        <!-- Mods (Other) -->
+        <li IfModActiveAll="kentington.saveourship2,ludeon.rimworld.odyssey">ModPatches/1.6/_Misc/SoS_Odyssey</li>
+        <li IfModActive="kentington.saveourship2" IfModNotActive="ludeon.rimworld.odyssey">ModPatches/1.6/_Misc/SoS_NoOdyssey</li>
+        <li IfModActive="kentington.saveourship2">ModPatches/1.6/SaveOurShip</li>
+        <li IfModNotActive="kentington.saveourship2">ModPatches/1.6/_Misc/NoSoS</li>
     </v1.6>
 </loadFolders>

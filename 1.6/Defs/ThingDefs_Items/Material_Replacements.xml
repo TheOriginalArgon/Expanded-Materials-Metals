@@ -6,6 +6,7 @@
         <materialToReplace>Steel</materialToReplace>
         <replaceWith>EM_Bronze</replaceWith>
         <maxTechLevel>Medieval</maxTechLevel>
+        <applyToRecipes>false</applyToRecipes>
         <costModifier>1.1</costModifier>
         <exceptionDefs>
             <li>MetalTile</li>
@@ -20,6 +21,7 @@
         <materialToReplace>Steel</materialToReplace>
         <replaceWith>EM_Iron</replaceWith>
         <maxTechLevel>Medieval</maxTechLevel>
+        <maxRecipeTechLevel>Medieval</maxRecipeTechLevel>
         <costModifier>1.2</costModifier>
         <exceptionDefs>
             <li>MetalTile</li>
@@ -34,6 +36,7 @@
         <materialToReplace>Steel</materialToReplace>
         <replaceWith>EM_MildSteel</replaceWith>
         <maxTechLevel>Industrial</maxTechLevel>
+        <maxRecipeTechLevel>Medieval</maxRecipeTechLevel>
         <costModifier>1.1</costModifier>
     </MaterialReplacement.Defs.MaterialReplacementDef>
 
@@ -41,7 +44,6 @@
         <defName>EM_Replacement_SteelWithTemperedSteel</defName>
         <materialToReplace>Steel</materialToReplace>
         <replaceWith>EM_TemperedSteel</replaceWith>
-        <maxTechLevel>Spacer</maxTechLevel>
         <costModifier>0.9</costModifier>
     </MaterialReplacement.Defs.MaterialReplacementDef>
 
@@ -52,7 +54,8 @@
         <materialToReplace>Plasteel</materialToReplace>
         <replaceWith>EM_Titanium</replaceWith>
         <maxTechLevel>Industrial</maxTechLevel>
-        <costModifier>0.8</costModifier>
+        <maxRecipeTechLevel>Industrial</maxRecipeTechLevel>
+        <costModifier>1</costModifier>
     </MaterialReplacement.Defs.MaterialReplacementDef>
 
 </Defs>

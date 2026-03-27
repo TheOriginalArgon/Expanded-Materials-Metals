@@ -1,0 +1,192 @@
+<Patch>
+
+    <!-- Ship parts that require titanium -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="Ship_CryptosleepCasket" or
+            defName="CrittersleepCasket" or
+            defName="CrittersleepCasketLarge" or
+            defName="HullFoamDistributor" or
+            defName="ShipHeatManifold" or
+            defName="ShipHeatBankLarge" or
+            defName="ShipHeatsinkAntiEntropy" or
+            defName="ShipTurret_ACI" or
+            defName="ShipTurret_ACII" or
+            defName="ShipTurret_ACIII" or
+            defName="ShipTurret_Laser" or
+            defName="ShipTurret_Laser_Large" or
+            defName="ShipTurret_Plasma" or
+            defName="ShipTurret_Plasma_Large" or
+            defName="ShipTurret_Kinetic" or
+            defName="ShipTurret_Kinetic_Large" or
+            defName="ShipSpinalEmitter" or
+            defName="ShipSpinalAmplifier" or
+            defName="ShipSpinalBarrelLaser" or
+            defName="ShipSpinalBarrelPlasma" or
+            defName="ShipSpinalBarrelKinetic" or
+            defName="ShipSpinalBarrelPsychic" or
+            defName="ShipSpinalBarrelMechanite" or
+            defName="Artillery_ShipTorpedo_One" or
+            defName="Artillery_ShipTorpedo_Two" or
+            defName="Artillery_ShipTorpedo" or
+            defName="ArchoRecycler" or
+            defName="ShipHardpointSmall" or
+            defName="ShipHardpoint" or
+            defName="ShipHardpointExtraMedium" or
+            defName="ShipHardpointLarge" or
+            defName="Ship_Engine_Small" or
+            defName="Ship_Engine" or
+            defName="Ship_Engine_Large" or
+            defName="Ship_Thruster" or
+            defName="Ship_Engine_Archotech" or
+            defName="ShipCombatShieldGenerator" or
+            defName="ShipCombatShieldGeneratorMini" or
+            defName="Ship_LifeSupport" or
+            defName="Ship_LifeSupport_Small" or
+            defName="Ship_Reactor" or
+            defName="Ship_Reactor_Small" or
+            defName="ShipCapacitorSmall" or
+            defName="ShipCapacitor" or
+            defName="ShipShuttleBay" or
+            defName="ShipShuttleBayLarge" or
+            defName="ShipSalvageBay" or
+            defName="ShipSalvageBayNano" or
+            defName="ShipCloakingDevice" or
+            defName="ShipInside_SolarGenerator" or
+            defName="ShipInside_SolarGeneratorArchotech" or
+            defName="ShipInside_SolarGeneratorMech" or
+            defName="ShipInside_PassiveVentArchotech" or
+            defName="ShipInside_PassiveVentMechanoid" or
+            defName="ShipAirlockBeam"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Titanium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>0.75</extraCostFactor>
+    </Operation>
+
+    <!-- Silver to copper -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="ShipCombatShieldGenerator" or
+            defName="ShipCombatShieldGeneratorMini" or
+            defName="ArchotechAntimatterReactor" or
+            defName="Ship_Reactor" or
+            defName="Ship_Reactor_Small"
+            ]/costList/Silver</xpath>
+        <newMaterial>EM_Copper</newMaterial>
+        <percentage>100</percentage>
+    </Operation>
+
+    <!-- Vehicles  -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/Vehicles.VehicleBuildDef [
+            defName="SoS2_Shuttle_Personal_Blueprint" or
+            defName="SoS2_Shuttle_Standard_Blueprint" or
+            defName="SoS2_Shuttle_Heavy_Blueprint" or
+            defName="SoS2_Shuttle_Superheavy_Blueprint"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Titanium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>0.8</extraCostFactor>
+    </Operation>
+
+    <!-- Conduits -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="ShipHeatConduit" or
+            defName="HiddenShipHeatConduit"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Copper</newMaterial>
+        <percentage>100</percentage>
+        <round>false</round>
+        <minimum>0</minimum>
+    </Operation>
+
+    <!-- Heatsinks -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="ShipPurgePort" or
+            defName="ShipPurgePortLarge"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Titanium</newMaterial>
+        <percentage>50</percentage>
+        <extraCostFactor>0.8</extraCostFactor>
+    </Operation>
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="ShipPurgePort" or
+            defName="ShipPurgePortLarge"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Copper</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>1.75</extraCostFactor>
+    </Operation>
+
+    <!-- Gold to silicon -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="Ship_DroneCore" or
+            defName="Ship_ComputerCore"
+            ]/costList/Gold</xpath>
+        <newMaterial>EM_Silicon</newMaterial>
+        <percentage>100</percentage>
+    </Operation>
+
+    <!-- Gold to germanium -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="ShipCloakingDevice"
+            ]/costList/Gold</xpath>
+        <newMaterial>EM_Germanium</newMaterial>
+        <percentage>100</percentage>
+    </Operation>
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="Ship_SensorCluster" or
+            defName="Ship_SensorClusterAdv"
+            ]/costList/Gold</xpath>
+        <newMaterial>EM_Germanium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>3</extraCostFactor>
+        <round>false</round>
+    </Operation>
+
+    <!-- Hulls and walls -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="Ship_BeamMech_Unpowered" or
+            defName="Ship_BeamArchotech_Unpowered" or
+            defName="Ship_BeamMech" or
+            defName="Ship_BeamArchotech" or
+            defName="ShipAirlockMech" or
+            defName="ShipAirlockArchotech"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Titanium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>0.75</extraCostFactor>
+        <round>false</round>
+    </Operation>
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="ShipHullTileMech" or
+            defName="ShipHullTileArchotech"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Titanium</newMaterial>
+        <percentage>100</percentage>
+        <round>false</round>
+        <minimum>0</minimum>
+    </Operation>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="Ship_BeamArchotech" or
+            defName="Ship_BeamMech"
+            ]/costList/EM_Titanium</xpath>
+        <newMaterial>EM_Copper</newMaterial>
+        <percentage>25</percentage>
+        <extraCostFactor>1.5</extraCostFactor>
+        <round>false</round>
+        <minimum>0</minimum>
+    </Operation>
+
+</Patch>

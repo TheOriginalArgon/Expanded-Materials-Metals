@@ -1,6 +1,5 @@
 <Defs>
 
-    <!-- DEBUG -->
     <RecipeDef>
         <defName>EM_ExtractOreFromChunks</defName>
         <label>extract ore from stone chunks</label>
@@ -29,6 +28,9 @@
             <categories>
                 <li>StoneChunks</li>
             </categories>
+            <disallowedThingDefs>
+                <li MayRequire="ludeon.rimworld.odyssey">ChunkVacstone</li>
+            </disallowedThingDefs>
         </fixedIngredientFilter>
         <modExtensions>
             <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_SpecialProducts">

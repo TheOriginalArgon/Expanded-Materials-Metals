@@ -1,0 +1,17 @@
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef [defName="GravlitePanel"]/costList/BlocksVacstone</xpath>
+        <value>
+            <EM_Aluminium>3</EM_Aluminium>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef [defName="GravlitePanel"]/description</xpath>
+        <value>
+            <description>A sheet of advanced polymer used in the construction of gravships. It's lightweight and has a high graviton conductance, making it ideal for gravtech structures.\n\nRequires aluminium, which can be obtained from asteroids or smelting vacstone chunks.</description>
+        </value>
+    </Operation>
+
+</Patch>

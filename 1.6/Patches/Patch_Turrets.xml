@@ -1,0 +1,35 @@
+<Patch>
+
+    <!-- Add lead to the ammunition of some turrets -->
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Steel-fueled turrets can also be refueled with lead (more efficient):</label>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef [
+                    defName="Turret_MiniTurret" or
+                    defName="Turret_Autocannon" or
+                    defName="VFES_Turret_AntiAir" or
+                    defName="VFES_Turret_Concealed" or
+                    defName="VFES_Turret_MilitaryTurret" or
+                    defName="VFES_Turret_ArmoredTurret" or
+                    defName="VFES_Turret_ShotgunTurret" or
+                    defName="VFES_Turret_AutocannonDouble" or
+                    defName="VFES_Complex_Hmg" or
+                    defName="VFES_Complex_Minigun" or
+                    defName="VFES_Turret_Minigun" or
+                    defName="VFES_Turret_NonLethalTurret" or
+                    defName="VFEM2_Turret_WallMountedArquebus" or
+                    defName="Turret_GatlingGun" or
+                    defName="VFEP_Turret_Cannon" or
+                    defName="VFED_Turret_Palintone"]
+                    /comps/li [@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs
+                </xpath>
+                <value>
+                    <li>EM_Lead</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,69 @@
+<Defs>
+
+    <RecipeDef>
+        <defName>EM_ExtractAluminiumFromVacstone</defName>
+        <label>smelt aluminium from vacstone</label>
+        <description>Smelt vacstone chunks to extract useful aluminium.</description>
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <jobString>Smelting aluminium from vacstone.</jobString>
+        <workAmount>780</workAmount>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ChunkVacstone</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <EM_Aluminium>20</EM_Aluminium>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ChunkVacstone</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>EM_OreExtraction</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>EM_ExtractTitaniumFromVacstone</defName>
+        <label>smelt titanium from vacstone</label>
+        <description>Smelt vacstone chunks to extract useful titanium.</description>
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <jobString>Smelting titanium from vacstone.</jobString>
+        <workAmount>900</workAmount>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ChunkVacstone</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <EM_Titanium>10</EM_Titanium>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ChunkVacstone</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisite>EM_OreExtraction</researchPrerequisite>
+    </RecipeDef>
+
+</Defs>

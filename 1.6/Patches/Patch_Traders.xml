@@ -1,0 +1,49 @@
+<Patch>
+
+    <!-- Add the metal traders to the corresponding vanilla factions -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef [@Name="OutlanderFactionBase"]/caravanTraderKinds</xpath>
+        <value>
+            <li>EM_Caravan_Outlander_Metals</li>
+            <li>EM_Caravan_Outlander_MetalsRare</li>
+        </value>
+    </Operation>
+
+    <!-- Add metals to orbital traders -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/TraderKindDef [defName="Orbital_BulkGoods"]/stockGenerators</xpath>
+        <value>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>EM_TemperedSteel</thingDef>
+                <countRange>250~400</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>EM_Copper</thingDef>
+                <countRange>200~400</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>EM_Lead</thingDef>
+                <countRange>300~500</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>EM_Coal</thingDef>
+                <countRange>300~700</countRange>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/TraderKindDef [defName="Orbital_Exotic"]/stockGenerators</xpath>
+        <value>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>EM_StainlessSteel</thingDef>
+                <countRange>150~300</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>EM_Titanium</thingDef>
+                <countRange>200~400</countRange>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

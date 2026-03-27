@@ -13,6 +13,7 @@
         <materialToReplace>DankPyon_IronIngot</materialToReplace>
         <replaceWith>EM_Bronze</replaceWith>
         <maxTechLevel>Medieval</maxTechLevel>
+        <applyToRecipes>false</applyToRecipes>
         <costModifier>1.1</costModifier>
     </MaterialReplacement.Defs.MaterialReplacementDef>
 

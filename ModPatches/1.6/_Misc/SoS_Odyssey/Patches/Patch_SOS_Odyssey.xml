@@ -1,0 +1,74 @@
+<Patch>
+
+    <!-- Ship parts that require aluminium -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="ShipPilotSeatMini" or
+            defName="ShipConsoleTactical" or
+            defName="ShipConsoleScience" or
+            defName="ShipInside_PassiveVent" or
+            defName="ShipInside_SolarGenerator" or
+            defName="Ship_ComputerCore" or
+            defName="Ship_DroneCore" or
+            defName="Ship_SensorCluster" or
+            defName="Ship_SensorClusterAdv"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Aluminium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>0.75</extraCostFactor>
+    </Operation>
+
+    <!-- Heatsinks -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="ShipHeatsink" or
+            defName="ShipHeatsinkLarge"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Aluminium</newMaterial>
+        <percentage>50</percentage>
+        <extraCostFactor>0.8</extraCostFactor>
+    </Operation>
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="ShipHeatsink" or
+            defName="ShipHeatsinkLarge"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Copper</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>1.75</extraCostFactor>
+    </Operation>
+
+    <!-- Hulls and walls -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="Ship_Beam_Unpowered" or
+            defName="Ship_Beam" or
+            defName="ShipAirlock"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Aluminium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>0.75</extraCostFactor>
+        <round>false</round>
+        <minimum>0</minimum>
+    </Operation>
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="ShipHullTile"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Aluminium</newMaterial>
+        <percentage>100</percentage>
+        <round>false</round>
+        <minimum>0</minimum>
+    </Operation>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="Ship_Beam"
+            ]/costList/EM_Aluminium</xpath>
+        <newMaterial>EM_Copper</newMaterial>
+        <percentage>25</percentage>
+        <extraCostFactor>1.5</extraCostFactor>
+        <round>false</round>
+    </Operation>
+
+</Patch>

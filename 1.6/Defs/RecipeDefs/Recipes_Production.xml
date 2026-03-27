@@ -76,125 +76,12 @@
     </RecipeDef>
 
     <!-- =============================== COMPONENT RECIPES =============================== -->
-    <RecipeDef>
-        <defName>EM_Make_ComponentIndustrial_Iron</defName>
-        <label>make component</label>
-        <description>Make a component.</description>
-        <jobString>Making component.</jobString>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>5000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <recipeUsers>
-            <li>FabricationBench</li>
-            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
-        </recipeUsers>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>EM_Iron</li>
-                    </thingDefs>
-                </filter>
-                <count>12</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>EM_Copper</li>
-                    </thingDefs>
-                </filter>
-                <count>0.5</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>EM_Tin</li>
-                    </thingDefs>
-                </filter>
-                <count>5</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>EM_Iron</li>
-                <li>EM_Copper</li>
-                <li>EM_Tin</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <products>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </products>
-        <skillRequirements>
-            <Crafting>8</Crafting>
-        </skillRequirements>
-        <workSkill>Crafting</workSkill>
-        <displayPriority>0</displayPriority>
-    </RecipeDef>
-
-    <RecipeDef>
-        <defName>EM_Make_ComponentIndustrial_Bronze</defName>
-        <label>make component</label>
-        <description>Make a component.</description>
-        <jobString>Making component.</jobString>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>5000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <recipeUsers>
-            <li>FabricationBench</li>
-            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
-        </recipeUsers>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>EM_Bronze</li>
-                    </thingDefs>
-                </filter>
-                <count>12</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>EM_Copper</li>
-                    </thingDefs>
-                </filter>
-                <count>0.7</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>EM_Tin</li>
-                    </thingDefs>
-                </filter>
-                <count>5</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>EM_Bronze</li>
-                <li>EM_Copper</li>
-                <li>EM_Tin</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <products>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </products>
-        <skillRequirements>
-            <Crafting>8</Crafting>
-        </skillRequirements>
-        <workSkill>Crafting</workSkill>
-        <displayPriority>0</displayPriority>
-    </RecipeDef>
 
     <!-- Components with lead (Recipe causes lead poisoning) -->
     <RecipeDef>
-        <defName>EM_Make_ComponentIndustrial_Steel_Lead</defName>
-        <label>make component (lead)</label>
-        <description>Make a component.</description>
+        <defName>EM_Make_ComponentIndustrial_Lead</defName>
+        <label>make component x2 (lead)</label>
+        <description>Make 2 components.</description>
         <jobString>Making component.</jobString>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <effectWorking>Cook</effectWorking>
@@ -213,7 +100,7 @@
                         <li>EM_MildSteel</li>
                     </thingDefs>
                 </filter>
-                <count>8</count>
+                <count>10</count>
             </li>
             <li>
                 <filter>
@@ -222,121 +109,6 @@
                     </thingDefs>
                 </filter>
                 <count>0.5</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>EM_Lead</li>
-                    </thingDefs>
-                </filter>
-                <count>2</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>Steel</li>
-                <li>EM_MildSteel</li>
-                <li>EM_Copper</li>
-                <li>EM_Lead</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <products>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </products>
-        <skillRequirements>
-            <Crafting>8</Crafting>
-        </skillRequirements>
-        <workSkill>Crafting</workSkill>
-        <displayPriority>0</displayPriority>
-    </RecipeDef>
-
-    <RecipeDef>
-        <defName>EM_Make_ComponentIndustrial_Iron_Lead</defName>
-        <label>make component (lead)</label>
-        <description>Make a component.</description>
-        <jobString>Making component.</jobString>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>2200</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <recipeUsers>
-            <li>FabricationBench</li>
-            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
-        </recipeUsers>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>EM_Iron</li>
-                    </thingDefs>
-                </filter>
-                <count>12</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>EM_Copper</li>
-                    </thingDefs>
-                </filter>
-                <count>0.5</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>EM_Lead</li>
-                    </thingDefs>
-                </filter>
-                <count>2</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>EM_Iron</li>
-                <li>EM_Copper</li>
-                <li>EM_Lead</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <products>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </products>
-        <skillRequirements>
-            <Crafting>8</Crafting>
-        </skillRequirements>
-        <workSkill>Crafting</workSkill>
-        <displayPriority>0</displayPriority>
-    </RecipeDef>
-
-    <RecipeDef>
-        <defName>EM_Make_ComponentIndustrial_Bronze_Lead</defName>
-        <label>make component (lead)</label>
-        <description>Make a component.</description>
-        <jobString>Making component.</jobString>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>2200</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <recipeUsers>
-            <li>FabricationBench</li>
-            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
-        </recipeUsers>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>EM_Bronze</li>
-                    </thingDefs>
-                </filter>
-                <count>12</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>EM_Copper</li>
-                    </thingDefs>
-                </filter>
-                <count>0.7</count>
             </li>
             <li>
                 <filter>
@@ -349,13 +121,14 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
-                <li>EM_Bronze</li>
+                <li>Steel</li>
+                <li>EM_MildSteel</li>
                 <li>EM_Copper</li>
                 <li>EM_Lead</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <ComponentIndustrial>1</ComponentIndustrial>
+            <ComponentIndustrial>2</ComponentIndustrial>
         </products>
         <skillRequirements>
             <Crafting>8</Crafting>
@@ -366,7 +139,7 @@
 
     <!-- Triple Components -->
     <RecipeDef>
-        <defName>EM_Make_ComponentIndustrial_x3_Steel</defName>
+        <defName>EM_Make_ComponentIndustrial_Silicon</defName>
         <label>make component x3</label>
         <description>Make a component.</description>
         <jobString>Making component.</jobString>
@@ -386,7 +159,7 @@
                         <li>Steel</li>
                     </thingDefs>
                 </filter>
-                <count>8</count>
+                <count>10</count>
             </li>
             <li>
                 <filter>
@@ -422,15 +195,17 @@
         <displayPriority>0</displayPriority>
     </RecipeDef>
 
+    <!-- =============================== ADVANCED COMPONENT RECIPES =============================== -->
+
     <RecipeDef>
-        <defName>EM_Make_ComponentIndustrial_x3_StainlessSteel</defName>
-        <label>make component x3</label>
-        <description>Make a component.</description>
-        <jobString>Making component.</jobString>
+        <defName>EM_Make_ComponentSpacer_Silicon</defName>
+        <label>make advanced component x2</label>
+        <description>Make two advanced components.</description>
+        <jobString>Making advanced components.</jobString>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <effectWorking>Cook</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>12000</workAmount>
+        <workAmount>15000</workAmount>
         <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
         <recipeUsers>
             <li>FabricationBench</li>
@@ -440,10 +215,27 @@
             <li>
                 <filter>
                     <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
                         <li>EM_StainlessSteel</li>
                     </thingDefs>
                 </filter>
-                <count>5</count>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                        <li>EM_Titanium</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
             </li>
             <li>
                 <filter>
@@ -451,32 +243,94 @@
                         <li>EM_Silicon</li>
                     </thingDefs>
                 </filter>
-                <count>5</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>EM_Tin</li>
-                    </thingDefs>
-                </filter>
-                <count>5</count>
+                <count>20</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
+                <li>ComponentIndustrial</li>
                 <li>EM_StainlessSteel</li>
+                <li>Plasteel</li>
+                <li>EM_Titanium</li>
                 <li>EM_Silicon</li>
-                <li>EM_Tin</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <ComponentIndustrial>3</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
         </products>
+        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
-            <Crafting>9</Crafting>
+            <Crafting>8</Crafting>
         </skillRequirements>
         <workSkill>Crafting</workSkill>
-        <displayPriority>0</displayPriority>
+        <displayPriority>10</displayPriority>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>EM_Make_ComponentSpacer_Germanium</defName>
+        <label>make advanced component x3</label>
+        <description>Make three advanced components.</description>
+        <jobString>Making advanced components.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>22000</workAmount>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <recipeUsers>
+            <li>FabricationBench</li>
+            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_StainlessSteel</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>EM_Germanium</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ComponentIndustrial</li>
+                <li>EM_StainlessSteel</li>
+                <li>Plasteel</li>
+                <li>EM_Germanium</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ComponentSpacer>3</ComponentSpacer>
+        </products>
+        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <displayPriority>10</displayPriority>
     </RecipeDef>
 
     <!-- =============================== CHEMFUEL RECIPES =============================== -->
@@ -599,209 +453,6 @@
         <products>
             <Chemfuel>75</Chemfuel>
         </products>
-    </RecipeDef>
-
-    <!-- =============================== ADVANCED COMPONENT RECIPES =============================== -->
-
-    <RecipeDef>
-        <defName>EM_Make_ComponentSpacer_StainlessSteel</defName>
-        <label>make advanced component</label>
-        <description>Make an advanced component.</description>
-        <jobString>Making advanced component.</jobString>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>10000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <recipeUsers>
-            <li>FabricationBench</li>
-            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
-        </recipeUsers>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>ComponentIndustrial</li>
-                    </thingDefs>
-                </filter>
-                <count>1</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>EM_StainlessSteel</li>
-                    </thingDefs>
-                </filter>
-                <count>15</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Plasteel</li>
-                    </thingDefs>
-                </filter>
-                <count>7</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Gold</li>
-                    </thingDefs>
-                </filter>
-                <count>0.3</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>ComponentIndustrial</li>
-                <li>EM_StainlessSteel</li>
-                <li>Plasteel</li>
-                <li>Gold</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <products>
-            <ComponentSpacer>1</ComponentSpacer>
-        </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
-        <skillRequirements>
-            <Crafting>8</Crafting>
-        </skillRequirements>
-        <workSkill>Crafting</workSkill>
-        <displayPriority>10</displayPriority>
-    </RecipeDef>
-
-    <RecipeDef>
-        <defName>EM_Make_ComponentSpacer_Silicon</defName>
-        <label>make advanced component</label>
-        <description>Make an advanced component.</description>
-        <jobString>Making advanced component.</jobString>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>10000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <recipeUsers>
-            <li>FabricationBench</li>
-            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
-        </recipeUsers>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>ComponentIndustrial</li>
-                    </thingDefs>
-                </filter>
-                <count>1</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Steel</li>
-                    </thingDefs>
-                </filter>
-                <count>20</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Plasteel</li>
-                    </thingDefs>
-                </filter>
-                <count>10</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>EM_Silicon</li>
-                    </thingDefs>
-                </filter>
-                <count>20</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>ComponentIndustrial</li>
-                <li>Steel</li>
-                <li>Plasteel</li>
-                <li>EM_Silicon</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <products>
-            <ComponentSpacer>1</ComponentSpacer>
-        </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
-        <skillRequirements>
-            <Crafting>8</Crafting>
-        </skillRequirements>
-        <workSkill>Crafting</workSkill>
-        <displayPriority>10</displayPriority>
-    </RecipeDef>
-
-    <RecipeDef>
-        <defName>EM_Make_ComponentSpacer_Germanium</defName>
-        <label>make advanced component</label>
-        <description>Make an advanced component.</description>
-        <jobString>Making advanced component.</jobString>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Machining</soundWorking>
-        <workAmount>10000</workAmount>
-        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-        <recipeUsers>
-            <li>FabricationBench</li>
-            <li MayRequire="VanillaExpanded.VFEProduction">VFE_ComponentFabricationBench</li>
-        </recipeUsers>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>ComponentIndustrial</li>
-                    </thingDefs>
-                </filter>
-                <count>1</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>EM_StainlessSteel</li>
-                    </thingDefs>
-                </filter>
-                <count>12</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Plasteel</li>
-                    </thingDefs>
-                </filter>
-                <count>5</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>EM_Germanium</li>
-                    </thingDefs>
-                </filter>
-                <count>12</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>ComponentIndustrial</li>
-                <li>EM_StainlessSteel</li>
-                <li>Plasteel</li>
-                <li>EM_Germanium</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <products>
-            <ComponentSpacer>1</ComponentSpacer>
-        </products>
-        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
-        <skillRequirements>
-            <Crafting>8</Crafting>
-        </skillRequirements>
-        <workSkill>Crafting</workSkill>
-        <displayPriority>10</displayPriority>
     </RecipeDef>
 
 </Defs>

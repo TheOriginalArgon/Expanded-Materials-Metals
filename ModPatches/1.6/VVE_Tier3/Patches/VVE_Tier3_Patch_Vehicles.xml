@@ -1,0 +1,52 @@
+<Patch>
+
+    <!-- Patch Tier 3 vehicle costs -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/Vehicles.VehicleBuildDef [
+            defName="VVE_BigRig_Blueprint" or
+            defName="VVE_Hermano_Blueprint" or
+            defName="VVE_Springbok_Blueprint"
+            ]/costList/Steel
+        </xpath>
+        <newMaterial>EM_TemperedSteel</newMaterial>
+        <percentage>25</percentage>
+    </Operation>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/Vehicles.VehicleBuildDef [
+            defName="VVE_Badger_Blueprint" or
+            defName="VVE_Burya_Blueprint" or
+            defName="VVE_Cherokee_Blueprint" or
+            defName="VVE_Goliath_Blueprint" or
+            defName="VVE_Lightning_Blueprint" or
+            defName="VVE_Louie_Blueprint" or
+            defName="VVE_Marshal_Blueprint" or
+            defName="VVE_Nomad_Blueprint" or
+            defName="VVE_Paladin_Blueprint" or
+            defName="VVE_Udar_Blueprint"
+            ]/costList/Steel
+        </xpath>
+        <newMaterial>EM_Titanium</newMaterial>
+        <percentage>75</percentage>
+        <extraCostFactor>0.8</extraCostFactor>
+    </Operation>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/Vehicles.VehicleBuildDef [
+            defName="VVE_Badger_Blueprint" or
+            defName="VVE_Burya_Blueprint" or
+            defName="VVE_Cherokee_Blueprint" or
+            defName="VVE_Goliath_Blueprint" or
+            defName="VVE_Lightning_Blueprint" or
+            defName="VVE_Louie_Blueprint" or
+            defName="VVE_Marshal_Blueprint" or
+            defName="VVE_Nomad_Blueprint" or
+            defName="VVE_Paladin_Blueprint" or
+            defName="VVE_Udar_Blueprint"
+            ]/costList/Steel
+        </xpath>
+        <newMaterial>EM_TemperedSteel</newMaterial>
+        <percentage>100</percentage>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,52 @@
+<Patch>
+
+    <!-- Uranium fuel pods need lead because radiation goes brr -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef [defName="MakeShuttleFuelPods100" or defName="MakeShuttleFuelPods1000"]/ingredients/li[2]/filter/thingDefs/li/text()</xpath>
+        <value>EM_Lead</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef [defName="MakeShuttleFuelPods100" or defName="MakeShuttleFuelPods1000"]/fixedIngredientFilter/thingDefs/li[2]/text()</xpath>
+        <value>EM_Lead</value>
+    </Operation>
+
+    <!-- EVA suit helmets require titanium -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="Apparel_SpaceSuitHelmet" or
+            defName="Apparel_SpaceSuitHelmetChild" or
+            defName="Apparel_SpaceSuitHelmetHeavy"
+            ]/costList/Gold
+        </xpath>
+        <newMaterial>EM_Titanium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>2</extraCostFactor>
+        <minimum>0</minimum>
+    </Operation>
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="Apparel_SpaceSuitHelmetHeavyPrestige"
+            ]/costList/Gold
+        </xpath>
+        <newMaterial>EM_Titanium</newMaterial>
+        <percentage>15</percentage>
+        <extraCostFactor>2</extraCostFactor>
+    </Operation>
+
+    <!-- Add tempered steel to bulk shells -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef [
+            defName="MakeAntigrainWarheadx4" or
+            defName="MakeHighExplosiveShellx4" or
+            defName="MakeEMPShellx4" or
+            defName="MakeHighExplosiveTorpedo4" or
+            defName="MakeEMPTorpedo4" or
+            defName="MakeAntigrainTorpedo4"
+            ]/ingredients/li[filter/thingDefs/li[text()="Steel"]]/filter/thingDefs</xpath>
+        <value>
+            <li>EM_TemperedSteel</li>
+        </value>
+    </Operation>
+
+</Patch>

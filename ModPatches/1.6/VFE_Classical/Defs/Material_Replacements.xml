@@ -5,6 +5,7 @@
         <materialToReplace>Steel</materialToReplace>
         <replaceWith>VFEC_Bronze</replaceWith>
         <maxTechLevel>Medieval</maxTechLevel>
+        <applyToRecipes>false</applyToRecipes>
         <costModifier>1.2</costModifier>
         <exceptionDefs>
             <li>MetalTile</li>

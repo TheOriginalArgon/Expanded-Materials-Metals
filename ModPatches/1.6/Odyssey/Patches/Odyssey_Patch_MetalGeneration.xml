@@ -1,0 +1,48 @@
+<Patch>
+
+    <!-- Add ores to asteroids -->
+     <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GenStepDef [defName="Asteroid"]/genStep/mineableCounts</xpath>
+        <value>
+            <EM_MineableTitanium>40~52</EM_MineableTitanium>
+            <EM_MineableAluminium>10~12</EM_MineableAluminium>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GenStepDef [defName="AsteroidBasic" or defName="Asteroid_NoRuins"]/genStep/mineableCounts</xpath>
+        <value>
+            <EM_MineableCoal>50~90</EM_MineableCoal>
+            <EM_MineableTin>15~20</EM_MineableTin>
+            <EM_MineableCopper>18~20</EM_MineableCopper>
+            <EM_MineableIron>90~120</EM_MineableIron>
+            <EM_MineableLead>40~60</EM_MineableLead>
+            <EM_MineableTitanium>16~23</EM_MineableTitanium>
+            <EM_MineableAluminium>5~8</EM_MineableAluminium>
+        </value>
+    </Operation>
+
+    <!-- Add ores to asteroid quest -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/QuestScriptDef [defName="OpportunitySite_Asteroid"]/root/nodes/li [@Class="QuestNode_Root_Asteroid"]/mineables</xpath>
+        <value>
+            <li>EM_MineableTitanium</li>
+            <li>EM_MineableAluminium</li>
+        </value>
+    </Operation>
+
+    <!-- Add ores to the generated location def (For the record, I don't know why there are so many things relating to the asteroid generation, but maybe someday I'll understand it) -->
+     <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/GeneratedLocationDef [defName="Asteroids"]/preciousResources</xpath>
+        <value>
+            <li>EM_MineableCoal</li>
+            <li>EM_MineableTin</li>
+            <li>EM_MineableCopper</li>
+            <li>EM_MineableIron</li>
+            <li>EM_MineableLead</li>
+            <li>EM_MineableTitanium</li>
+            <li>EM_MineableAluminium</li>
+        </value>
+     </Operation>
+
+</Patch>

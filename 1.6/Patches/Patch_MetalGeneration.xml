@@ -1,0 +1,135 @@
+<Patch>
+
+    <!-- Remove steel generation -->
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Remove natural generation of steel:</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/ThingDef [defName="MineableSteel"]/building/mineableScatterCommonality</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/ThingDef [defName="MineableSteel"]/building/mineableScatterLumpSizeRange</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/GenStepDef [defName="PreciousLump"]/genStep/mineables/li [text()="MineableSteel"]</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/ThingDef [defName="Steel"]/deepCommonality</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/ThingDef [defName="Steel"]/deepLumpSizeRange</xpath>
+            </li>
+            <li Class="PatchOperationRemove" MayRequire="vanillaexpanded.vfefactory">
+                <xpath>/Defs/VanillaFurnitureExpandedFactory.DrillableMetalsDef [defName="VFEFactory_DrillableMetals"]/drillableMetals/li [text()="Steel"]</xpath>
+            </li>
+            <li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.odyssey">
+                <xpath>/Defs/GenStepDef [defName="Asteroid_NoRuins" or defName="AsteroidBasic"]/genStep/mineableCounts/MineableSteel</xpath>
+            </li>
+            <li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.odyssey">
+                <xpath>/Defs/GeneratedLocationDef [defName="Asteroids"]/preciousResources/li [text()="MineableSteel"]</xpath>
+            </li>
+            <li Class="PatchOperationRemove" MayRequire="vanillaexpanded.gravship">
+                <xpath>/Defs/GenStepDef [defName="VGE_IceAsteroid" or defName="VGE_AsteroidCluster" or defName="VGE_AsteroidField" or defName="VGE_PorousAsteroid" or defName="VGE_ShatteredAsteroid" or defName="VGE_SmallAsteroid" or defName="VGE_AsteroidWithRuins" or defName="VGE_GiantAsteroid" or defName="VGE_DenseAsteroid"]/genStep/mineableCounts/MineableSteel</xpath>
+            </li>
+            <li Class="PatchOperationRemove" MayRequire="vanillaexpanded.gravship">
+                <xpath>/Defs/GeneratedLocationDef [defName="VGE_IceAsteroids" or defName="VGE_AsteroidCluster" or defName="VGE_AsteroidField" or defName="VGE_PorousAsteroid" or defName="VGE_ShatteredAsteroid" or defName="VGE_SmallAsteroid" or defName="VGE_AsteroidWithRuins" or defName="VGE_GiantAsteroid" or defName="VGE_DenseAsteroid"]/preciousResources/li [text()="MineableSteel"]</xpath>
+            </li>
+        </operations>
+    </Operation>
+
+    <!-- Remove plasteel generation -->
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Remove natural generation of plasteel:</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/ThingDef [defName="MineablePlasteel"]/building/mineableScatterCommonality</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/ThingDef [defName="MineablePlasteel"]/building/mineableScatterLumpSizeRange</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/GenStepDef [defName="PreciousLump"]/genStep/mineables/li [text()="MineablePlasteel"]</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/ThingDef [defName="Plasteel"]/deepCommonality</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/ThingDef [defName="Plasteel"]/deepLumpSizeRange</xpath>
+            </li>
+            <li Class="PatchOperationRemove" MayRequire="vanillaexpanded.vfefactory">
+                <xpath>/Defs/VanillaFurnitureExpandedFactory.DrillableMetalsDef [defName="VFEFactory_DrillableMetals"]/drillableMetals/li [text()="Plasteel"]</xpath>
+            </li>
+            <li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.odyssey">
+                <xpath>/Defs/GenStepDef [defName="Asteroid_NoRuins" or defName="AsteroidBasic"]/genStep/mineableCounts/MineablePlasteel</xpath>
+            </li>
+            <li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.odyssey">
+                <xpath>/Defs/GeneratedLocationDef [defName="Asteroids"]/preciousResources/li [text()="MineablePlasteel"]</xpath>
+            </li>
+            <li Class="PatchOperationRemove" MayRequire="vanillaexpanded.gravship">
+                <xpath>/Defs/GenStepDef [defName="VGE_IceAsteroid" or defName="VGE_AsteroidCluster" or defName="VGE_AsteroidField" or defName="VGE_PorousAsteroid" or defName="VGE_ShatteredAsteroid" or defName="VGE_SmallAsteroid" or defName="VGE_AsteroidWithRuins" or defName="VGE_GiantAsteroid" or defName="VGE_DenseAsteroid"]/genStep/mineableCounts/MineablePlasteel</xpath>
+            </li>
+            <li Class="PatchOperationRemove" MayRequire="vanillaexpanded.gravship">
+                <xpath>/Defs/GeneratedLocationDef [defName="VGE_IceAsteroids" or defName="VGE_AsteroidCluster" or defName="VGE_AsteroidField" or defName="VGE_PorousAsteroid" or defName="VGE_ShatteredAsteroid" or defName="VGE_SmallAsteroid" or defName="VGE_AsteroidWithRuins" or defName="VGE_GiantAsteroid" or defName="VGE_DenseAsteroid"]/preciousResources/li [text()="MineablePlasteel"]</xpath>
+            </li>
+        </operations>
+    </Operation>
+
+    <!-- Remove components generation -->
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Remove natural generation of compacted machinery (components):</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/ThingDef [defName="MineableComponentsIndustrial"]/building/mineableScatterCommonality</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>/Defs/ThingDef [defName="MineableComponentsIndustrial"]/building/mineableScatterLumpSizeRange</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/GenStepDef [defName="PreciousLump"]/genStep/mineables/li [text()="MineableComponentsIndustrial"]</xpath>
+            </li>
+            <li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.odyssey">
+                <xpath>/Defs/GenStepDef [defName="Asteroid_NoRuins" or defName="AsteroidBasic"]/genStep/mineableCounts/MineableComponentsIndustrial</xpath>
+            </li>
+            <li Class="PatchOperationRemove" MayRequire="ludeon.rimworld.odyssey">
+                <xpath>/Defs/GeneratedLocationDef [defName="Asteroids"]/preciousResources/li [text()="MineableComponentsIndustrial"]</xpath>
+            </li>
+            <li Class="PatchOperationRemove" MayRequire="vanillaexpanded.gravship">
+                <xpath>/Defs/GenStepDef [defName="VGE_IceAsteroid" or defName="VGE_AsteroidCluster" or defName="VGE_AsteroidField" or defName="VGE_PorousAsteroid" or defName="VGE_ShatteredAsteroid" or defName="VGE_SmallAsteroid" or defName="VGE_AsteroidWithRuins" or defName="VGE_GiantAsteroid" or defName="VGE_DenseAsteroid"]/genStep/mineableCounts/MineableComponentsIndustrial</xpath>
+            </li>
+            <li Class="PatchOperationRemove" MayRequire="vanillaexpanded.gravship">
+                <xpath>/Defs/GeneratedLocationDef [defName="VGE_IceAsteroids" or defName="VGE_AsteroidCluster" or defName="VGE_AsteroidField" or defName="VGE_PorousAsteroid" or defName="VGE_ShatteredAsteroid" or defName="VGE_SmallAsteroid" or defName="VGE_AsteroidWithRuins" or defName="VGE_GiantAsteroid" or defName="VGE_DenseAsteroid"]/preciousResources/li [text()="MineableComponentsIndustrial"]</xpath>
+            </li>
+        </operations>
+    </Operation>
+
+    <!-- Change mineable steel drop to mild steel -->
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Mineable steel yields mild steel:</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [defName="MineableSteel"]/building/mineableThing</xpath>
+                <value>
+                    <mineableThing>EM_MildSteel</mineableThing>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+    <!-- Long range metal generation -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GenStepDef [defName="PreciousLump"]/genStep/mineables</xpath>
+        <value>
+            <li>EM_MineableCoal</li>
+            <li>EM_MineableTin</li>
+            <li>EM_MineableCopper</li>
+            <li>EM_MineableIron</li>
+            <li>EM_MineableLead</li>
+            <li>EM_MineableTitanium</li>
+        </value>
+    </Operation>
+
+</Patch>

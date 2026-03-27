@@ -1,0 +1,27 @@
+<Patch>
+
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Prosthetics require stainless steel:</label>
+        <operations>
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                <xpath>/Defs/ThingDef [@ParentName="BodyPartProstheticMakeableBase" or @ParentName="BodyPartProstheticImperialBase"]/costList/Steel</xpath>
+                <newMaterial>EM_StainlessSteel</newMaterial>
+                <percentage>75</percentage>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Add titanium to vanilla bionics:</label>
+        <operations>
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                <xpath>/Defs/ThingDef [@ParentName="BodyPartBionicBase" or @ParentName="BodyPartBionicImperialBase"]/costList/Plasteel</xpath>
+                <newMaterial>EM_Titanium</newMaterial>
+                <percentage>75</percentage>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>

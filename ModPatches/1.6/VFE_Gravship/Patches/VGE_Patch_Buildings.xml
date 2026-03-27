@@ -1,0 +1,158 @@
+<Patch>
+
+    <!-- Gravship structures need titanium -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VGE_TargetingTerminal" or
+            defName="VGE_PointDefenseTurret" or
+            defName="VGE_GaussGun" or
+            defName="VGE_JavelinPod" or
+            defName="VGE_AnticraftCaster" or
+            defName="VQEA_DestroyedSmallAstrofuelTank" or
+            defName="VQEA_DestroyedGravExtender" or
+            defName="VQEA_DestroyedSmallThruster" or
+            defName="VQEA_DestroyedLargeThruster" or
+            defName="VGE_GravjumperEngine" or
+            defName="VGE_GravFieldAmplifier" or
+            defName="VGE_GravheatAbsorber" or
+            defName="VGE_LargeMechanoidThruster" or
+            defName="VGE_MechanoidResourceProcessor" or
+            defName="VGE_MechanoidPodLauncher" or
+            defName="VGE_GravcorePowerCoil" or
+            defName="VGE_GravshipCapacitor" or
+            defName="VGE_FlightComputer" or
+            defName="VGE_MaintenanceHub" or
+            defName="VGE_CapacitorHarmonizer" or
+            defName="VGE_OperatorSubpersonaCore" or
+            defName="VGE_GiantAstrofuelTank" or
+            defName="VGE_AstrofuelGenerator" or
+            defName="VGE_IndustrialAstrofuelGenerator" or
+            defName="VGE_AstrofuelSynthesizer" or
+            defName="VGE_Astropurifier" or
+            defName="VGE_GiantThruster" or
+            defName="VGE_OxygenHarvester" or
+            defName="VGE_LifeSupportSystem" or
+            defName="VGE_OxygenReclaimer" or
+            defName="VGE_AstrofuelValve"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Titanium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>0.5</extraCostFactor>
+    </Operation>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VGE_AstrofuelTap" or
+            defName="VGE_AstrofuelDrain"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Titanium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>0.25</extraCostFactor>
+    </Operation>
+
+    <!-- Gravship structures need aluminium -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            @ParentName="VGE_VacBarrierMultiCellBase" or
+            defName="VGE_CompactStove" or
+            defName="VGE_CompactDrugLab" or
+            defName="VGE_CompactMachiningTable" or
+            defName="VGE_CompactSmithy" or
+            defName="VGE_CompactTailor" or
+            defName="VGE_CompactRefinery" or
+            defName="VGE_CompactFabBench" or
+            defName="VQEA_DestroyedSmallOxygenTank" or
+            defName="VQEA_DestroyedSmallHeatsink" or
+            defName="VGE_CommsTerminal" or
+            defName="VGE_SmallHeatsink" or
+            defName="VGE_LargeHeatsink" or
+            defName="VGE_EngineeringConsole" or
+            defName="VGE_GravtechConsole" or
+            defName="VGE_MechanoidAstrofuelNode" or
+            defName="VGE_OxygenValve" or
+            defName="VGE_SmallOxygenTank" or
+            defName="VGE_LargeOxygenTank" or
+            defName="VGE_IndustrialOxygenPump" or
+            defName="VGE_Agrocell" or
+            defName="VGE_PilotCockpit" or
+            defName="VGE_PilotBridge" or
+            defName="VGE_CopilotConsole"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Aluminium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>0.5</extraCostFactor>
+    </Operation>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VGE_SealantPopper" or
+            defName="VGE_WallFirefoamPopper" or
+            defName="VGE_WallOrbitalTradeBeacon" or
+            defName="VGE_OxygenCanisterFiller" or
+            defName="VGE_OxygenCanisterEmptier"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Aluminium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>0.25</extraCostFactor>
+    </Operation>
+
+    <!-- <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Aluminium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>1</extraCostFactor>
+    </Operation> -->
+
+    <!-- Pipes with aluminium -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VGE_OxygenPipe" or
+            defName="VGE_HiddenOxygenPipe"
+            ]/costList/Steel</xpath>
+        <minimum>0</minimum>
+        <newMaterial>EM_Aluminium</newMaterial>
+        <percentage>100</percentage>
+        <round>false</round>
+    </Operation>
+
+    <!-- Pipes with titanium -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VGE_AstrofuelPipe" or
+            defName="VGE_HiddenAstrofuelPipe"
+            ]/costList/Steel</xpath>
+        <minimum>0</minimum>
+        <newMaterial>EM_Titanium</newMaterial>
+        <percentage>100</percentage>
+        <round>false</round>
+    </Operation>
+
+    <!-- Heatsinks require copper -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VGE_SmallHeatsink" or
+            defName="VGE_LargeHeatsink" or
+            defName="VGE_GravheatAbsorber"
+            ]/costList/Gold</xpath>
+        <newMaterial>EM_Copper</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>1.5</extraCostFactor>
+    </Operation>
+
+    <!-- Descriptions of broken parts mentioning steel -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="VQEA_DestroyedSmallOxygenTank"]/description</xpath>
+        <value>
+            <description>This tank once supplied oxygen to the gravship, but it’s now broken and useless. Some metals can still be salvaged from it.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="VQEA_DestroyedSmallHeatsink"]/description</xpath>
+        <value>
+            <description>This heatsink once cooled the gravship’s systems, but it has burned out. Some metals can still be recovered from the wreck.</description>
+        </value>
+    </Operation>
+
+</Patch>

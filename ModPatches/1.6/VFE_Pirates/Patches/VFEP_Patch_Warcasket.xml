@@ -1,0 +1,47 @@
+<Patch>
+
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>VFE - Pirates Warcasket weapons require tempered steel:</label>
+        <operations>
+
+            <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                <xpath>/Defs/ThingDef [
+                    defName="VFEP_Box_Autorifle" or
+                    defName="VFEP_Box_UraniumSlugRifle" or
+                    defName="VFEP_Box_Slugthrower" or
+                    defName="VFEP_Box_Minigun" or
+                    defName="VFEP_Box_GrenadeLauncher" or
+                    defName="VFEP_Box_HeavyFlamer" or
+                    defName="VFEP_Box_CombatKnife" or
+                    defName="VFEP_Box_Broadsword" or
+                    defName="VFEP_Box_HandheldCannon" or
+                    defName="VFEP_Box_GravityHammer" or
+                    defName="VFEP_Box_Railgun" or
+                    defName="VFEP_Box_SalvagedLaserEradicator" or
+                    defName="VFEP_Box_TearGasGrenadeLauncher" or
+                    defName="VFEP_Box_FoldingGun"or
+
+                    defName="VFEP_WarcasketGun_Autorifle" or
+                    defName="VFEP_WarcasketGun_UraniumSlugRifle" or
+                    defName="VFEP_WarcasketGun_Slugthrower" or
+                    defName="VFEP_WarcasketGun_Minigun" or
+                    defName="VFEP_WarcasketGun_GrenadeLauncher" or
+                    defName="VFEP_WarcasketGun_HeavyFlamer" or
+                    defName="VFEP_WarcasketGun_CombatKnife" or
+                    defName="VFEP_WarcasketGun_Broadsword" or
+                    defName="VFEP_WarcasketGun_HandheldCannon" or
+                    defName="VFEP_WarcasketGun_GravityHammer" or
+                    defName="VFEP_WarcasketGun_Railgun" or
+                    defName="VFEP_WarcasketGun_SalvagedLaserEradicator" or
+                    defName="VFEP_WarcasketGun_TearGasGrenadeLauncher" or
+                    defName="VFEP_WarcasketGun_FoldingGun"
+                    ]/costList/Steel</xpath>
+                <newMaterial>EM_TemperedSteel</newMaterial>
+                <percentage>100</percentage>
+            </li>
+
+        </operations>
+    </Operation>
+
+</Patch>

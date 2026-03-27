@@ -1,0 +1,10 @@
+<Patch>
+
+    <!-- AC control unit needs copper -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [defName="VTE_ACControlUnit"]/costList/Silver</xpath>
+        <newMaterial>EM_StainlessSteel</newMaterial>
+        <percentage>100</percentage>
+    </Operation>
+
+</Patch>

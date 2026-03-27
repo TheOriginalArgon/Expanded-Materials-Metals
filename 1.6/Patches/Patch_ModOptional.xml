@@ -1,0 +1,54 @@
+<Patch>
+
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>Enable crafting components with iron or bronze:</label>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef [defName="Make_ComponentIndustrial"]/ingredients/li[filter/thingDefs/li[text()="Steel"]]/filter/thingDefs</xpath>
+                <value>
+                    <li>EM_Iron</li>
+                    <li>EM_Bronze</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef [defName="Make_ComponentIndustrial"]/fixedIngredientFilter/thingDefs</xpath>
+                <value>
+                    <li>EM_Iron</li>
+                    <li>EM_Bronze</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef [defName="EM_Make_ComponentIndustrial_Lead"]/ingredients/li[filter/thingDefs/li[text()="Steel"]]/filter/thingDefs</xpath>
+                <value>
+                    <li>EM_Iron</li>
+                    <li>EM_Bronze</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef [defName="EM_Make_ComponentIndustrial_Lead"]/fixedIngredientFilter/thingDefs</xpath>
+                <value>
+                    <li>EM_Iron</li>
+                    <li>EM_Bronze</li>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef [defName="EM_Make_ComponentIndustrial_Silicon"]/ingredients/li[filter/thingDefs/li[text()="Steel"]]/filter/thingDefs</xpath>
+                <value>
+                    <li>EM_Iron</li>
+                    <li>EM_Bronze</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef [defName="EM_Make_ComponentIndustrial_Silicon"]/fixedIngredientFilter/thingDefs</xpath>
+                <value>
+                    <li>EM_Iron</li>
+                    <li>EM_Bronze</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,97 @@
+<Patch>
+
+    <!-- Add ores to asteroid types -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GenStepDef [
+            defName="VGE_IceAsteroid" or
+            defName="VGE_AsteroidCluster" or
+            defName="VGE_AsteroidField" or
+            defName="VGE_PorousAsteroid" or
+            defName="VGE_ShatteredAsteroid" or
+            defName="VGE_SmallAsteroid" or
+            defName="VGE_AsteroidWithRuins"
+            ]/genStep/mineableCounts</xpath>
+        <value>
+            <EM_MineableCoal>50~90</EM_MineableCoal>
+            <EM_MineableTin>15~20</EM_MineableTin>
+            <EM_MineableCopper>18~20</EM_MineableCopper>
+            <EM_MineableIron>90~120</EM_MineableIron>
+            <EM_MineableLead>40~60</EM_MineableLead>
+            <EM_MineableTitanium>16~23</EM_MineableTitanium>
+            <EM_MineableAluminium>5~8</EM_MineableAluminium>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GenStepDef [
+            defName="VGE_GiantAsteroid" or
+            defName="VGE_DenseAsteroid"
+            ]/genStep/mineableCounts</xpath>
+        <value>
+            <EM_MineableCoal>60~100</EM_MineableCoal>
+            <EM_MineableTin>20~30</EM_MineableTin>
+            <EM_MineableCopper>25~35</EM_MineableCopper>
+            <EM_MineableIron>100~150</EM_MineableIron>
+            <EM_MineableLead>60~70</EM_MineableLead>
+            <EM_MineableTitanium>40~45</EM_MineableTitanium>
+            <EM_MineableAluminium>5~8</EM_MineableAluminium>
+        </value>
+    </Operation>
+
+    <!-- Add compressed ores to the solid core asteroid quest -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/QuestScriptDef [defName="VGE_OpportunitySite_SolidCoreAsteroid"]/root/nodes/li [@Class="QuestNode_Root_Asteroid"]/mineables</xpath>
+        <value>
+            <li>EM_Compressed_Coal</li>
+            <li>EM_Compressed_Tin</li>
+            <li>EM_Compressed_Copper</li>
+            <li>EM_Compressed_Iron</li>
+            <li>EM_Compressed_Lead</li>
+            <li>EM_Compressed_Titanium</li>
+            <li>EM_Compressed_Aluminium</li>
+            <li>EM_Compressed_Silicon</li>
+            <li>EM_Compressed_Germanium</li>
+        </value>
+    </Operation>
+
+    <!-- Exclude compressed ores from mineral-rich mutator -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TileMutatorDef[defName="MineralRich"]/resourceBlacklist</xpath>
+        <value>
+            <li>EM_Compressed_Coal</li>
+            <li>EM_Compressed_Tin</li>
+            <li>EM_Compressed_Copper</li>
+            <li>EM_Compressed_Iron</li>
+            <li>EM_Compressed_Lead</li>
+            <li>EM_Compressed_Titanium</li>
+            <li>EM_Compressed_Aluminium</li>
+            <li>EM_Compressed_Silicon</li>
+            <li>EM_Compressed_Germanium</li>
+        </value>
+    </Operation>
+
+    <!-- Add ores to the generated location def (For the record, I don't know why there are so many things relating to the asteroid generation, but maybe someday I'll understand it) -->
+     <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/GeneratedLocationDef [
+            defName="VGE_IceAsteroids" or
+            defName="VGE_AsteroidCluster" or
+            defName="VGE_AsteroidField" or
+            defName="VGE_PorousAsteroid" or
+            defName="VGE_GiantAsteroid" or
+            defName="VGE_DenseAsteroid" or
+            defName="VGE_ShatteredAsteroid" or
+            defName="VGE_SmallAsteroid" or
+            defName="VGE_AsteroidWithRuins"
+            ]/preciousResources</xpath>
+        <value>
+            <li>EM_MineableCoal</li>
+            <li>EM_MineableTin</li>
+            <li>EM_MineableCopper</li>
+            <li>EM_MineableIron</li>
+            <li>EM_MineableLead</li>
+            <li>EM_MineableTitanium</li>
+            <li>EM_MineableAluminium</li>
+        </value>
+     </Operation>
+
+</Patch>

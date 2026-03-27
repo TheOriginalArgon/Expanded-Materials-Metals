@@ -1,0 +1,52 @@
+<Patch>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VFEFactory_Autofarmer" or
+            defName="VFEFactory_AutomatedDrillPlatform" or
+            defName="VFEFactory_AutomatedSmelter" or
+            defName="VFEFactory_AutomatedBiofuelRefinery" or
+            defName="VFEFactory_AutomatedMasonrySaw" or
+            defName="VFEFactory_AutomatedMincer" or
+            defName="VFEFactory_ConveyorOven" or
+            defName="VFEFactory_Autoloom" or
+            defName="VFEFactory_AutomatedCrematorium" or
+            defName="VFEFactory_AutomatedFishfarm" or
+            defName="VFEFactory_AutomatedCannery"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_TemperedSteel</newMaterial>
+        <percentage>50</percentage>
+    </Operation>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VFEFactory_AutomatedAssembler" or
+            defName="VFEFactory_NeutroamineSynthesizer" or
+            defName="VFEFactory_AutomatedAmmunitionPress" or
+            defName="VFEFactory_AutomatedAlloyForge" or
+            defName="VFEFactory_AutomatedDistillery" or
+            defName="VFEFactory_MedicineGranulator" or
+            defName="VFEFactory_AutomatedMachiningBay"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_TemperedSteel</newMaterial>
+        <percentage>75</percentage>
+    </Operation>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VFEFactory_NeutroamineSynthesizer"
+            ]/costList/Silver</xpath>
+        <newMaterial>EM_StainlessSteel</newMaterial>
+        <percentage>100</percentage>
+    </Operation>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VFEFactory_Heatsink"
+            ]/costList/Gold</xpath>
+        <newMaterial>EM_Copper</newMaterial>
+        <extraCostFactor>2.5</extraCostFactor>
+        <percentage>100</percentage>
+    </Operation>
+
+</Patch>

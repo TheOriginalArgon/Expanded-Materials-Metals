@@ -1,0 +1,17 @@
+<Defs>
+
+    <VanillaFurnitureExpandedFactory.DrillableMetalsDef>
+        <defName>EM_DrillableMetals</defName>
+        <label>Drillable metals</label>
+        <drillableMetals>
+            <li>EM_Iron</li>
+            <li>EM_Lead</li>
+            <li>EM_Copper</li>
+            <li>EM_Tin</li>
+            <li>EM_Titanium</li>
+            <li>EM_Silicon</li>
+            <li>EM_Germanium</li>
+        </drillableMetals>
+    </VanillaFurnitureExpandedFactory.DrillableMetalsDef>
+
+</Defs>

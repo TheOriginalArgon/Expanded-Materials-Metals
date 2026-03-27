@@ -5,7 +5,7 @@
         <label>Enable lead recipes causing lead poisoning:</label>
         <operations>
             <li Class="PatchOperationAddModExtension">
-                <xpath>/Defs/RecipeDef [defName="EM_Make_ComponentIndustrial_Steel_Lead" or defName="EM_Make_ComponentIndustrial_Iron_Lead" or defName="EM_Make_ComponentIndustrial_Bronze_Lead"]</xpath>
+                <xpath>/Defs/RecipeDef [defName="EM_Make_ComponentIndustrial_Lead"]</xpath>
                 <value>
                     <li Class="ArgonicCore.ModExtensions.RecipeDefExtension_HediffOnFinish">
                         <hediff>EM_LeadPoisoning</hediff>
@@ -16,7 +16,7 @@
                 </value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>/Defs/RecipeDef [defName="EM_Make_ComponentIndustrial_Steel_Lead" or defName="EM_Make_ComponentIndustrial_Iron_Lead" or defName="EM_Make_ComponentIndustrial_Bronze_Lead"]/description</xpath>
+                <xpath>/Defs/RecipeDef [defName="EM_Make_ComponentIndustrial_Lead"]/description</xpath>
                 <value>
                     <description>Make a component.\n\n&lt;color=#D73333&gt;Warning:&lt;/color&gt; This recipe uses lead soldering instead of tin. It is much quicker but causes accumulative lead poisoning over time.</description>
                 </value>

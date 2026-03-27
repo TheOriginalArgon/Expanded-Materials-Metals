@@ -1,0 +1,255 @@
+<Defs>
+
+    <ThingDef ParentName="RockBase">
+        <defName>EM_Compressed_Coal</defName>
+        <label>compressed coal</label>
+        <description>Ancient fossilized matter compressed into a dense coal-rich deposit. Found only in deep space.</description>
+        <graphicData>
+            <texPath>Things/Natural/DeepRockWallFlecked_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(115,106,98)</color>
+            <colorTwo>(25,29,34)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>4500</MaxHitPoints>
+        </statBases>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>EM_Coal</mineableThing>
+            <mineableYield>90</mineableYield>
+            <mineableScatterCommonality>0</mineableScatterCommonality>
+            <mineableScatterLumpSizeRange>
+                <min>50</min>
+                <max>90</max>
+            </mineableScatterLumpSizeRange>
+            <veinMineable>true</veinMineable>
+            <mineablePreventMeteorite>true</mineablePreventMeteorite>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="RockBase">
+        <defName>EM_Compressed_Iron</defName>
+        <label>compressed iron</label>
+        <description>Iron-rich veins compressed through millenia into the crust of an asteroid. Found only in deep space.</description>
+        <graphicData>
+            <texPath>Things/Natural/DeepRockWallFlecked_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(115,106,98)</color>
+            <colorTwo>(143,123,109)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>7500</MaxHitPoints>
+        </statBases>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>EM_Iron</mineableThing>
+            <mineableYield>80</mineableYield>
+            <mineableScatterCommonality>0</mineableScatterCommonality>
+            <mineableScatterLumpSizeRange>
+                <min>80</min>
+                <max>125</max>
+            </mineableScatterLumpSizeRange>
+            <veinMineable>true</veinMineable>
+            <mineablePreventMeteorite>true</mineablePreventMeteorite>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="RockBase">
+        <defName>EM_Compressed_Lead</defName>
+        <label>compressed lead</label>
+        <description>Ancient stone layers hiding veins of compressed lead. Found only in deep space.</description>
+        <graphicData>
+            <texPath>Things/Natural/DeepRockWallFlecked_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(115,106,98)</color>
+            <colorTwo>(95,86,81)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>6000</MaxHitPoints>
+        </statBases>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>EM_Lead</mineableThing>
+            <mineableYield>90</mineableYield>
+            <mineableScatterCommonality>0</mineableScatterCommonality>
+            <mineableScatterLumpSizeRange>
+                <min>20</min>
+                <max>60</max>
+            </mineableScatterLumpSizeRange>
+            <veinMineable>true</veinMineable>
+            <mineablePreventMeteorite>true</mineablePreventMeteorite>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="RockBase">
+        <defName>EM_Compressed_Tin</defName>
+        <label>compressed tin</label>
+        <description>Tin-laden stone layers compressed into a dense deposit. Found only in deep space.</description>
+        <graphicData>
+            <texPath>Things/Natural/DeepRockWallFlecked_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(115,106,98)</color>
+            <colorTwo>(143,144,145)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>4000</MaxHitPoints>
+        </statBases>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>EM_Tin</mineableThing>
+            <mineableYield>150</mineableYield>
+            <mineableScatterCommonality>0</mineableScatterCommonality>
+            <mineableScatterLumpSizeRange>
+                <min>20</min>
+                <max>40</max>
+            </mineableScatterLumpSizeRange>
+            <veinMineable>true</veinMineable>
+            <mineablePreventMeteorite>true</mineablePreventMeteorite>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="RockBase">
+        <defName>EM_Compressed_Copper</defName>
+        <label>compressed copper</label>
+        <description>Ancient asteroid crust compressed into an ultra-dense copper-rich deposit. Found only in deep space.</description>
+        <graphicData>
+            <texPath>Things/Natural/DeepRockWallFlecked_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(115,106,98)</color>
+            <colorTwo>(133,155,126)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>6000</MaxHitPoints>
+        </statBases>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>EM_Copper</mineableThing>
+            <mineableYield>120</mineableYield>
+            <mineableScatterCommonality>0</mineableScatterCommonality>
+            <mineableScatterLumpSizeRange>
+                <min>40</min>
+                <max>75</max>
+            </mineableScatterLumpSizeRange>
+            <veinMineable>true</veinMineable>
+            <mineablePreventMeteorite>true</mineablePreventMeteorite>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="RockBase">
+        <defName>EM_Compressed_Titanium</defName>
+        <label>compressed titanium</label>
+        <description>Ancient structural mass compacted by high pressure into a dense titanium-rich deposit. Found only in deep space.</description>
+        <graphicData>
+            <texPath>Things/Natural/DeepRockWallFlecked_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(115,106,98)</color>
+            <colorTwo>(158,169,169)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>20000</MaxHitPoints>
+        </statBases>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>EM_Titanium</mineableThing>
+            <mineableYield>120</mineableYield>
+            <mineableScatterCommonality>0</mineableScatterCommonality>
+            <mineableScatterLumpSizeRange>
+                <min>15</min>
+                <max>30</max>
+            </mineableScatterLumpSizeRange>
+            <veinMineable>true</veinMineable>
+            <mineablePreventMeteorite>true</mineablePreventMeteorite>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="RockBase">
+        <defName>EM_Compressed_Silicon</defName>
+        <label>compressed silicon</label>
+        <description>Rare silicon-rich deposits compressed into an ultra-dense form. Found only in deep space.</description>
+        <graphicData>
+            <texPath>Things/Natural/DeepRockWallFlecked_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(115,106,98)</color>
+            <colorTwo>(242,241,230)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>8000</MaxHitPoints>
+        </statBases>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>EM_Silicon</mineableThing>
+            <mineableYield>25</mineableYield>
+            <mineableScatterCommonality>0</mineableScatterCommonality>
+            <mineableScatterLumpSizeRange>
+                <min>5</min>
+                <max>10</max>
+            </mineableScatterLumpSizeRange>
+            <veinMineable>true</veinMineable>
+            <mineablePreventMeteorite>true</mineablePreventMeteorite>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="RockBase">
+        <defName>EM_Compressed_Germanium</defName>
+        <label>compressed germanium</label>
+        <description>Rare germanium-rich deposits compressed into an ultra-dense form. Found only in deep space.</description>
+        <graphicData>
+            <texPath>Things/Natural/DeepRockWallFlecked_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(115,106,98)</color>
+            <colorTwo>(96,99,95)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>8000</MaxHitPoints>
+        </statBases>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>EM_Germanium</mineableThing>
+            <mineableYield>20</mineableYield>
+            <mineableScatterCommonality>0</mineableScatterCommonality>
+            <mineableScatterLumpSizeRange>
+                <min>3</min>
+                <max>7</max>
+            </mineableScatterLumpSizeRange>
+            <veinMineable>true</veinMineable>
+            <mineablePreventMeteorite>true</mineablePreventMeteorite>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="RockBase">
+        <defName>EM_Compressed_Aluminium</defName>
+        <label>compressed aluminium</label>
+        <description>Compacted aluminium-rich deposits compressed through generations into the crust of an asteroid. Found only in deep space.</description>
+        <graphicData>
+            <texPath>Things/Natural/DeepRockWallFlecked_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(115,106,98)</color>
+            <colorTwo>(178,193,203)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>7500</MaxHitPoints>
+        </statBases>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>EM_Aluminium</mineableThing>
+            <mineableYield>80</mineableYield>
+            <mineableScatterCommonality>0</mineableScatterCommonality>
+            <mineableScatterLumpSizeRange>
+                <min>40</min>
+                <max>80</max>
+            </mineableScatterLumpSizeRange>
+            <veinMineable>true</veinMineable>
+            <mineablePreventMeteorite>true</mineablePreventMeteorite>
+        </building>
+    </ThingDef>
+
+</Defs>

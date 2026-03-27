@@ -1,0 +1,45 @@
+<Patch>
+
+    <!-- Neutroamine net buildings need stainless steel -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VREA_NeutroPipe" or
+            defName="VREA_SubterraneanNeutroPipe" or
+            defName="VREA_NeutroValve"
+            ]/costList/Silver</xpath>
+        <newMaterial>EM_StainlessSteel</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>0.5</extraCostFactor>
+        <round>false</round>
+    </Operation>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VREA_NeutroTank"
+            ]/costList/Silver</xpath>
+        <newMaterial>EM_StainlessSteel</newMaterial>
+        <percentage>100</percentage>
+    </Operation>
+
+    <!-- Behaviorist station needs silicon -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [defName="VREA_AndroidBehavioristStation"]/costList/Gold</xpath>
+        <newMaterial>EM_Silicon</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>2.5</extraCostFactor>
+    </Operation>
+
+    <!-- Some parts need germanium -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="VREA_ArtificialSpine" or
+            defName="VREA_MetabolismRegulator"
+            ]/costList/Gold</xpath>
+        <newMaterial>EM_Germanium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>10</extraCostFactor>
+        <round>false</round>
+        <minimum>0</minimum>
+    </Operation>
+
+</Patch>

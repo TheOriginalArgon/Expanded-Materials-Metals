@@ -69,7 +69,7 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>EM_Lead</mineableThing>
       <mineableYield>50</mineableYield>
-      <mineableScatterCommonality>0.7</mineableScatterCommonality>
+      <mineableScatterCommonality>0.5</mineableScatterCommonality>
       <mineableScatterLumpSizeRange>10~20</mineableScatterLumpSizeRange>
       <veinMineable>true</veinMineable>
     </building>
@@ -94,8 +94,8 @@
       <isResourceRock>true</isResourceRock>
       <mineableThing>EM_Tin</mineableThing>
       <mineableYield>90</mineableYield>
-      <mineableScatterCommonality>0.5</mineableScatterCommonality>
-      <mineableScatterLumpSizeRange>10~15</mineableScatterLumpSizeRange>
+      <mineableScatterCommonality>0.3</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>7~10</mineableScatterLumpSizeRange>
       <veinMineable>true</veinMineable>
     </building>
   </ThingDef>

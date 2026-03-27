@@ -1,0 +1,110 @@
+<Defs>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>EM_Aluminium</defName>
+        <label>aluminium</label>
+        <description>A lightweight, corrosion-resistant metal used in various applications. Aluminum is commonly used in construction due to its strength-to-weight ratio and durability. Its most prominent use is in the aerospace industry.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/EM_Aluminium</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <statBases>
+            <MarketValue>1.2</MarketValue>
+            <Mass>0.15</Mass>
+            <StuffPower_Armor_Sharp>0.70</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.28</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.35</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+            <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+            <SharpDamageMultiplier>0.7</SharpDamageMultiplier>
+        </statBases>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <deepCommonality>2</deepCommonality>
+        <deepCountPerPortion>35</deepCountPerPortion>
+        <deepLumpSizeRange>12~20</deepLumpSizeRange>
+        <burnableByRecipe>false</burnableByRecipe>
+        <smeltable>true</smeltable>
+        <stuffProps>
+            <categories>
+                <li>Metallic</li>
+            </categories>
+            <appearance>Metal</appearance>
+            <commonality>0.90</commonality>
+            <constructEffect>ConstructMetal</constructEffect>
+            <color>(178, 193, 203)</color>
+            <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+            <statFactors>
+                <MaxHitPoints>0.7</MaxHitPoints>
+                <Flammability>0.4</Flammability>
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <modExtensions>
+            <li Class="VEF.Things.StuffExtension">
+                <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
+                <weaponGenerationCommonalityFactor>0</weaponGenerationCommonalityFactor>
+                <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="RockBase">
+        <defName>EM_MineableAluminium</defName>
+        <label>aluminium ore</label>
+        <description>Rock containing bits of aluminium.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(178,193,203)</color>
+            <color>(137,145,150)</color>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>1200</MaxHitPoints>
+        </statBases>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>EM_Aluminium</mineableThing>
+            <mineableYield>25</mineableYield>
+            <mineableScatterCommonality>0.1</mineableScatterCommonality>
+            <mineableScatterLumpSizeRange>5~8</mineableScatterLumpSizeRange>
+            <veinMineable>true</veinMineable>
+        </building>
+    </ThingDef>
+
+    <!-- Aluminium can replace Stainless Steel and Steel -->
+    <MaterialReplacement.Defs.MaterialReplacementDef>
+        <defName>EM_Replacement_StainlessSteelWithAlluminium</defName>
+        <materialToReplace>EM_StainlessSteel</materialToReplace>
+        <replaceWith>EM_Aluminium</replaceWith>
+        <maxTechLevel>Spacer</maxTechLevel>
+        <maxRecipeTechLevel>Spacer</maxRecipeTechLevel>
+        <costModifier>1.25</costModifier>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
+
+    <MaterialReplacement.Defs.MaterialReplacementDef>
+        <defName>EM_Replacement_SteelWithAlluminium</defName>
+        <materialToReplace>Steel</materialToReplace>
+        <replaceWith>EM_Aluminium</replaceWith>
+        <maxTechLevel>Medieval</maxTechLevel>
+        <maxRecipeTechLevel>Medieval</maxRecipeTechLevel>
+        <costModifier>1.1</costModifier>
+        <exceptionDefs>
+            <li>MetalTile</li>
+            <li MayRequire="rebuild.cotr.doorsandcorners">RB_MetalGrateTile</li>
+            <li MayRequire="rebuild.cotr.doorsandcorners">RB_MetalStuddedTile</li>
+            <li MayRequire="vanillaexpanded.vfearchitect,ludeon.rimworld.royalty">VFEArch_FineSteelTile</li>
+        </exceptionDefs>
+    </MaterialReplacement.Defs.MaterialReplacementDef>
+
+</Defs>

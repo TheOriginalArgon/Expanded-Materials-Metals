@@ -516,8 +516,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>EM_Titanium</defName>
     <label>titanium</label>
-    <description>A highly durable metal, Titanium is only passable for use in structures but makes
-      for extremely durable weapons and armor.</description>
+    <description>A highly durable metal. Titanium is widely used for aerospace engineering and rough industrial applications due to its excellent strength-to-weight ratio.</description>
     <graphicData>
       <texPath>Things/Item/Resource/EM_Titanium</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -528,7 +527,7 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
       <MarketValue>7.8</MarketValue>
-      <Mass>0.55</Mass>
+      <Mass>0.35</Mass>
       <StuffPower_Armor_Sharp>1.09</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
       <StuffPower_Armor_Heat>0.65</StuffPower_Armor_Heat>

@@ -1,0 +1,45 @@
+<Patch>
+
+    <!-- ================================ VANILLA BUILDINGS PATCH ================================ -->
+
+    <!-- Replace steel with copper in power conduits -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="PowerConduit"]/costList/Steel</xpath>
+        <value>
+            <EM_Copper>1</EM_Copper>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="HiddenConduit"]/costList/Steel</xpath>
+        <value>
+            <EM_Copper>3</EM_Copper>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="WaterproofConduit"]/costList</xpath>
+        <value>
+            <costList>
+                <EM_Copper>5</EM_Copper>
+                <Steel>5</Steel>
+            </costList>
+        </value>
+    </Operation>
+
+    <!-- Multi-analyzer needs silicon -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [defName="MultiAnalyzer"]/costList/Gold</xpath>
+        <newMaterial>EM_Silicon</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>1.5</extraCostFactor>
+    </Operation>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="Battery"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Lead</newMaterial>
+        <percentage>80</percentage>
+        <extraCostFactor>1.25</extraCostFactor>
+    </Operation>
+
+</Patch>

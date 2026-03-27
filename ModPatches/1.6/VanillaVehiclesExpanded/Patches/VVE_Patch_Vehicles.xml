@@ -1,0 +1,105 @@
+<Patch>
+
+    <!-- Patch car part costs -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="VVE_EngineBlock"]/costList</xpath>
+        <value>
+            <costList>
+                <EM_TemperedSteel>40</EM_TemperedSteel>
+                <EM_StainlessSteel>40</EM_StainlessSteel>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="VVE_CarSuspension"]/costList</xpath>
+        <value>
+            <costList>
+                <EM_TemperedSteel>20</EM_TemperedSteel>
+                <EM_StainlessSteel>10</EM_StainlessSteel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="VVE_CarWheel"]/costList</xpath>
+        <value>
+            <costList>
+                <EM_TemperedSteel>25</EM_TemperedSteel>
+                <Chemfuel>10</Chemfuel>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="VVE_CarBattery"]/costList</xpath>
+        <value>
+            <costList>
+                <EM_Lead>40</EM_Lead>
+                <ComponentIndustrial>1</ComponentIndustrial>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="VVE_CarRadiator"]/costList</xpath>
+        <value>
+            <costList>
+                <EM_Copper>12</EM_Copper>
+                <ComponentIndustrial>1</ComponentIndustrial>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef [defName="VVE_CarWiring"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>10</Steel>
+                <EM_Silicon>10</EM_Silicon>
+            </costList>
+        </value>
+    </Operation>
+
+    <!-- Patch Tier 1 vehicle costs -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/Vehicles.VehicleBuildDef [
+            defName="VVE_BangBus_Blueprint" or
+            defName="VVE_Bunsen_Blueprint" or
+            defName="VVE_Frog_Blueprint" or
+            defName="VVE_Highwayman_Blueprint" or
+            defName="VVE_Mule_Blueprint" or
+            defName="VVE_Prowler_Blueprint" or
+            defName="VVE_Roadkill_Blueprint" or
+            defName="VVE_Scytheman_Blueprint" or
+            defName="VVE_Toad_Blueprint" or
+            defName="VVE_Traveller_Blueprint"
+            ]/costList/Steel
+        </xpath>
+        <newMaterial>EM_TemperedSteel</newMaterial>
+        <percentage>25</percentage>
+    </Operation>
+
+    <!-- Patch Tier 2 vehicle costs -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/Vehicles.VehicleBuildDef [
+            defName="VVE_Bulldog_Blueprint" or
+            defName="VVE_Charley_Blueprint" or
+            defName="VVE_Mosquito_Blueprint" or
+            defName="VVE_Roadrunner_Blueprint" or
+            defName="VVE_Smuggler_Blueprint" or
+            defName="VVE_Snatcher_Blueprint" or
+            defName="VVE_Tango_Blueprint" or
+            defName="VVE_Trawler_Blueprint" or
+            defName="VVE_Wagon_Blueprint" or
+            defName="VVE_Warbird_Blueprint" or
+            defName="VVE_Wisent_Blueprint"
+            ]/costList/Steel
+        </xpath>
+        <newMaterial>EM_TemperedSteel</newMaterial>
+        <percentage>50</percentage>
+    </Operation>
+
+
+</Patch>

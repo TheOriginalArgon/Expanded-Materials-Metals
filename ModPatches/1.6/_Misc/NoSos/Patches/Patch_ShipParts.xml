@@ -1,0 +1,34 @@
+<Patch>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="Ship_Beam" or
+            defName="Ship_CryptosleepCasket" or
+            defName="Ship_ComputerCore" or
+            defName="Ship_Reactor" or
+            defName="Ship_Engine" or
+            defName="Ship_SensorCluster"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Titanium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>0.75</extraCostFactor>
+    </Operation>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="Ship_ComputerCore"
+            ]/costList/Gold</xpath>
+        <newMaterial>EM_Silicon</newMaterial>
+        <percentage>100</percentage>
+    </Operation>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="Ship_SensorCluster"
+            ]/costList/Gold</xpath>
+        <newMaterial>EM_Germanium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>10</extraCostFactor>
+    </Operation>
+
+</Patch>
