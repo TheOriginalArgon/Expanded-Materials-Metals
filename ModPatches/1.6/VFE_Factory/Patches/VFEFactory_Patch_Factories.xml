@@ -1,5 +1,14 @@
 <Patch>
 
+    <!-- Remove processes -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef [defName="VFEFactory_AutomatedSmelter"]/comps/li [@Class="PipeSystem.CompProperties_AdvancedResourceProcessor"]/processes/ li[text()="VFEFactory_SmeltMetalFromChunk"]</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/PipeSystem.ProcessDef [defName="VFEFactory_SmeltMetalFromChunk"]</xpath>
+    </Operation>
+
+    <!-- Factory facilities costs -->
     <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
         <xpath>/Defs/ThingDef [
             defName="VFEFactory_Autofarmer" or
@@ -38,6 +47,7 @@
             ]/costList/Silver</xpath>
         <newMaterial>EM_StainlessSteel</newMaterial>
         <percentage>100</percentage>
+        <extraCostFactor>2</extraCostFactor>
     </Operation>
 
     <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">

@@ -1,0 +1,176 @@
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName="VFEFactory_AutomatedSmelter"]/comps/li [@Class="PipeSystem.CompProperties_AdvancedResourceProcessor"]/processes</xpath>
+        <value>
+            <li>EM_VFEFactory_SmeltIronFromChunk</li>
+            <li>EM_VFEFactory_SmeltCopperFromChunk</li>
+            <li>EM_VFEFactory_SmeltLeadFromChunk</li>
+            <li>EM_VFEFactory_SmeltTinFromChunk</li>
+            <li MayRequire="ludeon.rimworld.odyssey">EM_VFEFactory_SmeltAluminiumFromVacstone</li>
+            <li MayRequire="ludeon.rimworld.odyssey">EM_VFEFactory_SmeltTitaniumFromVacstone</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName="VFEFactory_AutomatedBiofuelRefinery"]/comps/li [@Class="PipeSystem.CompProperties_AdvancedResourceProcessor"]/processes</xpath>
+        <value>
+            <li>EM_VFEFactory_MakeChemfuelFromCoal</li>
+            <li>EM_VFEFactory_MakeChemfuelFromWood_Lead</li>
+            <li>EM_VFEFactory_MakeChemfuelFromCoal_Lead</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName="VFEFactory_AutomatedAssembler"]/comps/li [@Class="PipeSystem.CompProperties_AdvancedResourceProcessor"]/processes</xpath>
+        <value>
+            <li>EM_VFEFactory_AssembleComponent_x2</li>
+            <li>EM_VFEFactory_AssembleComponent_x3</li>
+            <li>EM_VFEFactory_AssembleAdvancedComponent_x2</li>
+            <li>EM_VFEFactory_AssembleAdvancedComponent_x3</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName="VFEFactory_AutomatedAlloyForge"]/comps/li [@Class="PipeSystem.CompProperties_AdvancedResourceProcessor"]/processes</xpath>
+        <value>
+            <li>EM_VFEFactory_AlloyBronze</li>
+            <li>EM_VFEFactory_AlloyMildSteel</li>
+            <li>EM_VFEFactory_AlloySteel</li>
+            <li>EM_VFEFactory_AlloyTemperedSteel</li>
+            <li>EM_VFEFactory_AlloyStainlessSteel</li>
+        </value>
+    </Operation>
+
+    <!-- Modify mod recipes -->
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+            <!-- Component recipe -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/PipeSystem.ProcessDef [defName="VFEFactory_AssembleComponent"]/ingredients</xpath>
+                <value>
+                    <ingredients>
+                        <li>
+                            <thing>Steel</thing>
+                            <countNeeded>8</countNeeded>
+                        </li>
+                        <li>
+                            <thing>EM_Copper</thing>
+                            <countNeeded>6</countNeeded>
+                        </li>
+                        <li>
+                            <thing>EM_Tin</thing>
+                            <countNeeded>3</countNeeded>
+                        </li>
+                    </ingredients>
+                </value>
+            </li>
+
+            <!-- Advanced components recipe -->
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/PipeSystem.ProcessDef [defName="VFEFactory_AssembleAdvancedComponent"]/ingredients</xpath>
+                <value>
+                    <ingredients>
+                        <li>
+                            <thing>EM_StainlessSteel</thing>
+                            <countNeeded>20</countNeeded>
+                        </li>
+                        <li>
+                            <thing>ComponentIndustrial</thing>
+                            <countNeeded>1</countNeeded>
+                        </li>
+                        <li>
+                            <thing>EM_Titanium</thing>
+                            <countNeeded>10</countNeeded>
+                        </li>
+                        <li>
+                            <thing>Gold</thing>
+                            <countNeeded>3</countNeeded>
+                        </li>
+                    </ingredients>
+                </value>
+            </li>
+
+            <!-- Gravlite tiles recipe -->
+            <li Class="PatchOperationSequence" MayRequire="ludeon.rimworld.odyssey">
+                <operations>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/PipeSystem.ProcessDef [defName="VFEFactory_AlloyGravlite"]/ingredients</xpath>
+                        <value>
+                            <ingredients>
+                                <li>
+                                    <thing>Plasteel</thing>
+                                    <countNeeded>5</countNeeded>
+                                </li>
+                                <li>
+                                    <thing>EM_Aluminium</thing>
+                                    <countNeeded>15</countNeeded>
+                                </li>
+                            </ingredients>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/PipeSystem.ProcessDef [defName="VFEFactory_AlloyGravlite"]/label</xpath>
+                        <value>
+                            <label>Alloy gravlite from aluminium and plasteel</label>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/PipeSystem.ProcessDef [defName="VFEFactory_AlloyGravlite"]/labelOverride</xpath>
+                        <value>
+                            <labelOverride>Alloy gravlite from aluminium and plasteel</labelOverride>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/PipeSystem.ProcessDef [defName="VFEFactory_AlloyGravlite"]/description</xpath>
+                        <value>
+                            <description>Use intense heat to combine plasteel and aluminium, forging the ultra-light gravlite alloy.</description>
+                        </value>
+                    </li>
+                </operations>
+            </li>
+
+            <!-- Cuprosteel recipe -->
+            <li Class="PatchOperationSequence" MayRequire="oskarpotocki.vfe.classical">
+                <operations>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/PipeSystem.ProcessDef [defName="VFEFactory_AlloyBronze"]/ingredients</xpath>
+                        <value>
+                            <ingredients>
+                                <li>
+                                    <thing>Steel</thing>
+                                    <countNeeded>30</countNeeded>
+                                </li>
+                                <li>
+                                    <thing>EM_Copper</thing>
+                                    <countNeeded>45</countNeeded>
+                                </li>
+                            </ingredients>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/PipeSystem.ProcessDef [defName="VFEFactory_AlloyBronze"]/label</xpath>
+                        <value>
+                            <label>Alloy cuprosteel from steel and copper</label>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/PipeSystem.ProcessDef [defName="VFEFactory_AlloyBronze"]/labelOverride</xpath>
+                        <value>
+                            <labelOverride>Alloy cuprosteel from steel and copper</labelOverride>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/PipeSystem.ProcessDef [defName="VFEFactory_AlloyBronze"]/description</xpath>
+                        <value>
+                            <description>Use intense heat to smelt and combine steel with copper to forge cuprosteel.</description>
+                        </value>
+                    </li>
+                </operations>
+            </li>
+
+        </operations>
+    </Operation>
+
+</Patch>

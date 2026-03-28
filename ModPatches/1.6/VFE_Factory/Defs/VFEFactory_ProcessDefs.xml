@@ -1,0 +1,775 @@
+<Defs>
+
+    <!-- Metal extraction -->
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_SmeltIronFromChunk</defName>
+        <label>Extract iron from stone chunk</label>
+        <labelOverride>Extract iron from stone chunk</labelOverride>
+        <description>Use heat and strong electromagnets to extract iron from stone chunks.</description>
+        <priorityInBillList>3</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(0,0,3)</li>
+            <li>(1,0,3)</li>
+            <li>(-1,0,3)</li>
+        </autoInputSlots>
+        <ticks>3200</ticks>
+        <ingredients>
+            <li>
+                <thingCategory>StoneChunks</thingCategory>
+                <countNeeded>1</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>EM_Iron</thing>
+                <count>3</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Smelt</effecterDef>
+        <maxOutputCount>75</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_SmeltCopperFromChunk</defName>
+        <label>Extract copper from stone chunk</label>
+        <labelOverride>Extract copper from stone chunk</labelOverride>
+        <description>Use heat and strong electromagnets to extract copper from stone chunks.</description>
+        <priorityInBillList>3</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(0,0,3)</li>
+            <li>(1,0,3)</li>
+            <li>(-1,0,3)</li>
+        </autoInputSlots>
+        <ticks>3200</ticks>
+        <ingredients>
+            <li>
+                <thingCategory>StoneChunks</thingCategory>
+                <countNeeded>1</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>EM_Copper</thing>
+                <count>2</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <researchPrerequisites>
+            <li>EM_OreExtraction</li>
+        </researchPrerequisites>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Smelt</effecterDef>
+        <maxOutputCount>75</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_SmeltLeadFromChunk</defName>
+        <label>Extract lead from stone chunk</label>
+        <labelOverride>Extract lead from stone chunk</labelOverride>
+        <description>Use heat and strong electromagnets to extract lead from stone chunks.</description>
+        <priorityInBillList>3</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(0,0,3)</li>
+            <li>(1,0,3)</li>
+            <li>(-1,0,3)</li>
+        </autoInputSlots>
+        <ticks>3200</ticks>
+        <ingredients>
+            <li>
+                <thingCategory>StoneChunks</thingCategory>
+                <countNeeded>1</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>EM_Lead</thing>
+                <count>3</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <researchPrerequisites>
+            <li>EM_OreExtraction</li>
+        </researchPrerequisites>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Smelt</effecterDef>
+        <maxOutputCount>75</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_SmeltTinFromChunk</defName>
+        <label>Extract tin from stone chunk</label>
+        <labelOverride>Extract tin from stone chunk</labelOverride>
+        <description>Use heat and strong electromagnets to extract tin from stone chunks.</description>
+        <priorityInBillList>3</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(0,0,3)</li>
+            <li>(1,0,3)</li>
+            <li>(-1,0,3)</li>
+        </autoInputSlots>
+        <ticks>3200</ticks>
+        <ingredients>
+            <li>
+                <thingCategory>StoneChunks</thingCategory>
+                <countNeeded>1</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>EM_Tin</thing>
+                <count>2</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <researchPrerequisites>
+            <li>EM_OreExtraction</li>
+        </researchPrerequisites>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Smelt</effecterDef>
+        <maxOutputCount>75</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef MayRequire="ludeon.rimworld.odyssey">
+        <defName>EM_VFEFactory_SmeltAluminiumFromVacstone</defName>
+        <label>Extract aluminium from vacstone</label>
+        <labelOverride>Extract aluminium from vacstone</labelOverride>
+        <description>Use heat and strong electromagnets to extract aluminium from vacstone.</description>
+        <priorityInBillList>3</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(0,0,3)</li>
+            <li>(1,0,3)</li>
+            <li>(-1,0,3)</li>
+        </autoInputSlots>
+        <ticks>3200</ticks>
+        <ingredients>
+            <li>
+                <thing>ChunkVacstone</thing>
+                <countNeeded>1</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>EM_Aluminium</thing>
+                <count>20</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <researchPrerequisites>
+            <li>EM_OreExtraction</li>
+        </researchPrerequisites>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Smelt</effecterDef>
+        <maxOutputCount>75</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef MayRequire="ludeon.rimworld.odyssey">
+        <defName>EM_VFEFactory_SmeltTitaniumFromVacstone</defName>
+        <label>Extract titanium from vacstone</label>
+        <labelOverride>Extract titanium from vacstone</labelOverride>
+        <description>Use heat and strong electromagnets to extract titanium from vacstone.</description>
+        <priorityInBillList>3</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(0,0,3)</li>
+            <li>(1,0,3)</li>
+            <li>(-1,0,3)</li>
+        </autoInputSlots>
+        <ticks>3200</ticks>
+        <ingredients>
+            <li>
+                <thing>ChunkVacstone</thing>
+                <countNeeded>1</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>EM_Titanium</thing>
+                <count>10</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <researchPrerequisites>
+            <li>EM_OreExtraction</li>
+        </researchPrerequisites>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Smelt</effecterDef>
+        <maxOutputCount>75</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <!-- Chemfuel -->
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_MakeChemfuelFromCoal</defName>
+        <label>Make chemfuel from coal</label>
+        <labelOverride>Make chemfuel from coal</labelOverride>
+        <description>Make a batch of chemfuel by extracting and condensing gas from coal.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(0,0,3)</li>
+            <li>(1,0,3)</li>
+            <li>(-1,0,3)</li>
+        </autoInputSlots>
+        <ticks>5000</ticks>
+        <ingredients>
+            <li>
+                <thing>EM_Coal</thing>
+                <countNeeded>50</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>Chemfuel</thing>
+                <count>35</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <researchPrerequisites>
+            <li>BiofuelRefining</li>
+        </researchPrerequisites>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedBrewingSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Cook</effecterDef>
+        <maxOutputCount>150</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_MakeChemfuelFromWood_Lead</defName>
+        <label>Make chemfuel from wood (lead)</label>
+        <labelOverride>Make chemfuel from wood (lead)</labelOverride>
+        <description>Make a batch of lead-based chemfuel by extracting and condensing wood gas from logs.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(0,0,3)</li>
+            <li>(1,0,3)</li>
+            <li>(-1,0,3)</li>
+        </autoInputSlots>
+        <ticks>5000</ticks>
+        <ingredients>
+            <li>
+                <thing>WoodLog</thing>
+                <countNeeded>50</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Lead</thing>
+                <countNeeded>15</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>Chemfuel</thing>
+                <count>40</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <researchPrerequisites>
+            <li>BiofuelRefining</li>
+        </researchPrerequisites>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedBrewingSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Cook</effecterDef>
+        <maxOutputCount>150</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_MakeChemfuelFromCoal_Lead</defName>
+        <label>Make chemfuel from coal (lead)</label>
+        <labelOverride>Make chemfuel from coal (lead)</labelOverride>
+        <description>Make a batch of lead-based chemfuel by extracting and condensing gas from coal.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(0,0,3)</li>
+            <li>(1,0,3)</li>
+            <li>(-1,0,3)</li>
+        </autoInputSlots>
+        <ticks>5000</ticks>
+        <wastePackToProduce>1</wastePackToProduce>
+        <wastePackToProduce>1</wastePackToProduce>
+        <ingredients>
+            <li>
+                <thing>EM_Coal</thing>
+                <countNeeded>50</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Lead</thing>
+                <countNeeded>15</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>Chemfuel</thing>
+                <count>70</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <researchPrerequisites>
+            <li>BiofuelRefining</li>
+        </researchPrerequisites>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedBrewingSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Cook</effecterDef>
+        <maxOutputCount>150</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <!-- Industrial Components -->
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_AssembleComponent_x2</defName>
+        <label>Make two components</label>
+        <labelOverride>Make two components</labelOverride>
+        <description>Assemble two components.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(3,0,0)</li>
+            <li>(-3,0,0)</li>
+            <li>(-1,0,3)</li>
+            <li>(1,0,3)</li>
+        </autoInputSlots>
+        <ticks>20000</ticks>
+        <ingredients>
+            <li>
+                <thing>Steel</thing>
+                <countNeeded>10</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Copper</thing>
+                <countNeeded>5</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Lead</thing>
+                <countNeeded>5</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>ComponentIndustrial</thing>
+                <count>2</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <researchPrerequisites>
+            <li>Fabrication</li>
+        </researchPrerequisites>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedMachiningSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Default</effecterDef>
+        <maxOutputCount>50</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_AssembleComponent_x3</defName>
+        <label>Make three components</label>
+        <labelOverride>Make three components</labelOverride>
+        <description>Assemble three components.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(3,0,0)</li>
+            <li>(-3,0,0)</li>
+            <li>(-1,0,3)</li>
+            <li>(1,0,3)</li>
+        </autoInputSlots>
+        <ticks>20000</ticks>
+        <ingredients>
+            <li>
+                <thing>Steel</thing>
+                <countNeeded>10</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Silicon</thing>
+                <countNeeded>5</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Tin</thing>
+                <countNeeded>5</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>ComponentIndustrial</thing>
+                <count>3</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <researchPrerequisites>
+            <li>Fabrication</li>
+        </researchPrerequisites>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedMachiningSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Default</effecterDef>
+        <maxOutputCount>50</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <!-- Advanced components -->
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_AssembleAdvancedComponent_x2</defName>
+        <label>Make two advanced components</label>
+        <labelOverride>Make two advanced components</labelOverride>
+        <description>Assemble two advanced components.</description>
+        <priorityInBillList>1</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(3,0,0)</li>
+            <li>(-3,0,0)</li>
+            <li>(-1,0,3)</li>
+            <li>(1,0,3)</li>
+        </autoInputSlots>
+        <ticks>40000</ticks>
+        <ingredients>
+            <li>
+                <thing>EM_StainlessSteel</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+            <li>
+                <thing>ComponentIndustrial</thing>
+                <countNeeded>2</countNeeded>
+            </li>
+            <li>
+                <thing>Plasteel</thing>
+                <countNeeded>10</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Silicon</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>ComponentSpacer</thing>
+                <count>2</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <researchPrerequisites>
+            <li>AdvancedFabrication</li>
+        </researchPrerequisites>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedMachiningSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Default</effecterDef>
+        <maxOutputCount>50</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_AssembleAdvancedComponent_x3</defName>
+        <label>Make three advanced components</label>
+        <labelOverride>Make three advanced components</labelOverride>
+        <description>Assemble three advanced components.</description>
+        <priorityInBillList>1</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(3,0,0)</li>
+            <li>(-3,0,0)</li>
+            <li>(-1,0,3)</li>
+            <li>(1,0,3)</li>
+        </autoInputSlots>
+        <ticks>40000</ticks>
+        <ingredients>
+            <li>
+                <thing>EM_StainlessSteel</thing>
+                <countNeeded>25</countNeeded>
+            </li>
+            <li>
+                <thing>ComponentIndustrial</thing>
+                <countNeeded>3</countNeeded>
+            </li>
+            <li>
+                <thing>Plasteel</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Germanium</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>ComponentSpacer</thing>
+                <count>3</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <researchPrerequisites>
+            <li>AdvancedFabrication</li>
+        </researchPrerequisites>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedMachiningSustainer</sustainerDef>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Default</effecterDef>
+        <maxOutputCount>50</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <!-- Alloys -->
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_AlloyBronze</defName>
+        <label>Alloy bronze from copper and tin</label>
+        <labelOverride>Alloy bronze from copper and tin</labelOverride>
+        <description>Use high heat and pressure to alloy copper and tin into bronze.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(-2,0,3)</li>
+            <li>(0,0,3)</li>
+            <li>(2,0,3)</li>
+
+        </autoInputSlots>
+        <ticks>20000</ticks>
+        <ingredients>
+            <li>
+                <thing>EM_Copper</thing>
+                <countNeeded>10</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Tin</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>EM_Bronze</thing>
+                <count>55</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Smelt</effecterDef>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
+        <maxOutputCount>75</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_AlloyMildSteel</defName>
+        <label>Alloy mild steel from iron and coal</label>
+        <labelOverride>Alloy mild steel from iron and coal</labelOverride>
+        <description>Use high heat and pressure to alloy iron and coal into mild steel.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(-2,0,3)</li>
+            <li>(0,0,3)</li>
+            <li>(2,0,3)</li>
+
+        </autoInputSlots>
+        <ticks>20000</ticks>
+        <ingredients>
+            <li>
+                <thing>EM_Iron</thing>
+                <countNeeded>35</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Coal</thing>
+                <countNeeded>10</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>EM_MildSteel</thing>
+                <count>50</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Smelt</effecterDef>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
+        <maxOutputCount>75</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_AlloySteel</defName>
+        <label>Alloy steel from iron and coal</label>
+        <labelOverride>Alloy steel from iron and coal</labelOverride>
+        <description>Use high heat and pressure to alloy iron and coal into steel.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(-2,0,3)</li>
+            <li>(0,0,3)</li>
+            <li>(2,0,3)</li>
+
+        </autoInputSlots>
+        <ticks>20000</ticks>
+        <ingredients>
+            <li>
+                <thing>EM_Iron</thing>
+                <countNeeded>35</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Coal</thing>
+                <countNeeded>25</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>Steel</thing>
+                <count>50</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Smelt</effecterDef>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
+        <maxOutputCount>75</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_AlloyTemperedSteel</defName>
+        <label>Alloy tempered steel from steel and chemfuel</label>
+        <labelOverride>Alloy tempered steel from steel and chemfuel</labelOverride>
+        <description>Use chemfuel chemicals to treat steel into tempered steel.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(-2,0,3)</li>
+            <li>(0,0,3)</li>
+            <li>(2,0,3)</li>
+
+        </autoInputSlots>
+        <ticks>20000</ticks>
+        <ingredients>
+            <li>
+                <thing>Steel</thing>
+                <countNeeded>35</countNeeded>
+            </li>
+            <li>
+                <thing>Chemfuel</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>EM_TemperedSteel</thing>
+                <count>35</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Smelt</effecterDef>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
+        <maxOutputCount>75</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+    <PipeSystem.ProcessDef>
+        <defName>EM_VFEFactory_AlloyStainlessSteel</defName>
+        <label>Alloy stainless steel from steel, tin and silver</label>
+        <labelOverride>Alloy stainless steel from steel, tin and silver</labelOverride>
+        <description>Use high heat and pressure to alloy steel, tin and silver into stainless steel.</description>
+        <priorityInBillList>0</priorityInBillList>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoGrabFromHoppers>true</autoGrabFromHoppers>
+        <autoInputSlots>
+            <li>(-2,0,3)</li>
+            <li>(0,0,3)</li>
+            <li>(2,0,3)</li>
+
+        </autoInputSlots>
+        <ticks>20000</ticks>
+        <ingredients>
+            <li>
+                <thing>Steel</thing>
+                <countNeeded>35</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Tin</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+            <li>
+                <thing>Silver</thing>
+                <countNeeded>15</countNeeded>
+            </li>
+        </ingredients>
+        <results>
+            <li>
+                <thing>EM_StainlessSteel</thing>
+                <count>35</count>
+            </li>
+        </results>
+        <isFactoryProcess>true</isFactoryProcess>
+        <autoExtract>true</autoExtract>
+        <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+        <effecterWhenWorking>true</effecterWhenWorking>
+        <effecterDef>VFEFactory_Smelt</effecterDef>
+        <sustainerWhenWorking>true</sustainerWhenWorking>
+        <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
+        <maxOutputCount>75</maxOutputCount>
+    </PipeSystem.ProcessDef>
+
+</Defs>
