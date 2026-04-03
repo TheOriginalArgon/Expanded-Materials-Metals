@@ -1,0 +1,10 @@
+<Patch>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [@ParentName="VWE_LaserSwordBase" or @ParentName="VWE_BaseLaserGunUltra"]/costList/Steel</xpath>
+        <newMaterial>EM_Titanium</newMaterial>
+        <percentage>100</percentage>
+        <round>false</round>
+    </Operation>
+
+</Patch>

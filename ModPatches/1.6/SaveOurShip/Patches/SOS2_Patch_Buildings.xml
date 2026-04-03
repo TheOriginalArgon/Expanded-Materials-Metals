@@ -39,12 +39,14 @@
             defName="Ship_Engine_Large" or
             defName="Ship_Thruster" or
             defName="Ship_Engine_Archotech" or
+            defName="JTDriveSalvage" or
             defName="ShipCombatShieldGenerator" or
             defName="ShipCombatShieldGeneratorMini" or
             defName="Ship_LifeSupport" or
             defName="Ship_LifeSupport_Small" or
             defName="Ship_Reactor" or
             defName="Ship_Reactor_Small" or
+            defName="Ship_DamagedReactor" or
             defName="ShipCapacitorSmall" or
             defName="ShipCapacitor" or
             defName="ShipShuttleBay" or
@@ -71,7 +73,8 @@
             defName="ShipCombatShieldGeneratorMini" or
             defName="ArchotechAntimatterReactor" or
             defName="Ship_Reactor" or
-            defName="Ship_Reactor_Small"
+            defName="Ship_Reactor_Small" or
+            defName="Ship_DamagedReactor"
             ]/costList/Silver</xpath>
         <newMaterial>EM_Copper</newMaterial>
         <percentage>100</percentage>
@@ -126,7 +129,8 @@
     <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
         <xpath>/Defs/ThingDef [
             defName="Ship_DroneCore" or
-            defName="Ship_ComputerCore"
+            defName="Ship_ComputerCore" or
+            defName="BlackBoxAI"
             ]/costList/Gold</xpath>
         <newMaterial>EM_Silicon</newMaterial>
         <percentage>100</percentage>

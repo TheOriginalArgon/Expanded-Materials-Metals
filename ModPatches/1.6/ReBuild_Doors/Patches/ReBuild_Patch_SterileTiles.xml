@@ -1,0 +1,14 @@
+<Patch>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/TerrainDef [defName="RB_SterileGrateTile" or defName="RB_SterileStuddedTile"]/costList/Silver</xpath>
+        <newMaterial>EM_StainlessSteel</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>0.5</extraCostFactor>
+        <round>false</round>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/TerrainDef [defName="RB_SterileGrateTile" or defName="RB_SterileStuddedTile"]/costList/Steel</xpath>
+    </Operation>
+
+</Patch>

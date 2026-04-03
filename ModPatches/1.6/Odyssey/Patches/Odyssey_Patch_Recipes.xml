@@ -1,5 +1,6 @@
 <Patch>
 
+    <!-- Gravlite panel -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef [defName="GravlitePanel"]/costList/BlocksVacstone</xpath>
         <value>

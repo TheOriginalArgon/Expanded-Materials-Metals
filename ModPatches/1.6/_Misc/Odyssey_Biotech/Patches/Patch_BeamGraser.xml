@@ -1,0 +1,17 @@
+<Patch>
+
+    <!-- Ludeon, look at what you make me do. -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef [defName="Make_BeamGraser"]/ingredients/li [filter/thingDefs/li [text()="Steel"]]/filter/thingDefs</xpath>
+        <value>
+            <li>EM_TemperedSteel</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef [defName="Make_BeamGraser"]/fixedIngredientFilter/thingDefs</xpath>
+        <value>
+            <li>EM_TemperedSteel</li>
+        </value>
+    </Operation>
+
+</Patch>

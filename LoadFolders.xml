@@ -17,6 +17,7 @@
         <li IfModActive="ludeon.rimworld.biotech">ModPatches/1.6/Biotech</li>
         <li IfModActive="ludeon.rimworld.anomaly">ModPatches/1.6/Anomaly</li>
         <li IfModActive="ludeon.rimworld.odyssey">ModPatches/1.6/Odyssey</li>
+        <li IfModActive="ludeon.rimworld.odyssey,ludeon.rimworld.biotech">ModPatches/1.6/_Misc/Odyssey_Biotech</li>
         
         <!-- Mods (VE) -->
         <li IfModActive="OskarPotocki.VFE.Classical">ModPatches/1.6/VFE_Classical</li>
@@ -37,6 +38,7 @@
         <li IfModActive="vanillaexpanded.gravship">ModPatches/1.6/VFE_Gravship</li>
         <li IfModActive="oskarpotocki.vanillavehiclesexpanded">ModPatches/1.6/VanillaVehiclesExpanded</li>
         <li IfModActive="oskarpotocki.vanillavehiclesexpandedtier3">ModPatches/1.6/VVE_Tier3</li>
+        <li IfModActive="vanillaexpanded.vwel">ModPatches/1.6/VWE_Laser</li>
         
         <!-- Mods (ReGrowth) -->
         <li IfModActive="rebuild.cotr.doorsandcorners">ModPatches/1.6/ReBuild_Doors</li>

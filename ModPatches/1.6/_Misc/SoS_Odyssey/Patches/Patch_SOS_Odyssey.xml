@@ -6,10 +6,13 @@
             defName="ShipPilotSeatMini" or
             defName="ShipConsoleTactical" or
             defName="ShipConsoleScience" or
+            defName="Ship_LabConsole" or
+            defName="Ship_SecurityConsole" or
             defName="ShipInside_PassiveVent" or
             defName="ShipInside_SolarGenerator" or
             defName="Ship_ComputerCore" or
             defName="Ship_DroneCore" or
+            defName="BlackBoxAI" or
             defName="Ship_SensorCluster" or
             defName="Ship_SensorClusterAdv"
             ]/costList/Steel</xpath>
@@ -43,7 +46,9 @@
         <xpath>/Defs/ThingDef [
             defName="Ship_Beam_Unpowered" or
             defName="Ship_Beam" or
-            defName="ShipAirlock"
+            defName="ShipAirlock" or
+            defName="Ship_Beam_Wrecked" or
+            defName="ShipAirlockWrecked"
             ]/costList/Steel</xpath>
         <newMaterial>EM_Aluminium</newMaterial>
         <percentage>100</percentage>
@@ -53,7 +58,8 @@
     </Operation>
     <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
         <xpath>/Defs/ThingDef [
-            defName="ShipHullTile"
+            defName="ShipHullTile" or
+            defName="ShipHullTileWrecked"
             ]/costList/Steel</xpath>
         <newMaterial>EM_Aluminium</newMaterial>
         <percentage>100</percentage>
@@ -68,6 +74,26 @@
         <newMaterial>EM_Copper</newMaterial>
         <percentage>25</percentage>
         <extraCostFactor>1.5</extraCostFactor>
+        <round>false</round>
+    </Operation>
+
+    <!-- Salvage -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="ShipChunkSalvage" or
+            defName="Space_Satellite_Core"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Aluminium</newMaterial>
+        <percentage>50</percentage>
+        <round>false</round>
+    </Operation>
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [
+            defName="ShipChunkSalvage" or
+            defName="Space_Satellite_Core"
+            ]/costList/Steel</xpath>
+        <newMaterial>EM_Titanium</newMaterial>
+        <percentage>100</percentage>
         <round>false</round>
     </Operation>
 

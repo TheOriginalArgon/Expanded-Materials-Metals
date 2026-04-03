@@ -1,14 +1,20 @@
 <Patch>
 
     <!-- Heavy bridges save steel -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>/Defs/TerrainDef [defName="HeavyBridge"]/costList</xpath>
-        <value>
-            <costList>
-                <EM_StainlessSteel>5</EM_StainlessSteel>
-                <EM_TemperedSteel>5</EM_TemperedSteel>
-            </costList>
-        </value>
+    <Operation Class="VEF.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Modify cost of heavy bridges:</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/TerrainDef [defName="HeavyBridge"]/costList</xpath>
+                <value>
+                    <costList>
+                        <EM_StainlessSteel>5</EM_StainlessSteel>
+                        <EM_TemperedSteel>5</EM_TemperedSteel>
+                    </costList>
+                </value>
+            </li>
+        </operations>
     </Operation>
 
     <!-- Gravship structures need titanium -->

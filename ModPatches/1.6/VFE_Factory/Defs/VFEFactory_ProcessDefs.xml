@@ -329,8 +329,6 @@
             <li>(-1,0,3)</li>
         </autoInputSlots>
         <ticks>5000</ticks>
-        <wastePackToProduce>1</wastePackToProduce>
-        <wastePackToProduce>1</wastePackToProduce>
         <ingredients>
             <li>
                 <thing>EM_Coal</thing>

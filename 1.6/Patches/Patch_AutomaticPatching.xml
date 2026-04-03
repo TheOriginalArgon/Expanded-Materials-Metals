@@ -1,0 +1,20 @@
+<Patch>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef [comps/li [@Class="CompProperties_Battery"] and not(costList/EM_Lead) and costList/Steel]</xpath>
+        <match Class="VEF.PatchOperationToggableSequence">
+
+            <enabled>true</enabled>
+            <label>Attempt adding lead to unpatched batteries:</label>
+            <operations>
+                <li Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+                    <xpath>/Defs/ThingDef [comps/li [@Class="CompProperties_Battery"] and not(costList/EM_Lead) and costList/Steel]/costList/Steel</xpath>
+                    <newMaterial>EM_Lead</newMaterial>
+                    <percentage>80</percentage>
+                    <extraCostFactor>1.25</extraCostFactor>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

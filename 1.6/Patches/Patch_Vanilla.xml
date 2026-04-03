@@ -25,6 +25,18 @@
         </value>
     </Operation>
 
+    <!-- Sterile tiles need stainless steel -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/TerrainDef [defName="SterileTile"]/costList/Silver</xpath>
+        <newMaterial>EM_StainlessSteel</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>0.5</extraCostFactor>
+        <round>false</round>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/TerrainDef [defName="SterileTile"]/costList/Steel</xpath>
+    </Operation>
+
     <!-- Multi-analyzer needs silicon -->
     <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
         <xpath>/Defs/ThingDef [defName="MultiAnalyzer"]/costList/Gold</xpath>

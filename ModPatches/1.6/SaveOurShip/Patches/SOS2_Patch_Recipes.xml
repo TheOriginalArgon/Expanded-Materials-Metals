@@ -48,5 +48,18 @@
             <li>EM_TemperedSteel</li>
         </value>
     </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef [
+            defName="MakeAntigrainWarheadx4" or
+            defName="MakeHighExplosiveShellx4" or
+            defName="MakeEMPShellx4" or
+            defName="MakeHighExplosiveTorpedo4" or
+            defName="MakeEMPTorpedo4" or
+            defName="MakeAntigrainTorpedo4"
+            ]/fixedIngredientFilter/thingDefs</xpath>
+        <value>
+            <li>EM_TemperedSteel</li>
+        </value>
+    </Operation>
 
 </Patch>
