@@ -33,7 +33,8 @@
             defName="VGE_OxygenHarvester" or
             defName="VGE_LifeSupportSystem" or
             defName="VGE_OxygenReclaimer" or
-            defName="VGE_AstrofuelValve"
+            defName="VGE_AstrofuelValve" or
+            defName="VGE_GravshipScannerCluster"
             ]/costList/Steel</xpath>
         <newMaterial>EM_Titanium</newMaterial>
         <percentage>100</percentage>
@@ -76,7 +77,12 @@
             defName="VGE_Agrocell" or
             defName="VGE_PilotCockpit" or
             defName="VGE_PilotBridge" or
-            defName="VGE_CopilotConsole"
+            defName="VGE_CopilotConsole" or
+            defName="VGE_CompactResearchBench" or
+            defName="VGE_GravshipBasicRecharger" or
+            defName="VGE_GravshipStandardRecharger" or
+            defName="VGE_CompactGeneBank" or
+            defName="VGE_CompactBiosculpterPod"
             ]/costList/Steel</xpath>
         <newMaterial>EM_Aluminium</newMaterial>
         <percentage>100</percentage>
@@ -89,21 +95,13 @@
             defName="VGE_WallFirefoamPopper" or
             defName="VGE_WallOrbitalTradeBeacon" or
             defName="VGE_OxygenCanisterFiller" or
-            defName="VGE_OxygenCanisterEmptier"
+            defName="VGE_OxygenCanisterEmptier" or
+            defName="VGE_WallToolCabinet"
             ]/costList/Steel</xpath>
         <newMaterial>EM_Aluminium</newMaterial>
         <percentage>100</percentage>
         <extraCostFactor>0.25</extraCostFactor>
     </Operation>
-
-    <!-- <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
-        <xpath>/Defs/ThingDef [
-
-            ]/costList/Steel</xpath>
-        <newMaterial>EM_Aluminium</newMaterial>
-        <percentage>100</percentage>
-        <extraCostFactor>1</extraCostFactor>
-    </Operation> -->
 
     <!-- Pipes with aluminium -->
     <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
@@ -114,6 +112,15 @@
         <minimum>0</minimum>
         <newMaterial>EM_Aluminium</newMaterial>
         <percentage>100</percentage>
+        <round>false</round>
+    </Operation>
+
+    <!-- The darn structural beam -->
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [defName="VGE_GravshipStructuralBeam"]/costList/Steel</xpath>
+        <newMaterial>EM_Aluminium</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>0.25</extraCostFactor>
         <round>false</round>
     </Operation>
 
@@ -139,6 +146,13 @@
         <newMaterial>EM_Copper</newMaterial>
         <percentage>100</percentage>
         <extraCostFactor>1.5</extraCostFactor>
+    </Operation>
+
+    <Operation Class="ArgonicCore.PatchOperations.PatchOperationDistributeCost">
+        <xpath>/Defs/ThingDef [defName="VGE_CompactMultiAnalyzer"]/costList/Gold</xpath>
+        <newMaterial>EM_Silicon</newMaterial>
+        <percentage>100</percentage>
+        <extraCostFactor>2</extraCostFactor>
     </Operation>
 
     <!-- Descriptions of broken parts mentioning steel -->
