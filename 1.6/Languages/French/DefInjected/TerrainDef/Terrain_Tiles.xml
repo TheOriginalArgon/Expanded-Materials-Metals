@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bronze tile -->
+  <EM_BronzeTile.label>tuile en bronze</EM_BronzeTile.label>
+  <!-- EN: For a neat, elegant and royal look, bronze tiles are beautiful and made from a not so expensive material. They are quick to clean and get a bonus to cleanliness. -->
+  <EM_BronzeTile.description>Pour un style soigné, élégant et royal, les tuiles en bronze sont magnifiques et fabriquées à partir d'un matériau peu coûteux. Elles sont faciles à nettoyer et offrent un avantage supplémentaire en termes de propreté.</EM_BronzeTile.description>
+  
+  <!-- EN: copper tile -->
+  <EM_CopperTile.label>tuile en cuivre</EM_CopperTile.label>
+  <!-- EN: For a distinctive, vintage and enigmatic look, copper tiles look quite good. They are quick to clean and get a bonus to cleanliness. -->
+  <EM_CopperTile.description>Pour un style distinctif, vintage et énigmatique, les tuiles en cuivre sont tout à fait appropriées. Elles sont faciles à nettoyer et offrent un avantage supplémentaire en matière de propreté.</EM_CopperTile.description>
+  
+</LanguageData>

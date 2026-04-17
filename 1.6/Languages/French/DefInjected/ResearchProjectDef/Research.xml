@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ore extraction -->
+  <EM_OreExtraction.label>extraction de minerai</EM_OreExtraction.label>
+  <!-- EN: Extract raw ore from rock chunks at a smelter. -->
+  <EM_OreExtraction.description>Extraire le minerai brut des morceaux de roche dans une fonderie.</EM_OreExtraction.description>
+  <!-- EN:
+    <li>subject->la voie de l'innovation</li>
+    <li>subject_story->a dévoilé des vérités simples derrière des phénomènes complexes</li>
+    <li>subject_story->a simplifié les éléments complexes afin de permettre des applications pratiques</li>
+    <li>subject_story->a exploité des principes de base pour réaliser des exploits remarquables</li>
+    <li>subject_gerund->la rationalisation de l'essence de la découverte</li>
+    <li>subject->les éléments constitutifs du progrès</li>
+    <li>subject_story->a posé les fondements d'une avancée monumentale</li>
+    <li>subject_story->a fait le lien entre les différentes disciplines pour révéler de nouvelles idées</li>
+    <li>subject_story->a construit les fondations sur lesquelles reposeront les innovations futures</li>
+    <li>subject_gerund->la pose des clés de voûte de l'avancement</li>
+    <li>subject->les graines du lendemain</li>
+    <li>subject_story->a fait germer des idées qui se sont transformées en solutions innovantes</li>
+    <li>subject_story->a cultivé un jardin de connaissances, riche en potentiel</li>
+    <li>subject_story->a nourri les racines du changement avec soin et prévoyance</li>
+    <li>subject_gerund->l'ensemencement de l'avenir avec les découvertes d'aujourd'hui</li>
+    <li>subject->l'écho de la curiosité</li>
+    <li>subject_story->a déclenché des vagues d'enquête qui se sont répercutées à travers le temps</li>
+    <li>subject_story->a lancé des galets d'innovation dans l'étang de la connaissance</li>
+    <li>subject_story->a observé qu'une question en entraînait une autre, élargissant le cercle de la compréhension</li>
+    <li>subject_gerund->l'apport de pierres pour créer la vague du progrès</li>
+    <li>subject->l'alchimie du progrès</li>
+    <li>subject_story->a fusionné des disciplines disparates pour ouvrir de nouveaux champs de possibilités</li>
+    <li>subject_story->a transformé l'impossible en inévitable à force d'ingéniosité</li>
+    <li>subject_story->a élaboré des solutions qui ont modifié la compréhension de ce qui est réalisable</li>
+    <li>subject_gerund->la science et la magie se fondent dans le tissu de la réalité</li>
+    <li>subject->la tapisserie de la découverte</li>
+    <li>subject_story->a tissé des fils de connaissances provenant des quatre coins du monde</li>
+    <li>subject_story->a révélé des schémas dans le chaos, traçant la voie vers des innovations sans précédent</li>
+    <li>subject_story->a brodé les annales de l'histoire avec des récits de percées fortuites</li>
+    <li>subject_gerund->l'avenir se tisse sur le métier à tisser du présent</li>
+    <li>subject->le creuset de la création</li>
+    <li>subject_story->a fusionné des éléments bruts pour en faire les éléments constitutifs de demain</li>
+    <li>subject_story->a tempéré les feux de la créativité pour forger des technologies sans précédent</li>
+    <li>subject_story->a étanché la soif de connaissance avec l'élixir de l'invention</li>
+    <li>subject_gerund->la transformation des matières premières d'aujourd'hui en artefacts de l'avenir</li>
+    <li>subject->le phare de l'illumination</li>
+    <li>subject_story->a éclairé les coins sombres de l'ignorance, guidant la voie à suivre</li>
+    <li>subject_story->a éclairé l'inconnu, rendant l'invisible visible aux esprits curieux</li>
+    <li>subject_story->a allumé les flammes de la curiosité, suscitant une quête mondiale de compréhension</li>
+    <li>subject_gerund->les flambeaux du progrès et de la connaissance</li>
+    <li>subject->la frontière de la connaissance</li>
+    <li>subject_story->a franchi de nouveaux horizons dans la recherche de la compréhension</li>
+    <li>subject_story->a remis en question le statu quo avec des théories révolutionnaires</li>
+    <li>subject_story->a fusionné la sagesse ancestrale et la technologie moderne pour trouver des solutions innovantes</li>
+    <li>subject_gerund->les frontières de la science et de l'art sont repoussées</li>
+    <li>subject->l'essence de l'innovation</li>
+    <li>subject_story->a transformé des matériaux quotidiens en outils extraordinaires</li>
+    <li>subject_story->a ouvert la voie aux générations futures grâce à des pratiques durables</li>
+    <li>subject_story->a exploité le pouvoir de la nature pour alimenter de nouvelles avancées</li>
+    <li>subject_gerund->la promotion d'un écosystème de créativité et de progrès</li>
+    <li>subject->les architectes de demain</li>
+    <li>subject_story->a jeté les bases d'une utopie où la technologie est au service de tous</li>
+    <li>subject_story->a imaginé un avenir où l'harmonie entre la technologie et la nature prospère</li>
+    <li>subject_story->a créé des outils qui permettent à l'humanité d'atteindre son plein potentiel</li>
+    <li>subject_gerund->la pose des clés de voûte des paysages de demain</li>
+    <li>subject->les sauts exploratoires</li>
+    <li>subject_story->s'est aventuré avec audace dans les territoires inexplorés de la connaissance</li>
+    <li>subject_story->a comblé le fossé entre le connu et l'inconnu</li>
+    <li>subject_story->s'est aventuré là où la curiosité a osé le mener</li>
+    <li>subject_gerund->l'embarquement pour des voyages de découverte</li>
+    <li>subject->l'essence de l'ingéniosité</li>
+    <li>subject_story->a transformé les défis en opportunités de croissance</li>
+    <li>subject_story->a fait preuve de créativité pour surmonter les obstacles traditionnels</li>
+    <li>subject_story->a élaboré des solutions élégantes grâce à un mélange d'art et de science</li>
+    <li>subject_gerund->la libération du potentiel par l'innovation</li>
+    <li>subject->la récolte de la connaissance</li>
+    <li>subject_story->a recueilli des informations en récoltant les champs au moment de la moisson</li>
+    <li>subject_story->a cultivé une abondance de compréhension à partir des graines d'enquête</li>
+    <li>subject_story->a partagé les fruits de la recherche avec le monde entier</li>
+    <li>subject_gerund->la récolte des fruits d'une curiosité sans relâche</li>
+    <li>subject->l'énigme du progrès</li>
+    <li>subject_story->a assemblé les pièces du mystère pour révéler la vue d'ensemble</li>
+    <li>subject_story->a associé la théorie à la pratique pour résoudre des énigmes de longue date</li>
+    <li>subject_story->a découvert des liens cachés qui ont débloqué de nouvelles possibilités</li>
+    <li>subject_gerund->l'assemblage des éléments de l'avancement</li>
+  -->
+  <EM_OreExtraction.generalRules.rulesStrings>
+    <li>subject->la voie de l'innovation</li>
+    <li>subject_story->a dévoilé des vérités simples derrière des phénomènes complexes</li>
+    <li>subject_story->a simplifié les éléments complexes afin de permettre des applications pratiques</li>
+    <li>subject_story->a exploité des principes de base pour réaliser des exploits remarquables</li>
+    <li>subject_gerund->la rationalisation de l'essence de la découverte</li>
+    <li>subject->les éléments constitutifs du progrès</li>
+    <li>subject_story->a posé les fondements d'une avancée monumentale</li>
+    <li>subject_story->a fait le lien entre les différentes disciplines pour révéler de nouvelles idées</li>
+    <li>subject_story->a construit les fondations sur lesquelles reposeront les innovations futures</li>
+    <li>subject_gerund->la pose des clés de voûte de l'avancement</li>
+    <li>subject->les graines du lendemain</li>
+    <li>subject_story->a fait germer des idées qui se sont transformées en solutions innovantes</li>
+    <li>subject_story->a cultivé un jardin de connaissances, riche en potentiel</li>
+    <li>subject_story->a nourri les racines du changement avec soin et prévoyance</li>
+    <li>subject_gerund->l'ensemencement de l'avenir avec les découvertes d'aujourd'hui</li>
+    <li>subject->l'écho de la curiosité</li>
+    <li>subject_story->a déclenché des vagues d'enquête qui se sont répercutées à travers le temps</li>
+    <li>subject_story->a lancé des galets d'innovation dans l'étang de la connaissance</li>
+    <li>subject_story->a observé qu'une question en entraînait une autre, élargissant le cercle de la compréhension</li>
+    <li>subject_gerund->l'apport de pierres pour créer la vague du progrès</li>
+    <li>subject->l'alchimie du progrès</li>
+    <li>subject_story->a fusionné des disciplines disparates pour ouvrir de nouveaux champs de possibilités</li>
+    <li>subject_story->a transformé l'impossible en inévitable à force d'ingéniosité</li>
+    <li>subject_story->a élaboré des solutions qui ont modifié la compréhension de ce qui est réalisable</li>
+    <li>subject_gerund->la science et la magie se fondent dans le tissu de la réalité</li>
+    <li>subject->la tapisserie de la découverte</li>
+    <li>subject_story->a tissé des fils de connaissances provenant des quatre coins du monde</li>
+    <li>subject_story->a révélé des schémas dans le chaos, traçant la voie vers des innovations sans précédent</li>
+    <li>subject_story->a brodé les annales de l'histoire avec des récits de percées fortuites</li>
+    <li>subject_gerund->l'avenir se tisse sur le métier à tisser du présent</li>
+    <li>subject->le creuset de la création</li>
+    <li>subject_story->a fusionné des éléments bruts pour en faire les éléments constitutifs de demain</li>
+    <li>subject_story->a tempéré les feux de la créativité pour forger des technologies sans précédent</li>
+    <li>subject_story->a étanché la soif de connaissance avec l'élixir de l'invention</li>
+    <li>subject_gerund->la transformation des matières premières d'aujourd'hui en artefacts de l'avenir</li>
+    <li>subject->le phare de l'illumination</li>
+    <li>subject_story->a éclairé les coins sombres de l'ignorance, guidant la voie à suivre</li>
+    <li>subject_story->a éclairé l'inconnu, rendant l'invisible visible aux esprits curieux</li>
+    <li>subject_story->a allumé les flammes de la curiosité, suscitant une quête mondiale de compréhension</li>
+    <li>subject_gerund->les flambeaux du progrès et de la connaissance</li>
+    <li>subject->la frontière de la connaissance</li>
+    <li>subject_story->a franchi de nouveaux horizons dans la recherche de la compréhension</li>
+    <li>subject_story->a remis en question le statu quo avec des théories révolutionnaires</li>
+    <li>subject_story->a fusionné la sagesse ancestrale et la technologie moderne pour trouver des solutions innovantes</li>
+    <li>subject_gerund->les frontières de la science et de l'art sont repoussées</li>
+    <li>subject->l'essence de l'innovation</li>
+    <li>subject_story->a transformé des matériaux quotidiens en outils extraordinaires</li>
+    <li>subject_story->a ouvert la voie aux générations futures grâce à des pratiques durables</li>
+    <li>subject_story->a exploité le pouvoir de la nature pour alimenter de nouvelles avancées</li>
+    <li>subject_gerund->la promotion d'un écosystème de créativité et de progrès</li>
+    <li>subject->les architectes de demain</li>
+    <li>subject_story->a jeté les bases d'une utopie où la technologie est au service de tous</li>
+    <li>subject_story->a imaginé un avenir où l'harmonie entre la technologie et la nature prospère</li>
+    <li>subject_story->a créé des outils qui permettent à l'humanité d'atteindre son plein potentiel</li>
+    <li>subject_gerund->la pose des clés de voûte des paysages de demain</li>
+    <li>subject->les sauts exploratoires</li>
+    <li>subject_story->s'est aventuré avec audace dans les territoires inexplorés de la connaissance</li>
+    <li>subject_story->a comblé le fossé entre le connu et l'inconnu</li>
+    <li>subject_story->s'est aventuré là où la curiosité a osé le mener</li>
+    <li>subject_gerund->l'embarquement pour des voyages de découverte</li>
+    <li>subject->l'essence de l'ingéniosité</li>
+    <li>subject_story->a transformé les défis en opportunités de croissance</li>
+    <li>subject_story->a fait preuve de créativité pour surmonter les obstacles traditionnels</li>
+    <li>subject_story->a élaboré des solutions élégantes grâce à un mélange d'art et de science</li>
+    <li>subject_gerund->la libération du potentiel par l'innovation</li>
+    <li>subject->la récolte de la connaissance</li>
+    <li>subject_story->a recueilli des informations en récoltant les champs au moment de la moisson</li>
+    <li>subject_story->a cultivé une abondance de compréhension à partir des graines d'enquête</li>
+    <li>subject_story->a partagé les fruits de la recherche avec le monde entier</li>
+    <li>subject_gerund->la récolte des fruits d'une curiosité sans relâche</li>
+    <li>subject->l'énigme du progrès</li>
+    <li>subject_story->a assemblé les pièces du mystère pour révéler la vue d'ensemble</li>
+    <li>subject_story->a associé la théorie à la pratique pour résoudre des énigmes de longue date</li>
+    <li>subject_story->a découvert des liens cachés qui ont débloqué de nouvelles possibilités</li>
+    <li>subject_gerund->l'assemblage des éléments de l'avancement</li>
+</EM_OreExtraction.generalRules.rulesStrings>
+  
+  <!-- EN: reverse alloying -->
+  <EM_ReverseAlloying.label>alliage inversé</EM_ReverseAlloying.label>
+  <!-- EN: Extract base metals from alloys at a drug lab. -->
+  <EM_ReverseAlloying.description>Extraire les métaux communs des alliages dans un laboratoire de fabrication de drogues.</EM_ReverseAlloying.description>
+  <!-- EN:
+    <li>subject->la voie de l'innovation</li>
+    <li>subject_story->a dévoilé des vérités simples derrière des phénomènes complexes</li>
+    <li>subject_story->a simplifié les éléments complexes afin de permettre des applications pratiques</li>
+    <li>subject_story->a exploité des principes de base pour réaliser des exploits remarquables</li>
+    <li>subject_gerund->la rationalisation de l'essence de la découverte</li>
+    <li>subject->les éléments constitutifs du progrès</li>
+    <li>subject_story->a posé les fondements d'une avancée monumentale</li>
+    <li>subject_story->a fait le lien entre les différentes disciplines pour révéler de nouvelles idées</li>
+    <li>subject_story->a construit les fondations sur lesquelles reposeront les innovations futures</li>
+    <li>subject_gerund->la pose des clés de voûte de l'avancement</li>
+    <li>subject->les graines du lendemain</li>
+    <li>subject_story->a fait germer des idées qui se sont transformées en solutions innovantes</li>
+    <li>subject_story->a cultivé un jardin de connaissances, riche en potentiel</li>
+    <li>subject_story->a nourri les racines du changement avec soin et prévoyance</li>
+    <li>subject_gerund->l'ensemencement de l'avenir avec les découvertes d'aujourd'hui</li>
+    <li>subject->l'écho de la curiosité</li>
+    <li>subject_story->a déclenché des vagues d'enquête qui se sont répercutées à travers le temps</li>
+    <li>subject_story->a lancé des galets d'innovation dans l'étang de la connaissance</li>
+    <li>subject_story->a observé qu'une question en entraînait une autre, élargissant le cercle de la compréhension</li>
+    <li>subject_gerund->l'apport de pierres pour créer la vague du progrès</li>
+    <li>subject->l'alchimie du progrès</li>
+    <li>subject_story->a fusionné des disciplines disparates pour ouvrir de nouveaux champs de possibilités</li>
+    <li>subject_story->a transformé l'impossible en inévitable à force d'ingéniosité</li>
+    <li>subject_story->a élaboré des solutions qui ont modifié la compréhension de ce qui est réalisable</li>
+    <li>subject_gerund->la science et la magie se fondent dans le tissu de la réalité</li>
+    <li>subject->la tapisserie de la découverte</li>
+    <li>subject_story->a tissé des fils de connaissances provenant des quatre coins du monde</li>
+    <li>subject_story->a révélé des schémas dans le chaos, traçant la voie vers des innovations sans précédent</li>
+    <li>subject_story->a brodé les annales de l'histoire avec des récits de percées fortuites</li>
+    <li>subject_gerund->l'avenir se tisse sur le métier à tisser du présent</li>
+    <li>subject->le creuset de la création</li>
+    <li>subject_story->a fusionné des éléments bruts pour en faire les éléments constitutifs de demain</li>
+    <li>subject_story->a tempéré les feux de la créativité pour forger des technologies sans précédent</li>
+    <li>subject_story->a étanché la soif de connaissance avec l'élixir de l'invention</li>
+    <li>subject_gerund->la transformation des matières premières d'aujourd'hui en artefacts de l'avenir</li>
+    <li>subject->le phare de l'illumination</li>
+    <li>subject_story->a éclairé les coins sombres de l'ignorance, guidant la voie à suivre</li>
+    <li>subject_story->a éclairé l'inconnu, rendant l'invisible visible aux esprits curieux</li>
+    <li>subject_story->a allumé les flammes de la curiosité, suscitant une quête mondiale de compréhension</li>
+    <li>subject_gerund->les flambeaux du progrès et de la connaissance</li>
+    <li>subject->la frontière de la connaissance</li>
+    <li>subject_story->a franchi de nouveaux horizons dans la recherche de la compréhension</li>
+    <li>subject_story->a remis en question le statu quo avec des théories révolutionnaires</li>
+    <li>subject_story->a fusionné la sagesse ancestrale et la technologie moderne pour trouver des solutions innovantes</li>
+    <li>subject_gerund->les frontières de la science et de l'art sont repoussées</li>
+    <li>subject->l'essence de l'innovation</li>
+    <li>subject_story->a transformé des matériaux quotidiens en outils extraordinaires</li>
+    <li>subject_story->a ouvert la voie aux générations futures grâce à des pratiques durables</li>
+    <li>subject_story->a exploité le pouvoir de la nature pour alimenter de nouvelles avancées</li>
+    <li>subject_gerund->la promotion d'un écosystème de créativité et de progrès</li>
+    <li>subject->les architectes de demain</li>
+    <li>subject_story->a jeté les bases d'une utopie où la technologie est au service de tous</li>
+    <li>subject_story->a imaginé un avenir où l'harmonie entre la technologie et la nature prospère</li>
+    <li>subject_story->a créé des outils qui permettent à l'humanité d'atteindre son plein potentiel</li>
+    <li>subject_gerund->la pose des clés de voûte des paysages de demain</li>
+    <li>subject->les sauts exploratoires</li>
+    <li>subject_story->s'est aventuré avec audace dans les territoires inexplorés de la connaissance</li>
+    <li>subject_story->a comblé le fossé entre le connu et l'inconnu</li>
+    <li>subject_story->s'est aventuré là où la curiosité a osé le mener</li>
+    <li>subject_gerund->l'embarquement pour des voyages de découverte</li>
+    <li>subject->l'essence de l'ingéniosité</li>
+    <li>subject_story->a transformé les défis en opportunités de croissance</li>
+    <li>subject_story->a fait preuve de créativité pour surmonter les obstacles traditionnels</li>
+    <li>subject_story->a élaboré des solutions élégantes grâce à un mélange d'art et de science</li>
+    <li>subject_gerund->la libération du potentiel par l'innovation</li>
+    <li>subject->la récolte de la connaissance</li>
+    <li>subject_story->a recueilli des informations en récoltant les champs au moment de la moisson</li>
+    <li>subject_story->a cultivé une abondance de compréhension à partir des graines d'enquête</li>
+    <li>subject_story->a partagé les fruits de la recherche avec le monde entier</li>
+    <li>subject_gerund->la récolte des fruits d'une curiosité sans relâche</li>
+    <li>subject->l'énigme du progrès</li>
+    <li>subject_story->a assemblé les pièces du mystère pour révéler la vue d'ensemble</li>
+    <li>subject_story->a associé la théorie à la pratique pour résoudre des énigmes de longue date</li>
+    <li>subject_story->a découvert des liens cachés qui ont débloqué de nouvelles possibilités</li>
+    <li>subject_gerund->l'assemblage des éléments de l'avancement</li>
+  -->
+  <EM_ReverseAlloying.generalRules.rulesStrings>
+    <li>subject->la voie de l'innovation</li>
+    <li>subject_story->a dévoilé des vérités simples derrière des phénomènes complexes</li>
+    <li>subject_story->a simplifié les éléments complexes afin de permettre des applications pratiques</li>
+    <li>subject_story->a exploité des principes de base pour réaliser des exploits remarquables</li>
+    <li>subject_gerund->la rationalisation de l'essence de la découverte</li>
+    <li>subject->les éléments constitutifs du progrès</li>
+    <li>subject_story->a posé les fondements d'une avancée monumentale</li>
+    <li>subject_story->a fait le lien entre les différentes disciplines pour révéler de nouvelles idées</li>
+    <li>subject_story->a construit les fondations sur lesquelles reposeront les innovations futures</li>
+    <li>subject_gerund->la pose des clés de voûte de l'avancement</li>
+    <li>subject->les graines du lendemain</li>
+    <li>subject_story->a fait germer des idées qui se sont transformées en solutions innovantes</li>
+    <li>subject_story->a cultivé un jardin de connaissances, riche en potentiel</li>
+    <li>subject_story->a nourri les racines du changement avec soin et prévoyance</li>
+    <li>subject_gerund->l'ensemencement de l'avenir avec les découvertes d'aujourd'hui</li>
+    <li>subject->l'écho de la curiosité</li>
+    <li>subject_story->a déclenché des vagues d'enquête qui se sont répercutées à travers le temps</li>
+    <li>subject_story->a lancé des galets d'innovation dans l'étang de la connaissance</li>
+    <li>subject_story->a observé qu'une question en entraînait une autre, élargissant le cercle de la compréhension</li>
+    <li>subject_gerund->l'apport de pierres pour créer la vague du progrès</li>
+    <li>subject->l'alchimie du progrès</li>
+    <li>subject_story->a fusionné des disciplines disparates pour ouvrir de nouveaux champs de possibilités</li>
+    <li>subject_story->a transformé l'impossible en inévitable à force d'ingéniosité</li>
+    <li>subject_story->a élaboré des solutions qui ont modifié la compréhension de ce qui est réalisable</li>
+    <li>subject_gerund->la science et la magie se fondent dans le tissu de la réalité</li>
+    <li>subject->la tapisserie de la découverte</li>
+    <li>subject_story->a tissé des fils de connaissances provenant des quatre coins du monde</li>
+    <li>subject_story->a révélé des schémas dans le chaos, traçant la voie vers des innovations sans précédent</li>
+    <li>subject_story->a brodé les annales de l'histoire avec des récits de percées fortuites</li>
+    <li>subject_gerund->l'avenir se tisse sur le métier à tisser du présent</li>
+    <li>subject->le creuset de la création</li>
+    <li>subject_story->a fusionné des éléments bruts pour en faire les éléments constitutifs de demain</li>
+    <li>subject_story->a tempéré les feux de la créativité pour forger des technologies sans précédent</li>
+    <li>subject_story->a étanché la soif de connaissance avec l'élixir de l'invention</li>
+    <li>subject_gerund->la transformation des matières premières d'aujourd'hui en artefacts de l'avenir</li>
+    <li>subject->le phare de l'illumination</li>
+    <li>subject_story->a éclairé les coins sombres de l'ignorance, guidant la voie à suivre</li>
+    <li>subject_story->a éclairé l'inconnu, rendant l'invisible visible aux esprits curieux</li>
+    <li>subject_story->a allumé les flammes de la curiosité, suscitant une quête mondiale de compréhension</li>
+    <li>subject_gerund->les flambeaux du progrès et de la connaissance</li>
+    <li>subject->la frontière de la connaissance</li>
+    <li>subject_story->a franchi de nouveaux horizons dans la recherche de la compréhension</li>
+    <li>subject_story->a remis en question le statu quo avec des théories révolutionnaires</li>
+    <li>subject_story->a fusionné la sagesse ancestrale et la technologie moderne pour trouver des solutions innovantes</li>
+    <li>subject_gerund->les frontières de la science et de l'art sont repoussées</li>
+    <li>subject->l'essence de l'innovation</li>
+    <li>subject_story->a transformé des matériaux quotidiens en outils extraordinaires</li>
+    <li>subject_story->a ouvert la voie aux générations futures grâce à des pratiques durables</li>
+    <li>subject_story->a exploité le pouvoir de la nature pour alimenter de nouvelles avancées</li>
+    <li>subject_gerund->la promotion d'un écosystème de créativité et de progrès</li>
+    <li>subject->les architectes de demain</li>
+    <li>subject_story->a jeté les bases d'une utopie où la technologie est au service de tous</li>
+    <li>subject_story->a imaginé un avenir où l'harmonie entre la technologie et la nature prospère</li>
+    <li>subject_story->a créé des outils qui permettent à l'humanité d'atteindre son plein potentiel</li>
+    <li>subject_gerund->la pose des clés de voûte des paysages de demain</li>
+    <li>subject->les sauts exploratoires</li>
+    <li>subject_story->s'est aventuré avec audace dans les territoires inexplorés de la connaissance</li>
+    <li>subject_story->a comblé le fossé entre le connu et l'inconnu</li>
+    <li>subject_story->s'est aventuré là où la curiosité a osé le mener</li>
+    <li>subject_gerund->l'embarquement pour des voyages de découverte</li>
+    <li>subject->l'essence de l'ingéniosité</li>
+    <li>subject_story->a transformé les défis en opportunités de croissance</li>
+    <li>subject_story->a fait preuve de créativité pour surmonter les obstacles traditionnels</li>
+    <li>subject_story->a élaboré des solutions élégantes grâce à un mélange d'art et de science</li>
+    <li>subject_gerund->la libération du potentiel par l'innovation</li>
+    <li>subject->la récolte de la connaissance</li>
+    <li>subject_story->a recueilli des informations en récoltant les champs au moment de la moisson</li>
+    <li>subject_story->a cultivé une abondance de compréhension à partir des graines d'enquête</li>
+    <li>subject_story->a partagé les fruits de la recherche avec le monde entier</li>
+    <li>subject_gerund->la récolte des fruits d'une curiosité sans relâche</li>
+    <li>subject->l'énigme du progrès</li>
+    <li>subject_story->a assemblé les pièces du mystère pour révéler la vue d'ensemble</li>
+    <li>subject_story->a associé la théorie à la pratique pour résoudre des énigmes de longue date</li>
+    <li>subject_story->a découvert des liens cachés qui ont débloqué de nouvelles possibilités</li>
+    <li>subject_gerund->l'assemblage des éléments de l'avancement</li>
+</EM_ReverseAlloying.generalRules.rulesStrings>
+  
+  <!-- EN: stainless steel -->
+  <EM_StainlessSteelMaking.label>acier inoxydable</EM_StainlessSteelMaking.label>
+  <!-- EN: Make stainless steel, a special variant of steel useful in prosthetics and medical supplies. -->
+  <EM_StainlessSteelMaking.description>Fabriquez de l'acier inoxydable, une variante spéciale de l'acier utile dans les prothèses et les fournitures médicales.</EM_StainlessSteelMaking.description>
+  <!-- EN:
+    <li>subject->la voie de l'innovation</li>
+    <li>subject_story->a dévoilé des vérités simples derrière des phénomènes complexes</li>
+    <li>subject_story->a simplifié les éléments complexes afin de permettre des applications pratiques</li>
+    <li>subject_story->a exploité des principes de base pour réaliser des exploits remarquables</li>
+    <li>subject_gerund->la rationalisation de l'essence de la découverte</li>
+    <li>subject->les éléments constitutifs du progrès</li>
+    <li>subject_story->a posé les fondements d'une avancée monumentale</li>
+    <li>subject_story->a fait le lien entre les différentes disciplines pour révéler de nouvelles idées</li>
+    <li>subject_story->a construit les fondations sur lesquelles reposeront les innovations futures</li>
+    <li>subject_gerund->la pose des clés de voûte de l'avancement</li>
+    <li>subject->les graines du lendemain</li>
+    <li>subject_story->a fait germer des idées qui se sont transformées en solutions innovantes</li>
+    <li>subject_story->a cultivé un jardin de connaissances, riche en potentiel</li>
+    <li>subject_story->a nourri les racines du changement avec soin et prévoyance</li>
+    <li>subject_gerund->l'ensemencement de l'avenir avec les découvertes d'aujourd'hui</li>
+    <li>subject->l'écho de la curiosité</li>
+    <li>subject_story->a déclenché des vagues d'enquête qui se sont répercutées à travers le temps</li>
+    <li>subject_story->a lancé des galets d'innovation dans l'étang de la connaissance</li>
+    <li>subject_story->a observé qu'une question en entraînait une autre, élargissant le cercle de la compréhension</li>
+    <li>subject_gerund->l'apport de pierres pour créer la vague du progrès</li>
+    <li>subject->l'alchimie du progrès</li>
+    <li>subject_story->a fusionné des disciplines disparates pour ouvrir de nouveaux champs de possibilités</li>
+    <li>subject_story->a transformé l'impossible en inévitable à force d'ingéniosité</li>
+    <li>subject_story->a élaboré des solutions qui ont modifié la compréhension de ce qui est réalisable</li>
+    <li>subject_gerund->la science et la magie se fondent dans le tissu de la réalité</li>
+    <li>subject->la tapisserie de la découverte</li>
+    <li>subject_story->a tissé des fils de connaissances provenant des quatre coins du monde</li>
+    <li>subject_story->a révélé des schémas dans le chaos, traçant la voie vers des innovations sans précédent</li>
+    <li>subject_story->a brodé les annales de l'histoire avec des récits de percées fortuites</li>
+    <li>subject_gerund->l'avenir se tisse sur le métier à tisser du présent</li>
+    <li>subject->le creuset de la création</li>
+    <li>subject_story->a fusionné des éléments bruts pour en faire les éléments constitutifs de demain</li>
+    <li>subject_story->a tempéré les feux de la créativité pour forger des technologies sans précédent</li>
+    <li>subject_story->a étanché la soif de connaissance avec l'élixir de l'invention</li>
+    <li>subject_gerund->la transformation des matières premières d'aujourd'hui en artefacts de l'avenir</li>
+    <li>subject->le phare de l'illumination</li>
+    <li>subject_story->a éclairé les coins sombres de l'ignorance, guidant la voie à suivre</li>
+    <li>subject_story->a éclairé l'inconnu, rendant l'invisible visible aux esprits curieux</li>
+    <li>subject_story->a allumé les flammes de la curiosité, suscitant une quête mondiale de compréhension</li>
+    <li>subject_gerund->les flambeaux du progrès et de la connaissance</li>
+    <li>subject->la frontière de la connaissance</li>
+    <li>subject_story->a franchi de nouveaux horizons dans la recherche de la compréhension</li>
+    <li>subject_story->a remis en question le statu quo avec des théories révolutionnaires</li>
+    <li>subject_story->a fusionné la sagesse ancestrale et la technologie moderne pour trouver des solutions innovantes</li>
+    <li>subject_gerund->les frontières de la science et de l'art sont repoussées</li>
+    <li>subject->l'essence de l'innovation</li>
+    <li>subject_story->a transformé des matériaux quotidiens en outils extraordinaires</li>
+    <li>subject_story->a ouvert la voie aux générations futures grâce à des pratiques durables</li>
+    <li>subject_story->a exploité le pouvoir de la nature pour alimenter de nouvelles avancées</li>
+    <li>subject_gerund->la promotion d'un écosystème de créativité et de progrès</li>
+    <li>subject->les architectes de demain</li>
+    <li>subject_story->a jeté les bases d'une utopie où la technologie est au service de tous</li>
+    <li>subject_story->a imaginé un avenir où l'harmonie entre la technologie et la nature prospère</li>
+    <li>subject_story->a créé des outils qui permettent à l'humanité d'atteindre son plein potentiel</li>
+    <li>subject_gerund->la pose des clés de voûte des paysages de demain</li>
+    <li>subject->les sauts exploratoires</li>
+    <li>subject_story->s'est aventuré avec audace dans les territoires inexplorés de la connaissance</li>
+    <li>subject_story->a comblé le fossé entre le connu et l'inconnu</li>
+    <li>subject_story->s'est aventuré là où la curiosité a osé le mener</li>
+    <li>subject_gerund->l'embarquement pour des voyages de découverte</li>
+    <li>subject->l'essence de l'ingéniosité</li>
+    <li>subject_story->a transformé les défis en opportunités de croissance</li>
+    <li>subject_story->a fait preuve de créativité pour surmonter les obstacles traditionnels</li>
+    <li>subject_story->a élaboré des solutions élégantes grâce à un mélange d'art et de science</li>
+    <li>subject_gerund->la libération du potentiel par l'innovation</li>
+    <li>subject->la récolte de la connaissance</li>
+    <li>subject_story->a recueilli des informations en récoltant les champs au moment de la moisson</li>
+    <li>subject_story->a cultivé une abondance de compréhension à partir des graines d'enquête</li>
+    <li>subject_story->a partagé les fruits de la recherche avec le monde entier</li>
+    <li>subject_gerund->la récolte des fruits d'une curiosité sans relâche</li>
+    <li>subject->l'énigme du progrès</li>
+    <li>subject_story->a assemblé les pièces du mystère pour révéler la vue d'ensemble</li>
+    <li>subject_story->a associé la théorie à la pratique pour résoudre des énigmes de longue date</li>
+    <li>subject_story->a découvert des liens cachés qui ont débloqué de nouvelles possibilités</li>
+    <li>subject_gerund->l'assemblage des éléments de l'avancement</li>
+  -->
+  <EM_StainlessSteelMaking.generalRules.rulesStrings>
+    <li>subject->la voie de l'innovation</li>
+    <li>subject_story->a dévoilé des vérités simples derrière des phénomènes complexes</li>
+    <li>subject_story->a simplifié les éléments complexes afin de permettre des applications pratiques</li>
+    <li>subject_story->a exploité des principes de base pour réaliser des exploits remarquables</li>
+    <li>subject_gerund->la rationalisation de l'essence de la découverte</li>
+    <li>subject->les éléments constitutifs du progrès</li>
+    <li>subject_story->a posé les fondements d'une avancée monumentale</li>
+    <li>subject_story->a fait le lien entre les différentes disciplines pour révéler de nouvelles idées</li>
+    <li>subject_story->a construit les fondations sur lesquelles reposeront les innovations futures</li>
+    <li>subject_gerund->la pose des clés de voûte de l'avancement</li>
+    <li>subject->les graines du lendemain</li>
+    <li>subject_story->a fait germer des idées qui se sont transformées en solutions innovantes</li>
+    <li>subject_story->a cultivé un jardin de connaissances, riche en potentiel</li>
+    <li>subject_story->a nourri les racines du changement avec soin et prévoyance</li>
+    <li>subject_gerund->l'ensemencement de l'avenir avec les découvertes d'aujourd'hui</li>
+    <li>subject->l'écho de la curiosité</li>
+    <li>subject_story->a déclenché des vagues d'enquête qui se sont répercutées à travers le temps</li>
+    <li>subject_story->a lancé des galets d'innovation dans l'étang de la connaissance</li>
+    <li>subject_story->a observé qu'une question en entraînait une autre, élargissant le cercle de la compréhension</li>
+    <li>subject_gerund->l'apport de pierres pour créer la vague du progrès</li>
+    <li>subject->l'alchimie du progrès</li>
+    <li>subject_story->a fusionné des disciplines disparates pour ouvrir de nouveaux champs de possibilités</li>
+    <li>subject_story->a transformé l'impossible en inévitable à force d'ingéniosité</li>
+    <li>subject_story->a élaboré des solutions qui ont modifié la compréhension de ce qui est réalisable</li>
+    <li>subject_gerund->la science et la magie se fondent dans le tissu de la réalité</li>
+    <li>subject->la tapisserie de la découverte</li>
+    <li>subject_story->a tissé des fils de connaissances provenant des quatre coins du monde</li>
+    <li>subject_story->a révélé des schémas dans le chaos, traçant la voie vers des innovations sans précédent</li>
+    <li>subject_story->a brodé les annales de l'histoire avec des récits de percées fortuites</li>
+    <li>subject_gerund->l'avenir se tisse sur le métier à tisser du présent</li>
+    <li>subject->le creuset de la création</li>
+    <li>subject_story->a fusionné des éléments bruts pour en faire les éléments constitutifs de demain</li>
+    <li>subject_story->a tempéré les feux de la créativité pour forger des technologies sans précédent</li>
+    <li>subject_story->a étanché la soif de connaissance avec l'élixir de l'invention</li>
+    <li>subject_gerund->la transformation des matières premières d'aujourd'hui en artefacts de l'avenir</li>
+    <li>subject->le phare de l'illumination</li>
+    <li>subject_story->a éclairé les coins sombres de l'ignorance, guidant la voie à suivre</li>
+    <li>subject_story->a éclairé l'inconnu, rendant l'invisible visible aux esprits curieux</li>
+    <li>subject_story->a allumé les flammes de la curiosité, suscitant une quête mondiale de compréhension</li>
+    <li>subject_gerund->les flambeaux du progrès et de la connaissance</li>
+    <li>subject->la frontière de la connaissance</li>
+    <li>subject_story->a franchi de nouveaux horizons dans la recherche de la compréhension</li>
+    <li>subject_story->a remis en question le statu quo avec des théories révolutionnaires</li>
+    <li>subject_story->a fusionné la sagesse ancestrale et la technologie moderne pour trouver des solutions innovantes</li>
+    <li>subject_gerund->les frontières de la science et de l'art sont repoussées</li>
+    <li>subject->l'essence de l'innovation</li>
+    <li>subject_story->a transformé des matériaux quotidiens en outils extraordinaires</li>
+    <li>subject_story->a ouvert la voie aux générations futures grâce à des pratiques durables</li>
+    <li>subject_story->a exploité le pouvoir de la nature pour alimenter de nouvelles avancées</li>
+    <li>subject_gerund->la promotion d'un écosystème de créativité et de progrès</li>
+    <li>subject->les architectes de demain</li>
+    <li>subject_story->a jeté les bases d'une utopie où la technologie est au service de tous</li>
+    <li>subject_story->a imaginé un avenir où l'harmonie entre la technologie et la nature prospère</li>
+    <li>subject_story->a créé des outils qui permettent à l'humanité d'atteindre son plein potentiel</li>
+    <li>subject_gerund->la pose des clés de voûte des paysages de demain</li>
+    <li>subject->les sauts exploratoires</li>
+    <li>subject_story->s'est aventuré avec audace dans les territoires inexplorés de la connaissance</li>
+    <li>subject_story->a comblé le fossé entre le connu et l'inconnu</li>
+    <li>subject_story->s'est aventuré là où la curiosité a osé le mener</li>
+    <li>subject_gerund->l'embarquement pour des voyages de découverte</li>
+    <li>subject->l'essence de l'ingéniosité</li>
+    <li>subject_story->a transformé les défis en opportunités de croissance</li>
+    <li>subject_story->a fait preuve de créativité pour surmonter les obstacles traditionnels</li>
+    <li>subject_story->a élaboré des solutions élégantes grâce à un mélange d'art et de science</li>
+    <li>subject_gerund->la libération du potentiel par l'innovation</li>
+    <li>subject->la récolte de la connaissance</li>
+    <li>subject_story->a recueilli des informations en récoltant les champs au moment de la moisson</li>
+    <li>subject_story->a cultivé une abondance de compréhension à partir des graines d'enquête</li>
+    <li>subject_story->a partagé les fruits de la recherche avec le monde entier</li>
+    <li>subject_gerund->la récolte des fruits d'une curiosité sans relâche</li>
+    <li>subject->l'énigme du progrès</li>
+    <li>subject_story->a assemblé les pièces du mystère pour révéler la vue d'ensemble</li>
+    <li>subject_story->a associé la théorie à la pratique pour résoudre des énigmes de longue date</li>
+    <li>subject_story->a découvert des liens cachés qui ont débloqué de nouvelles possibilités</li>
+    <li>subject_gerund->l'assemblage des éléments de l'avancement</li>
+</EM_StainlessSteelMaking.generalRules.rulesStrings>
+  
+  <!-- EN: steel working -->
+  <EM_SteelWorking.label>travail de l'acier</EM_SteelWorking.label>
+  <!-- EN: Make steel from iron and carbon. -->
+  <EM_SteelWorking.description>Fabriquez de l'acier à partir de fer et de carbone.</EM_SteelWorking.description>
+  <!-- EN:
+    <li>subject->la voie de l'innovation</li>
+    <li>subject_story->a dévoilé des vérités simples derrière des phénomènes complexes</li>
+    <li>subject_story->a simplifié les éléments complexes afin de permettre des applications pratiques</li>
+    <li>subject_story->a exploité des principes de base pour réaliser des exploits remarquables</li>
+    <li>subject_gerund->la rationalisation de l'essence de la découverte</li>
+    <li>subject->les éléments constitutifs du progrès</li>
+    <li>subject_story->a posé les fondements d'une avancée monumentale</li>
+    <li>subject_story->a fait le lien entre les différentes disciplines pour révéler de nouvelles idées</li>
+    <li>subject_story->a construit les fondations sur lesquelles reposeront les innovations futures</li>
+    <li>subject_gerund->la pose des clés de voûte de l'avancement</li>
+    <li>subject->les graines du lendemain</li>
+    <li>subject_story->a fait germer des idées qui se sont transformées en solutions innovantes</li>
+    <li>subject_story->a cultivé un jardin de connaissances, riche en potentiel</li>
+    <li>subject_story->a nourri les racines du changement avec soin et prévoyance</li>
+    <li>subject_gerund->l'ensemencement de l'avenir avec les découvertes d'aujourd'hui</li>
+    <li>subject->l'écho de la curiosité</li>
+    <li>subject_story->a déclenché des vagues d'enquête qui se sont répercutées à travers le temps</li>
+    <li>subject_story->a lancé des galets d'innovation dans l'étang de la connaissance</li>
+    <li>subject_story->a observé qu'une question en entraînait une autre, élargissant le cercle de la compréhension</li>
+    <li>subject_gerund->l'apport de pierres pour créer la vague du progrès</li>
+    <li>subject->l'alchimie du progrès</li>
+    <li>subject_story->a fusionné des disciplines disparates pour ouvrir de nouveaux champs de possibilités</li>
+    <li>subject_story->a transformé l'impossible en inévitable à force d'ingéniosité</li>
+    <li>subject_story->a élaboré des solutions qui ont modifié la compréhension de ce qui est réalisable</li>
+    <li>subject_gerund->la science et la magie se fondent dans le tissu de la réalité</li>
+    <li>subject->la tapisserie de la découverte</li>
+    <li>subject_story->a tissé des fils de connaissances provenant des quatre coins du monde</li>
+    <li>subject_story->a révélé des schémas dans le chaos, traçant la voie vers des innovations sans précédent</li>
+    <li>subject_story->a brodé les annales de l'histoire avec des récits de percées fortuites</li>
+    <li>subject_gerund->l'avenir se tisse sur le métier à tisser du présent</li>
+    <li>subject->le creuset de la création</li>
+    <li>subject_story->a fusionné des éléments bruts pour en faire les éléments constitutifs de demain</li>
+    <li>subject_story->a tempéré les feux de la créativité pour forger des technologies sans précédent</li>
+    <li>subject_story->a étanché la soif de connaissance avec l'élixir de l'invention</li>
+    <li>subject_gerund->la transformation des matières premières d'aujourd'hui en artefacts de l'avenir</li>
+    <li>subject->le phare de l'illumination</li>
+    <li>subject_story->a éclairé les coins sombres de l'ignorance, guidant la voie à suivre</li>
+    <li>subject_story->a éclairé l'inconnu, rendant l'invisible visible aux esprits curieux</li>
+    <li>subject_story->a allumé les flammes de la curiosité, suscitant une quête mondiale de compréhension</li>
+    <li>subject_gerund->les flambeaux du progrès et de la connaissance</li>
+    <li>subject->la frontière de la connaissance</li>
+    <li>subject_story->a franchi de nouveaux horizons dans la recherche de la compréhension</li>
+    <li>subject_story->a remis en question le statu quo avec des théories révolutionnaires</li>
+    <li>subject_story->a fusionné la sagesse ancestrale et la technologie moderne pour trouver des solutions innovantes</li>
+    <li>subject_gerund->les frontières de la science et de l'art sont repoussées</li>
+    <li>subject->l'essence de l'innovation</li>
+    <li>subject_story->a transformé des matériaux quotidiens en outils extraordinaires</li>
+    <li>subject_story->a ouvert la voie aux générations futures grâce à des pratiques durables</li>
+    <li>subject_story->a exploité le pouvoir de la nature pour alimenter de nouvelles avancées</li>
+    <li>subject_gerund->la promotion d'un écosystème de créativité et de progrès</li>
+    <li>subject->les architectes de demain</li>
+    <li>subject_story->a jeté les bases d'une utopie où la technologie est au service de tous</li>
+    <li>subject_story->a imaginé un avenir où l'harmonie entre la technologie et la nature prospère</li>
+    <li>subject_story->a créé des outils qui permettent à l'humanité d'atteindre son plein potentiel</li>
+    <li>subject_gerund->la pose des clés de voûte des paysages de demain</li>
+    <li>subject->les sauts exploratoires</li>
+    <li>subject_story->s'est aventuré avec audace dans les territoires inexplorés de la connaissance</li>
+    <li>subject_story->a comblé le fossé entre le connu et l'inconnu</li>
+    <li>subject_story->s'est aventuré là où la curiosité a osé le mener</li>
+    <li>subject_gerund->l'embarquement pour des voyages de découverte</li>
+    <li>subject->l'essence de l'ingéniosité</li>
+    <li>subject_story->a transformé les défis en opportunités de croissance</li>
+    <li>subject_story->a fait preuve de créativité pour surmonter les obstacles traditionnels</li>
+    <li>subject_story->a élaboré des solutions élégantes grâce à un mélange d'art et de science</li>
+    <li>subject_gerund->la libération du potentiel par l'innovation</li>
+    <li>subject->la récolte de la connaissance</li>
+    <li>subject_story->a recueilli des informations en récoltant les champs au moment de la moisson</li>
+    <li>subject_story->a cultivé une abondance de compréhension à partir des graines d'enquête</li>
+    <li>subject_story->a partagé les fruits de la recherche avec le monde entier</li>
+    <li>subject_gerund->la récolte des fruits d'une curiosité sans relâche</li>
+    <li>subject->l'énigme du progrès</li>
+    <li>subject_story->a assemblé les pièces du mystère pour révéler la vue d'ensemble</li>
+    <li>subject_story->a associé la théorie à la pratique pour résoudre des énigmes de longue date</li>
+    <li>subject_story->a découvert des liens cachés qui ont débloqué de nouvelles possibilités</li>
+    <li>subject_gerund->l'assemblage des éléments de l'avancement</li>
+  -->
+  <EM_SteelWorking.generalRules.rulesStrings>
+    <li>subject->la voie de l'innovation</li>
+    <li>subject_story->a dévoilé des vérités simples derrière des phénomènes complexes</li>
+    <li>subject_story->a simplifié les éléments complexes afin de permettre des applications pratiques</li>
+    <li>subject_story->a exploité des principes de base pour réaliser des exploits remarquables</li>
+    <li>subject_gerund->la rationalisation de l'essence de la découverte</li>
+    <li>subject->les éléments constitutifs du progrès</li>
+    <li>subject_story->a posé les fondements d'une avancée monumentale</li>
+    <li>subject_story->a fait le lien entre les différentes disciplines pour révéler de nouvelles idées</li>
+    <li>subject_story->a construit les fondations sur lesquelles reposeront les innovations futures</li>
+    <li>subject_gerund->la pose des clés de voûte de l'avancement</li>
+    <li>subject->les graines du lendemain</li>
+    <li>subject_story->a fait germer des idées qui se sont transformées en solutions innovantes</li>
+    <li>subject_story->a cultivé un jardin de connaissances, riche en potentiel</li>
+    <li>subject_story->a nourri les racines du changement avec soin et prévoyance</li>
+    <li>subject_gerund->l'ensemencement de l'avenir avec les découvertes d'aujourd'hui</li>
+    <li>subject->l'écho de la curiosité</li>
+    <li>subject_story->a déclenché des vagues d'enquête qui se sont répercutées à travers le temps</li>
+    <li>subject_story->a lancé des galets d'innovation dans l'étang de la connaissance</li>
+    <li>subject_story->a observé qu'une question en entraînait une autre, élargissant le cercle de la compréhension</li>
+    <li>subject_gerund->l'apport de pierres pour créer la vague du progrès</li>
+    <li>subject->l'alchimie du progrès</li>
+    <li>subject_story->a fusionné des disciplines disparates pour ouvrir de nouveaux champs de possibilités</li>
+    <li>subject_story->a transformé l'impossible en inévitable à force d'ingéniosité</li>
+    <li>subject_story->a élaboré des solutions qui ont modifié la compréhension de ce qui est réalisable</li>
+    <li>subject_gerund->la science et la magie se fondent dans le tissu de la réalité</li>
+    <li>subject->la tapisserie de la découverte</li>
+    <li>subject_story->a tissé des fils de connaissances provenant des quatre coins du monde</li>
+    <li>subject_story->a révélé des schémas dans le chaos, traçant la voie vers des innovations sans précédent</li>
+    <li>subject_story->a brodé les annales de l'histoire avec des récits de percées fortuites</li>
+    <li>subject_gerund->l'avenir se tisse sur le métier à tisser du présent</li>
+    <li>subject->le creuset de la création</li>
+    <li>subject_story->a fusionné des éléments bruts pour en faire les éléments constitutifs de demain</li>
+    <li>subject_story->a tempéré les feux de la créativité pour forger des technologies sans précédent</li>
+    <li>subject_story->a étanché la soif de connaissance avec l'élixir de l'invention</li>
+    <li>subject_gerund->la transformation des matières premières d'aujourd'hui en artefacts de l'avenir</li>
+    <li>subject->le phare de l'illumination</li>
+    <li>subject_story->a éclairé les coins sombres de l'ignorance, guidant la voie à suivre</li>
+    <li>subject_story->a éclairé l'inconnu, rendant l'invisible visible aux esprits curieux</li>
+    <li>subject_story->a allumé les flammes de la curiosité, suscitant une quête mondiale de compréhension</li>
+    <li>subject_gerund->les flambeaux du progrès et de la connaissance</li>
+    <li>subject->la frontière de la connaissance</li>
+    <li>subject_story->a franchi de nouveaux horizons dans la recherche de la compréhension</li>
+    <li>subject_story->a remis en question le statu quo avec des théories révolutionnaires</li>
+    <li>subject_story->a fusionné la sagesse ancestrale et la technologie moderne pour trouver des solutions innovantes</li>
+    <li>subject_gerund->les frontières de la science et de l'art sont repoussées</li>
+    <li>subject->l'essence de l'innovation</li>
+    <li>subject_story->a transformé des matériaux quotidiens en outils extraordinaires</li>
+    <li>subject_story->a ouvert la voie aux générations futures grâce à des pratiques durables</li>
+    <li>subject_story->a exploité le pouvoir de la nature pour alimenter de nouvelles avancées</li>
+    <li>subject_gerund->la promotion d'un écosystème de créativité et de progrès</li>
+    <li>subject->les architectes de demain</li>
+    <li>subject_story->a jeté les bases d'une utopie où la technologie est au service de tous</li>
+    <li>subject_story->a imaginé un avenir où l'harmonie entre la technologie et la nature prospère</li>
+    <li>subject_story->a créé des outils qui permettent à l'humanité d'atteindre son plein potentiel</li>
+    <li>subject_gerund->la pose des clés de voûte des paysages de demain</li>
+    <li>subject->les sauts exploratoires</li>
+    <li>subject_story->s'est aventuré avec audace dans les territoires inexplorés de la connaissance</li>
+    <li>subject_story->a comblé le fossé entre le connu et l'inconnu</li>
+    <li>subject_story->s'est aventuré là où la curiosité a osé le mener</li>
+    <li>subject_gerund->l'embarquement pour des voyages de découverte</li>
+    <li>subject->l'essence de l'ingéniosité</li>
+    <li>subject_story->a transformé les défis en opportunités de croissance</li>
+    <li>subject_story->a fait preuve de créativité pour surmonter les obstacles traditionnels</li>
+    <li>subject_story->a élaboré des solutions élégantes grâce à un mélange d'art et de science</li>
+    <li>subject_gerund->la libération du potentiel par l'innovation</li>
+    <li>subject->la récolte de la connaissance</li>
+    <li>subject_story->a recueilli des informations en récoltant les champs au moment de la moisson</li>
+    <li>subject_story->a cultivé une abondance de compréhension à partir des graines d'enquête</li>
+    <li>subject_story->a partagé les fruits de la recherche avec le monde entier</li>
+    <li>subject_gerund->la récolte des fruits d'une curiosité sans relâche</li>
+    <li>subject->l'énigme du progrès</li>
+    <li>subject_story->a assemblé les pièces du mystère pour révéler la vue d'ensemble</li>
+    <li>subject_story->a associé la théorie à la pratique pour résoudre des énigmes de longue date</li>
+    <li>subject_story->a découvert des liens cachés qui ont débloqué de nouvelles possibilités</li>
+    <li>subject_gerund->l'assemblage des éléments de l'avancement</li>
+</EM_SteelWorking.generalRules.rulesStrings>
+  
+  <!-- EN: tempered steel -->
+  <EM_TemperedSteelMaking.label>acier trempé</EM_TemperedSteelMaking.label>
+  <!-- EN: Make tempered steel, a stronger version of steel made through a chemical process. -->
+  <EM_TemperedSteelMaking.description>Fabriquez de l'acier trempé, une version plus résistante de l'acier obtenue par un processus chimique.</EM_TemperedSteelMaking.description>
+  <!-- EN:
+    <li>subject->la voie de l'innovation</li>
+    <li>subject_story->a dévoilé des vérités simples derrière des phénomènes complexes</li>
+    <li>subject_story->a simplifié les éléments complexes afin de permettre des applications pratiques</li>
+    <li>subject_story->a exploité des principes de base pour réaliser des exploits remarquables</li>
+    <li>subject_gerund->la rationalisation de l'essence de la découverte</li>
+    <li>subject->les éléments constitutifs du progrès</li>
+    <li>subject_story->a posé les fondements d'une avancée monumentale</li>
+    <li>subject_story->a fait le lien entre les différentes disciplines pour révéler de nouvelles idées</li>
+    <li>subject_story->a construit les fondations sur lesquelles reposeront les innovations futures</li>
+    <li>subject_gerund->la pose des clés de voûte de l'avancement</li>
+    <li>subject->les graines du lendemain</li>
+    <li>subject_story->a fait germer des idées qui se sont transformées en solutions innovantes</li>
+    <li>subject_story->a cultivé un jardin de connaissances, riche en potentiel</li>
+    <li>subject_story->a nourri les racines du changement avec soin et prévoyance</li>
+    <li>subject_gerund->l'ensemencement de l'avenir avec les découvertes d'aujourd'hui</li>
+    <li>subject->l'écho de la curiosité</li>
+    <li>subject_story->a déclenché des vagues d'enquête qui se sont répercutées à travers le temps</li>
+    <li>subject_story->a lancé des galets d'innovation dans l'étang de la connaissance</li>
+    <li>subject_story->a observé qu'une question en entraînait une autre, élargissant le cercle de la compréhension</li>
+    <li>subject_gerund->l'apport de pierres pour créer la vague du progrès</li>
+    <li>subject->l'alchimie du progrès</li>
+    <li>subject_story->a fusionné des disciplines disparates pour ouvrir de nouveaux champs de possibilités</li>
+    <li>subject_story->a transformé l'impossible en inévitable à force d'ingéniosité</li>
+    <li>subject_story->a élaboré des solutions qui ont modifié la compréhension de ce qui est réalisable</li>
+    <li>subject_gerund->la science et la magie se fondent dans le tissu de la réalité</li>
+    <li>subject->la tapisserie de la découverte</li>
+    <li>subject_story->a tissé des fils de connaissances provenant des quatre coins du monde</li>
+    <li>subject_story->a révélé des schémas dans le chaos, traçant la voie vers des innovations sans précédent</li>
+    <li>subject_story->a brodé les annales de l'histoire avec des récits de percées fortuites</li>
+    <li>subject_gerund->l'avenir se tisse sur le métier à tisser du présent</li>
+    <li>subject->le creuset de la création</li>
+    <li>subject_story->a fusionné des éléments bruts pour en faire les éléments constitutifs de demain</li>
+    <li>subject_story->a tempéré les feux de la créativité pour forger des technologies sans précédent</li>
+    <li>subject_story->a étanché la soif de connaissance avec l'élixir de l'invention</li>
+    <li>subject_gerund->la transformation des matières premières d'aujourd'hui en artefacts de l'avenir</li>
+    <li>subject->le phare de l'illumination</li>
+    <li>subject_story->a éclairé les coins sombres de l'ignorance, guidant la voie à suivre</li>
+    <li>subject_story->a éclairé l'inconnu, rendant l'invisible visible aux esprits curieux</li>
+    <li>subject_story->a allumé les flammes de la curiosité, suscitant une quête mondiale de compréhension</li>
+    <li>subject_gerund->les flambeaux du progrès et de la connaissance</li>
+    <li>subject->la frontière de la connaissance</li>
+    <li>subject_story->a franchi de nouveaux horizons dans la recherche de la compréhension</li>
+    <li>subject_story->a remis en question le statu quo avec des théories révolutionnaires</li>
+    <li>subject_story->a fusionné la sagesse ancestrale et la technologie moderne pour trouver des solutions innovantes</li>
+    <li>subject_gerund->les frontières de la science et de l'art sont repoussées</li>
+    <li>subject->l'essence de l'innovation</li>
+    <li>subject_story->a transformé des matériaux quotidiens en outils extraordinaires</li>
+    <li>subject_story->a ouvert la voie aux générations futures grâce à des pratiques durables</li>
+    <li>subject_story->a exploité le pouvoir de la nature pour alimenter de nouvelles avancées</li>
+    <li>subject_gerund->la promotion d'un écosystème de créativité et de progrès</li>
+    <li>subject->les architectes de demain</li>
+    <li>subject_story->a jeté les bases d'une utopie où la technologie est au service de tous</li>
+    <li>subject_story->a imaginé un avenir où l'harmonie entre la technologie et la nature prospère</li>
+    <li>subject_story->a créé des outils qui permettent à l'humanité d'atteindre son plein potentiel</li>
+    <li>subject_gerund->la pose des clés de voûte des paysages de demain</li>
+    <li>subject->les sauts exploratoires</li>
+    <li>subject_story->s'est aventuré avec audace dans les territoires inexplorés de la connaissance</li>
+    <li>subject_story->a comblé le fossé entre le connu et l'inconnu</li>
+    <li>subject_story->s'est aventuré là où la curiosité a osé le mener</li>
+    <li>subject_gerund->l'embarquement pour des voyages de découverte</li>
+    <li>subject->l'essence de l'ingéniosité</li>
+    <li>subject_story->a transformé les défis en opportunités de croissance</li>
+    <li>subject_story->a fait preuve de créativité pour surmonter les obstacles traditionnels</li>
+    <li>subject_story->a élaboré des solutions élégantes grâce à un mélange d'art et de science</li>
+    <li>subject_gerund->la libération du potentiel par l'innovation</li>
+    <li>subject->la récolte de la connaissance</li>
+    <li>subject_story->a recueilli des informations en récoltant les champs au moment de la moisson</li>
+    <li>subject_story->a cultivé une abondance de compréhension à partir des graines d'enquête</li>
+    <li>subject_story->a partagé les fruits de la recherche avec le monde entier</li>
+    <li>subject_gerund->la récolte des fruits d'une curiosité sans relâche</li>
+    <li>subject->l'énigme du progrès</li>
+    <li>subject_story->a assemblé les pièces du mystère pour révéler la vue d'ensemble</li>
+    <li>subject_story->a associé la théorie à la pratique pour résoudre des énigmes de longue date</li>
+    <li>subject_story->a découvert des liens cachés qui ont débloqué de nouvelles possibilités</li>
+    <li>subject_gerund->l'assemblage des éléments de l'avancement</li>
+  -->
+  <EM_TemperedSteelMaking.generalRules.rulesStrings>
+    <li>subject->la voie de l'innovation</li>
+    <li>subject_story->a dévoilé des vérités simples derrière des phénomènes complexes</li>
+    <li>subject_story->a simplifié les éléments complexes afin de permettre des applications pratiques</li>
+    <li>subject_story->a exploité des principes de base pour réaliser des exploits remarquables</li>
+    <li>subject_gerund->la rationalisation de l'essence de la découverte</li>
+    <li>subject->les éléments constitutifs du progrès</li>
+    <li>subject_story->a posé les fondements d'une avancée monumentale</li>
+    <li>subject_story->a fait le lien entre les différentes disciplines pour révéler de nouvelles idées</li>
+    <li>subject_story->a construit les fondations sur lesquelles reposeront les innovations futures</li>
+    <li>subject_gerund->la pose des clés de voûte de l'avancement</li>
+    <li>subject->les graines du lendemain</li>
+    <li>subject_story->a fait germer des idées qui se sont transformées en solutions innovantes</li>
+    <li>subject_story->a cultivé un jardin de connaissances, riche en potentiel</li>
+    <li>subject_story->a nourri les racines du changement avec soin et prévoyance</li>
+    <li>subject_gerund->l'ensemencement de l'avenir avec les découvertes d'aujourd'hui</li>
+    <li>subject->l'écho de la curiosité</li>
+    <li>subject_story->a déclenché des vagues d'enquête qui se sont répercutées à travers le temps</li>
+    <li>subject_story->a lancé des galets d'innovation dans l'étang de la connaissance</li>
+    <li>subject_story->a observé qu'une question en entraînait une autre, élargissant le cercle de la compréhension</li>
+    <li>subject_gerund->l'apport de pierres pour créer la vague du progrès</li>
+    <li>subject->l'alchimie du progrès</li>
+    <li>subject_story->a fusionné des disciplines disparates pour ouvrir de nouveaux champs de possibilités</li>
+    <li>subject_story->a transformé l'impossible en inévitable à force d'ingéniosité</li>
+    <li>subject_story->a élaboré des solutions qui ont modifié la compréhension de ce qui est réalisable</li>
+    <li>subject_gerund->la science et la magie se fondent dans le tissu de la réalité</li>
+    <li>subject->la tapisserie de la découverte</li>
+    <li>subject_story->a tissé des fils de connaissances provenant des quatre coins du monde</li>
+    <li>subject_story->a révélé des schémas dans le chaos, traçant la voie vers des innovations sans précédent</li>
+    <li>subject_story->a brodé les annales de l'histoire avec des récits de percées fortuites</li>
+    <li>subject_gerund->l'avenir se tisse sur le métier à tisser du présent</li>
+    <li>subject->le creuset de la création</li>
+    <li>subject_story->a fusionné des éléments bruts pour en faire les éléments constitutifs de demain</li>
+    <li>subject_story->a tempéré les feux de la créativité pour forger des technologies sans précédent</li>
+    <li>subject_story->a étanché la soif de connaissance avec l'élixir de l'invention</li>
+    <li>subject_gerund->la transformation des matières premières d'aujourd'hui en artefacts de l'avenir</li>
+    <li>subject->le phare de l'illumination</li>
+    <li>subject_story->a éclairé les coins sombres de l'ignorance, guidant la voie à suivre</li>
+    <li>subject_story->a éclairé l'inconnu, rendant l'invisible visible aux esprits curieux</li>
+    <li>subject_story->a allumé les flammes de la curiosité, suscitant une quête mondiale de compréhension</li>
+    <li>subject_gerund->les flambeaux du progrès et de la connaissance</li>
+    <li>subject->la frontière de la connaissance</li>
+    <li>subject_story->a franchi de nouveaux horizons dans la recherche de la compréhension</li>
+    <li>subject_story->a remis en question le statu quo avec des théories révolutionnaires</li>
+    <li>subject_story->a fusionné la sagesse ancestrale et la technologie moderne pour trouver des solutions innovantes</li>
+    <li>subject_gerund->les frontières de la science et de l'art sont repoussées</li>
+    <li>subject->l'essence de l'innovation</li>
+    <li>subject_story->a transformé des matériaux quotidiens en outils extraordinaires</li>
+    <li>subject_story->a ouvert la voie aux générations futures grâce à des pratiques durables</li>
+    <li>subject_story->a exploité le pouvoir de la nature pour alimenter de nouvelles avancées</li>
+    <li>subject_gerund->la promotion d'un écosystème de créativité et de progrès</li>
+    <li>subject->les architectes de demain</li>
+    <li>subject_story->a jeté les bases d'une utopie où la technologie est au service de tous</li>
+    <li>subject_story->a imaginé un avenir où l'harmonie entre la technologie et la nature prospère</li>
+    <li>subject_story->a créé des outils qui permettent à l'humanité d'atteindre son plein potentiel</li>
+    <li>subject_gerund->la pose des clés de voûte des paysages de demain</li>
+    <li>subject->les sauts exploratoires</li>
+    <li>subject_story->s'est aventuré avec audace dans les territoires inexplorés de la connaissance</li>
+    <li>subject_story->a comblé le fossé entre le connu et l'inconnu</li>
+    <li>subject_story->s'est aventuré là où la curiosité a osé le mener</li>
+    <li>subject_gerund->l'embarquement pour des voyages de découverte</li>
+    <li>subject->l'essence de l'ingéniosité</li>
+    <li>subject_story->a transformé les défis en opportunités de croissance</li>
+    <li>subject_story->a fait preuve de créativité pour surmonter les obstacles traditionnels</li>
+    <li>subject_story->a élaboré des solutions élégantes grâce à un mélange d'art et de science</li>
+    <li>subject_gerund->la libération du potentiel par l'innovation</li>
+    <li>subject->la récolte de la connaissance</li>
+    <li>subject_story->a recueilli des informations en récoltant les champs au moment de la moisson</li>
+    <li>subject_story->a cultivé une abondance de compréhension à partir des graines d'enquête</li>
+    <li>subject_story->a partagé les fruits de la recherche avec le monde entier</li>
+    <li>subject_gerund->la récolte des fruits d'une curiosité sans relâche</li>
+    <li>subject->l'énigme du progrès</li>
+    <li>subject_story->a assemblé les pièces du mystère pour révéler la vue d'ensemble</li>
+    <li>subject_story->a associé la théorie à la pratique pour résoudre des énigmes de longue date</li>
+    <li>subject_story->a découvert des liens cachés qui ont débloqué de nouvelles possibilités</li>
+    <li>subject_gerund->l'assemblage des éléments de l'avancement</li>
+</EM_TemperedSteelMaking.generalRules.rulesStrings>
+  
+</LanguageData>

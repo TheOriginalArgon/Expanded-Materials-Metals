@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make charcoal -->
+  <EM_Make_Charcoal.label>fabriquer du charbon de bois</EM_Make_Charcoal.label>
+  <!-- EN: Incinerate wood in a closed chamber. Lack of oxygen prevents the wood from completely burning, thus making charcoal. -->
+  <EM_Make_Charcoal.description>Incinérez le bois dans une chambre fermée. Le manque d'oxygène empêche le bois de brûler complètement, ce qui permet d'obtenir du charbon de bois.</EM_Make_Charcoal.description>
+  <!-- EN: Making charcoal. -->
+  <EM_Make_Charcoal.jobString>Fabrique du charbon de bois.</EM_Make_Charcoal.jobString>
+  
+  <!-- EN: make bulk charcoal -->
+  <EM_Make_Charcoal_Bulk.label>fabriquer du charbon de bois (vrac)</EM_Make_Charcoal_Bulk.label>
+  <!-- EN: Incinerate wood in a closed chamber. Lack of oxygen prevents the wood from completely burning, thus making charcoal. -->
+  <EM_Make_Charcoal_Bulk.description>Incinérez le bois dans une chambre fermée. Le manque d'oxygène empêche le bois de brûler complètement, ce qui permet d'obtenir du charbon de bois.</EM_Make_Charcoal_Bulk.description>
+  <!-- EN: Making charcoal. -->
+  <EM_Make_Charcoal_Bulk.jobString>Fabrique du charbon de bois.</EM_Make_Charcoal_Bulk.jobString>
+  
+  <!-- EN: make chemfuel from coal -->
+  <EM_Make_ChemfuelFromCoal.label>fabriquer du chemfuel à partir du charbon</EM_Make_ChemfuelFromCoal.label>
+  <!-- EN: Make a batch of chemfuel by extracting and condensing gas from coal chunks. -->
+  <EM_Make_ChemfuelFromCoal.description>Fabriquez un lot de chemfuel en extrayant et en condensant le gaz contenu dans des morceaux de charbon.</EM_Make_ChemfuelFromCoal.description>
+  <!-- EN: Refining chemfuel from coal. -->
+  <EM_Make_ChemfuelFromCoal.jobString>Raffine du chemfuel à partir de charbon.</EM_Make_ChemfuelFromCoal.jobString>
+  
+  <!-- EN: make chemfuel from coal (lead) -->
+  <EM_Make_ChemfuelFromCoal_Lead.label>fabriquer du chemfuel à partir du charbon (plomb)</EM_Make_ChemfuelFromCoal_Lead.label>
+  <!-- EN: Make a batch of lead-based chemfuel by extracting and condensing gas from coal chunks.\n\n<color=#D73333>Warning:</color> Lead makes for a higher yield but causes accumulative lead contamination over time. -->
+  <EM_Make_ChemfuelFromCoal_Lead.description>Fabriquez un lot de chemfuel à base de plomb en extrayant et en condensant le gaz des morceaux de charbon.\n\n<color=#D73333>Avertissement :</color> le plomb permet d'obtenir un rendement plus élevé, mais provoque une contamination cumulative au fil du temps.</EM_Make_ChemfuelFromCoal_Lead.description>
+  <!-- EN: Refining chemfuel from coal. -->
+  <EM_Make_ChemfuelFromCoal_Lead.jobString>Raffine du chemfuel à partir de charbon.</EM_Make_ChemfuelFromCoal_Lead.jobString>
+  
+  <!-- EN: make chemfuel from wood (lead) -->
+  <EM_Make_ChemfuelFromWood_Lead.label>fabriquer du chemfuel à partir de bois (plomb)</EM_Make_ChemfuelFromWood_Lead.label>
+  <!-- EN: Make a batch of lead-based chemfuel by extracting and condensing gas from wood logs.\n\n<color=#D73333>Warning:</color> Lead makes for a higher yield but causes accumulative lead contamination over time. -->
+  <EM_Make_ChemfuelFromWood_Lead.description>Fabriquez un lot de chemfuel à base de plomb en extrayant et en condensant le gaz des bûches de bois.\n\n<color=#D73333>Avertissement :</color> le plomb permet d'obtenir un rendement plus élevé, mais provoque une contamination cumulative au fil du temps.</EM_Make_ChemfuelFromWood_Lead.description>
+  <!-- EN: Refining chemfuel from coal. -->
+  <EM_Make_ChemfuelFromWood_Lead.jobString>Raffine du chemfuel à partir de bois.</EM_Make_ChemfuelFromWood_Lead.jobString>
+  
+  <!-- EN: make component -->
+  <EM_Make_ComponentIndustrial_Bronze.label>fabriquer un composant</EM_Make_ComponentIndustrial_Bronze.label>
+  <!-- EN: Make a component. -->
+  <EM_Make_ComponentIndustrial_Bronze.description>Fabriquer un composant.</EM_Make_ComponentIndustrial_Bronze.description>
+  <!-- EN: Making component. -->
+  <EM_Make_ComponentIndustrial_Bronze.jobString>Fabrique un composant.</EM_Make_ComponentIndustrial_Bronze.jobString>
+  
+  <!-- EN: make component (lead) -->
+  <EM_Make_ComponentIndustrial_Bronze_Lead.label>fabriquer un composant (plomb)</EM_Make_ComponentIndustrial_Bronze_Lead.label>
+  <!-- EN: Make a component.\n\n<color=#D73333>Warning:</color> This recipe uses lead soldering instead of tin. It is much quicker but causes accumulative lead poisoning over time. -->
+  <EM_Make_ComponentIndustrial_Bronze_Lead.description>Fabriquer un composant. \n\n<color=#D73333>Avertissement :</color> cette recette utilise de la soudure au plomb à la place de l'étain. Elle est beaucoup plus rapide, mais provoque une intoxication cumulative au plomb au fil du temps.</EM_Make_ComponentIndustrial_Bronze_Lead.description>
+  <!-- EN: Making component. -->
+  <EM_Make_ComponentIndustrial_Bronze_Lead.jobString>Fabrique un composant.</EM_Make_ComponentIndustrial_Bronze_Lead.jobString>
+  
+  <!-- EN: make component -->
+  <EM_Make_ComponentIndustrial_Iron.label>fabriquer un composant</EM_Make_ComponentIndustrial_Iron.label>
+  <!-- EN: Make a component. -->
+  <EM_Make_ComponentIndustrial_Iron.description>Fabriquer un composant.</EM_Make_ComponentIndustrial_Iron.description>
+  <!-- EN: Making component. -->
+  <EM_Make_ComponentIndustrial_Iron.jobString>Fabrique un composant.</EM_Make_ComponentIndustrial_Iron.jobString>
+  
+  <!-- EN: make component (lead) -->
+  <EM_Make_ComponentIndustrial_Iron_Lead.label>fabriquer un composant (plomb)</EM_Make_ComponentIndustrial_Iron_Lead.label>
+  <!-- EN: Make a component.\n\n<color=#D73333>Warning:</color> This recipe uses lead soldering instead of tin. It is much quicker but causes accumulative lead poisoning over time. -->
+  <EM_Make_ComponentIndustrial_Iron_Lead.description>Fabriquer un composant. \n\n<color=#D73333>Avertissement :</color> cette recette utilise de la soudure au plomb à la place de l'étain. Elle est beaucoup plus rapide, mais provoque une intoxication cumulative au plomb au fil du temps.</EM_Make_ComponentIndustrial_Iron_Lead.description>
+  <!-- EN: Making component. -->
+  <EM_Make_ComponentIndustrial_Iron_Lead.jobString>Fabrique un composant.</EM_Make_ComponentIndustrial_Iron_Lead.jobString>
+  
+  <!-- EN: make component (lead) -->
+  <EM_Make_ComponentIndustrial_Steel_Lead.label>fabriquer un composant (plomb)</EM_Make_ComponentIndustrial_Steel_Lead.label>
+  <!-- EN: Make a component.\n\n<color=#D73333>Warning:</color> This recipe uses lead soldering instead of tin. It is much quicker but causes accumulative lead poisoning over time. -->
+  <EM_Make_ComponentIndustrial_Steel_Lead.description>Fabriquer un composant. \n\n<color=#D73333>Avertissement :</color> cette recette utilise de la soudure au plomb à la place de l'étain. Elle est beaucoup plus rapide, mais provoque une intoxication cumulative au plomb au fil du temps.</EM_Make_ComponentIndustrial_Steel_Lead.description>
+  <!-- EN: Making component. -->
+  <EM_Make_ComponentIndustrial_Steel_Lead.jobString>Fabrique un composant.</EM_Make_ComponentIndustrial_Steel_Lead.jobString>
+  
+  <!-- EN: make component x3 -->
+  <EM_Make_ComponentIndustrial_x3_StainlessSteel.label>fabriquer un composant x3</EM_Make_ComponentIndustrial_x3_StainlessSteel.label>
+  <!-- EN: Make a component. -->
+  <EM_Make_ComponentIndustrial_x3_StainlessSteel.description>Fabriquer un composant.</EM_Make_ComponentIndustrial_x3_StainlessSteel.description>
+  <!-- EN: Making component. -->
+  <EM_Make_ComponentIndustrial_x3_StainlessSteel.jobString>Fabrique un composant.</EM_Make_ComponentIndustrial_x3_StainlessSteel.jobString>
+  
+  <!-- EN: make component x3 -->
+  <EM_Make_ComponentIndustrial_x3_Steel.label>fabriquer un composant x3</EM_Make_ComponentIndustrial_x3_Steel.label>
+  <!-- EN: Make a component. -->
+  <EM_Make_ComponentIndustrial_x3_Steel.description>Fabriquer un composant.</EM_Make_ComponentIndustrial_x3_Steel.description>
+  <!-- EN: Making component. -->
+  <EM_Make_ComponentIndustrial_x3_Steel.jobString>Fabrique un composant.</EM_Make_ComponentIndustrial_x3_Steel.jobString>
+  
+  <!-- EN: make advanced component -->
+  <EM_Make_ComponentSpacer_Germanium.label>fabriquer un composant avancé</EM_Make_ComponentSpacer_Germanium.label>
+  <!-- EN: Make an advanced component. -->
+  <EM_Make_ComponentSpacer_Germanium.description>Fabriquer un composant avancé.</EM_Make_ComponentSpacer_Germanium.description>
+  <!-- EN: Making advanced component. -->
+  <EM_Make_ComponentSpacer_Germanium.jobString>Fabrique un composant avancé.</EM_Make_ComponentSpacer_Germanium.jobString>
+  
+  <!-- EN: make advanced component -->
+  <EM_Make_ComponentSpacer_Silicon.label>fabriquer un composant avancé</EM_Make_ComponentSpacer_Silicon.label>
+  <!-- EN: Make an advanced component. -->
+  <EM_Make_ComponentSpacer_Silicon.description>Fabriquer un composant avancé.</EM_Make_ComponentSpacer_Silicon.description>
+  <!-- EN: Making advanced component. -->
+  <EM_Make_ComponentSpacer_Silicon.jobString>Fabrique un composant avancé.</EM_Make_ComponentSpacer_Silicon.jobString>
+  
+  <!-- EN: make advanced component -->
+  <EM_Make_ComponentSpacer_StainlessSteel.label>fabriquer un composant avancé</EM_Make_ComponentSpacer_StainlessSteel.label>
+  <!-- EN: Make an advanced component. -->
+  <EM_Make_ComponentSpacer_StainlessSteel.description>Fabriquer un composant avancé.</EM_Make_ComponentSpacer_StainlessSteel.description>
+  <!-- EN: Making advanced component. -->
+  <EM_Make_ComponentSpacer_StainlessSteel.jobString>Fabrique un composant avancé.</EM_Make_ComponentSpacer_StainlessSteel.jobString>
+  
+</LanguageData>

@@ -1,0 +1,11 @@
+<LanguageData>
+
+    <EM_Settings_GenerateSteelVeins>Setting_GenerateSteelVeins</EM_Settings_GenerateSteelVeins>
+    <EM_Settings_GenerateComponentVeins>Setting_GenerateComponentVeins</EM_Settings_GenerateComponentVeins>
+
+    <EMSettings_NaturalGenerationOptions>Génération d'acier de base et de composants (nécessite un redémarrage)</EMSettings_NaturalGenerationOptions>
+
+    <EMSettings_EnableSteelGeneration>Autoriser la génération d'acier</EMSettings_EnableSteelGeneration>
+    <EMSettings_EnableComponentGeneration>Autoriser la génération de composants</EMSettings_EnableComponentGeneration>
+
+</LanguageData>
