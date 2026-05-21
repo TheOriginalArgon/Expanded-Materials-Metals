@@ -104,6 +104,7 @@
       <appearance>Metal</appearance>
       <commonality>1.00</commonality>
       <constructEffect>ConstructMetal</constructEffect>
+      <isAirtight>true</isAirtight>
       <color>(143, 123, 109)</color>
       <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -155,6 +156,7 @@
       <appearance>Metal</appearance>
       <commonality>1.00</commonality>
       <constructEffect>ConstructMetal</constructEffect>
+      <isAirtight>true</isAirtight>
       <color>(109, 105, 105)</color>
       <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -208,6 +210,7 @@
       <appearance>Metal</appearance>
       <commonality>1.00</commonality>
       <constructEffect>ConstructMetal</constructEffect>
+      <isAirtight>true</isAirtight>
       <color>(100, 100, 102)</color>
       <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -271,6 +274,7 @@
       <commonality>0.08</commonality>
       <color>(126,136,148)</color>
       <constructEffect>ConstructMetal</constructEffect>
+      <isAirtight>true</isAirtight>
       <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
@@ -334,6 +338,7 @@
       <appearance>Metal</appearance>
       <commonality>1.00</commonality>
       <constructEffect>ConstructMetal</constructEffect>
+      <isAirtight>true</isAirtight>
       <color>(176, 139, 101)</color>
       <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -429,6 +434,7 @@
       <color>(167, 98, 64)</color>
       <commonality>0.12</commonality>
       <constructEffect>ConstructMetal</constructEffect>
+      <isAirtight>true</isAirtight>
       <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
@@ -487,6 +493,7 @@
       <appearance>Metal</appearance>
       <commonality>0.05</commonality>
       <constructEffect>ConstructMetal</constructEffect>
+      <isAirtight>true</isAirtight>
       <color>(111,124,145)</color>
       <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
@@ -551,6 +558,7 @@
       <appearance>Metal</appearance>
       <commonality>0.05</commonality>
       <constructEffect>ConstructMetal</constructEffect>
+      <isAirtight>true</isAirtight>
       <color>(58,58,58)</color>
       <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
