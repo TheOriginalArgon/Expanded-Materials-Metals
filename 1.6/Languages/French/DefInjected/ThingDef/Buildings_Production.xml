@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: electric alloy furnace -->
+  <EM_ElectricAlloyFurnace.label>four électrique à alliage</EM_ElectricAlloyFurnace.label>
+  <!-- EN: An electric-powered furnace used for smelting metals and combining them into alloys.. -->
+  <EM_ElectricAlloyFurnace.description>Four électrique utilisé pour fondre les métaux et les combiner en alliages.</EM_ElectricAlloyFurnace.description>
+  
+  <!-- EN: alloy furnace -->
+  <EM_FueledAlloyFurnace.label>four à alliage</EM_FueledAlloyFurnace.label>
+  <!-- EN: A fueled furnace used for smelting metals and combining them into alloys. -->
+  <EM_FueledAlloyFurnace.description>Four à combustible utilisé pour fondre les métaux et les combiner en alliages.</EM_FueledAlloyFurnace.description>
+  
+</LanguageData>

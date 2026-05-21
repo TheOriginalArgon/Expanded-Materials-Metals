@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: lead poisoning -->
+  <EM_LeadPoisoning.label>saturnisme</EM_LeadPoisoning.label>
+  <!-- EN: Contamination in the body caused by exposure to lead. It slowly accumulates through time and cannot be cured easily or using conventional medicine. Lead poisoning happens when a person accidentally ingested or inhaled lead through different means; it can be due to consuming contaminated food or inhaling vapors produced by this metal when melted or used as a chemical additive.\nHigher levels of lead in the bloodstream can cause severe health issues and eventually death. -->
+  <EM_LeadPoisoning.description>Contamination de l'organisme causée par une exposition au plomb. Elle s'accumule lentement au fil du temps et ne peut être guérie facilement ni à l'aide de médicaments conventionnels. L'intoxication au plomb survient lorsqu'une personne ingère ou inhale accidentellement du plomb par différents moyens ; elle peut être due à la consommation d'aliments contaminés ou à l'inhalation de vapeurs produites par ce métal lorsqu'il est fondu ou utilisé comme additif chimique. Des taux élevés de plomb dans le sang peuvent entraîner de graves problèmes de santé et, à terme, la mort.</EM_LeadPoisoning.description>
+  <!-- EN: lead poisoning -->
+  <EM_LeadPoisoning.labelNoun>saturnisme</EM_LeadPoisoning.labelNoun>
+  <!-- EN: noticeable -->
+  <EM_LeadPoisoning.stages.noticeable.label>notable</EM_LeadPoisoning.stages.noticeable.label>
+  <!-- EN: risky -->
+  <EM_LeadPoisoning.stages.risky.label>risquée</EM_LeadPoisoning.stages.risky.label>
+  <!-- EN: mild -->
+  <EM_LeadPoisoning.stages.mild.label>légère</EM_LeadPoisoning.stages.mild.label>
+  <!-- EN: moderate -->
+  <EM_LeadPoisoning.stages.moderate.label>modérée</EM_LeadPoisoning.stages.moderate.label>
+  <!-- EN: high -->
+  <EM_LeadPoisoning.stages.high.label>élevée</EM_LeadPoisoning.stages.high.label>
+  <!-- EN: extreme -->
+  <EM_LeadPoisoning.stages.extreme.label>extrême</EM_LeadPoisoning.stages.extreme.label>
+  
+  <!-- EN: physical discomfort (lead poisoning) -->
+  <EM_LeadPoisoning_StageFive.label>inconfort physique (saturnisme)</EM_LeadPoisoning_StageFive.label>
+  <!-- EN: Generalized body malfunctioning caused by lead poisoning. Higher levels of lead poisoning produce worse symptoms. -->
+  <EM_LeadPoisoning_StageFive.description>Dysfonctionnement général de l'organisme causé par un empoisonnement au plomb. Plus le niveau d'empoisonnement au plomb est élevé, plus les symptômes sont graves.</EM_LeadPoisoning_StageFive.description>
+  <!-- EN: general physical discomfort -->
+  <EM_LeadPoisoning_StageFive.labelNoun>mal-être physique général</EM_LeadPoisoning_StageFive.labelNoun>
+  
+  <!-- EN: physical discomfort (lead poisoning) -->
+  <EM_LeadPoisoning_StageFour.label>inconfort physique (saturnisme)</EM_LeadPoisoning_StageFour.label>
+  <!-- EN: Generalized body malfunctioning caused by lead poisoning. Higher levels of lead poisoning produce worse symptoms. -->
+  <EM_LeadPoisoning_StageFour.description>Dysfonctionnement général de l'organisme causé par un empoisonnement au plomb. Plus le niveau d'empoisonnement au plomb est élevé, plus les symptômes sont graves.</EM_LeadPoisoning_StageFour.description>
+  <!-- EN: general physical discomfort -->
+  <EM_LeadPoisoning_StageFour.labelNoun>mal-être physique général</EM_LeadPoisoning_StageFour.labelNoun>
+  
+  <!-- EN: physical discomfort (lead poisoning) -->
+  <EM_LeadPoisoning_StageOne.label>inconfort physique (saturnisme)</EM_LeadPoisoning_StageOne.label>
+  <!-- EN: Generalized body malfunctioning caused by lead poisoning. Higher levels of lead poisoning produce worse symptoms. -->
+  <EM_LeadPoisoning_StageOne.description>Dysfonctionnement général de l'organisme causé par un empoisonnement au plomb. Plus le niveau d'empoisonnement au plomb est élevé, plus les symptômes sont graves.</EM_LeadPoisoning_StageOne.description>
+  <!-- EN: general physical discomfort -->
+  <EM_LeadPoisoning_StageOne.labelNoun>mal-être physique général</EM_LeadPoisoning_StageOne.labelNoun>
+  
+  <!-- EN: physical discomfort (lead poisoning) -->
+  <EM_LeadPoisoning_StageSeven.label>inconfort physique (saturnisme)</EM_LeadPoisoning_StageSeven.label>
+  <!-- EN: Generalized body malfunctioning caused by lead poisoning. Higher levels of lead poisoning produce worse symptoms. -->
+  <EM_LeadPoisoning_StageSeven.description>Dysfonctionnement général de l'organisme causé par un empoisonnement au plomb. Plus le niveau d'empoisonnement au plomb est élevé, plus les symptômes sont graves.</EM_LeadPoisoning_StageSeven.description>
+  <!-- EN: general physical discomfort -->
+  <EM_LeadPoisoning_StageSeven.labelNoun>mal-être physique général</EM_LeadPoisoning_StageSeven.labelNoun>
+  
+  <!-- EN: physical discomfort (lead poisoning) -->
+  <EM_LeadPoisoning_StageSix.label>inconfort physique (saturnisme)</EM_LeadPoisoning_StageSix.label>
+  <!-- EN: Generalized body malfunctioning caused by lead poisoning. Higher levels of lead poisoning produce worse symptoms. -->
+  <EM_LeadPoisoning_StageSix.description>Dysfonctionnement général de l'organisme causé par un empoisonnement au plomb. Plus le niveau d'empoisonnement au plomb est élevé, plus les symptômes sont graves.</EM_LeadPoisoning_StageSix.description>
+  <!-- EN: general physical discomfort -->
+  <EM_LeadPoisoning_StageSix.labelNoun>mal-être physique général</EM_LeadPoisoning_StageSix.labelNoun>
+  
+  <!-- EN: physical discomfort (lead poisoning) -->
+  <EM_LeadPoisoning_StageThree.label>inconfort physique (saturnisme)</EM_LeadPoisoning_StageThree.label>
+  <!-- EN: Generalized body malfunctioning caused by lead poisoning. Higher levels of lead poisoning produce worse symptoms. -->
+  <EM_LeadPoisoning_StageThree.description>Dysfonctionnement général de l'organisme causé par un empoisonnement au plomb. Plus le niveau d'empoisonnement au plomb est élevé, plus les symptômes sont graves.</EM_LeadPoisoning_StageThree.description>
+  <!-- EN: general physical discomfort -->
+  <EM_LeadPoisoning_StageThree.labelNoun>mal-être physique général</EM_LeadPoisoning_StageThree.labelNoun>
+  
+  <!-- EN: physical discomfort (lead poisoning) -->
+  <EM_LeadPoisoning_StageTwo.label>inconfort physique (saturnisme)</EM_LeadPoisoning_StageTwo.label>
+  <!-- EN: Generalized body malfunctioning caused by lead poisoning. Higher levels of lead poisoning produce worse symptoms. -->
+  <EM_LeadPoisoning_StageTwo.description>Dysfonctionnement général de l'organisme causé par un empoisonnement au plomb. Plus le niveau d'empoisonnement au plomb est élevé, plus les symptômes sont graves.</EM_LeadPoisoning_StageTwo.description>
+  <!-- EN: general physical discomfort -->
+  <EM_LeadPoisoning_StageTwo.labelNoun>mal-être physique général</EM_LeadPoisoning_StageTwo.labelNoun>
+  
+</LanguageData>

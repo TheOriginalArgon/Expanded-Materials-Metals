@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: alloy bronze -->
+  <EM_AlloyBronze.label>allier du bronze</EM_AlloyBronze.label>
+  <!-- EN: Alloy bronze from copper and tin -->
+  <EM_AlloyBronze.description>Alliage de bronze à base de cuivre et d'étain.</EM_AlloyBronze.description>
+  <!-- EN: Alloying bronze. -->
+  <EM_AlloyBronze.jobString>Allie du bronze.</EM_AlloyBronze.jobString>
+  
+  <!-- EN: alloy bronze (bulk) -->
+  <EM_AlloyBronze_Bulk.label>allier du bronze (vrac)</EM_AlloyBronze_Bulk.label>
+  <!-- EN: Alloy bronze with copper and tin -->
+  <EM_AlloyBronze_Bulk.description>Alliage de bronze à base de cuivre et d'étain.</EM_AlloyBronze_Bulk.description>
+  <!-- EN: Alloying bronze. -->
+  <EM_AlloyBronze_Bulk.jobString>Allie du bronze.</EM_AlloyBronze_Bulk.jobString>
+  
+  <!-- EN: alloy bronze (low quality) -->
+  <EM_AlloyBronze_LowQuality.label>allier du bronze (basse qualité)</EM_AlloyBronze_LowQuality.label>
+  <!-- EN: Alloy bronze from copper and tin -->
+  <EM_AlloyBronze_LowQuality.description>Alliage de bronze à base de cuivre et d'étain.</EM_AlloyBronze_LowQuality.description>
+  <!-- EN: Alloying bronze. -->
+  <EM_AlloyBronze_LowQuality.jobString>Allie du bronze.</EM_AlloyBronze_LowQuality.jobString>
+  
+  <!-- EN: alloy mild steel -->
+  <EM_AlloyMildSteel.label>allier de l'acier doux</EM_AlloyMildSteel.label>
+  <!-- EN: Alloy mild steel from iron and carbon -->
+  <EM_AlloyMildSteel.description>Alliage d'acier doux à base de fer et de carbone.</EM_AlloyMildSteel.description>
+  <!-- EN: Alloying mild steel. -->
+  <EM_AlloyMildSteel.jobString>Allie de l'acier doux.</EM_AlloyMildSteel.jobString>
+  
+  <!-- EN: alloy mild steel (bulk) -->
+  <EM_AlloyMildSteel_Bulk.label>allier de l'acier doux (vrac)</EM_AlloyMildSteel_Bulk.label>
+  <!-- EN: Alloy mild steel with iron and carbon -->
+  <EM_AlloyMildSteel_Bulk.description>Alliage d'acier doux à base de fer et de carbone.</EM_AlloyMildSteel_Bulk.description>
+  <!-- EN: Alloying mild steel. -->
+  <EM_AlloyMildSteel_Bulk.jobString>Allie de l'acier doux.</EM_AlloyMildSteel_Bulk.jobString>
+  
+  <!-- EN: alloy mild steel -->
+  <EM_AlloyMildSteel_Downgrade.label>allier de l'acier doux</EM_AlloyMildSteel_Downgrade.label>
+  <!-- EN: Alloy mild steel by mixing steel and tin -->
+  <EM_AlloyMildSteel_Downgrade.description>Alliage d'acier doux obtenu en mélangeant de l'acier et de l'étain.</EM_AlloyMildSteel_Downgrade.description>
+  <!-- EN: Alloying mild steel. -->
+  <EM_AlloyMildSteel_Downgrade.jobString>Allie de l'acier doux.</EM_AlloyMildSteel_Downgrade.jobString>
+  
+  <!-- EN: alloy stainless steel -->
+  <EM_AlloyStainlessSteel.label>allier de l'acier inoxydable</EM_AlloyStainlessSteel.label>
+  <!-- EN: Sterilize steel with silver and tin -->
+  <EM_AlloyStainlessSteel.description>Stériliser l'acier avec de l'argent et de l'étain.</EM_AlloyStainlessSteel.description>
+  <!-- EN: Alloying stainless steel. -->
+  <EM_AlloyStainlessSteel.jobString>Allie de l'acier inoxydable.</EM_AlloyStainlessSteel.jobString>
+  
+  <!-- EN: alloy stainless steel (bulk) -->
+  <EM_AlloyStainlessSteel_Bulk.label>allier de l'acier inoxydable (vrac)</EM_AlloyStainlessSteel_Bulk.label>
+  <!-- EN: Sterilize steel with silver and tin -->
+  <EM_AlloyStainlessSteel_Bulk.description>Stériliser l'acier avec de l'argent et de l'étain.</EM_AlloyStainlessSteel_Bulk.description>
+  <!-- EN: Alloying stainless steel. -->
+  <EM_AlloyStainlessSteel_Bulk.jobString>Allie de l'acier inoxydable.</EM_AlloyStainlessSteel_Bulk.jobString>
+  
+  <!-- EN: alloy stainless steel (low quality) -->
+  <EM_AlloyStainlessSteel_LowQuality.label>allier de l'acier inoxydable (basse qualité)</EM_AlloyStainlessSteel_LowQuality.label>
+  <!-- EN: Sterilize steel with tin -->
+  <EM_AlloyStainlessSteel_LowQuality.description>Stériliser l'acier avec de l'étain.</EM_AlloyStainlessSteel_LowQuality.description>
+  <!-- EN: Alloying stainless steel. -->
+  <EM_AlloyStainlessSteel_LowQuality.jobString>Allie de l'acier inoxydable.</EM_AlloyStainlessSteel_LowQuality.jobString>
+  
+  <!-- EN: alloy steel -->
+  <EM_AlloySteel.label>allier de l'acier</EM_AlloySteel.label>
+  <!-- EN: Alloy steel from iron and carbon -->
+  <EM_AlloySteel.description>Alliage d'acier à partir de fer et de carbone.</EM_AlloySteel.description>
+  <!-- EN: Alloying steel. -->
+  <EM_AlloySteel.jobString>Allie de l'acier.</EM_AlloySteel.jobString>
+  
+  <!-- EN: alloy steel (bulk) -->
+  <EM_AlloySteel_Bulk.label>allier de l'acier (vrac)</EM_AlloySteel_Bulk.label>
+  <!-- EN: Alloy steel with iron and carbon -->
+  <EM_AlloySteel_Bulk.description>Alliage d'acier à partir de fer et de carbone.</EM_AlloySteel_Bulk.description>
+  <!-- EN: Alloying steel. -->
+  <EM_AlloySteel_Bulk.jobString>Allie de l'acier.</EM_AlloySteel_Bulk.jobString>
+  
+  <!-- EN: alloy tempered steel -->
+  <EM_AlloyTemperedSteel_Chemfuel.label>allier de l'acier trempé</EM_AlloyTemperedSteel_Chemfuel.label>
+  <!-- EN: Enhance steel with chemfuel -->
+  <EM_AlloyTemperedSteel_Chemfuel.description>Améliorer l'acier avec du chemfuel.</EM_AlloyTemperedSteel_Chemfuel.description>
+  <!-- EN: Alloying tempered steel. -->
+  <EM_AlloyTemperedSteel_Chemfuel.jobString>Allie de l'acier trempé.</EM_AlloyTemperedSteel_Chemfuel.jobString>
+  
+  <!-- EN: alloy tempered steel (bulk) -->
+  <EM_AlloyTemperedSteel_Chemfuel_Bulk.label>allier de l'acier trempé (vrac)</EM_AlloyTemperedSteel_Chemfuel_Bulk.label>
+  <!-- EN: Enhance steel with chemfuel -->
+  <EM_AlloyTemperedSteel_Chemfuel_Bulk.description>Améliorer l'acier avec du chemfuel.</EM_AlloyTemperedSteel_Chemfuel_Bulk.description>
+  <!-- EN: Alloying tempered steel. -->
+  <EM_AlloyTemperedSteel_Chemfuel_Bulk.jobString>Allie de l'acier trempé.</EM_AlloyTemperedSteel_Chemfuel_Bulk.jobString>
+  
+  <!-- EN: alloy tempered steel -->
+  <EM_AlloyTemperedSteel_Wood.label>allier de l'acier trempé</EM_AlloyTemperedSteel_Wood.label>
+  <!-- EN: Enhance steel with organic oils -->
+  <EM_AlloyTemperedSteel_Wood.description>Améliorez l'acier avec des huiles organiques.</EM_AlloyTemperedSteel_Wood.description>
+  <!-- EN: Alloying tempered steel. -->
+  <EM_AlloyTemperedSteel_Wood.jobString>Allie de l'acier trempé.</EM_AlloyTemperedSteel_Wood.jobString>
+  
+  <!-- EN: alloy tempered steel (bulk) -->
+  <EM_AlloyTemperedSteel_Wood_Bulk.label>allier de l'acier trempé (vrac)</EM_AlloyTemperedSteel_Wood_Bulk.label>
+  <!-- EN: Enhance steel with organic oils -->
+  <EM_AlloyTemperedSteel_Wood_Bulk.description>Améliorez l'acier avec des huiles organiques.</EM_AlloyTemperedSteel_Wood_Bulk.description>
+  <!-- EN: Alloying tempered steel. -->
+  <EM_AlloyTemperedSteel_Wood_Bulk.jobString>Allie de l'acier trempé.</EM_AlloyTemperedSteel_Wood_Bulk.jobString>
+  
+  <!-- EN: extract copper from bronze -->
+  <EM_ReverseAlloy_CopperFromBronze.label>extraire du cuivre à partir de bronze</EM_ReverseAlloy_CopperFromBronze.label>
+  <!-- EN: Smelt bronze to recover small amounts of copper -->
+  <EM_ReverseAlloy_CopperFromBronze.description>Faire fondre du bronze pour récupérer de petites quantités de cuivre.</EM_ReverseAlloy_CopperFromBronze.description>
+  <!-- EN: Extracting copper from metals. -->
+  <EM_ReverseAlloy_CopperFromBronze.jobString>Extrait du cuivre à partir de métaux.</EM_ReverseAlloy_CopperFromBronze.jobString>
+  
+  <!-- EN: extract iron from mild steel -->
+  <EM_ReverseAlloy_IronFromMildSteel.label>extraire du fer à partir d'acier doux</EM_ReverseAlloy_IronFromMildSteel.label>
+  <!-- EN: Smelt mild steel to recover small amounts of iron -->
+  <EM_ReverseAlloy_IronFromMildSteel.description>Faire fondre de l'acier doux pour récupérer de petites quantités de fer.</EM_ReverseAlloy_IronFromMildSteel.description>
+  <!-- EN: Extracting iron from metals. -->
+  <EM_ReverseAlloy_IronFromMildSteel.jobString>Extrait du fer à partir de métaux.</EM_ReverseAlloy_IronFromMildSteel.jobString>
+  
+  <!-- EN: extract iron from steel -->
+  <EM_ReverseAlloy_IronFromSteel.label>extraire du fer à partir d'acier</EM_ReverseAlloy_IronFromSteel.label>
+  <!-- EN: Smelt steel to recover small amounts of iron -->
+  <EM_ReverseAlloy_IronFromSteel.description>Faire fondre de l'acier pour récupérer de petites quantités de fer.</EM_ReverseAlloy_IronFromSteel.description>
+  <!-- EN: Extracting iron from metals. -->
+  <EM_ReverseAlloy_IronFromSteel.jobString>Extrait du fer à partir de métaux.</EM_ReverseAlloy_IronFromSteel.jobString>
+  
+  <!-- EN: extract silver from stainless steel -->
+  <EM_ReverseAlloy_SilverFromStainlessSteel.label>extraire de l'argent à partir d'acier inoxydable</EM_ReverseAlloy_SilverFromStainlessSteel.label>
+  <!-- EN: Smelt stainless steel to recover small amounts of silver. -->
+  <EM_ReverseAlloy_SilverFromStainlessSteel.description>Faire fondre de l'acier inoxydable pour récupérer de petites quantités d'argent.</EM_ReverseAlloy_SilverFromStainlessSteel.description>
+  <!-- EN: Extracting silver from metals. -->
+  <EM_ReverseAlloy_SilverFromStainlessSteel.jobString>Extrait de l'argent à partir de métaux.</EM_ReverseAlloy_SilverFromStainlessSteel.jobString>
+  
+  <!-- EN: extract steel from stainless steel -->
+  <EM_ReverseAlloy_SteelFromStainlessSteel.label>extraire de l'acier à partir d'acier inoxydable</EM_ReverseAlloy_SteelFromStainlessSteel.label>
+  <!-- EN: Smelt stainless steel to recover small amounts of steel -->
+  <EM_ReverseAlloy_SteelFromStainlessSteel.description>Faire fondre de l'acier inoxydable pour récupérer de petites quantités d'acier.</EM_ReverseAlloy_SteelFromStainlessSteel.description>
+  <!-- EN: Extracting steel from metals. -->
+  <EM_ReverseAlloy_SteelFromStainlessSteel.jobString>Extrait de l'acier à partir de métaux.</EM_ReverseAlloy_SteelFromStainlessSteel.jobString>
+  
+  <!-- EN: extract tin from bronze -->
+  <EM_ReverseAlloy_TinFromBronze.label>extraire de l'étain à partir de bronze</EM_ReverseAlloy_TinFromBronze.label>
+  <!-- EN: Smelt bronze to recover small amounts of tin -->
+  <EM_ReverseAlloy_TinFromBronze.description>Fondre du bronze pour récupérer de petites quantités d'étain.</EM_ReverseAlloy_TinFromBronze.description>
+  <!-- EN: Extracting tin from metals. -->
+  <EM_ReverseAlloy_TinFromBronze.jobString>Extrait de l'étain à partir de métaux.</EM_ReverseAlloy_TinFromBronze.jobString>
+  
+</LanguageData>
