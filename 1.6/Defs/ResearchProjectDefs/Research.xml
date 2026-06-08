@@ -40,6 +40,34 @@
         </prerequisites>
     </ResearchProjectDef>
 
+    <ResearchProjectDef>
+        <defName>EM_AdvancedAlloying</defName>
+        <label>advanced alloying</label>
+        <description>Create complex alloys furnaces that can handle extreme temperatures and high pressure to create cutting-edge materials.</description>
+        <baseCost>3500</baseCost>
+        <techLevel>Spacer</techLevel>
+        <researchViewX>4.00</researchViewX>
+        <researchViewY>4.00</researchViewY>
+        <prerequisites>
+            <li>EM_TemperedSteelMaking</li>
+            <li>EM_StainlessSteelMaking</li>
+            <li>Electricity</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>EM_PlasteelAlloying</defName>
+        <label>plasteel alloying</label>
+        <description>Learn to create an ultra-durable lightweight alloy that is 98% identical to plasteel at a molecular level.</description>
+        <baseCost>4000</baseCost>
+        <techLevel>Ultra</techLevel>
+        <researchViewX>5.00</researchViewX>
+        <researchViewY>4.00</researchViewY>
+        <prerequisites>
+            <li>EM_AdvancedAlloying</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
     <!-- Reverse Alloying -->
     <ResearchProjectDef>
         <defName>EM_ReverseAlloying</defName>

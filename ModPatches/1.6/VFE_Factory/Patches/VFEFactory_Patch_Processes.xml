@@ -42,6 +42,10 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef [defName="VFEFactory_AutomatedAlloyForge"]/comps/li [@Class="PipeSystem.CompProperties_AdvancedResourceProcessor"]/processes/li[text()="VFEFactory_AlloyPlasteel"]</xpath>
+    </Operation>
+
     <!-- Modify mod recipes -->
     <Operation Class="PatchOperationSequence">
         <operations>

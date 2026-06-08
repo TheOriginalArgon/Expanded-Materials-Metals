@@ -9,6 +9,8 @@
         <fixedBillGiverDefs>
             <li>EM_FueledAlloyFurnace</li>
             <li>EM_ElectricAlloyFurnace</li>
+            <li>EM_ChemfuelAlloyFurnace</li>
+            <li MayRequire="vanillaexpanded.helixiengas">EM_GasAlloyFurnace</li>
         </fixedBillGiverDefs>
         <verb>alloy</verb>
         <gerund>alloying at</gerund>

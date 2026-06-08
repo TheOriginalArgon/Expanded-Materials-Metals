@@ -1,0 +1,176 @@
+<Defs>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>EM_AdvancedAlloyFurnace</defName>
+        <label>advanced alloy furnace</label>
+        <description>An electric-powered advanced alloy furnace which allows for the automatic combination of metals into advanced alloys. It reaches higher temperatures and pressure, allowing it to create much more efficient results.</description>
+        <inspectorTabs>
+			<li>PipeSystem.ITab_Processor</li>
+		</inspectorTabs>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Things/Building/EM_AdvancedAlloyFurnace</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2.5,1.5)</drawSize>
+            <shadowData>
+                <volume>(2.8, 0.35, 0.59)</volume>
+                <offset>(0, 0, 0.08)</offset>
+            </shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <costList>
+            <EM_Titanium>100</EM_Titanium>
+            <ComponentSpacer>6</ComponentSpacer>
+        </costList>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <statBases>
+            <Mass>200</Mass>
+            <WorkToBuild>4700</WorkToBuild>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>-3</Cleanliness>
+        </statBases>
+        <tickerType>Rare</tickerType>
+        <size>(2,1)</size>
+        <designationCategory>Production</designationCategory>
+        <uiOrder>2510</uiOrder>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+        <building>
+            <buildingTags>
+				<li>Production</li>
+			</buildingTags>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>700</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>2</glowRadius>
+                <glowColor>(217,112,33,0)</glowColor>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusherPowered</compClass>
+                <heatPerSecond>3</heatPerSecond>
+            </li>
+            <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
+				<notWorkingKey>EM_AdvancedAlloyFurnaceNotWorking</notWorkingKey>
+				<processes>
+					<li>EM_AutoAlloy_Steel</li>
+                    <li>EM_AutoAlloy_TemperedSteel</li>
+                    <li>EM_AutoAlloy_Bronze</li>
+                    <li>EM_AutoAlloy_StainlessSteel</li>
+                    <li>EM_AutoAlloy_Plasteel</li>
+				</processes>
+				<progressBarOffset>(0,0,-0.75)</progressBarOffset>
+				<hideSettings>true</hideSettings>
+				<!-- <inProgressTexture>Things/Buildings/EM_AdvancedAlloyFurnace</inProgressTexture>
+				<finishedTexture>Things/Buildings/EM_AdvancedAlloyFurnace</finishedTexture> -->
+			</li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>EM_AdvancedAlloying</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <!-- Charcoal Kiln -->
+     <ThingDef ParentName="BuildingBase">
+        <defName>EM_CharcoalKiln</defName>
+        <label>charcoal kiln</label>
+        <description>A metallic container used for converting wood into charcoal through a process of heating in the absence of oxygen.</description>
+        <inspectorTabs>
+			<li>PipeSystem.ITab_Processor</li>
+		</inspectorTabs>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Things/Building/EM_CharcoalKiln</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <shadowData>
+                <volume>(2.8, 0.35, 0.59)</volume>
+                <offset>(0, 0, 0.08)</offset>
+            </shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <costList>
+            <Steel>60</Steel>
+        </costList>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <statBases>
+            <Mass>50</Mass>
+            <WorkToBuild>1200</WorkToBuild>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <Cleanliness>-3</Cleanliness>
+        </statBases>
+        <tickerType>Rare</tickerType>
+        <size>(1,1)</size>
+        <rotatable>false</rotatable>
+        <designationCategory>Production</designationCategory>
+        <uiOrder>2510</uiOrder>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <surfaceType>Item</surfaceType>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+        <building>
+            <buildingTags>
+				<li>Production</li>
+			</buildingTags>
+        </building>
+        <comps>
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusherPowered</compClass>
+                <heatPerSecond>2</heatPerSecond>
+            </li>
+            <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
+				<notWorkingKey>EM_CharcoalKilnNotWorking</notWorkingKey>
+				<processes>
+					<li>EM_Auto_Charcoal</li>
+				</processes>
+				<progressBarOffset>(0,0,-0.75)</progressBarOffset>
+				<hideSettings>true</hideSettings>
+				<inProgressTexture>Things/Building/EM_CharcoalKiln_full</inProgressTexture>
+				<finishedTexture>Things/Building/EM_CharcoalKiln_full</finishedTexture>
+			</li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>Smithing</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+
+</Defs>

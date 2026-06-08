@@ -682,6 +682,9 @@
         <sustainerWhenWorking>true</sustainerWhenWorking>
         <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
         <maxOutputCount>75</maxOutputCount>
+            <researchPrerequisites>
+                <li>EM_SteelWorking</li>
+            </researchPrerequisites>
     </PipeSystem.ProcessDef>
 
     <PipeSystem.ProcessDef>
@@ -723,6 +726,9 @@
         <sustainerWhenWorking>true</sustainerWhenWorking>
         <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
         <maxOutputCount>75</maxOutputCount>
+        <researchPrerequisites>
+            <li>EM_TemperedSteelMaking</li>
+        </researchPrerequisites>
     </PipeSystem.ProcessDef>
 
     <PipeSystem.ProcessDef>
@@ -768,6 +774,9 @@
         <sustainerWhenWorking>true</sustainerWhenWorking>
         <sustainerDef>VFEFactory_AutomatedSmeltingSustainer</sustainerDef>
         <maxOutputCount>75</maxOutputCount>
+        <researchPrerequisites>
+            <li>EM_StainlessSteelMaking</li>
+        </researchPrerequisites>
     </PipeSystem.ProcessDef>
 
 </Defs>

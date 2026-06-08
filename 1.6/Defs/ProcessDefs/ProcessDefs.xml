@@ -1,0 +1,211 @@
+<Defs>
+
+    <!-- Charcoal -->
+    <PipeSystem.ProcessDef>
+        <defName>EM_Auto_Charcoal</defName>
+        <label>Charcoal</label>
+        <description>Converts wood into charcoal by heating it in the absence of oxygen.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoExtract>false</autoExtract>
+        <useIngredients>true</useIngredients>
+        <transfersIngredientList>true</transfersIngredientList>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>WoodLog</thing>
+                <countNeeded>50</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>38000</ticks>
+        <results>
+            <li>
+                <thing>EM_Charcoal</thing>
+                <count>60</count>
+            </li>
+        </results>
+        <noPowerDestroysProgress>false</noPowerDestroysProgress>
+        <destroyIngredientsOnStart>true</destroyIngredientsOnStart>
+        <researchPrerequisites>
+            <li>Smithing</li>
+        </researchPrerequisites>
+    </PipeSystem.ProcessDef>
+
+    <!-- Steel -->
+    <PipeSystem.ProcessDef>
+        <defName>EM_AutoAlloy_Steel</defName>
+        <label>Alloy Steel</label>
+        <description>Automatically combines iron and coal into steel.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoExtract>false</autoExtract>
+        <useIngredients>true</useIngredients>
+        <transfersIngredientList>true</transfersIngredientList>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>EM_Iron</thing>
+                <countNeeded>50</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Coal</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>50000</ticks>
+        <results>
+            <li>
+                <thing>Steel</thing>
+                <count>75</count>
+            </li>
+        </results>
+        <noPowerDestroysProgress>false</noPowerDestroysProgress>
+        <destroyIngredientsOnStart>true</destroyIngredientsOnStart>
+        <researchPrerequisites>
+            <li>EM_AdvancedAlloying</li>
+        </researchPrerequisites>
+    </PipeSystem.ProcessDef>
+
+    <!-- Tempered Steel -->
+    <PipeSystem.ProcessDef>
+        <defName>EM_AutoAlloy_TemperedSteel</defName>
+        <label>Tempered Steel</label>
+        <description>Automatically combines steel and chemfuel into tempered steel.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoExtract>false</autoExtract>
+        <useIngredients>true</useIngredients>
+        <transfersIngredientList>true</transfersIngredientList>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>Steel</thing>
+                <countNeeded>75</countNeeded>
+            </li>
+            <li>
+                <thing>Chemfuel</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>50000</ticks>
+        <results>
+            <li>
+                <thing>EM_TemperedSteel</thing>
+                <count>75</count>
+            </li>
+        </results>
+        <noPowerDestroysProgress>false</noPowerDestroysProgress>
+        <destroyIngredientsOnStart>true</destroyIngredientsOnStart>
+        <researchPrerequisites>
+            <li>EM_AdvancedAlloying</li>
+        </researchPrerequisites>
+    </PipeSystem.ProcessDef>
+
+    <!-- Bronze -->
+    <PipeSystem.ProcessDef>
+        <defName>EM_AutoAlloy_Bronze</defName>
+        <label>Bronze</label>
+        <description>Automatically combines copper and tin into bronze.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoExtract>false</autoExtract>
+        <useIngredients>true</useIngredients>
+        <transfersIngredientList>true</transfersIngredientList>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>EM_Copper</thing>
+                <countNeeded>70</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Tin</thing>
+                <countNeeded>30</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>35000</ticks>
+        <results>
+            <li>
+                <thing>EM_Bronze</thing>
+                <count>75</count>
+            </li>
+        </results>
+        <noPowerDestroysProgress>false</noPowerDestroysProgress>
+        <destroyIngredientsOnStart>true</destroyIngredientsOnStart>
+        <researchPrerequisites>
+            <li>EM_AdvancedAlloying</li>
+        </researchPrerequisites>
+    </PipeSystem.ProcessDef>
+
+    <!-- Stainless Steel -->
+    <PipeSystem.ProcessDef>
+        <defName>EM_AutoAlloy_StainlessSteel</defName>
+        <label>Stainless Steel</label>
+        <description>Automatically combines steel, silver and tin into stainless steel.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoExtract>false</autoExtract>
+        <useIngredients>true</useIngredients>
+        <transfersIngredientList>true</transfersIngredientList>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>Steel</thing>
+                <countNeeded>50</countNeeded>
+            </li>
+            <li>
+                <thing>Silver</thing>
+                <countNeeded>25</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Tin</thing>
+                <countNeeded>30</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>35000</ticks>
+        <results>
+            <li>
+                <thing>EM_StainlessSteel</thing>
+                <count>75</count>
+            </li>
+        </results>
+        <noPowerDestroysProgress>false</noPowerDestroysProgress>
+        <destroyIngredientsOnStart>true</destroyIngredientsOnStart>
+        <researchPrerequisites>
+            <li>EM_AdvancedAlloying</li>
+        </researchPrerequisites>
+    </PipeSystem.ProcessDef>
+
+    <!-- Plasteel -->
+    <PipeSystem.ProcessDef>
+        <defName>EM_AutoAlloy_Plasteel</defName>
+        <label>Plasteel</label>
+        <description>Automatically combines steel, carbon and uranium into plasteel.</description>
+        <spawnOnInteractionCell>true</spawnOnInteractionCell>
+        <autoExtract>false</autoExtract>
+        <useIngredients>true</useIngredients>
+        <transfersIngredientList>true</transfersIngredientList>
+        <priorityInBillList>0</priorityInBillList>
+        <ingredients>
+            <li>
+                <thing>Steel</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+            <li>
+                <thing>EM_Coal</thing>
+                <countNeeded>20</countNeeded>
+            </li>
+            <li>
+                <thing>Uranium</thing>
+                <countNeeded>10</countNeeded>
+            </li>
+        </ingredients>
+        <ticks>60000</ticks>
+        <results>
+            <li>
+                <thing>Plasteel</thing>
+                <count>5</count>
+            </li>
+        </results>
+        <noPowerDestroysProgress>false</noPowerDestroysProgress>
+        <destroyIngredientsOnStart>true</destroyIngredientsOnStart>
+        <researchPrerequisites>
+            <li>EM_PlasteelAlloying</li>
+        </researchPrerequisites>
+    </PipeSystem.ProcessDef>
+
+</Defs>

@@ -8,10 +8,10 @@
         <thingClass>Building_WorkTable</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <graphicData>
-            <texPath>Things/Building/EM_AlloySmelter</texPath>
+            <texPath>Things/Building/EM_AlloyFurnace</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <shaderType>CutoutComplex</shaderType>
-            <drawSize>(4,2)</drawSize>
+            <drawSize>(3.5,1.5)</drawSize>
             <shadowData>
                 <volume>(2.8, 0.35, 0.59)</volume>
                 <offset>(0, 0, 0.08)</offset>
@@ -50,6 +50,8 @@
         </inspectorTabs>
         <building>
             <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <workTableRoomRole>Workshop</workTableRoomRole>
+			<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
         </building>
         <comps>
             <li Class="CompProperties_Refuelable">
@@ -88,10 +90,9 @@
         <description>An electric-powered furnace used for smelting metals and combining them into alloys..</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
-            <texPath>Things/Building/EM_ElectricAlloySmelter</texPath>
+            <texPath>Things/Building/EM_ElectricAlloyFurnace</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <drawSize>(4,2)</drawSize>
+            <drawSize>(3.5,1.5)</drawSize>
             <shadowData>
                 <volume>(2.8, 0.35, 0.59)</volume>
                 <offset>(0, 0, 0.08)</offset>
@@ -103,13 +104,13 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
-        <stuffCategories>
+        <!-- <stuffCategories>
             <li>Stony</li>
         </stuffCategories>
-        <costStuffCount>100</costStuffCount>
+        <costStuffCount>100</costStuffCount> -->
         <costList>
-            <Steel>50</Steel>
-            <ComponentIndustrial>3</ComponentIndustrial>
+            <Steel>130</Steel>
+            <ComponentIndustrial>7</ComponentIndustrial>
         </costList>
         <altitudeLayer>Building</altitudeLayer>
         <fillPercent>0.5</fillPercent>
@@ -119,6 +120,7 @@
             <MaxHitPoints>180</MaxHitPoints>
             <Flammability>1.0</Flammability>
             <Cleanliness>-3</Cleanliness>
+            <WorkTableWorkSpeedFactor>1.1</WorkTableWorkSpeedFactor>
         </statBases>
         <size>(3,1)</size>
         <designationCategory>Production</designationCategory>
@@ -129,11 +131,14 @@
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <surfaceType>Item</surfaceType>
         <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <minifiedDef>MinifiedThing</minifiedDef>
         <inspectorTabs>
             <li>ITab_Bills</li>
         </inspectorTabs>
         <building>
             <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <workTableRoomRole>Workshop</workTableRoomRole>
+			<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
         </building>
         <comps>
             <li Class="CompProperties_Power">
@@ -164,6 +169,204 @@
             <li>Smithing</li>
             <li>Electricity</li>
         </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="BenchBase">
+        <defName>EM_ChemfuelAlloyFurnace</defName>
+        <label>chemfuel alloy furnace</label>
+        <description>A chemfuel-powered furnace used for smelting metals and combining them into alloys..</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <texPath>Things/Building/EM_ChemfuelAlloyFurnace</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3.5,1.5)</drawSize>
+            <shadowData>
+                <volume>(2.8, 0.35, 0.59)</volume>
+                <offset>(0, 0, 0.08)</offset>
+            </shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <!-- <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>100</costStuffCount> -->
+        <costList>
+            <Steel>130</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <statBases>
+            <WorkToBuild>3000</WorkToBuild>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>-3</Cleanliness>
+            <WorkTableWorkSpeedFactor>1.1</WorkTableWorkSpeedFactor>
+        </statBases>
+        <size>(3,1)</size>
+        <designationCategory>Production</designationCategory>
+        <uiOrder>2510</uiOrder>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <workTableRoomRole>Workshop</workTableRoomRole>
+			<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+        </building>
+        <comps>
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>40.0</fuelConsumptionRate>
+                <fuelCapacity>60.0</fuelCapacity>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(217,112,33,0)</glowColor>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>ToolCabinet</li>
+                </linkableFacilities>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusherPowered</compClass>
+                <heatPerSecond>5</heatPerSecond>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>Smithing</li>
+            <li>BiofuelRefining</li>
+        </researchPrerequisites>
+        <modExtensions>
+            <li Class="VEF.Buildings.RecipeInheritanceExtension">
+                <inheritRecipesFrom>
+                    <li>EM_ElectricAlloyFurnace</li>
+                </inheritRecipesFrom>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="BenchBase" MayRequire="vanillaexpanded.helixiengas">
+        <defName>EM_GasAlloyFurnace</defName>
+        <label>gas alloy furnace</label>
+        <description>A gas-powered furnace used for smelting metals and combining them into alloys..</description>
+        <thingClass>PipeSystem.Building_ResourceWorkTable_HeatPush</thingClass>
+        <graphicData>
+            <texPath>Things/Building/EM_GasAlloyFurnace</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3.5,1.5)</drawSize>
+            <shadowData>
+                <volume>(2.8, 0.35, 0.59)</volume>
+                <offset>(0, 0, 0.08)</offset>
+            </shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <!-- <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>100</costStuffCount> -->
+        <costList>
+            <Steel>130</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <statBases>
+            <WorkToBuild>3000</WorkToBuild>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>-3</Cleanliness>
+            <WorkTableWorkSpeedFactor>1.1</WorkTableWorkSpeedFactor>
+        </statBases>
+        <size>(3,1)</size>
+        <designationCategory>Production</designationCategory>
+        <uiOrder>2510</uiOrder>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <workTableRoomRole>Workshop</workTableRoomRole>
+			<workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+        </building>
+        <comps>
+            <li Class="PipeSystem.CompProperties_ResourceTrader">
+				<pipeNet>VHGE_HelixienNet</pipeNet>
+				<consumptionPerTick>2</consumptionPerTick>
+				<idleConsumptionPerTick>0</idleConsumptionPerTick>
+			</li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(217,112,33,0)</glowColor>
+            </li>
+            <li Class="CompProperties_Flickable">
+				<commandTexture>Things/Special/Fluid/VHGE_OverlayBase</commandTexture>
+				<commandLabelKey>VHGE_CommandToggleGas_Label</commandLabelKey>
+				<commandDescKey>VHGE_CommandToggleGas_Desc</commandDescKey>
+			</li>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>ToolCabinet</li>
+                </linkableFacilities>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusherPowered</compClass>
+                <heatPerSecond>5</heatPerSecond>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>Smithing</li>
+            <li>VHGE_GasExtraction</li>
+        </researchPrerequisites>
+        <modExtensions>
+            <li Class="VEF.Buildings.RecipeInheritanceExtension">
+                <inheritRecipesFrom>
+                    <li>EM_ElectricAlloyFurnace</li>
+                </inheritRecipesFrom>
+            </li>
+        </modExtensions>
     </ThingDef>
 
 </Defs>
