@@ -27,8 +27,8 @@
             <li>ResourcesRaw</li>
         </thingCategories>
         <deepCommonality>2</deepCommonality>
-        <deepCountPerPortion>35</deepCountPerPortion>
-        <deepLumpSizeRange>12~20</deepLumpSizeRange>
+        <deepCountPerPortion>15</deepCountPerPortion>
+        <deepLumpSizeRange>5~8</deepLumpSizeRange>
         <burnableByRecipe>false</burnableByRecipe>
         <smeltable>true</smeltable>
         <stuffProps>
@@ -45,7 +45,7 @@
             <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
             <statFactors>
                 <MaxHitPoints>0.7</MaxHitPoints>
-                <Flammability>0.4</Flammability>
+                <Flammability>0</Flammability>
             </statFactors>
         </stuffProps>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>

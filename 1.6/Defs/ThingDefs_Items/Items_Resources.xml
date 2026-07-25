@@ -113,7 +113,7 @@
       <statFactors>
         <MaxHitPoints>1</MaxHitPoints>
         <Beauty>1</Beauty>
-        <Flammability>0.4</Flammability>
+        <Flammability>0</Flammability>
       </statFactors>
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
@@ -165,7 +165,7 @@
       <statFactors>
         <MaxHitPoints>1</MaxHitPoints>
         <Beauty>1</Beauty>
-        <Flammability>0.4</Flammability>
+        <Flammability>0</Flammability>
         <WorkToBuild>1.08</WorkToBuild>
         <WorkToMake>1.12</WorkToMake>
       </statFactors>
@@ -219,7 +219,7 @@
       <statFactors>
         <MaxHitPoints>1.2</MaxHitPoints>
         <Beauty>1</Beauty>
-        <Flammability>0.4</Flammability>
+        <Flammability>0</Flammability>
         <WorkToBuild>1.1</WorkToBuild>
         <WorkToMake>1.15</WorkToMake>
       </statFactors>
@@ -281,7 +281,7 @@
       <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
       <statFactors>
         <MaxHitPoints>0.75</MaxHitPoints>
-        <Flammability>0.4</Flammability>
+        <Flammability>0</Flammability>
         <Beauty>0.5</Beauty>
         <WorkToBuild>1.2</WorkToBuild>
         <WorkToMake>0.9</WorkToMake>
@@ -347,7 +347,7 @@
       <statFactors>
         <MaxHitPoints>0.9</MaxHitPoints>
         <Beauty>1.1</Beauty>
-        <Flammability>0.4</Flammability>
+        <Flammability>0</Flammability>
       </statFactors>
       <statOffsets>
         <Beauty>3</Beauty>
@@ -441,7 +441,7 @@
       <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
       <statFactors>
         <MaxHitPoints>0.75</MaxHitPoints>
-        <Flammability>0.4</Flammability>
+        <Flammability>0</Flammability>
         <Beauty>1.05</Beauty>
         <WorkToMake>0.75</WorkToMake>
         <WorkToBuild>0.75</WorkToBuild>
@@ -502,7 +502,7 @@
       <statFactors>
         <MaxHitPoints>1</MaxHitPoints>
         <Beauty>1.25</Beauty>
-        <Flammability>0.2</Flammability>
+        <Flammability>0</Flammability>
       </statFactors>
       <statOffsets>
         <Beauty>1</Beauty>

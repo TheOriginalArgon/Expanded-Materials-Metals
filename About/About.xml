@@ -9,7 +9,7 @@
         <li>1.6</li>
     </supportedVersions>
     <description>An expansion mod that adds multiple new metals to the game, expanding the production chain and making the game harder.</description>
-    <modVersion IgnoreIfNoMatchingField="True">1.1.2a</modVersion>
+    <modVersion IgnoreIfNoMatchingField="True">1.2.0a</modVersion>
     <modIconPath IgnoreIfNoMatchingField="True">UI/EM_Logo</modIconPath>
     <modDependencies>
         <li>

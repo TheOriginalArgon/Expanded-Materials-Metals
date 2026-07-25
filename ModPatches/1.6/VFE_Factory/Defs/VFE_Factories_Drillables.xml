@@ -4,6 +4,7 @@
         <defName>EM_DrillableMetals</defName>
         <label>Drillable metals</label>
         <drillableMetals>
+            <li>EM_Coal</li>
             <li>EM_Iron</li>
             <li>EM_Lead</li>
             <li>EM_Copper</li>
