@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: treat lead poisoning -->
+  <EM_TreatLeadPoisoning.label>治疗铅中毒</EM_TreatLeadPoisoning.label>
+  <!-- EN: Treat lead poisoning. -->
+  <EM_TreatLeadPoisoning.description>治疗铅中毒。</EM_TreatLeadPoisoning.description>
+  <!-- EN: Treating lead poisoning. -->
+  <EM_TreatLeadPoisoning.jobString>正在治疗铅中毒。</EM_TreatLeadPoisoning.jobString>
+  
+</LanguageData>

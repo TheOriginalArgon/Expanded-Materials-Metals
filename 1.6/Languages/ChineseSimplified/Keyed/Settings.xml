@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <EM_Settings_GenerateSteelVeins>Setting_GenerateSteelVeins</EM_Settings_GenerateSteelVeins>
+    <EM_Settings_GenerateComponentVeins>Setting_GenerateComponentVeins</EM_Settings_GenerateComponentVeins>
+
+    <EMSettings_NaturalGenerationOptions>基础钢和零部件自然生成（需要重启）</EMSettings_NaturalGenerationOptions>
+
+    <EMSettings_EnableSteelGeneration>允许钢生成</EMSettings_EnableSteelGeneration>
+    <EMSettings_EnableComponentGeneration>允许零部件生成</EMSettings_EnableComponentGeneration>
+
+</LanguageData>

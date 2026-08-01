@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bronze -->
+  <EM_Bronze.label>青铜</EM_Bronze.label>
+  <!-- EN: A metal alloy consisting mostly of copper and a relatively small portion of tin. Bronze is not as hard and durable as iron, but it is quicker to work and it also has some unique benefits, like a bonus to cleanliness and beauty. -->
+  <EM_Bronze.description>一种主要由铜和相对少量的锡组成的金属合金。青铜不如铁那么坚硬耐用，但加工速度更快，并且具有一些独特的优势，如清洁度和美观度加成。</EM_Bronze.description>
+  
+  <!-- EN: charcoal -->
+  <EM_Charcoal.label>木炭</EM_Charcoal.label>
+  <!-- EN: A lightweight, black carbon residue produced by strongly heating wood to remove all water and volatile constituents. Charcoal is not as much of an efficient carbon source as mineral coal is, but it is an effective substitute. -->
+  <EM_Charcoal.description>一种轻质黑色碳残留物，通过强烈加热木材以去除所有水分和挥发性成分而产生。木炭作为碳源的效率不如矿物煤，但是一种有效的替代品。</EM_Charcoal.description>
+  
+  <!-- EN: coal -->
+  <EM_Coal.label>煤炭</EM_Coal.label>
+  <!-- EN: A combustible, black sedimentary rock formed by dead plant matter turned into peat and converted into coal by the heat and pressure of deep burial over millions of years. Coal is mostly carbon with variable amounts of other elements. It is used as a common fuel and also as a source of carbon, which is required in some important alloys like steel. -->
+  <EM_Coal.description>一种可燃的黑色沉积岩，由死亡的植物物质转化为泥炭，再经过数百万年的深埋热压作用形成。煤炭主要成分是碳，含有不同数量的其他元素。它被用作普通燃料，也作为碳源，用于制造某些重要合金如钢。</EM_Coal.description>
+  
+  <!-- EN: copper -->
+  <EM_Copper.label>铜</EM_Copper.label>
+  <!-- EN: An orange-looking, relatively malleable and somewhat pretty metal that can be found in veins scattered in mountains. Copper is not very tough, but somewhat viable for weaponry in some rare cases, however, it has very high thermal and electrical conductivity, and it is mostly used as a temperature insulator and electrical conductor. Copper is essential in modern civilizations and settlements as the main element used to make wiring and generators. Its use is also widely required in electronics. Copper is a naturally sterile metal and has a very slight bonus to cleanliness. -->
+  <EM_Copper.description>一种橙色外观、相对可塑且相当美观的金属，可在山脉中散布的矿脉中找到。铜不太坚韧，但在某些罕见情况下可用于制造武器，然而它具有很高的导热和导电性，主要用作温度绝缘体和电导体。铜在现代文明和定居点中至关重要，是制造电线和发电机的主要元素。它在电子设备中也被广泛使用。铜是一种天然无菌金属，具有非常轻微的清洁度加成。</EM_Copper.description>
+  
+  <!-- EN: germanium -->
+  <EM_Germanium.label>锗</EM_Germanium.label>
+  <!-- EN: A lustrous grayish-white metal very valuable in advanced industry and microelectronics. Germanium is rare, and can only be found scattered in very small amounts in some rocks. It is widely used in the production of optical elements and microelectronic components such as chips and processors. -->
+  <EM_Germanium.description>一种有光泽的灰白色金属，在高端工业和微电子领域非常有价值。锗很稀有，只能在一些岩石中发现极少量散布。它广泛用于生产光学元件和微电子组件，如芯片和处理器。</EM_Germanium.description>
+  
+  <!-- EN: iron -->
+  <EM_Iron.label>铁</EM_Iron.label>
+  <!-- EN: A basic resource found widely in mountains and underground. Iron is one of mankind's oldest and most used metals for making weapons, armor, reinforced building structures and several other things. Iron can be used on alloys too, steel being the most common one. -->
+  <EM_Iron.description>一种在山区和地下广泛存在的基本资源。铁是人类最古老、使用最广泛的金属之一，用于制造武器、盔甲、加固建筑结构和其他多种物品。铁也可以用于制造合金，钢是最常见的一种。</EM_Iron.description>
+  
+  <!-- EN: lead -->
+  <EM_Lead.label>铅</EM_Lead.label>
+  <!-- EN: A heavy, dark gray-bluish metal that is malleable and soft. While it is not very suitable for weapons and armor due to its weight and low resistance, lead is a very useful metal. It is widely used as a chemical additive and to make industrial batteries. It is also an essential material in the weapon industry, being the main component of most bullets and ammunition. Lead is toxic to the human body, and can contaminate soil and food if it evaporates or burns. Lead poisoning can cause chemical damage to the kidneys and brain, and if not tended properly, death. -->
+  <EM_Lead.description>一种沉重、深灰蓝色的金属，具有可塑性和柔软性。虽然由于其重量和低强度而不太适合制造武器和盔甲，但铅是一种非常有用的金属。它广泛用作化学添加剂和制造工业电池。它也是武器工业中必不可少的材料，是大多数子弹和弹药的主要成分。铅对人体有毒，如果蒸发或燃烧，会污染土壤和食物。铅中毒会对肾脏和大脑造成化学损伤，如果不妥善处理，会导致死亡。</EM_Lead.description>
+  
+  <!-- EN: mild steel -->
+  <EM_MildSteel.label>低碳钢</EM_MildSteel.label>
+  <!-- EN: A variant of steel with a lesser percentage of carbon. Mild steel alloy process is slightly faster than average steel, however, the material is also slightly less tough. Mild steel is very common among medieval civilizations, where alloying metals is difficult and sometimes quantity-over-quality is the best approach. -->
+  <EM_MildSteel.description>一种碳含量较低的钢变体。低碳钢的合金过程比普通钢稍快，但材料韧性也稍差。低碳钢在中世纪文明中非常常见，那里合金冶炼困难，有时数量优先于质量是最好的策略。</EM_MildSteel.description>
+  
+  <!-- EN: silicon -->
+  <EM_Silicon.label>硅</EM_Silicon.label>
+  <!-- EN: A silverish, brittle metal found scattered across planets. Despite its abundance, it does not occur pure as other minerals, finding it requires drilling for deep veins and processing certain types of rocks. Silicon is widely used as a mineral additive to various materials like mortars, porcelain or glass, but its most important implementation is as a semiconductor for microelectronics and integrated circuits. -->
+  <EM_Silicon.description>一种银白色、易碎的金属，散布在星球各处。尽管储量丰富，但它不像其他矿物那样以纯净形式存在，需要钻探深矿脉并加工特定类型的岩石才能获得。硅被广泛用作各种材料（如砂浆、瓷器或玻璃）的矿物添加剂，但其最重要的应用是作为微电子和集成电路的半导体材料。</EM_Silicon.description>
+  
+  <!-- EN: stainless steel -->
+  <EM_StainlessSteel.label>不锈钢</EM_StainlessSteel.label>
+  <!-- EN: A harder, stronger and prettier alloy of steel made by combining it with an assortment of other metals. In the most advanced high-tech worlds, chromium is used to make the most pure stainless steel, but other metals like silver or tin can also be used to produce a close-quality material. Stainless steel has sterile properties and it is widely required in modern industry. Medicine, energy, weapons and the aerospace industry all require this type of steel. -->
+  <EM_StainlessSteel.description>一种更硬、更强、更美观的钢合金，通过与其他多种金属结合制成。在最先进的高科技世界中，铬用于制造最纯的不锈钢，但银或锡等其他金属也可用于生产质量相近的材料。不锈钢具有无菌特性，在现代工业中广泛需求。医药、能源、武器和航空航天工业都需要这种类型的钢。</EM_StainlessSteel.description>
+  
+  <!-- EN: tempered steel -->
+  <EM_TemperedSteel.label>淬火钢</EM_TemperedSteel.label>
+  <!-- EN: Steel with a heat treating process that enhances its properties. Tempering is generally done by heating the material to some temperature below the critical point for some time and then quickly cooling it in water or oil. Tempered steel is much stronger than average steel, and it is mostly used to build stronger weapons, armor and structures. -->
+  <EM_TemperedSteel.description>经过热处理以增强其性能的钢。淬火通常通过将材料加热到临界点以下的温度一段时间，然后在水或油中快速冷却来完成。淬火钢比普通钢强韧得多，主要用于制造更强大的武器、盔甲和结构。</EM_TemperedSteel.description>
+  
+  <!-- EN: tin -->
+  <EM_Tin.label>锡</EM_Tin.label>
+  <!-- EN: A somewhat rare, silvery-white colored metal that melts at a relatively low temperature. Tin is extremely weak compared to other metals; a bar of tin can be easily bent by hand, therefore it is not suitable by any means to make weapons or armor. However, it has incredible properties when alloyed with other metals. Tin is one of the main components of bronze, and it can also be used as plating to reinforce other metals. Tin is also widely used in electronics as a soldering element. -->
+  <EM_Tin.description>一种相当稀有的银白色金属，熔点较低。与其他金属相比，锡非常脆弱；一根锡条可以轻易用手弯曲，因此它完全不适用于制造武器或盔甲。然而，当与其他金属合金化时，它具有令人难以置信的特性。锡是青铜的主要成分之一，也可以用作镀层来增强其他金属。锡在电子设备中也被广泛用作焊料元素。</EM_Tin.description>
+  
+  <!-- EN: titanium -->
+  <EM_Titanium.label>钛</EM_Titanium.label>
+  <!-- EN: A highly durable metal, Titanium is only passable for use in structures but makes\n      for extremely durable weapons and armor. -->
+  <EM_Titanium.description>一种高度耐用的金属，钛在结构中使用效果尚可，但能制造出极其耐用的武器和盔甲。</EM_Titanium.description>
+  
+</LanguageData>

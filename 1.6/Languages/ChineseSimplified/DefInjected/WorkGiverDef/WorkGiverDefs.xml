@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: alloying metals -->
+  <EM_DoBillsAlloyFurnaceOven.label>熔炼金属</EM_DoBillsAlloyFurnaceOven.label>
+  <!-- EN: alloying at -->
+  <EM_DoBillsAlloyFurnaceOven.gerund>正在熔炼于</EM_DoBillsAlloyFurnaceOven.gerund>
+  <!-- EN: alloy -->
+  <EM_DoBillsAlloyFurnaceOven.verb>熔炼</EM_DoBillsAlloyFurnaceOven.verb>
+  
+</LanguageData>
