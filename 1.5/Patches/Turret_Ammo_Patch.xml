@@ -2,11 +2,16 @@
 
     <!-- Turrets can be refueled with lead, which is also way more efficient -->
 
-    <Operation Class="PatchOperationAdd">
+    <!-- Conditional: Combat Extended (and similar mods) remove the Refuelable comp from turrets,
+         so only add lead when steel-fueled turrets actually exist -->
+    <Operation Class="PatchOperationConditional">
         <xpath>/Defs/ThingDef [thingClass="Building_TurretGun" and comps/li [@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]]/comps/li [@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
-        <value>
-            <li>EM_Lead</li>
-        </value>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef [thingClass="Building_TurretGun" and comps/li [@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]]/comps/li [@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+            <value>
+                <li>EM_Lead</li>
+            </value>
+        </match>
     </Operation>
 
     <!-- Optional patch to disable refueling with steel -->
