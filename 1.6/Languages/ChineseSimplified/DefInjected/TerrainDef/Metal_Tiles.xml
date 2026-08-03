@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bronze grate tile -->
+  <EM_BronzeGrateTile.label>青铜格栅地砖</EM_BronzeGrateTile.label>
+  <!-- EN: Bronze grate tiles, for that neat imperial look. They are very quick to clean and get a bonus to cleanliness for use in medical settings. -->
+  <EM_BronzeGrateTile.description>青铜格栅地砖，营造整洁的帝国风格。它们非常容易清洁，并在医疗环境中获得清洁度加成。</EM_BronzeGrateTile.description>
+  
+  <!-- EN: bronze studded tile -->
+  <EM_BronzeStuddedTile.label>青铜铆钉地砖</EM_BronzeStuddedTile.label>
+  <!-- EN: Bronze studded tiles, for that neat imperial look. They are quick to clean and get a bonus to cleanliness for use in medical settings. -->
+  <EM_BronzeStuddedTile.description>青铜铆钉地砖，营造整洁的帝国风格。它们容易清洁，并在医疗环境中获得清洁度加成。</EM_BronzeStuddedTile.description>
+  
+  <!-- EN: copper grate tile -->
+  <EM_CopperGrateTile.label>铜制格栅地砖</EM_CopperGrateTile.label>
+  <!-- EN: Copper grate tiles, for that antique look. They are very quick to clean and get a bonus to cleanliness for use in medical settings. -->
+  <EM_CopperGrateTile.description>铜制格栅地砖，营造复古风格。它们非常容易清洁，并在医疗环境中获得清洁度加成。</EM_CopperGrateTile.description>
+  
+  <!-- EN: copper studded tile -->
+  <EM_CopperStuddedTile.label>铜制铆钉地砖</EM_CopperStuddedTile.label>
+  <!-- EN: Copper studded tiles, for that antique look. They are quick to clean and get a bonus to cleanliness for use in medical settings. -->
+  <EM_CopperStuddedTile.description>铜制铆钉地砖，营造复古风格。它们容易清洁，并在医疗环境中获得清洁度加成。</EM_CopperStuddedTile.description>
+  
+</LanguageData>

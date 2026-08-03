@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bronze slag chunk -->
+  <EM_ChunkSlagBronze.label>青铜矿渣块</EM_ChunkSlagBronze.label>
+  <!-- EN: A chunk of bronze slag. While it's useless in its current form, it can be smelted to recover bronze. -->
+  <EM_ChunkSlagBronze.description>一块青铜矿渣。虽然目前形态无用，但可以熔炼以回收青铜。</EM_ChunkSlagBronze.description>
+  
+  <!-- EN: iron slag chunk -->
+  <EM_ChunkSlagIron.label>铁矿渣块</EM_ChunkSlagIron.label>
+  <!-- EN: A chunk of iron slag. While it's useless in its current form, it can be smelted to recover iron. -->
+  <EM_ChunkSlagIron.description>一块铁矿渣。虽然目前形态无用，但可以熔炼以回收铁。</EM_ChunkSlagIron.description>
+  
+  <!-- EN: lead slag chunk -->
+  <EM_ChunkSlagLead.label>铅矿渣块</EM_ChunkSlagLead.label>
+  <!-- EN: A chunk of lead slag. While it's useless in its current form, it can be smelted to recover lead. -->
+  <EM_ChunkSlagLead.description>一块铅矿渣。虽然目前形态无用，但可以熔炼以回收铅。</EM_ChunkSlagLead.description>
+  
+</LanguageData>

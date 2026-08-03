@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: smelt bronze from slag -->
+  <EM_ExtractBronzeFromSlag.label>从矿渣中熔炼青铜</EM_ExtractBronzeFromSlag.label>
+  <!-- EN: Use heat and strong electromagnets to extract useful bronze from slag chunks. -->
+  <EM_ExtractBronzeFromSlag.description>利用热量和强力电磁铁从矿渣块中提取有用的青铜。</EM_ExtractBronzeFromSlag.description>
+  <!-- EN: Smelting bronze from slag. -->
+  <EM_ExtractBronzeFromSlag.jobString>正在从矿渣中熔炼青铜。</EM_ExtractBronzeFromSlag.jobString>
+  
+  <!-- EN: smelt iron from slag -->
+  <EM_ExtractIronFromSlag.label>从矿渣中熔炼铁</EM_ExtractIronFromSlag.label>
+  <!-- EN: Use heat and strong electromagnets to extract useful iron from slag chunks. -->
+  <EM_ExtractIronFromSlag.description>利用热量和强力电磁铁从矿渣块中提取有用的铁。</EM_ExtractIronFromSlag.description>
+  <!-- EN: Smelting iron from slag. -->
+  <EM_ExtractIronFromSlag.jobString>正在从矿渣中熔炼铁。</EM_ExtractIronFromSlag.jobString>
+  
+  <!-- EN: smelt lead from slag -->
+  <EM_ExtractLeadFromSlag.label>从矿渣中熔炼铅</EM_ExtractLeadFromSlag.label>
+  <!-- EN: Use heat and strong electromagnets to extract useful lead from slag chunks. -->
+  <EM_ExtractLeadFromSlag.description>利用热量和强力电磁铁从矿渣块中提取有用的铅。</EM_ExtractLeadFromSlag.description>
+  <!-- EN: Smelting iron from slag. -->
+  <EM_ExtractLeadFromSlag.jobString>正在从矿渣中熔炼铅。</EM_ExtractLeadFromSlag.jobString>
+  
+  <!-- EN: extract ore from stone chunks -->
+  <EM_ExtractOreFromChunks.label>从石块中提取矿石</EM_ExtractOreFromChunks.label>
+  <!-- EN: Smelt rocks to get small traces of resources. -->
+  <EM_ExtractOreFromChunks.description>熔炼岩石以获得微量资源。</EM_ExtractOreFromChunks.description>
+  <!-- EN: Smelting ore from rocks. -->
+  <EM_ExtractOreFromChunks.jobString>正在从岩石中熔炼矿石。</EM_ExtractOreFromChunks.jobString>
+  
+</LanguageData>

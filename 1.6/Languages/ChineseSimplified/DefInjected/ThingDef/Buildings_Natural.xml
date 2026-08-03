@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: coal ore -->
+  <EM_MineableCoal.label>煤矿</EM_MineableCoal.label>
+  <!-- EN: Rock containing bits of coal. -->
+  <EM_MineableCoal.description>含有煤炭碎片的岩石。</EM_MineableCoal.description>
+  
+  <!-- EN: copper ore -->
+  <EM_MineableCopper.label>铜矿</EM_MineableCopper.label>
+  <!-- EN: Rock containing bits of copper. -->
+  <EM_MineableCopper.description>含有铜碎片的岩石。</EM_MineableCopper.description>
+  
+  <!-- EN: iron ore -->
+  <EM_MineableIron.label>铁矿</EM_MineableIron.label>
+  <!-- EN: Rock containing bits of iron. -->
+  <EM_MineableIron.description>含有铁碎片的岩石。</EM_MineableIron.description>
+  
+  <!-- EN: lead ore -->
+  <EM_MineableLead.label>铅矿</EM_MineableLead.label>
+  <!-- EN: Rock containing bits of lead. -->
+  <EM_MineableLead.description>含有铅碎片的岩石。</EM_MineableLead.description>
+  
+  <!-- EN: tin ore -->
+  <EM_MineableTin.label>锡矿</EM_MineableTin.label>
+  <!-- EN: Rock containing bits of tin. -->
+  <EM_MineableTin.description>含有锡碎片的岩石。</EM_MineableTin.description>
+  
+  <!-- EN: titanium ore -->
+  <EM_MineableTitanium.label>钛矿</EM_MineableTitanium.label>
+  <!-- EN: Rock containing bits of titanium. -->
+  <EM_MineableTitanium.description>含有钛碎片的岩石。</EM_MineableTitanium.description>
+  
+</LanguageData>

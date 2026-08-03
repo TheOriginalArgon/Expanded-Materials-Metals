@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make charcoal -->
+  <EM_Make_Charcoal.label>制作木炭</EM_Make_Charcoal.label>
+  <!-- EN: Incinerate wood in a closed chamber. Lack of oxygen prevents the wood from completely burning, thus making charcoal. -->
+  <EM_Make_Charcoal.description>在封闭空间中焚烧木材。缺氧环境阻止木材完全燃烧，从而制成木炭。</EM_Make_Charcoal.description>
+  <!-- EN: Making charcoal. -->
+  <EM_Make_Charcoal.jobString>正在制作木炭。</EM_Make_Charcoal.jobString>
+  
+  <!-- EN: make bulk charcoal -->
+  <EM_Make_Charcoal_Bulk.label>制作木炭（批量）</EM_Make_Charcoal_Bulk.label>
+  <!-- EN: Incinerate wood in a closed chamber. Lack of oxygen prevents the wood from completely burning, thus making charcoal. -->
+  <EM_Make_Charcoal_Bulk.description>在封闭空间中焚烧木材。缺氧环境阻止木材完全燃烧，从而制成木炭。</EM_Make_Charcoal_Bulk.description>
+  <!-- EN: Making charcoal. -->
+  <EM_Make_Charcoal_Bulk.jobString>正在制作木炭。</EM_Make_Charcoal_Bulk.jobString>
+  
+  <!-- EN: make chemfuel from coal -->
+  <EM_Make_ChemfuelFromCoal.label>从煤炭中制作化工燃料</EM_Make_ChemfuelFromCoal.label>
+  <!-- EN: Make a batch of chemfuel by extracting and condensing gas from coal chunks. -->
+  <EM_Make_ChemfuelFromCoal.description>通过从煤块中提取和冷凝气体来制作一批化工燃料。</EM_Make_ChemfuelFromCoal.description>
+  <!-- EN: Refining chemfuel from coal. -->
+  <EM_Make_ChemfuelFromCoal.jobString>正在从煤炭中提炼化工燃料。</EM_Make_ChemfuelFromCoal.jobString>
+  
+  <!-- EN: make chemfuel from coal (lead) -->
+  <EM_Make_ChemfuelFromCoal_Lead.label>从煤炭中制作化工燃料（铅）</EM_Make_ChemfuelFromCoal_Lead.label>
+  <!-- EN: Make a batch of lead-based chemfuel by extracting and condensing gas from coal chunks.\n\n<color=#D73333>Warning:</color> Lead makes for a higher yield but causes accumulative lead contamination over time. -->
+  <EM_Make_ChemfuelFromCoal_Lead.description>通过从煤块中提取和冷凝气体来制作一批基于铅的化工燃料。\n\n<color=#D73333>警告：</color>铅的产率更高，但会随时间累积导致铅污染。</EM_Make_ChemfuelFromCoal_Lead.description>
+  <!-- EN: Refining chemfuel from coal. -->
+  <EM_Make_ChemfuelFromCoal_Lead.jobString>正在从煤炭中提炼化工燃料。</EM_Make_ChemfuelFromCoal_Lead.jobString>
+  
+  <!-- EN: make chemfuel from wood (lead) -->
+  <EM_Make_ChemfuelFromWood_Lead.label>从木材中制作化工燃料（铅）</EM_Make_ChemfuelFromWood_Lead.label>
+  <!-- EN: Make a batch of lead-based chemfuel by extracting and condensing gas from wood logs.\n\n<color=#D73333>Warning:</color> Lead makes for a higher yield but causes accumulative lead contamination over time. -->
+  <EM_Make_ChemfuelFromWood_Lead.description>通过从木材中提取和冷凝气体来制作一批基于铅的化工燃料。\n\n<color=#D73333>警告：</color>铅的产率更高，但会随时间累积导致铅污染。</EM_Make_ChemfuelFromWood_Lead.description>
+  <!-- EN: Refining chemfuel from coal. -->
+  <EM_Make_ChemfuelFromWood_Lead.jobString>正在从木材中提炼化工燃料。</EM_Make_ChemfuelFromWood_Lead.jobString>
+  
+  <!-- EN: make component -->
+  <EM_Make_ComponentIndustrial_Bronze.label>制作零部件</EM_Make_ComponentIndustrial_Bronze.label>
+  <!-- EN: Make a component. -->
+  <EM_Make_ComponentIndustrial_Bronze.description>制作一个零部件。</EM_Make_ComponentIndustrial_Bronze.description>
+  <!-- EN: Making component. -->
+  <EM_Make_ComponentIndustrial_Bronze.jobString>正在制作零部件。</EM_Make_ComponentIndustrial_Bronze.jobString>
+  
+  <!-- EN: make component (lead) -->
+  <EM_Make_ComponentIndustrial_Bronze_Lead.label>制作零部件（铅）</EM_Make_ComponentIndustrial_Bronze_Lead.label>
+  <!-- EN: Make a component.\n\n<color=#D73333>Warning:</color> This recipe uses lead soldering instead of tin. It is much quicker but causes accumulative lead poisoning over time. -->
+  <EM_Make_ComponentIndustrial_Bronze_Lead.description>制作一个零部件。\n\n<color=#D73333>警告：</color>此配方使用铅焊料代替锡。速度更快，但会随时间累积导致铅中毒。</EM_Make_ComponentIndustrial_Bronze_Lead.description>
+  <!-- EN: Making component. -->
+  <EM_Make_ComponentIndustrial_Bronze_Lead.jobString>正在制作零部件。</EM_Make_ComponentIndustrial_Bronze_Lead.jobString>
+  
+  <!-- EN: make component -->
+  <EM_Make_ComponentIndustrial_Iron.label>制作零部件</EM_Make_ComponentIndustrial_Iron.label>
+  <!-- EN: Make a component. -->
+  <EM_Make_ComponentIndustrial_Iron.description>制作一个零部件。</EM_Make_ComponentIndustrial_Iron.description>
+  <!-- EN: Making component. -->
+  <EM_Make_ComponentIndustrial_Iron.jobString>正在制作零部件。</EM_Make_ComponentIndustrial_Iron.jobString>
+  
+  <!-- EN: make component (lead) -->
+  <EM_Make_ComponentIndustrial_Iron_Lead.label>制作零部件（铅）</EM_Make_ComponentIndustrial_Iron_Lead.label>
+  <!-- EN: Make a component.\n\n<color=#D73333>Warning:</color> This recipe uses lead soldering instead of tin. It is much quicker but causes accumulative lead poisoning over time. -->
+  <EM_Make_ComponentIndustrial_Iron_Lead.description>制作一个零部件。\n\n<color=#D73333>警告：</color>此配方使用铅焊料代替锡。速度更快，但会随时间累积导致铅中毒。</EM_Make_ComponentIndustrial_Iron_Lead.description>
+  <!-- EN: Making component. -->
+  <EM_Make_ComponentIndustrial_Iron_Lead.jobString>正在制作零部件。</EM_Make_ComponentIndustrial_Iron_Lead.jobString>
+  
+  <!-- EN: make component (lead) -->
+  <EM_Make_ComponentIndustrial_Steel_Lead.label>制作零部件（铅）</EM_Make_ComponentIndustrial_Steel_Lead.label>
+  <!-- EN: Make a component.\n\n<color=#D73333>Warning:</color> This recipe uses lead soldering instead of tin. It is much quicker but causes accumulative lead poisoning over time. -->
+  <EM_Make_ComponentIndustrial_Steel_Lead.description>制作一个零部件。\n\n<color=#D73333>警告：</color>此配方使用铅焊料代替锡。速度更快，但会随时间累积导致铅中毒。</EM_Make_ComponentIndustrial_Steel_Lead.description>
+  <!-- EN: Making component. -->
+  <EM_Make_ComponentIndustrial_Steel_Lead.jobString>正在制作零部件。</EM_Make_ComponentIndustrial_Steel_Lead.jobString>
+  
+  <!-- EN: make component x3 -->
+  <EM_Make_ComponentIndustrial_x3_StainlessSteel.label>制作零部件 x3</EM_Make_ComponentIndustrial_x3_StainlessSteel.label>
+  <!-- EN: Make a component. -->
+  <EM_Make_ComponentIndustrial_x3_StainlessSteel.description>制作一个零部件。</EM_Make_ComponentIndustrial_x3_StainlessSteel.description>
+  <!-- EN: Making component. -->
+  <EM_Make_ComponentIndustrial_x3_StainlessSteel.jobString>正在制作零部件。</EM_Make_ComponentIndustrial_x3_StainlessSteel.jobString>
+  
+  <!-- EN: make component x3 -->
+  <EM_Make_ComponentIndustrial_x3_Steel.label>制作零部件 x3</EM_Make_ComponentIndustrial_x3_Steel.label>
+  <!-- EN: Make a component. -->
+  <EM_Make_ComponentIndustrial_x3_Steel.description>制作一个零部件。</EM_Make_ComponentIndustrial_x3_Steel.description>
+  <!-- EN: Making component. -->
+  <EM_Make_ComponentIndustrial_x3_Steel.jobString>正在制作零部件。</EM_Make_ComponentIndustrial_x3_Steel.jobString>
+  
+  <!-- EN: make advanced component -->
+  <EM_Make_ComponentSpacer_Germanium.label>制作高级零部件</EM_Make_ComponentSpacer_Germanium.label>
+  <!-- EN: Make an advanced component. -->
+  <EM_Make_ComponentSpacer_Germanium.description>制作一个高级零部件。</EM_Make_ComponentSpacer_Germanium.description>
+  <!-- EN: Making advanced component. -->
+  <EM_Make_ComponentSpacer_Germanium.jobString>正在制作高级零部件。</EM_Make_ComponentSpacer_Germanium.jobString>
+  
+  <!-- EN: make advanced component -->
+  <EM_Make_ComponentSpacer_Silicon.label>制作高级零部件</EM_Make_ComponentSpacer_Silicon.label>
+  <!-- EN: Make an advanced component. -->
+  <EM_Make_ComponentSpacer_Silicon.description>制作一个高级零部件。</EM_Make_ComponentSpacer_Silicon.description>
+  <!-- EN: Making advanced component. -->
+  <EM_Make_ComponentSpacer_Silicon.jobString>正在制作高级零部件。</EM_Make_ComponentSpacer_Silicon.jobString>
+  
+  <!-- EN: make advanced component -->
+  <EM_Make_ComponentSpacer_StainlessSteel.label>制作高级零部件</EM_Make_ComponentSpacer_StainlessSteel.label>
+  <!-- EN: Make an advanced component. -->
+  <EM_Make_ComponentSpacer_StainlessSteel.description>制作一个高级零部件。</EM_Make_ComponentSpacer_StainlessSteel.description>
+  <!-- EN: Making advanced component. -->
+  <EM_Make_ComponentSpacer_StainlessSteel.jobString>正在制作高级零部件。</EM_Make_ComponentSpacer_StainlessSteel.jobString>
+  
+</LanguageData>
