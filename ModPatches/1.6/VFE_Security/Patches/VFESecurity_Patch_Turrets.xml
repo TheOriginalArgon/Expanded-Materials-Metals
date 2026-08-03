@@ -5,16 +5,26 @@
         <enabled>true</enabled>
         <label>Plasteel-fueled turrets can also be refueled with titanium:</label>
         <operations>
-            <li Class="PatchOperationAdd">
+            <!-- Conditional: Combat Extended (and similar mods) remove the Refuelable comp from turrets,
+                 so only add titanium when the fuel filter node actually exists -->
+            <li Class="PatchOperationConditional">
                 <xpath>/Defs/ThingDef [
                     defName="VFES_Turret_ChargeTurret" or
                     defName="VFES_Turret_ChargeRailgun" or
                     defName="VFES_Complex_Charge"]
                     /comps/li [@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs
                 </xpath>
-                <value>
-                    <li>EM_Titanium</li>
-                </value>
+                <match Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef [
+                        defName="VFES_Turret_ChargeTurret" or
+                        defName="VFES_Turret_ChargeRailgun" or
+                        defName="VFES_Complex_Charge"]
+                        /comps/li [@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs
+                    </xpath>
+                    <value>
+                        <li>EM_Titanium</li>
+                    </value>
+                </match>
             </li>
         </operations>
     </Operation>

@@ -42,6 +42,9 @@
         
         <!-- Mods (ReGrowth) -->
         <li IfModActive="rebuild.cotr.doorsandcorners">ModPatches/1.6/ReBuild_Doors</li>
+
+        <!-- Mods (Combat Extended) -->
+        <li IfModActive="CETeam.CombatExtended">ModPatches/1.6/CombatExtended</li>
         
         <!-- Mods (Other) -->
         <li IfModActiveAll="kentington.saveourship2,ludeon.rimworld.odyssey">ModPatches/1.6/_Misc/SoS_Odyssey</li>

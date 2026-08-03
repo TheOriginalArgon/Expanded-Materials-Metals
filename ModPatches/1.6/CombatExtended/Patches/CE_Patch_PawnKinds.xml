@@ -1,0 +1,17 @@
+<Patch>
+
+    <!-- Combat Extended sets the mercenary sniper weaponMoney to 415~600 and rebalances the
+         sniper rifle to cost 414. Converting its steel cost to tempered steel raises the
+         price to 420, which exceeds the 415 minimum and triggers a "could end up weaponless"
+         config error. Raise the minimum to match. -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/PawnKindDef[@Name="MercenarySniperBase" or defName="Mercenary_Sniper_Acidifier"]/weaponMoney</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/PawnKindDef[@Name="MercenarySniperBase" or defName="Mercenary_Sniper_Acidifier"]/weaponMoney</xpath>
+            <value>
+                <weaponMoney>420~600</weaponMoney>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>
